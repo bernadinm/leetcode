@@ -1,12 +1,10 @@
-# [3059. Find All Unique Email Domains](https://leetcode.cn/problems/find-all-unique-email-domains)
+# [3059. Find All Unique Email Domains](https://leetcode.com/problems/find-all-unique-email-domains)
 
-[English Version](/solution/3000-3099/3059.Find%20All%20Unique%20Email%20Domains/README_EN.md)
+[中文文档](/solution/3000-3099/3059.Find%20All%20Unique%20Email%20Domains/README.md)
 
-<!-- tags:数据库 -->
+<!-- tags:Database -->
 
-## 题目描述
-
-<!-- 这里写题目描述 -->
+## Description
 
 <p>Table: <code>Emails</code></p>
 
@@ -55,11 +53,11 @@ Emails table:
 Output table is ordered by email_domains in ascending order.
 </pre>
 
-## 解法
+## Solutions
 
-### 方法一：使用 `SUBSTRING_INDEX` 函数 + 分组统计
+### Solution 1: Using `SUBSTRING_INDEX` Function + Grouping Statistics
 
-我们先筛选出所有以 `.com` 结尾的邮箱，然后使用 `SUBSTRING_INDEX` 函数提取出邮箱的域名，最后使用 `GROUP BY` 统计每个域名的个数。
+First, we filter out all emails ending with `.com`, then use the `SUBSTRING_INDEX` function to extract the domain name of the email. Finally, we use `GROUP BY` to count the number of each domain.
 
 <!-- tabs:start -->
 

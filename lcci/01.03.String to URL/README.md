@@ -1,37 +1,50 @@
-# [面试题 01.03. URL 化](https://leetcode.cn/problems/string-to-url-lcci)
+# [01.03. String to URL](https://leetcode.cn/problems/string-to-url-lcci)
 
-[English Version](/lcci/01.03.String%20to%20URL/README_EN.md)
+[中文文档](/lcci/01.03.String%20to%20URL/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>URL化。编写一种方法，将字符串中的空格全部替换为<code>%20</code>。假定该字符串尾部有足够的空间存放新增字符，并且知道字符串的&ldquo;真实&rdquo;长度。（注：用<code>Java</code>实现的话，请使用字符数组实现，以便直接在数组上操作。）</p>
+<p>Write a method to replace all spaces in a string with &#39;%20&#39;. You may assume that the string has sufficient space at the end to hold the additional characters,and that you are given the &quot;true&quot; length of the string. (Note: If implementing in Java,please use a character array so that you can perform this operation in place.)</p>
 
-<p><strong>示例1:</strong></p>
+<p><strong>Example 1:</strong></p>
 
-<pre><strong> 输入</strong>：&quot;Mr John Smith    &quot;, 13
-<strong> 输出</strong>：&quot;Mr%20John%20Smith&quot;
+<pre>
+
+<strong>Input: </strong>&quot;Mr John Smith &quot;, 13
+
+<strong>Output: </strong>&quot;Mr%20John%20Smith&quot;
+
+<strong>Explanation: </strong>
+
+The missing numbers are [5,6,8,...], hence the third missing number is 8.
+
 </pre>
 
-<p><strong>示例2:</strong></p>
+<p><strong>Example 2:</strong></p>
 
-<pre><strong> 输入</strong>：&quot;               &quot;, 5
-<strong> 输出</strong>：&quot;%20%20%20%20%20&quot;
+<pre>
+
+<strong>Input: </strong>&quot;               &quot;, 5
+
+<strong>Output: </strong>&quot;%20%20%20%20%20&quot;
+
 </pre>
 
-<p><strong>提示：</strong></p>
+<p>&nbsp;</p>
+
+<p><strong>Note:</strong></p>
 
 <ol>
-	<li>字符串长度在[0, 500000]范围内。</li>
+	<li><code>0 &lt;= S.length &lt;= 500000</code></li>
 </ol>
 
-## 解法
+## Solutions
 
-### 方法一：使用 `replace()` 函数
+### Solution 1: Using `replace()` function
 
-直接利用 `replace` 将所有 ` ` 替换为 `%20`：
+Directly use `replace` to replace all ` ` with `%20`:
 
-时间复杂度 $O(n)$，空间复杂度 $O(n)$。其中 $n$ 为字符串长度。
+The time complexity is $O(n)$, and the space complexity is $O(n)$. Here, $n$ is the length of the string.
 
 <!-- tabs:start -->
 
@@ -68,11 +81,11 @@ var replaceSpaces = function (S, length) {
 
 <!-- tabs:end -->
 
-### 方法二：模拟
+### Solution 2: Simulation
 
-遍历字符串每个字符 $c$，遇到空格则将 `%20` 添加到结果中，否则添加 $c$。
+Traverse each character $c$ in the string. When encountering a space, add `%20` to the result, otherwise add $c$.
 
-时间复杂度 $O(n)$，空间复杂度 $O(n)$。其中 $n$ 为字符串长度。
+The time complexity is $O(n)$, and the space complexity is $O(n)$. Here, $n$ is the length of the string.
 
 <!-- tabs:start -->
 

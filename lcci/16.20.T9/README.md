@@ -1,37 +1,43 @@
-# [面试题 16.20. T9 键盘](https://leetcode.cn/problems/t9-lcci)
+# [16.20. T9](https://leetcode.cn/problems/t9-lcci)
 
-[English Version](/lcci/16.20.T9/README_EN.md)
+[中文文档](/lcci/16.20.T9/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-
-<p>在老式手机上，用户通过数字键盘输入，手机将提供与这些数字相匹配的单词列表。每个数字映射到0至4个字母。给定一个数字序列，实现一个算法来返回匹配单词的列表。你会得到一张含有有效单词的列表。映射如下图所示：</p>
+<p>On old cell phones, users typed on a numeric keypad and the phone would provide a list of words that matched these numbers. Each digit mapped to a set of 0&nbsp;- 4 letters. Implement an algo&shy;rithm to return a list of matching words, given a sequence of digits. You are provided a list of valid words. The mapping is shown in the diagram below:</p>
 ![](https://fastly.jsdelivr.net/gh/doocs/leetcode@main/lcci/16.20.T9/images/17_telephone_keypad.png)
-<p><strong>示例 1:</strong></p>
-<pre><strong>输入:</strong> num = &quot;8733&quot;, words = [&quot;tree&quot;, &quot;used&quot;]
-<strong>输出:</strong> [&quot;tree&quot;, &quot;used&quot;]
+<p><strong>Example 1:</strong></p>
+<pre>
+
+<strong>Input:</strong> num = &quot;8733&quot;, words = [&quot;tree&quot;, &quot;used&quot;]
+
+<strong>Output:</strong> [&quot;tree&quot;, &quot;used&quot;]
+
 </pre>
-<p><strong>示例 2:</strong></p>
-<pre><strong>输入:</strong> num = &quot;2&quot;, words = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;]
-<strong>输出:</strong> [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]</pre>
-<p>提示：</p>
+<p><strong>Example 2:</strong></p>
+<pre>
+
+<strong>Input:</strong> num = &quot;2&quot;, words = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;]
+
+<strong>Output:</strong> [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]</pre>
+
+<p>Note:</p>
 <ul>
 	<li><code>num.length &lt;= 1000</code></li>
 	<li><code>words.length &lt;= 500</code></li>
 	<li><code>words[i].length == num.length</code></li>
-	<li><code>num</code>中不会出现 0, 1 这两个数字</li>
+	<li><code>There are no number 0 and 1 in num</code>.</li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：逆向思维
+### Solution 1: Reverse Thinking
 
-我们考虑一种正向的解法，遍历字符串 $num$ 中的每个数字，将其映射到对应的字母，然后将所有的字母组合起来，得到所有可能的单词，再与给定的单词列表进行比较，若单词在列表中，则将其加入答案。这种解法的时间复杂度为 $O(4^n)$，其中 $n$ 为字符串 $num$ 的长度，显然会超时。
+We consider a forward solution, which traverses each digit in the string $num$, maps it to the corresponding letter, combines all the letters to obtain all possible words, and then compares them with the given word list. If the word is in the list, it is added to the answer. The time complexity of this solution is $O(4^n)$, where $n$ is the length of the string $num$, which will obviously time out.
 
-我们不妨考虑逆向的解法，遍历给定的单词列表，对于每个单词 $w$，判断其是否能够由字符串 $num$ 中的数字组成。若能够组成，则将其加入答案。那么问题的关键在于如何判断一个单词是否能够由字符串 $num$ 中的数字组成。我们只需要遍历单词 $w$ 的每个字母，将其还原为对应的数字，逐个与字符串 $num$ 中的数字进行比较，若相同，则说明单词 $w$ 可以由字符串 $num$ 中的数字组成。
+Instead, we can consider a reverse solution, which traverses the given word list, and for each word $w$, determines whether it can be composed of the digits in the string $num$. If it can be composed, it is added to the answer. The key to the problem is how to determine whether a word can be composed of the digits in the string $num$. We only need to traverse each letter in the word $w$, restore it to the corresponding digit, and compare it with each digit in the string $num$ one by one. If they are the same, it means that the word $w$ can be composed of the digits in the string $num$.
 
-时间复杂度 $O(m \times n)$，空间复杂度 $O(C)$。其中 $m$ 和 $n$ 分别是单词列表的长度和字符串 $num$ 的长度；而 $C$ 为字符集大小，本题中字符集大小为 $26$。
+The time complexity is $O(m \times n)$, and the space complexity is $O(C)$. Here, $m$ and $n$ are the length of the word list and the string $num$, respectively, and $C$ is the size of the character set, which is $26$ in this problem.
 
 <!-- tabs:start -->
 
@@ -149,7 +155,7 @@ function getValidT9Words(num: string, words: string[]): string[] {
 
 <!-- tabs:end -->
 
-### 方法二
+### Solution 2
 
 <!-- tabs:start -->
 

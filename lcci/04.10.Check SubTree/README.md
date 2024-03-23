@@ -1,35 +1,42 @@
-# [面试题 04.10. 检查子树](https://leetcode.cn/problems/check-subtree-lcci)
+# [04.10. Check SubTree](https://leetcode.cn/problems/check-subtree-lcci)
 
-[English Version](/lcci/04.10.Check%20SubTree/README_EN.md)
+[中文文档](/lcci/04.10.Check%20SubTree/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>检查子树。你有两棵非常大的二叉树：T1，有几万个节点；T2，有几万个节点。设计一个算法，判断 T2 是否为 T1 的子树。</p>
+<p>T1&nbsp;and T2 are two very large binary trees, with T1&nbsp;much bigger than T2. Create an algorithm to determine if T2 is a subtree of T1.</p>
 
-<p>如果 T1 有这么一个节点 n，其子树与 T2 一模一样，则 T2 为 T1 的子树，也就是说，从节点 n 处把树砍断，得到的树与 T2 完全相同。</p>
+<p>A tree T2 is a subtree of T1&nbsp;if there exists a node n in T1&nbsp;such that the subtree of n is identical to T2. That is, if you cut off the tree at node n, the two trees would be identical.</p>
 
-<p><strong>示例1:</strong></p>
+<p><strong>Example1:</strong></p>
 
-<pre><strong> 输入</strong>：t1 = [1, 2, 3], t2 = [2]
-<strong> 输出</strong>：true
+<pre>
+
+<strong> Input</strong>: t1 = [1, 2, 3], t2 = [2]
+
+<strong> Output</strong>: true
+
 </pre>
 
-<p><strong>示例2:</strong></p>
+<p><strong>Example2:</strong></p>
 
-<pre><strong> 输入</strong>：t1 = [1, null, 2, 4], t2 = [3, 2]
-<strong> 输出</strong>：false
+<pre>
+
+<strong> Input</strong>: t1 = [1, null, 2, 4], t2 = [3, 2]
+
+<strong> Output</strong>: false
+
 </pre>
 
-<p><strong>提示：</strong></p>
+<p><strong>Note: </strong></p>
 
 <ol>
-	<li>树的节点数目范围为[0, 20000]。</li>
+	<li>The node numbers of both tree are in [0, 20000].</li>
 </ol>
 
-## 解法
+## Solutions
 
-### 方法一
+### Solution 1
 
 <!-- tabs:start -->
 

@@ -1,41 +1,60 @@
-# [面试题 04.06. 后继者](https://leetcode.cn/problems/successor-lcci)
+# [04.06. Successor](https://leetcode.cn/problems/successor-lcci)
 
-[English Version](/lcci/04.06.Successor/README_EN.md)
+[中文文档](/lcci/04.06.Successor/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>设计一个算法，找出二叉搜索树中指定节点的&ldquo;下一个&rdquo;节点（也即中序后继）。</p>
+<p>Write an algorithm to find the &quot;next&quot; node (i.e., in-order successor) of a given node in a binary search tree.</p>
 
-<p>如果指定节点没有对应的&ldquo;下一个&rdquo;节点，则返回<code>null</code>。</p>
+<p>Return <code>null</code> if there&#39;s no &quot;next&quot; node for the given node.</p>
 
-<p><strong>示例 1:</strong></p>
+<p><strong>Example 1:</strong></p>
 
-<pre><strong>输入:</strong> root = <code>[2,1,3], p = 1
+<pre>
+
+<strong>Input:</strong> root = <code>[2,1,3], p = 1
+
+
 
   2
+
  / \
+
 1   3
+
 </code>
-<strong>输出:</strong> 2</pre>
 
-<p><strong>示例 2:</strong></p>
+<strong>Output:</strong> 2</pre>
 
-<pre><strong>输入:</strong> root = <code>[5,3,6,2,4,null,null,1], p = 6
+<p><strong>Example 2:</strong></p>
+
+<pre>
+
+<strong>Input:</strong> root = <code>[5,3,6,2,4,null,null,1], p = 6
+
+
 
       5
+
      / \
+
     3   6
+
    / \
+
   2   4
+
  /   
+
 1
+
 </code>
-<strong>输出:</strong> null</pre>
 
-## 解法
+<strong>Output:</strong> null</pre>
 
-### 方法一
+## Solutions
+
+### Solution 1
 
 <!-- tabs:start -->
 
@@ -193,7 +212,7 @@ var inorderSuccessor = function (root, p) {
 
 <!-- tabs:end -->
 
-### 方法二
+### Solution 2
 
 <!-- tabs:start -->
 

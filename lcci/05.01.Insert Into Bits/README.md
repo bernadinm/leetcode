@@ -1,34 +1,34 @@
-# [面试题 05.01. 插入](https://leetcode.cn/problems/insert-into-bits-lcci)
+# [05.01. Insert Into Bits](https://leetcode.cn/problems/insert-into-bits-lcci)
 
-[English Version](/lcci/05.01.Insert%20Into%20Bits/README_EN.md)
+[中文文档](/lcci/05.01.Insert%20Into%20Bits/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-
-<p>插入。给定两个32位的整数<code>N</code>与<code>M</code>，以及表示比特位置的<code>i</code>与<code>j</code>。编写一种方法，将<code>M</code>插入<code>N</code>，使得M从N的第j位开始，到第<code>i</code>位结束。假定从<code>j</code>位到<code>i</code>位足以容纳<code>M</code>，也即若M = 10 011，那么j和i之间至少可容纳5个位。例如，不可能出现j = 3和i = 2的情况，因为第3位和第2位之间放不下M。</p>
-
-<p> <strong>示例1:</strong></p>
-
+<p>You are given two 32-bit numbers, N and M, and two bit positions, i and j. Write a method to insert M into N such that M starts at bit j and ends at bit i. You can assume that the bits j through i have enough space to fit all of M. That is, if M = 10011, you can assume that there are at least 5 bits between j and i. You would not, for example, have j = 3 and i = 2, because M could not fully fit between bit 3 and bit 2.</p>
+<p><strong>Example1:</strong></p>
 <pre>
-<strong> 输入</strong>：N = 10000000000, M = 10011, i = 2, j = 6
-<strong> 输出</strong>：N = 10001001100
+
+<strong> Input</strong>: N = 10000000000, M = 10011, i = 2, j = 6
+
+<strong> Output</strong>: N = 10001001100
+
+</pre>
+<p><strong>Example2:</strong></p>
+<pre>
+
+<strong> Input</strong>: N = 0, M = 11111, i = 0, j = 4
+
+<strong> Output</strong>: N = 11111
+
 </pre>
 
-<p> <strong>示例2:</strong></p>
+## Solutions
 
-<pre>
-<strong> 输入</strong>： N = 0, M = 11111, i = 0, j = 4
-<strong> 输出</strong>：N = 11111
-</pre>
+### Solution 1: Bit Manipulation
 
-## 解法
+First, we clear the bits from the $i$-th to the $j$-th in $N$, then we left shift $M$ by $i$ bits, and finally perform a bitwise OR operation on $M$ and $N$.
 
-### 方法一：位运算
-
-我们先将 $N$ 的第 $i$ 位到第 $j$ 位清零，然后再将 $M$ 左移 $i$ 位，最后将 $M$ 与 $N$ 进行或运算。
-
-时间复杂度 $O(\log n)$，其中 $n$ 是 $N$ 的大小。空间复杂度 $O(1)$。
+The time complexity is $O(\log n)$, where $n$ is the size of $N$. The space complexity is $O(1)$.
 
 <!-- tabs:start -->
 

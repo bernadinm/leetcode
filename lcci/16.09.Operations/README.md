@@ -1,30 +1,35 @@
-# [面试题 16.09. 运算](https://leetcode.cn/problems/operations-lcci)
+# [16.09. Operations](https://leetcode.cn/problems/operations-lcci)
 
-[English Version](/lcci/16.09.Operations/README_EN.md)
+[中文文档](/lcci/16.09.Operations/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>请实现整数数字的乘法、减法和除法运算，运算结果均为整数数字，程序中只允许使用加法运算符和逻辑运算符，允许程序中出现正负常数，不允许使用位运算。</p>
-<p>你的实现应该支持如下操作：</p>
+<p>rite methods to implement the multiply, subtract, and divide operations for integers. The results of all of these are integers. Use only the add operator.</p>
+<p>You should implement following methods:</p>
 <ul>
-<li><code>Operations()</code> 构造函数</li>
-<li><code>minus(a, b)</code> 减法，返回<code>a - b</code></li>
-<li><code>multiply(a, b)</code> 乘法，返回<code>a * b</code></li>
-<li><code>divide(a, b)</code> 除法，返回<code>a / b</code></li>
+	<li><code>Operations()</code>&nbsp; constructor</li>
+	<li><code>minus(a, b)</code>&nbsp; Subtraction, returns&nbsp;<code>a - b</code></li>
+	<li><code>multiply(a, b)</code>&nbsp; Multiplication, returns&nbsp;<code>a * b</code></li>
+	<li><code>divide(a, b)</code>&nbsp; Division, returns&nbsp;<code>a / b</code></li>
 </ul>
-<p><strong>示例：</strong></p>
-<pre>Operations operations = new Operations();
-operations.minus(1, 2); //返回-1
-operations.multiply(3, 4); //返回12
-operations.divide(5, -2); //返回-2
+<p><strong>Example: </strong></p>
+<pre>
+
+Operations operations = new Operations();
+
+operations.minus(1, 2); //returns -1
+
+operations.multiply(3, 4); //returns 12
+
+operations.divide(5, -2); //returns -2
+
 </pre>
-<p><strong>提示：</strong></p>
+<p><strong>Note: </strong></p>
 <ul>
-<li>你可以假设函数输入一定是有效的，例如不会出现除法分母为0的情况</li>
-<li>单个用例的函数调用次数不会超过1000次</li>
+    <li>You can assume inputs are always valid, that is, e.g., denominator will not be 0 in division.</li>
+    <li>The number of calls will not exceed 1000.</li>
 </ul>
 
-## 解法
+## Solutions
 
 <!-- end -->

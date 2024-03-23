@@ -1,33 +1,38 @@
-# [面试题 17.17. 多次搜索](https://leetcode.cn/problems/multi-search-lcci)
+# [17.17. Multi Search](https://leetcode.cn/problems/multi-search-lcci)
 
-[English Version](/lcci/17.17.Multi%20Search/README_EN.md)
+[中文文档](/lcci/17.17.Multi%20Search/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>给定一个较长字符串<code>big</code>和一个包含较短字符串的数组<code>smalls</code>，设计一个方法，根据<code>smalls</code>中的每一个较短字符串，对<code>big</code>进行搜索。输出<code>smalls</code>中的字符串在<code>big</code>里出现的所有位置<code>positions</code>，其中<code>positions[i]</code>为<code>smalls[i]</code>出现的所有位置。</p>
+<p>Given a string band an array of smaller strings T, design a method to search b for each small string in T. Output&nbsp;<code>positions</code> of all strings in&nbsp;<code>smalls</code>&nbsp;that appear in <code>big</code>,&nbsp;where <code>positions[i]</code> is all positions of <code>smalls[i]</code>.</p>
 
-<p><strong>示例：</strong></p>
+<p><strong>Example: </strong></p>
 
-<pre><strong>输入：</strong>
+<pre>
+
+<strong>Input: </strong>
+
 big = &quot;mississippi&quot;
+
 smalls = [&quot;is&quot;,&quot;ppi&quot;,&quot;hi&quot;,&quot;sis&quot;,&quot;i&quot;,&quot;ssippi&quot;]
-<strong>输出：</strong> [[1,4],[8],[],[3],[1,4,7,10],[5]]
+
+<strong>Output: </strong> [[1,4],[8],[],[3],[1,4,7,10],[5]]
+
 </pre>
 
-<p><strong>提示：</strong></p>
+<p><strong>Note: </strong></p>
 
 <ul>
 	<li><code>0 &lt;= len(big) &lt;= 1000</code></li>
 	<li><code>0 &lt;= len(smalls[i]) &lt;= 1000</code></li>
-	<li><code>smalls</code>的总字符数不会超过 100000。</li>
-	<li>你可以认为<code>smalls</code>中没有重复字符串。</li>
-	<li>所有出现的字符均为英文小写字母。</li>
+	<li>The total number of characters in&nbsp;<code>smalls</code>&nbsp;will not exceed 100000.</li>
+	<li>No duplicated strings in&nbsp;<code>smalls</code>.</li>
+	<li>All characters are lowercase letters.</li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：前缀树
+### Solution 1
 
 <!-- tabs:start -->
 

@@ -1,55 +1,82 @@
-# [面试题 01.08. 零矩阵](https://leetcode.cn/problems/zero-matrix-lcci)
+# [01.08. Zero Matrix](https://leetcode.cn/problems/zero-matrix-lcci)
 
-[English Version](/lcci/01.08.Zero%20Matrix/README_EN.md)
+[中文文档](/lcci/01.08.Zero%20Matrix/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>编写一种算法，若M × N矩阵中某个元素为0，则将其所在的行与列清零。</p>
+<p>Write an algorithm such that if an element in an MxN matrix is 0, its entire row and column are set to 0.</p>
 
 <p>&nbsp;</p>
 
-<p><strong>示例 1：</strong></p>
+<p><strong>Example 1: </strong></p>
 
-<pre><strong>输入：</strong>
+<pre>
+
+<strong>Input: </strong>
+
 [
+
   [1,1,1],
+
   [1,0,1],
+
   [1,1,1]
+
 ]
-<strong>输出：</strong>
+
+<strong>Output: </strong>
+
 [
+
   [1,0,1],
+
   [0,0,0],
+
   [1,0,1]
+
 ]
+
 </pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong>Example 2: </strong></p>
 
-<pre><strong>输入：</strong>
+<pre>
+
+<strong>Input: </strong>
+
 [
+
   [0,1,2,0],
+
   [3,4,5,2],
+
   [1,3,1,5]
+
 ]
-<strong>输出：</strong>
+
+<strong>Output: </strong>
+
 [
+
   [0,0,0,0],
+
   [0,4,5,0],
+
   [0,3,1,0]
+
 ]
+
 </pre>
 
-## 解法
+## Solutions
 
-### 方法一：数组标记
+### Solution 1: Array Marking
 
-我们分别用数组 `rows` 和 `cols` 标记待清零的行和列。
+We use arrays `rows` and `cols` to mark the rows and columns to be zeroed.
 
-然后再遍历一遍矩阵，将 `rows` 和 `cols` 中标记的行和列对应的元素清零。
+Then we traverse the matrix again, zeroing the elements corresponding to the rows and columns marked in `rows` and `cols`.
 
-时间复杂度 $O(m \times n)$，空间复杂度 $O(m + n)$。其中 $m$ 和 $n$ 分别为矩阵的行数和列数。
+The time complexity is $O(m \times n)$, and the space complexity is $O(m + n)$. Here, $m$ and $n$ are the number of rows and columns of the matrix, respectively.
 
 <!-- tabs:start -->
 
@@ -254,13 +281,13 @@ void setZeroes(int** matrix, int matrixSize, int* matrixColSize) {
 
 <!-- tabs:end -->
 
-### 方法二：原地标记
+### Solution 2: In-place Marking
 
-方法一中使用了额外的数组标记待清零的行和列，实际上我们也可以直接用矩阵的第一行和第一列来标记，不需要开辟额外的数组空间。
+In Solution 1, we used additional arrays to mark the rows and columns to be zeroed. In fact, we can directly use the first row and first column of the matrix for marking, without needing to allocate additional array space.
 
-由于第一行、第一列用来做标记，它们的值可能会因为标记而发生改变，因此，我们需要额外的变量 $i0$, $j0$ 来标记第一行、第一列是否需要被清零。
+Since the first row and first column are used for marking, their values may change due to the marking. Therefore, we need additional variables $i0$ and $j0$ to mark whether the first row and first column need to be zeroed.
 
-时间复杂度 $O(m \times n)$，其中 $m$ 和 $n$ 分别为矩阵的行数和列数。空间复杂度 $O(1)$。
+The time complexity is $O(m \times n)$, where $m$ and $n$ are the number of rows and columns of the matrix, respectively. The space complexity is $O(1)$.
 
 <!-- tabs:start -->
 

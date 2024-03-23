@@ -1,51 +1,44 @@
-# [面试题 17.10. 主要元素](https://leetcode.cn/problems/find-majority-element-lcci)
+# [17.10. Find Majority Element](https://leetcode.cn/problems/find-majority-element-lcci)
 
-[English Version](/lcci/17.10.Find%20Majority%20Element/README_EN.md)
+[中文文档](/lcci/17.10.Find%20Majority%20Element/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>如果数组中多一半的数都是同一个，则称之为主要元素。给定一个<strong>整数</strong>数组，找到它的主要元素。若没有，返回-1。</p>
+<p>A majority element is an element that makes up more than half of the items in an array. Given a positive integers array, find the majority element. If there is no majority element, return -1. Do this in O(N) time and O(1) space.</p>
 
-<p><strong>示例 1：</strong></p>
+<p><strong>Example 1: </strong></p>
 
-<pre><strong>输入：</strong>[1,2,5,9,5,9,5,5,5]
-<strong>输出：</strong>5</pre>
+<pre>
 
-<p>&nbsp;</p>
+<strong>Input: </strong>[1,2,5,9,5,9,5,5,5]
 
-<p><strong>示例 2：</strong></p>
-
-<pre><strong>输入：</strong>[3,2]
-<strong>输出：</strong>-1</pre>
+<strong>Output: </strong>5</pre>
 
 <p>&nbsp;</p>
 
-<p><strong>示例 3：</strong></p>
+<p><strong>Example 2: </strong></p>
 
-<pre><strong>输入：</strong>[2,2,1,1,1,2,2]
-<strong>输出：</strong>2</pre>
+<pre>
+
+<strong>Input: </strong>[3,2]
+
+<strong>Output: </strong>-1</pre>
 
 <p>&nbsp;</p>
 
-<p><strong>说明：</strong><br>
-你有办法在时间复杂度为 O(N)，空间复杂度为 O(1) 内完成吗？</p>
+<p><strong>Example 3: </strong></p>
 
-## 解法
+<pre>
 
-### 方法一：摩尔投票法
+<strong>Input: </strong>[2,2,1,1,1,2,2]
 
-摩尔投票法的基本步骤如下：
+<strong>Output: </strong>2
 
-初始化元素 $m$，并给计数器 $cnt$ 赋初值 $cnt=0$。对于输入列表中每一个元素 $x$：
+</pre>
 
-1. 若 $cnt=0$，那么 $m=x$ and $cnt=1$；
-1. 否则若 $m=x$，那么 $cnt=cnt+1$；
-1. 否则 $cnt=cnt-1$。
+## Solutions
 
-一般而言，摩尔投票法需要对输入的列表进行**两次遍历**。在第一次遍历中，我们生成候选值 $m$，如果存在多数，那么该候选值就是多数值。在第二次遍历中，只需要简单地计算候选值的频率，以确认是否是多数值。
-
-时间复杂度 $O(n)$，空间复杂度 $O(1)$。
+### Solution 1
 
 <!-- tabs:start -->
 

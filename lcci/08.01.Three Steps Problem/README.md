@@ -1,44 +1,46 @@
-# [面试题 08.01. 三步问题](https://leetcode.cn/problems/three-steps-problem-lcci)
+# [08.01. Three Steps Problem](https://leetcode.cn/problems/three-steps-problem-lcci)
 
-[English Version](/lcci/08.01.Three%20Steps%20Problem/README_EN.md)
+[中文文档](/lcci/08.01.Three%20Steps%20Problem/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>三步问题。有个小孩正在上楼梯，楼梯有n阶台阶，小孩一次可以上1阶、2阶或3阶。实现一种方法，计算小孩有多少种上楼梯的方式。结果可能很大，你需要对结果模1000000007。</p>
+<p>A child is running up a staircase with n steps and can hop either 1 step, 2 steps, or 3 steps at a time. Implement a method to count how many possible ways the child can run up the stairs.&nbsp;The result may be large, so return it modulo 1000000007.</p>
 
-<p> <strong>示例1:</strong></p>
-
-<pre>
-<strong> 输入</strong>：n = 3 
-<strong> 输出</strong>：4
-<strong> 说明</strong>: 有四种走法
-</pre>
-
-<p> <strong>示例2:</strong></p>
+<p><strong>Example1:</strong></p>
 
 <pre>
-<strong> 输入</strong>：n = 5
-<strong> 输出</strong>：13
+
+<strong> Input</strong>: n = 3 
+
+<strong> Output</strong>: 4
+
 </pre>
 
-<p> <strong>提示:</strong></p>
+<p><strong>Example2:</strong></p>
 
-<ol>
-<li>n范围在[1, 1000000]之间</li>
-</ol>
+<pre>
 
-## 解法
+<strong> Input</strong>: n = 5
 
-### 方法一：递推
+<strong> Output</strong>: 13
 
-我们定义 $f[i]$ 表示上第 $i$ 阶台阶的方法数，初始时 $f[1]=1$, $f[2]=2$, $f[3]=4$。答案为 $f[n]$。
+</pre>
 
-递推公式为 $f[i] = f[i-1] + f[i-2] + f[i-3]$。
+<p><strong>Note:</strong></p>
 
-由于 $f[i]$ 只与 $f[i-1]$, $f[i-2]$, $f[i-3]$ 有关，因此我们可以使用三个变量 $a$, $b$, $c$ 来存储 $f[i-1]$, $f[i-2]$, $f[i-3]$ 的值，使得空间复杂度降低到 $O(1)$。
+1. `1 <= n <= 1000000`
 
-时间复杂度 $O(n)$，其中 $n$ 为给定的整数。空间复杂度 $O(1)$。
+## Solutions
+
+### Solution 1: Recursion
+
+We define $f[i]$ as the number of ways to reach the $i$-th step, initially $f[1]=1$, $f[2]=2$, $f[3]=4$. The answer is $f[n]$.
+
+The recursion formula is $f[i] = f[i-1] + f[i-2] + f[i-3]$.
+
+Since $f[i]$ is only related to $f[i-1]$, $f[i-2]$, $f[i-3]$, we can use three variables $a$, $b$, $c$ to store the values of $f[i-1]$, $f[i-2]$, $f[i-3]$, reducing the space complexity to $O(1)$.
+
+The time complexity is $O(n)$, where $n$ is the given integer. The space complexity is $O(1)$.
 
 <!-- tabs:start -->
 
@@ -143,19 +145,19 @@ int waysToStep(int n) {
 
 <!-- tabs:end -->
 
-### 方法二：矩阵快速幂加速递推
+### Solution 2: Matrix Quick Power to Accelerate Recursion
 
-我们设 $F(n)$ 表示一个 $1 \times 3$ 的矩阵 $\begin{bmatrix} F_{n - 1} & F_{n - 2} & F_{n - 3} \end{bmatrix}$，其中 $F_{n - 1}$, $F_{n - 2}$ 和 $F_{n - 3}$ 分别表示上第 $n - 1$ 阶、第 $n - 2$ 阶和第 $n - 3$ 阶台阶的方法数。
+We set $F(n)$ to represent a $1 \times 3$ matrix $\begin{bmatrix} F_{n - 1} & F_{n - 2} & F_{n - 3} \end{bmatrix}$, where $F_{n - 1}$, $F_{n - 2}$ and $F_{n - 3}$ respectively represent the number of ways to reach the $n - 1$-th, $n - 2$-th and $n - 3$-th steps.
 
-我们希望根据 $F(n-1) = \begin{bmatrix} F_{n - 2} & F_{n - 3} & F_{n - 4} \end{bmatrix}$ 推出 $F(n)$。也即是说，我们需要一个矩阵 $base$，使得 $F(n - 1) \times base = F(n)$，即：
+We hope to derive $F(n)$ based on $F(n-1) = \begin{bmatrix} F_{n - 2} & F_{n - 3} & F_{n - 4} \end{bmatrix}$. That is to say, we need a matrix $base$, so that $F(n - 1) \times base = F(n)$, i.e.:
 
 $$
 \begin{bmatrix}
-F_{n - 2} & T_{n - 3} & T_{n - 4}
+F_{n - 2} & F_{n - 3} & F_{n - 4}
 \end{bmatrix} \times base = \begin{bmatrix} F_{n - 1} & F_{n - 2} & F_{n - 3} \end{bmatrix}
 $$
 
-由于 $F_n = F_{n - 1} + F_{n - 2} + F_{n - 3}$，所以矩阵 $base$ 为：
+Since $F_n = F_{n - 1} + F_{n - 2} + F_{n - 3}$, the matrix $base$ is:
 
 $$
 \begin{bmatrix}
@@ -165,9 +167,9 @@ $$
 \end{bmatrix}
 $$
 
-我们定义初始矩阵 $res = \begin{bmatrix} 1 & 1  & 0 \end{bmatrix}$，那么 $F_n$ 等于 $res$ 乘以 $base^{n - 4}$ 的结果矩阵中所有元素之和。使用矩阵快速幂求解即可。
+We define the initial matrix $res = \begin{bmatrix} 1 & 1  & 0 \end{bmatrix}$, then $F_n$ equals the sum of all elements in the result matrix of $res$ multiplied by $base^{n - 4}$. It can be solved using matrix quick power.
 
-时间复杂度 $O(\log n)$，空间复杂度 $O(1)$。
+The time complexity is $O(\log n)$, and the space complexity is $O(1)$.
 
 <!-- tabs:start -->
 
@@ -388,7 +390,7 @@ function pow(a, n) {
 
 <!-- tabs:end -->
 
-### 方法三
+### Solution 3
 
 <!-- tabs:start -->
 

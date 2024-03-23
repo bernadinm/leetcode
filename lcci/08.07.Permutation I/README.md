@@ -1,36 +1,41 @@
-# [面试题 08.07. 无重复字符串的排列组合](https://leetcode.cn/problems/permutation-i-lcci)
+# [08.07. Permutation I](https://leetcode.cn/problems/permutation-i-lcci)
 
-[English Version](/lcci/08.07.Permutation%20I/README_EN.md)
+[中文文档](/lcci/08.07.Permutation%20I/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>无重复字符串的排列组合。编写一种方法，计算某字符串的所有排列组合，字符串每个字符均不相同。</p>
+<p>Write a method to compute all permutations of a string of unique characters.</p>
 
-<p> <strong>示例1:</strong></p>
-
-<pre>
-<strong> 输入</strong>：S = "qwe"
-<strong> 输出</strong>：["qwe", "qew", "wqe", "weq", "ewq", "eqw"]
-</pre>
-
-<p> <strong>示例2:</strong></p>
+<p><strong>Example1:</strong></p>
 
 <pre>
-<strong> 输入</strong>：S = "ab"
-<strong> 输出</strong>：["ab", "ba"]
+
+<strong> Input</strong>: S = &quot;qwe&quot;
+
+<strong> Output</strong>: [&quot;qwe&quot;, &quot;qew&quot;, &quot;wqe&quot;, &quot;weq&quot;, &quot;ewq&quot;, &quot;eqw&quot;]
+
 </pre>
 
-<p> <strong>提示:</strong></p>
+<p><strong>Example2:</strong></p>
+
+<pre>
+
+<strong> Input</strong>: S = &quot;ab&quot;
+
+<strong> Output</strong>: [&quot;ab&quot;, &quot;ba&quot;]
+
+</pre>
+
+<p><strong>Note:</strong></p>
 
 <ol>
-<li>字符都是英文字母。</li>
-<li>字符串长度在[1, 9]之间。</li>
+	<li>All characters are English letters.</li>
+	<li><code>1 &lt;= S.length &lt;= 9</code></li>
 </ol>
 
-## 解法
+## Solutions
 
-### 方法一：回溯
+### Solution 1
 
 <!-- tabs:start -->
 

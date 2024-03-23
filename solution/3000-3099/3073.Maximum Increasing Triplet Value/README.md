@@ -1,61 +1,64 @@
-# [3073. 最大递增三元组](https://leetcode.cn/problems/maximum-increasing-triplet-value)
+# [3073. Maximum Increasing Triplet Value](https://leetcode.com/problems/maximum-increasing-triplet-value)
 
-[English Version](/solution/3000-3099/3073.Maximum%20Increasing%20Triplet%20Value/README_EN.md)
+[中文文档](/solution/3000-3099/3073.Maximum%20Increasing%20Triplet%20Value/README.md)
 
-<!-- tags:数组,有序集合 -->
+<!-- tags:Array,Ordered Set -->
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>Given an array <code>nums</code>, return <em>the <strong>maximum value</strong> of a triplet</em> <code>(i, j, k)</code> <em>such that</em> <code>i &lt; j &lt; k</code> <em>and</em> <code>nums[i] &lt; nums[j] &lt; nums[k]</code>.</p>
 
-<p>给定一个数组&nbsp;<code>nums</code>，返回满足 <code>i &lt; j &lt; k</code> 且 <code>nums[i] &lt; nums[j] &lt; nums[k]</code>&nbsp;的三元组 <code>(i, j, k)</code> <em>&nbsp;</em>的 <strong>最大值</strong><i>。</i></p>
-
-<p>三元组&nbsp;<code>(i, j, k)</code> &nbsp;的&nbsp;<strong>值&nbsp;</strong>为&nbsp;<code>nums[i] - nums[j] + nums[k]</code>。</p>
+<p>The <strong>value</strong> of a triplet <code>(i, j, k)</code> is <code>nums[i] - nums[j] + nums[k]</code>.</p>
 
 <div id="gtx-trans" style="position: absolute; left: 274px; top: 102px;">
-<div class="gtx-trans-icon">&nbsp;</div>
+<div class="gtx-trans-icon"> </div>
 </div>
 
 <p>&nbsp;</p>
+<p><strong class="example">Example 1: </strong></p>
 
-<p><strong class="example">示例 1: </strong></p>
+<div class="example-block" style="border-color: var(--border-tertiary); border-left-width: 2px; color: var(--text-secondary); font-size: .875rem; margin-bottom: 1rem; margin-top: 1rem; overflow: visible; padding-left: 1rem;">
+<p><strong>Input: </strong> <span class="example-io" style="font-family: Menlo,sans-serif; font-size: 0.85rem;">nums = [5,6,9] </span></p>
 
-<pre>
-输入：nums = [5,6,9]
-输出：8
-解释：对于一个递增的三元组，我们只有一个选择，那就是选择所有三个元素。三元组的值为 5 - 6 + 9 = 8。
-</pre>
+<p><strong>Output: </strong> <span class="example-io" style="font-family: Menlo,sans-serif; font-size: 0.85rem;">8 </span></p>
 
-<p><strong class="example">示例 2: </strong></p>
+<p><strong>Explanation: </strong> We only have one choice for an increasing triplet and that is choosing all three elements. The value of this triplet would be <code>5 - 6 + 9 = 8</code>.</p>
+</div>
 
-<pre>
-输入：nums = [1,5,3,6]
-输出：4
-解释：只有两个递增三元组：
-(0, 1, 3)：这个三元组的值为 nums[0] - nums[1] + nums[3] = 1 - 5 + 6 = 2。
-(0, 2, 3)：这个三元组的值为 nums[0] - nums[2] + nums[3] = 1 - 3 + 6 = 4。
-因此答案是 4。
-</pre>
+<p><strong class="example">Example 2: </strong></p>
+
+<div class="example-block" style="border-color: var(--border-tertiary); border-left-width: 2px; color: var(--text-secondary); font-size: .875rem; margin-bottom: 1rem; margin-top: 1rem; overflow: visible; padding-left: 1rem;">
+<p><strong>Input:</strong> <span class="example-io" style="font-family: Menlo,sans-serif; font-size: 0.85rem;"> nums = [1,5,3,6] </span></p>
+
+<p><strong>Output:</strong> <span class="example-io" style="font-family: Menlo,sans-serif; font-size: 0.85rem;"> 4 </span></p>
+
+<p><strong>Explanation: </strong> There are only two increasing triplets:</p>
+
+<p><code>(0, 1, 3)</code>: The value of this triplet is <code>nums[0] - nums[1] + nums[3] = 1 - 5 + 6 = 2</code>.</p>
+
+<p><code>(0, 2, 3)</code>: The value of this triplet is <code>nums[0] - nums[2] + nums[3] = 1 - 3 + 6 = 4</code>.</p>
+
+<p>Thus the answer would be <code>4</code>.</p>
+</div>
 
 <p>&nbsp;</p>
-
-<p><strong>提示:</strong></p>
+<p><strong>Constraints:</strong></p>
 
 <ul>
 	<li><code>3 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
-	<li>输入数据保证至少一个三元组满足给定条件。</li>
+	<li>The input is generated such that at least one triplet meets the given condition.</li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：后缀最大值 + 有序集合
+### Solution 1: Suffix Maximum + Ordered Set
 
-我们不妨考虑枚举 $nums[j]$，那么我们需要在 $j$ 的左侧找到一个最大的 $nums[i]$，使得 $nums[i] < nums[j]$，并且在 $j$ 的右侧找到一个最大的 $nums[k]$，使得 $nums[k] > nums[j]$。
+We can consider enumerating $nums[j]$. Then, we need to find the largest $nums[i]$ on the left of $j$ such that $nums[i] < nums[j]$, and find the largest $nums[k]$ on the right of $j$ such that $nums[k] > nums[j]$.
 
-因此，我们可以预处理出数组 $right$，其中 $right[i]$ 表示 $nums[i]$ 右侧的最大值。然后我们可以使用有序集合来维护 $nums[j]$ 左侧的值，这样我们就可以在 $O(\log n)$ 的时间内找到最大的小于 $nums[j]$ 的 $nums[i]$。
+Therefore, we can preprocess an array $right$, where $right[i]$ represents the maximum value to the right of $nums[i]$. Then, we can use an ordered set to maintain the values on the left of $nums[j]$, so that we can find the largest $nums[i]$ less than $nums[j]$ in $O(\log n)$ time.
 
-时间复杂度 $O(n \times \log n)$，空间复杂度 $O(n)$。其中 $n$ 为数组 $nums$ 的长度。
+The time complexity is $O(n \times \log n)$, and the space complexity is $O(n)$, where $n$ is the length of the array $nums$.
 
 <!-- tabs:start -->
 

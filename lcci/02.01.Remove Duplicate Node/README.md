@@ -1,50 +1,55 @@
-# [面试题 02.01. 移除重复节点](https://leetcode.cn/problems/remove-duplicate-node-lcci)
+# [02.01. Remove Duplicate Node](https://leetcode.cn/problems/remove-duplicate-node-lcci)
 
-[English Version](/lcci/02.01.Remove%20Duplicate%20Node/README_EN.md)
+[中文文档](/lcci/02.01.Remove%20Duplicate%20Node/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>编写代码，移除未排序链表中的重复节点。保留最开始出现的节点。</p>
+<p>Write code to remove duplicates from an unsorted linked list.</p>
 
-<p> <strong>示例1:</strong></p>
-
-<pre>
-<strong> 输入</strong>：[1, 2, 3, 3, 2, 1]
-<strong> 输出</strong>：[1, 2, 3]
-</pre>
-
-<p> <strong>示例2:</strong></p>
+<p><strong>Example1:</strong></p>
 
 <pre>
-<strong> 输入</strong>：[1, 1, 1, 1, 2]
-<strong> 输出</strong>：[1, 2]
+
+<strong> Input</strong>: [1, 2, 3, 3, 2, 1]
+
+<strong> Output</strong>: [1, 2, 3]
+
 </pre>
 
-<p><strong>提示：</strong></p>
+<p><strong>Example2:</strong></p>
+
+<pre>
+
+<strong> Input</strong>: [1, 1, 1, 1, 2]
+
+<strong> Output</strong>: [1, 2]
+
+</pre>
+
+<p><strong>Note: </strong></p>
 
 <ol>
-<li>链表长度在[0, 20000]范围内。</li>
-<li>链表元素在[0, 20000]范围内。</li>
+	<li>The length of the list is within the range[0, 20000].</li>
+    <li>The values of the list elements are within the range [0, 20000].</li>
 </ol>
 
-<p> <strong>进阶：</strong></p>
+<p><strong>Follow Up: </strong></p>
 
-<p>如果不得使用临时缓冲区，该怎么解决？</p>
+<p>How would you solve this problem if a temporary buffer is not allowed?</p>
 
-## 解法
+## Solutions
 
-### 方法一：哈希表
+### Solution 1: Hash Table
 
-我们创建一个哈希表 $vis$，用于记录已经访问过的节点的值。
+We create a hash table $vis$ to record the values of the nodes that have been visited.
 
-然后我们创建一个虚拟节点 $pre$，使得 $pre.next = head$。
+Then we create a dummy node $pre$ such that $pre.next = head$.
 
-接下来我们遍历链表，如果当前节点的值已经在哈希表中，我们就将当前节点删除，即 $pre.next = pre.next.next$；否则，我们将当前节点的值加入哈希表中，并将 $pre$ 指向下一个节点。
+Next, we traverse the linked list. If the value of the current node is already in the hash table, we delete the current node, i.e., $pre.next = pre.next.next$; otherwise, we add the value of the current node to the hash table and move $pre$ to the next node.
 
-遍历结束后，我们返回链表的头节点。
+After the traversal, we return the head of the linked list.
 
-时间复杂度 $O(n)$，空间复杂度 $O(n)$。其中 $n$ 为链表的长度。
+The time complexity is $O(n)$, and the space complexity is $O(n)$. Here, $n$ is the length of the linked list.
 
 <!-- tabs:start -->
 

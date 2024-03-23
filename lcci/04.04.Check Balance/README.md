@@ -1,26 +1,58 @@
-# [面试题 04.04. 检查平衡性](https://leetcode.cn/problems/check-balance-lcci)
+# [04.04. Check Balance](https://leetcode.cn/problems/check-balance-lcci)
 
-[English Version](/lcci/04.04.Check%20Balance/README_EN.md)
+[中文文档](/lcci/04.04.Check%20Balance/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>实现一个函数，检查二叉树是否平衡。在这个问题中，平衡树的定义如下：任意一个节点，其两棵子树的高度差不超过 1。</p><br><strong>示例 1:</strong><pre>给定二叉树 [3,9,20,null,null,15,7]<br>    3<br>   / &#92<br>  9  20<br>    /  &#92<br>   15   7<br>返回 true 。</pre><strong>示例 2:</strong><br><pre>给定二叉树 [1,2,2,3,3,null,null,4,4]<br>      1<br>     / &#92<br>    2   2<br>   / &#92<br>  3   3<br> / &#92<br>4   4<br>返回 false 。</pre>
+<p>Implement a function to check if a binary tree is balanced. For the purposes of this question, a balanced tree is defined to be a tree such that the heights of the two subtrees of any node never differ by more than one.</p>
 
-## 解法
+<p><br />
 
-### 方法一：递归（后序遍历）
+<strong>Example 1:</strong></p>
 
-我们设计一个函数 $dfs(root)$，它的作用是返回以 $root$ 为根节点的树的高度，如果以 $root$ 为根节点的树是平衡树，则返回树的高度，否则返回 $-1$。
+<pre>
 
-函数 $dfs(root)$ 的执行逻辑如下：
+Given tree [3,9,20,null,null,15,7]
 
--   如果 $root$ 为空，则返回 $0$；
--   否则，我们递归调用 $dfs(root.left)$ 和 $dfs(root.right)$，并判断 $dfs(root.left)$ 和 $dfs(root.right)$ 的返回值是否为 $-1$，如果不为 $-1$，则判断 $abs(dfs(root.left) - dfs(root.right)) <= 1$ 是否成立，如果成立，则返回 $max(dfs(root.left), dfs(root.right)) + 1$，否则返回 $-1$。
+    3
 
-在主函数中，我们只需要调用 $dfs(root)$，并判断其返回值是否为 $-1$，如果不为 $-1$，则返回 `true`，否则返回 `false`。
+   / \
 
-时间复杂度 $O(n)$，空间复杂度 $O(n)$。其中 $n$ 是二叉树的节点个数。
+  9  20
+
+    /  \
+
+   15   7
+
+return true.</pre>
+
+<p><strong>Example 2:</strong></p>
+
+<pre>
+
+Given [1,2,2,3,3,null,null,4,4]
+
+      1
+
+     / \
+
+    2   2
+
+   / \
+
+  3   3
+
+ / \
+
+4   4
+
+return&nbsp;false.</pre>
+
+<p>&nbsp;</p>
+
+## Solutions
+
+### Solution 1
 
 <!-- tabs:start -->
 
@@ -168,7 +200,7 @@ function isBalanced(root: TreeNode | null): boolean {
 
 <!-- tabs:end -->
 
-### 方法二
+### Solution 2
 
 <!-- tabs:start -->
 

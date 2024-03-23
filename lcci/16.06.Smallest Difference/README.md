@@ -1,30 +1,36 @@
-# [面试题 16.06. 最小差](https://leetcode.cn/problems/smallest-difference-lcci)
+# [16.06. Smallest Difference](https://leetcode.cn/problems/smallest-difference-lcci)
 
-[English Version](/lcci/16.06.Smallest%20Difference/README_EN.md)
+[中文文档](/lcci/16.06.Smallest%20Difference/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>Given two arrays of integers, compute the pair of values (one value in each array) with the smallest (non-negative) difference. Return the difference.</p>
 
-<p>给定两个整数数组<code>a</code>和<code>b</code>，计算具有最小差绝对值的一对数值（每个数组中取一个值），并返回该对数值的差</p>
-<p><strong>示例：</strong></p>
-<pre><strong>输入：</strong>{1, 3, 15, 11, 2}, {23, 127, 235, 19, 8}
-<strong>输出：</strong> 3，即数值对(11, 8)
+<p><strong>Example: </strong></p>
+
+<pre>
+
+<strong>Input: </strong>{1, 3, 15, 11, 2}, {23, 127, 235, 19, 8}
+
+<strong>Output: </strong> 3, the pair (11, 8)
+
 </pre>
-<p><strong>提示：</strong></p>
+
+<p><strong>Note: </strong></p>
+
 <ul>
-<li><code>1 <= a.length, b.length <= 100000</code></li>
-<li><code>-2147483648 <= a[i], b[i] <= 2147483647</code></li>
-<li>正确结果在区间[-2147483648, 2147483647]内</li>
+	<li><code>1 &lt;= a.length, b.length &lt;= 100000</code></li>
+	<li><code>-2147483648 &lt;= a[i], b[i] &lt;= 2147483647</code></li>
+	<li>The result is in the range [-2147483648, 2147483647]</li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：排序 + 二分查找
+### Solution 1: Sorting + Binary Search
 
-我们可以对数组 $b$ 进行排序，并对数组 $a$ 中的每个元素 $x$ 在数组 $b$ 中进行二分查找，找到最接近 $x$ 的元素 $y$，那么 $x$ 和 $y$ 的差的绝对值就是 $x$ 和 $b$ 中最接近 $x$ 的元素的差的绝对值。
+We can sort the array $b$, and for each element $x$ in array $a$, perform a binary search in array $b$ to find the element $y$ closest to $x$. Then, the absolute difference between $x$ and $y$ is the absolute difference between $x$ and the closest element in $b$.
 
-时间复杂度 $O(n \times \log n)$，空间复杂度 $O(\log n)$。其中 $n$ 是数组 $b$ 的长度。
+The time complexity is $O(n \times \log n)$, and the space complexity is $O(\log n)$. Here, $n$ is the length of array $b$.
 
 <!-- tabs:start -->
 
@@ -143,11 +149,11 @@ function smallestDifference(a: number[], b: number[]): number {
 
 <!-- tabs:end -->
 
-### 方法二：排序 + 双指针
+### Solution 2: Sorting + Two Pointers
 
-我们可以对数组 $a$ 和 $b$ 分别进行排序，然后使用双指针的方法，维护两个指针 $i$ 和 $j$，初始时分别指向数组 $a$ 和 $b$ 的起始位置。每一次，我们计算 $a[i]$ 和 $b[j]$ 的差的绝对值，并且更新答案。如果 $a[i]$ 和 $b[j]$ 指向的两个元素中的一个元素比另一个元素要小，则将指向较小元素的指针向前移动一步。当至少有一个指针超出数组范围时，遍历结束。
+We can sort both arrays $a$ and $b$, and use two pointers $i$ and $j$ to maintain the current positions in the two arrays. Initially, $i$ and $j$ point to the beginning of arrays $a$ and $b$, respectively. At each step, we calculate the absolute difference between $a[i]$ and $b[j]$, and update the answer. If one of the elements pointed to by $i$ and $j$ is smaller than the other, we move the pointer pointing to the smaller element forward by one step. The traversal ends when at least one of the pointers goes beyond the array range.
 
-时间复杂度 $O(n \times \log n)$，空间复杂度 $O(\log n)$。其中 $n$ 是数组 $a$ 和 $b$ 的长度。
+The time complexity is $O(n \times \log n)$, and the space complexity is $O(\log n)$. Here, $n$ is the length of arrays $a$ and $b$.
 
 <!-- tabs:start -->
 

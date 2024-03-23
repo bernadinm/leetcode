@@ -1,33 +1,30 @@
-# [面试题 01.04. 回文排列](https://leetcode.cn/problems/palindrome-permutation-lcci)
+# [01.04. Palindrome Permutation](https://leetcode.cn/problems/palindrome-permutation-lcci)
 
-[English Version](/lcci/01.04.Palindrome%20Permutation/README_EN.md)
+[中文文档](/lcci/01.04.Palindrome%20Permutation/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>给定一个字符串，编写一个函数判定其是否为某个回文串的排列之一。</p>
-
-<p>回文串是指正反两个方向都一样的单词或短语。排列是指字母的重新排列。</p>
-
-<p>回文串不一定是字典当中的单词。</p>
+<p>Given a string, write a function to check if it is a permutation of a palin&shy; drome. A palindrome is a word or phrase that is the same forwards and backwards. A permutation is a rearrangement of letters. The palindrome does not need to be limited to just dictionary words.</p>
 
 <p>&nbsp;</p>
 
-<p><strong>示例1：</strong></p>
+<p><strong>Example1: </strong></p>
 
-<pre><strong>输入：&quot;</strong>tactcoa&quot;
-<strong>输出：</strong>true（排列有&quot;tacocat&quot;、&quot;atcocta&quot;，等等）
+<pre>
+
+<strong>Input: &quot;</strong>tactcoa&quot;
+
+<strong>Output: </strong>true（permutations: &quot;tacocat&quot;、&quot;atcocta&quot;, etc.）
+
 </pre>
 
-<p>&nbsp;</p>
+## Solutions
 
-## 解法
+### Solution 1: Hash Table
 
-### 方法一：哈希表
+We use a hash table $cnt$ to store the occurrence count of each character. If more than $1$ character has an odd count, then it is not a palindrome permutation.
 
-我们用哈希表 $cnt$ 存储每个字符出现的次数。若次数为奇数的字符超过 $1$ 个，则不是回文排列。
-
-时间复杂度 $O(n)$，空间复杂度 $O(n)$。其中 $n$ 为字符串长度。
+The time complexity is $O(n)$, and the space complexity is $O(n)$. Here, $n$ is the length of the string.
 
 <!-- tabs:start -->
 
@@ -122,13 +119,13 @@ impl Solution {
 
 <!-- tabs:end -->
 
-### 方法二：哈希表的另一种实现
+### Solution 2: Another Implementation of Hash Table
 
-我们用哈希表 $vis$ 存储每个字符是否出现过。若出现过，则从哈希表中删除该字符；否则，将该字符加入哈希表。
+We use a hash table $vis$ to store whether each character has appeared. If it has appeared, we remove the character from the hash table; otherwise, we add the character to the hash table.
 
-最后判断哈希表中字符的个数是否小于 $2$，若是，则是回文排列。
+Finally, we check whether the number of characters in the hash table is less than $2$. If it is, then it is a palindrome permutation.
 
-时间复杂度 $O(n)$，空间复杂度 $O(n)$。其中 $n$ 为字符串长度。
+The time complexity is $O(n)$, and the space complexity is $O(n)$. Here, $n$ is the length of the string.
 
 <!-- tabs:start -->
 

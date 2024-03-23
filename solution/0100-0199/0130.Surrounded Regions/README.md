@@ -1,59 +1,57 @@
-# [130. 被围绕的区域](https://leetcode.cn/problems/surrounded-regions)
+# [130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions)
 
-[English Version](/solution/0100-0199/0130.Surrounded%20Regions/README_EN.md)
+[中文文档](/solution/0100-0199/0130.Surrounded%20Regions/README.md)
 
-<!-- tags:深度优先搜索,广度优先搜索,并查集,数组,矩阵 -->
+<!-- tags:Depth-First Search,Breadth-First Search,Union Find,Array,Matrix -->
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>Given an <code>m x n</code> matrix <code>board</code> containing <code>&#39;X&#39;</code> and <code>&#39;O&#39;</code>, <em>capture all regions that are 4-directionally&nbsp;surrounded by</em> <code>&#39;X&#39;</code>.</p>
 
-给你一个 <code>m x n</code> 的矩阵 <code>board</code> ，由若干字符 <code>'X'</code> 和 <code>'O'</code> ，找到所有被 <code>'X'</code> 围绕的区域，并将这些区域里所有的  <code>'O'</code> 用 <code>'X'</code> 填充。
+<p>A region is <strong>captured</strong> by flipping all <code>&#39;O&#39;</code>s into <code>&#39;X&#39;</code>s in that surrounded region.</p>
 
-<div class="original__bRMd">
-<div>
-<p> </p>
-
-<p><strong>示例 1：</strong></p>
-<img alt="" src="https://fastly.jsdelivr.net/gh/doocs/leetcode@main/solution/0100-0199/0130.Surrounded%20Regions/images/xogrid.jpg" style="width: 550px; height: 237px;" />
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="./images/xogrid.jpg" style="width: 550px; height: 237px;" />
 <pre>
-<strong>输入：</strong>board = [["X","X","X","X"],["X","O","O","X"],["X","X","O","X"],["X","O","X","X"]]
-<strong>输出：</strong>[["X","X","X","X"],["X","X","X","X"],["X","X","X","X"],["X","O","X","X"]]
-<strong>解释：</strong>被围绕的区间不会存在于边界上，换句话说，任何边界上的 <code>'O'</code> 都不会被填充为 <code>'X'</code>。 任何不在边界上，或不与边界上的 <code>'O'</code> 相连的 <code>'O'</code> 最终都会被填充为 <code>'X'</code>。如果两个元素在水平或垂直方向相邻，则称它们是“相连”的。
+<strong>Input:</strong> board = [[&quot;X&quot;,&quot;X&quot;,&quot;X&quot;,&quot;X&quot;],[&quot;X&quot;,&quot;O&quot;,&quot;O&quot;,&quot;X&quot;],[&quot;X&quot;,&quot;X&quot;,&quot;O&quot;,&quot;X&quot;],[&quot;X&quot;,&quot;O&quot;,&quot;X&quot;,&quot;X&quot;]]
+<strong>Output:</strong> [[&quot;X&quot;,&quot;X&quot;,&quot;X&quot;,&quot;X&quot;],[&quot;X&quot;,&quot;X&quot;,&quot;X&quot;,&quot;X&quot;],[&quot;X&quot;,&quot;X&quot;,&quot;X&quot;,&quot;X&quot;],[&quot;X&quot;,&quot;O&quot;,&quot;X&quot;,&quot;X&quot;]]
+<strong>Explanation:</strong> Notice that an &#39;O&#39; should not be flipped if:
+- It is on the border, or
+- It is adjacent to an &#39;O&#39; that should not be flipped.
+The bottom &#39;O&#39; is on the border, so it is not flipped.
+The other three &#39;O&#39; form a surrounded region, so they are flipped.
 </pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
-<strong>输入：</strong>board = [["X"]]
-<strong>输出：</strong>[["X"]]
+<strong>Input:</strong> board = [[&quot;X&quot;]]
+<strong>Output:</strong> [[&quot;X&quot;]]
 </pre>
 
-<p> </p>
-
-<p><strong>提示：</strong></p>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
 <ul>
 	<li><code>m == board.length</code></li>
 	<li><code>n == board[i].length</code></li>
-	<li><code>1 <= m, n <= 200</code></li>
-	<li><code>board[i][j]</code> 为 <code>'X'</code> 或 <code>'O'</code></li>
+	<li><code>1 &lt;= m, n &lt;= 200</code></li>
+	<li><code>board[i][j]</code> is <code>&#39;X&#39;</code> or <code>&#39;O&#39;</code>.</li>
 </ul>
-</div>
-</div>
 
-## 解法
+## Solutions
 
-### 方法一：DFS
+### Solution 1: Depth-First Search (DFS)
 
-我们可以从矩阵的边界开始，将矩阵边界上的每个 `O` 作为起始点，开始进行深度优先搜索。将搜索到的 `O` 全部替换成 `.`。
+We can start from the boundary of the matrix, taking each 'O' on the matrix boundary as a starting point, and perform depth-first search. All 'O's found in the search are replaced with '.'.
 
-然后我们再遍历这个矩阵，对于每个位置：
+Then we traverse the matrix again, for each position:
 
--   如果是 `.`，则替换成 `O`；
--   否则如果是 `O`，则替换成 `X`。
+-   If it is '.', replace it with 'O';
+-   Otherwise, if it is 'O', replace it with 'X'.
 
-时间复杂度 $O(m \times n)$，空间复杂度 $O(m \times n)$。其中 $m$ 和 $n$ 分别是矩阵的行数和列数。
+The time complexity is $O(m \times n)$, and the space complexity is $O(m \times n)$. Here, $m$ and $n$ are the number of rows and columns in the matrix, respectively.
 
 <!-- tabs:start -->
 
@@ -326,13 +324,13 @@ public class Solution {
 
 <!-- tabs:end -->
 
-### 方法二：并查集
+### Solution 2: Union-Find Set
 
-我们也可以使用并查集，将矩阵边界上的每个 `O` 与一个超级节点 $m \times n$ 相连，将矩阵中的每个 `O` 与其上下左右的 `O` 相连。
+We can also use a union-find set, connecting each 'O' on the matrix boundary with a super node $m \times n$, and connecting each 'O' in the matrix with the 'O's above, below, left, and right of it.
 
-然后我们遍历这个矩阵，对于每个位置，如果是 `O`，并且其与超级节点不相连，则将其替换成 `X`。
+Then we traverse this matrix, for each position, if it is 'O' and it is not connected to the super node, then we replace it with 'X'.
 
-时间复杂度 $O(m \times n \times \alpha(m \times n))$，空间复杂度 $O(m \times n)$。其中 $m$ 和 $n$ 分别是矩阵的行数和列数，$\alpha$ 是阿克曼函数的反函数。
+The time complexity is $O(m \times n \times \alpha(m \times n))$, and the space complexity is $O(m \times n)$. Here, $m$ and $n$ are the number of rows and columns in the matrix, respectively, and $\alpha$ is the inverse Ackermann function.
 
 <!-- tabs:start -->
 

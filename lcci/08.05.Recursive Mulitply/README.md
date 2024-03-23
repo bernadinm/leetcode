@@ -1,35 +1,40 @@
-# [面试题 08.05. 递归乘法](https://leetcode.cn/problems/recursive-mulitply-lcci)
+# [08.05. Recursive Mulitply](https://leetcode.cn/problems/recursive-mulitply-lcci)
 
-[English Version](/lcci/08.05.Recursive%20Mulitply/README_EN.md)
+[中文文档](/lcci/08.05.Recursive%20Mulitply/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>递归乘法。 写一个递归函数，不使用 * 运算符， 实现两个正整数的相乘。可以使用加号、减号、位移，但要吝啬一些。</p>
-<p> <strong>示例1:</strong></p>
+<p>Write a recursive function to multiply two positive integers without using the * operator. You can use addition, subtraction, and bit shifting, but you should minimize the number of those operations.</p>
+<p><strong>Example 1:</strong></p>
 <pre>
-<strong> 输入</strong>：A = 1, B = 10
-<strong> 输出</strong>：10
+
+<strong> Input</strong>: A = 1, B = 10
+
+<strong> Output</strong>: 10
+
 </pre>
-<p> <strong>示例2:</strong></p>
+<p><strong>Example 2:</strong></p>
 <pre>
-<strong> 输入</strong>：A = 3, B = 4
-<strong> 输出</strong>：12
+
+<strong> Input</strong>: A = 3, B = 4
+
+<strong> Output</strong>: 12
+
 </pre>
-<p> <strong>提示:</strong></p>
+<p><strong>Note:</strong></p>
 <ol>
-<li>保证乘法范围不会溢出</li>
+	<li>The result will not overflow.</li>
 </ol>
 
-## 解法
+## Solutions
 
-### 方法一：递归 + 位运算
+### Solution 1: Recursion + Bit Manipulation
 
-我们先判断 $B$ 是否为 $1$，如果是，那么直接返回 $A$。
+First, we check if $B$ is $1$. If it is, we directly return $A$.
 
-否则，我们判断 $B$ 是否为奇数，如果是，那么我们可以将 $B$ 右移一位，然后递归调用函数，最后将结果左移一位，再加上 $A$。否则，我们可以将 $B$ 右移一位，然后递归调用函数，最后将结果左移一位。
+Otherwise, we check if $B$ is an odd number. If it is, we can right shift $B$ by one bit, then recursively call the function, and finally left shift the result by one bit and add $A$. If not, we can right shift $B$ by one bit, then recursively call the function, and finally left shift the result by one bit.
 
-时间复杂度 $O(\log n)$，空间复杂度 $O(\log n)$。其中 $n$ 是 $B$ 的大小。
+The time complexity is $O(\log n)$, and the space complexity is $O(\log n)$. Here, $n$ is the size of $B$.
 
 <!-- tabs:start -->
 

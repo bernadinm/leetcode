@@ -1,12 +1,10 @@
-# [3057. Employees Project Allocation](https://leetcode.cn/problems/employees-project-allocation)
+# [3057. Employees Project Allocation](https://leetcode.com/problems/employees-project-allocation)
 
-[English Version](/solution/3000-3099/3057.Employees%20Project%20Allocation/README_EN.md)
+[中文文档](/solution/3000-3099/3057.Employees%20Project%20Allocation/README.md)
 
-<!-- tags:数据库 -->
+<!-- tags:Database -->
 
-## 题目描述
-
-<!-- 这里写题目描述 -->
+## Description
 
 <p>Table: <code>Project</code></p>
 
@@ -81,13 +79,13 @@ Employees table:
 Result table orderd by employee_id, project_id in ascending order.
 </pre>
 
-## 解法
+## Solutions
 
-### 方法一：分组统计 + 等值连接
+### Solution 1: Grouping Statistics + Equi-Join
 
-我们先根据 `employee_id` 连接 `Project` 表和 `Employees` 表，然后再根据 `team` 分组统计每个团队的平均工作量，记录在临时表 `T` 中。
+First, we join the `Project` table and the `Employees` table based on `employee_id`, then group by `team` to calculate the average workload of each team, and record it in the temporary table `T`.
 
-然后，我们再次连接 `Project` 表和 `Employees` 表，同时连接 `T` 表，找出工作量大于团队平均工作量的员工，并且按照 `employee_id` 和 `project_id` 排序。
+Then, we join the `Project` table and the `Employees` table again, and also join the `T` table, to find employees whose workload is greater than the average workload of the team. Finally, we sort by `employee_id` and `project_id`.
 
 <!-- tabs:start -->
 

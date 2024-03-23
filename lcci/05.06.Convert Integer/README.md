@@ -1,39 +1,56 @@
-# [面试题 05.06. 整数转换](https://leetcode.cn/problems/convert-integer-lcci)
+# [05.06. Convert Integer](https://leetcode.cn/problems/convert-integer-lcci)
 
-[English Version](/lcci/05.06.Convert%20Integer/README_EN.md)
+[中文文档](/lcci/05.06.Convert%20Integer/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>整数转换。编写一个函数，确定需要改变几个位才能将整数A转成整数B。</p>
+<p>Write a function to determine the number of bits you would need to flip to convert integer A to integer B.</p>
 
-<p> <strong>示例1:</strong></p>
-
-<pre>
-<strong> 输入</strong>：A = 29 （或者0b11101）, B = 15（或者0b01111）
-<strong> 输出</strong>：2
-</pre>
-
-<p> <strong>示例2:</strong></p>
+<p><strong>Example1:</strong></p>
 
 <pre>
-<strong> 输入</strong>：A = 1，B = 2
-<strong> 输出</strong>：2
+
+
+
+<strong> Input</strong>: A = 29 (0b11101), B = 15 (0b01111)
+
+
+
+<strong> Output</strong>: 2
+
+
+
 </pre>
 
-<p> <strong>提示:</strong></p>
+<p><strong>Example2:</strong></p>
+
+<pre>
+
+
+
+<strong> Input</strong>: A = 1，B = 2
+
+
+
+<strong> Output</strong>: 2
+
+
+
+</pre>
+
+<p><strong>Note:</strong></p>
 
 <ol>
-<li>A，B范围在[-2147483648, 2147483647]之间</li>
+	<li><code>-2147483648 &lt;= A, B &lt;= 2147483647</code></li>
 </ol>
 
-## 解法
+## Solutions
 
-### 方法一：位运算
+### Solution 1: Bit Manipulation
 
-我们将 A 和 B 进行异或运算，得到的结果中 $1$ 的个数即为需要改变的位数。
+We perform a bitwise XOR operation on A and B. The number of $1$s in the result is the number of bits that need to be changed.
 
-时间复杂度 $O(\log n)$，其中 $n$ 为 A 和 B 的最大值。空间复杂度 $O(1)$。
+The time complexity is $O(\log n)$, where $n$ is the maximum value of A and B. The space complexity is $O(1)$.
 
 <!-- tabs:start -->
 

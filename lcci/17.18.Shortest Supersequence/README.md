@@ -1,38 +1,42 @@
-# [面试题 17.18. 最短超串](https://leetcode.cn/problems/shortest-supersequence-lcci)
+# [17.18. Shortest Supersequence](https://leetcode.cn/problems/shortest-supersequence-lcci)
 
-[English Version](/lcci/17.18.Shortest%20Supersequence/README_EN.md)
+[中文文档](/lcci/17.18.Shortest%20Supersequence/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>You are given two arrays, one shorter (with all distinct elements) and one longer. Find the shortest subarray in the longer array that contains all the elements in the shorter array. The items can appear in any order.</p>
+<p>Return the indexes of the leftmost and the rightmost elements of the array. If there are more than one answer, return the one that has the smallest left index. If there is no answer, return an empty array.</p>
+<p><strong>Example 1:</strong></p>
+<pre>
 
-<p>假设你有两个数组，一个长一个短，短的元素均不相同。找到长数组中包含短数组所有的元素的最短子数组，其出现顺序无关紧要。</p>
-<p>返回最短子数组的左端点和右端点，如有多个满足条件的子数组，返回左端点最小的一个。若不存在，返回空数组。</p>
-<p><strong>示例 1:</strong></p>
-<pre><strong>输入:</strong>
+<strong>Input:</strong>
+
 big = [7,5,9,0,2,1,3,<strong>5,7,9,1</strong>,1,5,8,8,9,7]
+
 small = [1,5,9]
-<strong>输出: </strong>[7,10]</pre>
-<p><strong>示例 2:</strong></p>
-<pre><strong>输入:</strong>
+
+<strong>Output: </strong>[7,10]</pre>
+
+<p><strong>Example 2:</strong></p>
+<pre>
+
+<strong>Input:</strong>
+
 big = [1,2,3]
+
 small = [4]
-<strong>输出: </strong>[]</pre>
-<p><strong>提示：</strong></p>
+
+<strong>Output: </strong>[]</pre>
+
+<p><strong>Note: </strong></p>
 <ul>
 	<li><code>big.length&nbsp;&lt;= 100000</code></li>
 	<li><code>1 &lt;= small.length&nbsp;&lt;= 100000</code></li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：哈希表 + 双指针
-
-我们定义两个哈希表，其中哈希表 $need$ 用于存储数组 $small$ 中的元素及其出现次数，哈希表 $window$ 用于存储当前滑动窗口中的元素及其出现次数。另外，我们用变量 $cnt$ 记录当前未满足条件的元素个数，用变量 $mi$ 记录最短子数组的长度，用变量 $k$ 记录最短子数组的左端点。
-
-我们用双指针 $j$ 和 $i$ 分别表示滑动窗口的左右端点，初始时，$j$ 和 $i$ 均指向数组 $big$ 的第一个元素。我们先移动右指针 $i$，将 $big[i]$ 加入到 $window$ 中，如果 $window[big[i]]$ 的值小于等于 $need[big[i]]$ 的值，说明当前滑动窗口中包含数组 $small$ 中的一个元素，令 $cnt$ 减一。当 $cnt$ 的值等于 $0$ 时，说明当前滑动窗口中包含数组 $small$ 中的所有元素，此时我们移动左指针 $j$，将 $big[j]$ 从 $window$ 中减去，如果 $window[big[j]]$ 的值小于 $need[big[j]]$ 的值，说明当前滑动窗口不再包含数组 $small$ 中的所有元素，令 $cnt$ 加一。在滑动窗口移动的过程中，我们更新 $mi$ 和 $k$ 的值。
-
-时间复杂度 $O(m + n)$，空间复杂度 $O(m + n)$。其中 $m$ 和 $n$ 分别是数组 $big$ 和 $small$ 的长度。
+### Solution 1
 
 <!-- tabs:start -->
 

@@ -1,36 +1,44 @@
-# [面试题 16.05. 阶乘尾数](https://leetcode.cn/problems/factorial-zeros-lcci)
+# [16.05. Factorial Zeros](https://leetcode.cn/problems/factorial-zeros-lcci)
 
-[English Version](/lcci/16.05.Factorial%20Zeros/README_EN.md)
+[中文文档](/lcci/16.05.Factorial%20Zeros/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>Write an algorithm which computes the number of trailing zeros in n factorial.</p>
+<p><strong>Example 1:</strong></p>
+<pre>
 
-<p>设计一个算法，算出 n 阶乘有多少个尾随零。</p>
-<p><strong>示例 1:</strong></p>
-<pre><strong>输入:</strong> 3
-<strong>输出:</strong> 0
-<strong>解释:</strong>&nbsp;3! = 6, 尾数中没有零。</pre>
-<p><strong>示例&nbsp;2:</strong></p>
-<pre><strong>输入:</strong> 5
-<strong>输出:</strong> 1
-<strong>解释:</strong>&nbsp;5! = 120, 尾数中有 1 个零.</pre>
-<p><strong>说明: </strong>你算法的时间复杂度应为&nbsp;<em>O</em>(log&nbsp;<em>n</em>)<em>&nbsp;</em>。</p>
+<strong>Input:</strong> 3
 
-## 解法
+<strong>Output:</strong> 0
 
-### 方法一：数学
+<strong>Explanation:</strong>&nbsp;3! = 6, no trailing zero.</pre>
 
-题目实际上是求 $[1,n]$ 中有多少个 $5$ 的因数。
+<p><strong>Example&nbsp;2:</strong></p>
+<pre>
 
-我们以 $130$ 为例来分析：
+<strong>Input:</strong> 5
 
-1. 第 $1$ 次除以 $5$，得到 $26$，表示存在 $26$ 个包含因数 $5$ 的数；
-1. 第 $2$ 次除以 $5$，得到 $5$，表示存在 $5$ 个包含因数 $5^2$ 的数；
-1. 第 $3$ 次除以 $5$，得到 $1$，表示存在 $1$ 个包含因数 $5^3$ 的数；
-1. 累加得到从 $[1,n]$ 中所有 $5$ 的因数的个数。
+<strong>Output:</strong> 1
 
-时间复杂度 $O(\log n)$，空间复杂度 $O(1)$。
+<strong>Explanation:</strong>&nbsp;5! = 120, one trailing zero.</pre>
+
+<p><b>Note:&nbsp;</b>Your solution should be in logarithmic time complexity.</p>
+
+## Solutions
+
+### Solution 1: Mathematics
+
+The problem is actually asking for the number of factors of $5$ in $[1,n]$.
+
+Let's take $130$ as an example:
+
+1. Divide $130$ by $5$ for the first time, and get $26$, which means there are $26$ numbers containing a factor of $5$.
+2. Divide $26$ by $5$ for the second time, and get $5$, which means there are $5$ numbers containing a factor of $5^2$.
+3. Divide $5$ by $5$ for the third time, and get $1$, which means there is $1$ number containing a factor of $5^3$.
+4. Add up all the counts to get the total number of factors of $5$ in $[1,n]$.
+
+The time complexity is $O(\log n)$, and the space complexity is $O(1)$.
 
 <!-- tabs:start -->
 

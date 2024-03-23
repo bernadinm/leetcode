@@ -1,40 +1,47 @@
-# [面试题 08.09. 括号](https://leetcode.cn/problems/bracket-lcci)
+# [08.09. Bracket](https://leetcode.cn/problems/bracket-lcci)
 
-[English Version](/lcci/08.09.Bracket/README_EN.md)
+[中文文档](/lcci/08.09.Bracket/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>括号。设计一种算法，打印n对括号的所有合法的（例如，开闭一一对应）组合。</p>
+<p>Implement an algorithm to print all valid (e.g., properly opened and closed) combinations of n pairs of parentheses.</p>
 
-<p>说明：解集不能包含重复的子集。</p>
+<p>Note: The result set should not contain duplicated subsets.</p>
 
-<p>例如，给出 n = 3，生成结果为：</p>
+<p>For example, given&nbsp;n = 3, the result should be:</p>
 
 <pre>
+
 [
-  "((()))",
-  "(()())",
-  "(())()",
-  "()(())",
-  "()()()"
+
+  &quot;((()))&quot;,
+
+  &quot;(()())&quot;,
+
+  &quot;(())()&quot;,
+
+  &quot;()(())&quot;,
+
+  &quot;()()()&quot;
+
 ]
+
 </pre>
 
-## 解法
+## Solutions
 
-### 方法一：DFS + 剪枝
+### Solution 1: DFS + Pruning
 
-题目中 $n$ 的范围为 $[1, 8]$，因此我们直接通过“暴力搜索 + 剪枝”的方式快速解决本题。
+The range of $n$ in the problem is $[1, 8]$, so we can directly solve this problem quickly through "brute force search + pruning".
 
-我们设计函数 `dfs(l, r, t)`，其中 $l$ 和 $r$ 分别表示左括号和右括号的数量，而 $t$ 表示当前的括号序列。那么我们可以得到如下的递归结构：
+We design a function `dfs(l, r, t)`, where $l$ and $r$ represent the number of left and right parentheses respectively, and $t$ represents the current parentheses sequence. Then we can get the following recursive structure:
 
--   如果 $l \gt n$ 或者 $r \gt n$ 或者 $l \lt r$，那么当前括号组合 $t$ 不合法，直接返回；
--   如果 $l = n$ 且 $r = n$，那么当前括号组合 $t$ 合法，将其加入答案数组 `ans` 中，直接返回；
--   我们可以选择添加一个左括号，递归执行 `dfs(l + 1, r, t + "(")`；
--   我们也可以选择添加一个右括号，递归执行 `dfs(l, r + 1, t + ")")`。
+-   If $l > n$ or $r > n$ or $l < r$, then the current parentheses combination $t$ is illegal, return directly;
+-   If $l = n$ and $r = n$, then the current parentheses combination $t$ is legal, add it to the answer array `ans`, and return directly;
+-   We can choose to add a left parenthesis, and recursively execute `dfs(l + 1, r, t + "(")`;
+-   We can also choose to add a right parenthesis, and recursively execute `dfs(l, r + 1, t + ")")`.
 
-时间复杂度 $O(2^{n\times 2} \times n)$，空间复杂度 $O(n)$。
+The time complexity is $O(2^{n\times 2} \times n)$, and the space complexity is $O(n)$.
 
 <!-- tabs:start -->
 

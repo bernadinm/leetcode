@@ -1,37 +1,42 @@
-# [面试题 17.13. 恢复空格](https://leetcode.cn/problems/re-space-lcci)
+# [17.13. Re-Space](https://leetcode.cn/problems/re-space-lcci)
 
-[English Version](/lcci/17.13.Re-Space/README_EN.md)
+[中文文档](/lcci/17.13.Re-Space/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>Oh, no! You have accidentally removed all spaces, punctuation, and capitalization in a lengthy document. A sentence like &quot;I reset the computer. It still didn&#39;t boot!&quot; became &quot;iresetthecomputeritstilldidntboot&#39;&#39;. You&#39;ll deal with the punctuation and capi&shy;talization later; right now you need to re-insert the spaces. Most of the words are in a dictionary but a few are not. Given a dictionary (a list of strings) and the document (a string), design an algorithm to unconcatenate the document in a way that minimizes the number of unrecognized characters. Return the number of unrecognized characters.</p>
 
-<p>哦，不！你不小心把一个长篇文章中的空格、标点都删掉了，并且大写也弄成了小写。像句子<code>&quot;I reset the computer. It still didn&rsquo;t boot!&quot;</code>已经变成了<code>&quot;iresetthecomputeritstilldidntboot&quot;</code>。在处理标点符号和大小写之前，你得先把它断成词语。当然了，你有一本厚厚的词典<code>dictionary</code>，不过，有些词没在词典里。假设文章用<code>sentence</code>表示，设计一个算法，把文章断开，要求未识别的字符最少，返回未识别的字符数。</p>
-
-<p><strong>注意：</strong>本题相对原题稍作改动，只需返回未识别的字符数</p>
+<p><strong>Note: </strong>This&nbsp;problem is slightly different from the original one in the book.</p>
 
 <p>&nbsp;</p>
 
-<p><strong>示例：</strong></p>
+<p><strong>Example: </strong></p>
 
-<pre><strong>输入：</strong>
+<pre>
+
+<strong>Input: </strong>
+
 dictionary = [&quot;looked&quot;,&quot;just&quot;,&quot;like&quot;,&quot;her&quot;,&quot;brother&quot;]
+
 sentence = &quot;jesslookedjustliketimherbrother&quot;
-<strong>输出：</strong> 7
-<strong>解释：</strong> 断句后为&quot;<strong>jess</strong> looked just like <strong>tim</strong> her brother&quot;，共7个未识别字符。
+
+<strong>Output: </strong> 7
+
+<strong>Explanation: </strong> After unconcatenating, we got &quot;<strong>jess</strong> looked just like <strong>tim</strong> her brother&quot;, which containing 7 unrecognized characters.
+
 </pre>
 
-<p><strong>提示：</strong></p>
+<p><strong>Note: </strong></p>
 
 <ul>
 	<li><code>0 &lt;= len(sentence) &lt;= 1000</code></li>
-	<li><code>dictionary</code>中总字符数不超过 150000。</li>
-	<li>你可以认为<code>dictionary</code>和<code>sentence</code>中只包含小写字母。</li>
+	<li><code><font face="sans-serif, Arial, Verdana, Trebuchet MS">The total number of characters in&nbsp;</font>dictionary</code>&nbsp;is less than or equal to 150000.</li>
+	<li>There are only lowercase letters in&nbsp;<code>dictionary</code>&nbsp;and&nbsp;<code>sentence</code>.</li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：动态规划
+### Solution 1
 
 <!-- tabs:start -->
 

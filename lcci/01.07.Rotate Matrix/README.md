@@ -1,61 +1,90 @@
-# [面试题 01.07. 旋转矩阵](https://leetcode.cn/problems/rotate-matrix-lcci)
+# [01.07. Rotate Matrix](https://leetcode.cn/problems/rotate-matrix-lcci)
 
-[English Version](/lcci/01.07.Rotate%20Matrix/README_EN.md)
+[中文文档](/lcci/01.07.Rotate%20Matrix/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>给定一幅由N × N矩阵表示的图像，其中每个像素的大小为4字节，编写一种方法，将图像旋转90度。</p>
-
-<p>不占用额外内存空间能否做到？</p>
+<p>Given an image represented by an N x N matrix, where each pixel in the image is 4 bytes, write a method to rotate the image by 90 degrees. Can you do this in place?</p>
 
 <p>&nbsp;</p>
 
-<p><strong>示例 1:</strong></p>
+<p><strong>Example 1:</strong></p>
 
-<pre>给定 <strong>matrix</strong> =
+<pre>
+
+Given <strong>matrix</strong> =
+
 [
+
   [1,2,3],
+
   [4,5,6],
+
   [7,8,9]
+
 ],
 
-<strong>原地</strong>旋转输入矩阵，使其变为:
+
+
+Rotate the matrix <strong>in place. </strong>It becomes:
+
 [
+
   [7,4,1],
+
   [8,5,2],
+
   [9,6,3]
+
 ]
+
 </pre>
 
-<p><strong>示例 2:</strong></p>
+<p><strong>Example 2:</strong></p>
 
-<pre>给定 <strong>matrix</strong> =
+<pre>
+
+Given <strong>matrix</strong> =
+
 [
+
   [ 5, 1, 9,11],
+
   [ 2, 4, 8,10],
+
   [13, 3, 6, 7],
+
   [15,14,12,16]
+
 ],
 
-<strong>原地</strong>旋转输入矩阵，使其变为:
+
+
+Rotate the matrix <strong>in place. </strong>It becomes:
+
 [
+
   [15,13, 2, 5],
+
   [14, 3, 4, 1],
+
   [12, 6, 8, 9],
+
   [16, 7,10,11]
+
 ]
+
 </pre>
 
-## 解法
+## Solutions
 
-### 方法一：原地翻转
+### Solution 1: In-place Rotation
 
-根据题目要求，我们实际上需要将 $matrix[i][j]$ 旋转至 $matrix[j][n - i - 1]$。
+According to the problem requirements, we actually need to rotate $matrix[i][j]$ to $matrix[j][n - i - 1]$.
 
-我们可以先对矩阵进行上下翻转，即 $matrix[i][j]$ 和 $matrix[n - i - 1][j]$ 进行交换，然后再对矩阵进行主对角线翻转，即 $matrix[i][j]$ 和 $matrix[j][i]$ 进行交换。这样就能将 $matrix[i][j]$ 旋转至 $matrix[j][n - i - 1]$ 了。
+We can first flip the matrix upside down, that is, swap $matrix[i][j]$ and $matrix[n - i - 1][j]$, and then flip the matrix along the main diagonal, that is, swap $matrix[i][j]$ and $matrix[j][i]$. This way, we can rotate $matrix[i][j]$ to $matrix[j][n - i - 1]$.
 
-时间复杂度 $O(n^2)$，其中 $n$ 是矩阵的边长。空间复杂度 $O(1)$。
+The time complexity is $O(n^2)$, where $n$ is the side length of the matrix. The space complexity is $O(1)$.
 
 <!-- tabs:start -->
 

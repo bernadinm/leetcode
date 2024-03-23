@@ -20,7 +20,7 @@
 
 欢迎各位小伙伴们添加 @yanglbme 的个人微信（微信号：YLB0109），备注 「**leetcode**」。后续我们会创建算法、技术相关的交流群，大家一起交流学习，分享经验，共同进步。
 
-| <img src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/gh/doocs/images/qrcode-for-yanglbme.png" width="260px" align="left"/> |
+| <img src="./images/qrcode-for-yanglbme.png" width="260px" align="left"/> |
 | ------------------------------------------------------------------------------------------------------------------------------ |
 
 ## 许可证

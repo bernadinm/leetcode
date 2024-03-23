@@ -1,78 +1,74 @@
-# [3088. 使字符串反回文](https://leetcode.cn/problems/make-string-anti-palindrome)
+# [3088. Make String Anti-palindrome](https://leetcode.com/problems/make-string-anti-palindrome)
 
-[English Version](/solution/3000-3099/3088.Make%20String%20Anti-palindrome/README_EN.md)
+[中文文档](/solution/3000-3099/3088.Make%20String%20Anti-palindrome/README.md)
 
 <!-- tags: -->
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>We call a string <code>s</code> of <strong>even</strong> length <code>n</code> an <strong>anti-palindrome</strong> if for each index <code>0 &lt;= i &lt; n</code>, <code>s[i] != s[n - i - 1]</code>.</p>
 
-<p>我们称一个长度为偶数的字符串&nbsp;<code>s</code>&nbsp;为&nbsp;<strong>反回文</strong>&nbsp;的，如果对于每一个下标&nbsp;<code>0 &lt;= i &lt; n</code>&nbsp;，<code>s[i] != s[n - i - 1]</code>。</p>
+<p>Given a string <code>s</code>, your task is to make <code>s</code> an <strong>anti-palindrome</strong> by doing <strong>any</strong> number of operations (including zero).</p>
 
-<p>给定一个字符串&nbsp;<code>s</code>，你需要进行&nbsp;<strong>任意</strong> 次（包括 0）操作使&nbsp;<code>s</code>&nbsp;成为 <strong>反回文。</strong></p>
+<p>In one operation, you can select two characters from <code>s</code> and swap them.</p>
 
-<p>在一次操作中，你可以选择&nbsp;<code>s</code>&nbsp;中的两个字符并且交换它们。</p>
-
-<p>返回结果字符串。如果有多个字符串符合条件，返回 <span data-keyword="lexicographically-smaller-string">字典序最小</span> 的那个。如果它不能成为一个反回文，返回&nbsp;<code>"-1"</code>。</p>
+<p>Return <em>the resulting string. If multiple strings meet the conditions, return the <span data-keyword="lexicographically-smaller-string">lexicographically smallest</span> one. If it can&#39;t be made into an anti-palindrome, return </em><code>&quot;-1&quot;</code><em>.</em></p>
 
 <p>&nbsp;</p>
-
-<p><strong class="example">示例 1：</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <div class="example-block">
-<p><strong>输入：</strong><span class="example-io">s = "abca"</span></p>
+<p><strong>Input:</strong> <span class="example-io">s = &quot;abca&quot;</span></p>
 
-<p><strong>输出：</strong><span class="example-io">"aabc"</span></p>
+<p><strong>Output:</strong> <span class="example-io">&quot;aabc&quot;</span></p>
 
-<p><strong>解释：</strong></p>
+<p><strong>Explanation:</strong></p>
 
-<p><code>"aabc"</code> 是一个反回文字符串，因为 <code>s[0] != s[3]</code> 并且&nbsp;<code>s[1] != s[2]</code>。同时，它也是 <code>"abca"</code>&nbsp;的一个重排。</p>
+<p><code>&quot;aabc&quot;</code> is an anti-palindrome string since <code>s[0] != s[3]</code> and <code>s[1] != s[2]</code>. Also, it is a rearrangement of <code>&quot;abca&quot;</code>.</p>
 </div>
 
-<p><strong class="example">示例 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <div class="example-block">
-<p><strong>输入：</strong><span class="example-io">s = "abba"</span></p>
+<p><strong>Input:</strong> <span class="example-io">s = &quot;abba&quot;</span></p>
 
-<p><b>输出：</b><span class="example-io">"aabb"</span></p>
+<p><strong>Output:</strong> <span class="example-io">&quot;aabb&quot;</span></p>
 
-<p><b>解释：</b></p>
+<p><strong>Explanation:</strong></p>
 
-<p><code>"aabb"</code>&nbsp;是一个反回文字符串，因为&nbsp;<code>s[0] != s[3]</code>&nbsp;并且&nbsp;<code>s[1] != s[2]</code>。同时，它也是&nbsp;<code>"abba"</code>&nbsp;的一个重排。</p>
+<p><code>&quot;aabb&quot;</code> is an anti-palindrome string since <code>s[0] != s[3]</code> and <code>s[1] != s[2]</code>. Also, it is a rearrangement of <code>&quot;abba&quot;</code>.</p>
 </div>
 
-<p><strong class="example">示例 3:</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <div class="example-block">
-<p><strong>输入：</strong><span class="example-io">s = "cccd"</span></p>
+<p><strong>Input:</strong> <span class="example-io">s = &quot;cccd&quot;</span></p>
 
-<p><strong>输出：</strong><span class="example-io">"-1"</span></p>
+<p><strong>Output:</strong> <span class="example-io">&quot;-1&quot;</span></p>
 
-<p><strong>解释：</strong></p>
+<p><strong>Explanation:</strong></p>
 
-<p>你可以发现无论你如何重排&nbsp;<code>"cccd"</code>&nbsp;的字符，都有&nbsp;<code>s[0] == s[3]</code>&nbsp;或&nbsp;<code>s[1] == s[2]</code>。所以它不能形成一个反回文字符串。</p>
+<p>You can see that no matter how you rearrange the characters of <code>&quot;cccd&quot;</code>, either <code>s[0] == s[3]</code> or <code>s[1] == s[2]</code>. So it can not form an anti-palindrome string.</p>
 </div>
 
 <p>&nbsp;</p>
-
-<p><strong>提示：</strong></p>
+<p><strong>Constraints:</strong></p>
 
 <ul>
 	<li><code>2 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>s.length % 2 == 0</code></li>
-	<li><code>s</code> 只包含小写英文字母。</li>
+	<li><code>s</code> consists only of lowercase English letters.</li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：贪心 + 排序
+### Solution 1: Greedy + Sorting
 
-题目要求我们将字符串 $s$ 变成字典序最小的反回文字符串，我们不妨先对字符串 $s$ 进行排序。
+The problem asks us to transform the string $s$ into the lexicographically smallest non-palindrome string. We might as well sort the string $s$ first.
 
-接下来，我们只需要比较中间的两个字符 $s[m]$ 和 $s[m-1]$ 是否相等，如果相等，我们就在后半部分找到第一个不等于 $s[m]$ 的字符 $s[i]$，用一个指针 $j$ 指向 $m$，然后交换 $s[i]$ 和 $s[j]$。如果找不到这样的字符 $s[i]$，说明字符串 $s$ 无法变成反回文字符串，返回 `"1"`。否则，执行交换操作，并向右移动 $i$ 和 $j$，比较 $s[j]$ 和 $s[n-j-1]$ 是否相等，如果相等，继续执行交换操作，直到 $i$ 超出字符串长度。
+Next, we only need to compare whether the two middle characters $s[m]$ and $s[m-1]$ are equal. If they are equal, we find the first character $s[i]$ in the second half that is not equal to $s[m]$, use a pointer $j$ to point to $m$, and then swap $s[i]$ and $s[j]$. If we can't find such a character $s[i]$, it means that the string $s$ cannot be transformed into a non-palindrome string, return `"1"`. Otherwise, perform the swap operation, move $i$ and $j$ to the right, compare whether $s[j]$ and $s[n-j-1]$ are equal, if they are equal, continue to perform the swap operation until $i$ exceeds the length of the string.
 
-时间复杂度 $O(n \times \log n)$，空间复杂度 $O(n)$。其中 $n$ 是字符串 $s$ 的长度。
+The time complexity is $O(n \times \log n)$, and the space complexity is $O(n)$. Where $n$ is the length of the string $s$.
 
 <!-- tabs:start -->
 

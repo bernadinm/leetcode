@@ -1,53 +1,65 @@
-# [面试题 16.04. 井字游戏](https://leetcode.cn/problems/tic-tac-toe-lcci)
+# [16.04. Tic-Tac-Toe](https://leetcode.cn/problems/tic-tac-toe-lcci)
 
-[English Version](/lcci/16.04.Tic-Tac-Toe/README_EN.md)
+[中文文档](/lcci/16.04.Tic-Tac-Toe/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-
-<p>设计一个算法，判断玩家是否赢了井字游戏。输入是一个 N x N 的数组棋盘，由字符&quot; &quot;，&quot;X&quot;和&quot;O&quot;组成，其中字符&quot; &quot;代表一个空位。</p>
-<p>以下是井字游戏的规则：</p>
+<p>Design an algorithm to figure out if someone has won a game of tic-tac-toe.&nbsp;Input is a string array&nbsp;of size N x N, including characters &quot; &quot;, &quot;X&quot; and &quot;O&quot;, where &quot; &quot; represents a empty grid.</p>
+<p>The rules of tic-tac-toe are as follows:</p>
 <ul>
-	<li>玩家轮流将字符放入空位（&quot; &quot;）中。</li>
-	<li>第一个玩家总是放字符&quot;O&quot;，且第二个玩家总是放字符&quot;X&quot;。</li>
-	<li>&quot;X&quot;和&quot;O&quot;只允许放置在空位中，不允许对已放有字符的位置进行填充。</li>
-	<li>当有N个相同（且非空）的字符填充任何行、列或对角线时，游戏结束，对应该字符的玩家获胜。</li>
-	<li>当所有位置非空时，也算为游戏结束。</li>
-	<li>如果游戏结束，玩家不允许再放置字符。</li>
+	<li>Players place characters into an empty grid(&quot; &quot;) in turn.</li>
+	<li>The first player always place character &quot;O&quot;, and the second one place &quot;X&quot;.</li>
+	<li>Players are only allowed to place characters in empty grid. Replacing a character is not allowed.</li>
+	<li>If there is any row, column or diagonal filled with N&nbsp;same characters, the game ends. The player who place the last charater wins.</li>
+	<li>When there is no empty grid, the game ends.</li>
+	<li>If the game ends, players cannot place any character further.</li>
 </ul>
-<p>如果游戏存在获胜者，就返回该游戏的获胜者使用的字符（&quot;X&quot;或&quot;O&quot;）；如果游戏以平局结束，则返回 &quot;Draw&quot;；如果仍会有行动（游戏未结束），则返回 &quot;Pending&quot;。</p>
-<p><strong>示例 1：</strong></p>
-<pre><strong>输入：</strong> board = [&quot;O X&quot;,&quot; XO&quot;,&quot;X O&quot;]
-<strong>输出：</strong> &quot;X&quot;
+<p>If there is any winner, return the character that the winner used. If there&#39;s a draw, return &quot;Draw&quot;. If the game doesn&#39;t end and there is no winner, return &quot;Pending&quot;.</p>
+<p><strong>Example 1: </strong></p>
+<pre>
+
+<strong>Input: </strong> board = [&quot;O X&quot;,&quot; XO&quot;,&quot;X O&quot;]
+
+<strong>Output: </strong> &quot;X&quot;
+
 </pre>
-<p><strong>示例 2：</strong></p>
-<pre><strong>输入：</strong> board = [&quot;OOX&quot;,&quot;XXO&quot;,&quot;OXO&quot;]
-<strong>输出：</strong> &quot;Draw&quot;
-<strong>解释：</strong> 没有玩家获胜且不存在空位
+<p><strong>Example 2: </strong></p>
+<pre>
+
+<strong>Input: </strong> board = [&quot;OOX&quot;,&quot;XXO&quot;,&quot;OXO&quot;]
+
+<strong>Output: </strong> &quot;Draw&quot;
+
+<strong>Explanation: </strong> no player wins and no empty grid left
+
 </pre>
-<p><strong>示例 3：</strong></p>
-<pre><strong>输入：</strong> board = [&quot;OOX&quot;,&quot;XXO&quot;,&quot;OX &quot;]
-<strong>输出：</strong> &quot;Pending&quot;
-<strong>解释：</strong> 没有玩家获胜且仍存在空位
+<p><strong>Example 3: </strong></p>
+<pre>
+
+<strong>Input: </strong> board = [&quot;OOX&quot;,&quot;XXO&quot;,&quot;OX &quot;]
+
+<strong>Output: </strong> &quot;Pending&quot;
+
+<strong>Explanation: </strong> no player wins but there is still a empty grid
+
 </pre>
-<p><strong>提示：</strong></p>
+<p><strong>Note: </strong></p>
 <ul>
 	<li><code>1 &lt;= board.length == board[i].length &lt;= 100</code></li>
-	<li>输入一定遵循井字棋规则</li>
+	<li>Input follows the rules.</li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：计数
+### Solution 1: Counting
 
-对于每个格子，如果是 `X`，我们不妨将计数加 $1$，如果是 `O`，我们不妨将计数减 $1$。那么当某个格子所在的行、列或者对角线的计数的绝对值等于 $n$ 时，说明当前玩家在该行、列或者对角线上放置了 $n$ 个相同字符，游戏结束，返回对应的字符即可。
+For each cell, if it is `X`, we can add $1$ to the count; if it is `O`, we can subtract $1$ from the count. When the absolute value of the count of a row, column, or diagonal equals $n$, it means that the current player has placed $n$ identical characters in that row, column, or diagonal, and the game is over. We can return the corresponding character.
 
-具体地，我们用一个长度为 $n$ 的一维数组 $rows$ 和 $cols$ 分别表示每一行和每一列的计数，用 $dg$ 和 $udg$ 分别表示两个对角线的计数。当玩家放置一个字符到 $(i, j)$ 时，根据字符是 `X` 还是 `O`，更新数组 $rows$，$cols$，$dg$ 以及 $udg$ 中对应元素的值。每次更新后，我们判断对应的元素的值的绝对值是否等于 $n$，如果等于 $n$，则说明当前玩家在行、列或者对角线上放置了 $n$ 个相同字符，游戏结束，返回对应的字符即可。
+Specifically, we use a one-dimensional array $rows$ and $cols$ of length $n$ to represent the count of each row and column, and use $dg$ and $udg$ to represent the count of the two diagonals. When a player places a character at $(i, j)$, we update the corresponding elements in the arrays $rows$, $cols$, $dg$, and $udg$ based on whether the character is `X` or `O`. After each update, we check whether the absolute value of the corresponding element equals $n$. If it does, it means that the current player has placed $n$ identical characters in that row, column, or diagonal, and the game is over. We can return the corresponding character.
 
-最后，我们遍历整个棋盘，如果棋盘中存在字符 ` `，说明游戏还未结束，返回 `Pending`，否则返回 `Draw`。
+Finally, we traverse the entire board. If there is a character ` `, it means that the game is not over yet, and we return `Pending`. Otherwise, we return `Draw`.
 
-时间复杂度 $O(n^2)$，空间复杂度 $O(n)$。其中 $n$ 是棋盘的边长。
+The time complexity is $O(n^2)$, and the space complexity is $O(n)$, where $n$ is the side length of the board.
 
 <!-- tabs:start -->
 

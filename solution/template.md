@@ -20,7 +20,7 @@
 
 欢迎各位小伙伴们添加 @yanglbme 的个人微信（微信号：YLB0109），备注 「**leetcode**」。后续我们会创建算法、技术相关的交流群，大家一起交流学习，分享经验，共同进步。
 
-| <img src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/gh/doocs/images/qrcode-for-yanglbme.png" width="260px" align="left"/> |
+| <img src="./images/qrcode-for-yanglbme.png" width="260px" align="left"/> |
 | ------------------------------------------------------------------------------------------------------------------------------ |
 
 ## 许可证
@@ -51,7 +51,7 @@ The copyright of this project belongs to [Doocs](https://github.com/doocs) commu
 
 We welcome everyone to add @yanglbme's personal WeChat (WeChat ID: YLB0109), with the note "leetcode". In the future, we will create algorithm and technology related discussion groups, where we can learn and share experiences together, and make progress together.
 
-| <img src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/gh/doocs/images/qrcode-for-yanglbme-en.png" width="260px" align="left"/> |
+| <img src="./images/qrcode-for-yanglbme-en.png" width="260px" align="left"/> |
 | --------------------------------------------------------------------------------------------------------------------------------- |
 
 ## License
@@ -84,7 +84,7 @@ This work is licensed under a <a rel="license" href="http://creativecommons.org/
 
 欢迎各位小伙伴们添加 @yanglbme 的个人微信（微信号：YLB0109），备注 「**leetcode**」。后续我们会创建算法、技术相关的交流群，大家一起交流学习，分享经验，共同进步。
 
-| <img src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/gh/doocs/images/qrcode-for-yanglbme.png" width="260px" align="left"/> |
+| <img src="./images/qrcode-for-yanglbme.png" width="260px" align="left"/> |
 | ------------------------------------------------------------------------------------------------------------------------------ |
 
 <!-- 这里是readme_template结束位置 -->
@@ -111,7 +111,7 @@ The copyright of this project belongs to [Doocs](https://github.com/doocs) commu
 
 We welcome everyone to add @yanglbme's personal WeChat (WeChat ID: YLB0109), with the note "leetcode". In the future, we will create algorithm and technology related discussion groups, where we can learn and share experiences together, and make progress together.
 
-| <img src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/gh/doocs/images/qrcode-for-yanglbme-en.png" width="260px" align="left"/> |
+| <img src="./images/qrcode-for-yanglbme-en.png" width="260px" align="left"/> |
 | --------------------------------------------------------------------------------------------------------------------------------- |
 
 ## License
@@ -136,8 +136,8 @@ This work is licensed under a <a rel="license" href="http://creativecommons.org/
 
 | 段位 | 比例 | 段位名   | 国服分数线  | 勋章                                                                                                                    |
 | ---- | ---- | -------- | ----------- | ----------------------------------------------------------------------------------------------------------------------- |
-| LV3  | 5%   | Guardian | &ge;2254.76 | <p><img alt="" src="https://fastly.jsdelivr.net/gh/doocs/leetcode@main/images/Guardian.gif" style="width: 80px;" /></p> |
-| LV2  | 20%  | Knight   | &ge;1882.78 | <p><img alt="" src="https://fastly.jsdelivr.net/gh/doocs/leetcode@main/images/Knight.gif" style="width: 80px;" /></p>   |
+| LV3  | 5%   | Guardian | &ge;2254.76 | <p><img alt="" src="./images/Guardian.gif" style="width: 80px;" /></p> |
+| LV2  | 20%  | Knight   | &ge;1882.78 | <p><img alt="" src="./images/Knight.gif" style="width: 80px;" /></p>   |
 | LV1  | 75%  | -        | -           | -                                                                                                                       |
 
 力扣竞赛 **全国排名前 10** 的用户，全站用户名展示为品牌橙色。
@@ -171,8 +171,8 @@ If you are in the top 25% of the contest rating, you’ll get the “Knight” b
 
 | Level | Proportion | Badge    | Rating      |                                                                                                                         |
 | ----- | ---------- | -------- | ----------- | ----------------------------------------------------------------------------------------------------------------------- |
-| LV3   | 5\%        | Guardian | &ge;2228.90 | <p><img alt="" src="https://fastly.jsdelivr.net/gh/doocs/leetcode@main/images/Guardian.gif" style="width: 80px;" /></p> |
-| LV2   | 20\%       | Knight   | &ge;1842.73 | <p><img alt="" src="https://fastly.jsdelivr.net/gh/doocs/leetcode@main/images/Knight.gif" style="width: 80px;" /></p>   |
+| LV3   | 5\%        | Guardian | &ge;2228.90 | <p><img alt="" src="./images/Guardian.gif" style="width: 80px;" /></p> |
+| LV2   | 20\%       | Knight   | &ge;1842.73 | <p><img alt="" src="./images/Knight.gif" style="width: 80px;" /></p>   |
 | LV1   | 75\%       | -        | -           | -                                                                                                                       |
 
 For top 10 users (excluding LCCN users), your LeetCode ID will be colored orange on the ranking board. You'll also have the honor with you when you post/comment under discuss.

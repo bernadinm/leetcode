@@ -1,12 +1,10 @@
-# [3051. Find Candidates for Data Scientist Position](https://leetcode.cn/problems/find-candidates-for-data-scientist-position)
+# [3051. Find Candidates for Data Scientist Position](https://leetcode.com/problems/find-candidates-for-data-scientist-position)
 
-[English Version](/solution/3000-3099/3051.Find%20Candidates%20for%20Data%20Scientist%20Position/README_EN.md)
+[中文文档](/solution/3000-3099/3051.Find%20Candidates%20for%20Data%20Scientist%20Position/README.md)
 
-<!-- tags:数据库 -->
+<!-- tags:Database -->
 
-## 题目描述
-
-<!-- 这里写题目描述 -->
+## Description
 
 <p>Table: <font face="monospace"><code>Candidates</code></font></p>
 
@@ -63,11 +61,11 @@ Candidates table:
 The output table is sorted by candidate_id in ascending order.
 </pre>
 
-## 解法
+## Solutions
 
-### 方法一：条件筛选 + 分组统计
+### Solution 1: Conditional Filtering + Grouping Statistics
 
-我们首先筛选出具备 `Python`, `Tableau`, `PostgreSQL` 这三个技能的候选人，然后按照 `candidate_id` 进行分组统计，统计每个候选人具备的技能数量，最后筛选出具备这三个技能的候选人，并且按照 `candidate_id` 进行升序排序。
+First, we filter out candidates who have the skills `Python`, `Tableau`, and `PostgreSQL`. Then, we group by `candidate_id` and count the number of skills each candidate has. Finally, we filter out candidates who have these three skills and sort them in ascending order by `candidate_id`.
 
 <!-- tabs:start -->
 

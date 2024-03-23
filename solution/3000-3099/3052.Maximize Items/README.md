@@ -1,12 +1,10 @@
-# [3052. Maximize Items](https://leetcode.cn/problems/maximize-items)
+# [3052. Maximize Items](https://leetcode.com/problems/maximize-items)
 
-[English Version](/solution/3000-3099/3052.Maximize%20Items/README_EN.md)
+[中文文档](/solution/3000-3099/3052.Maximize%20Items/README.md)
 
-<!-- tags:数据库 -->
+<!-- tags:Database -->
 
-## 题目描述
-
-<!-- 这里写题目描述 -->
+## Description
 
 <p>Table: <font face="monospace"><code>Inventory</code></font></p>
 
@@ -70,13 +68,13 @@ Inventory table:
 - In the not_prime category, there are a total of 4 items with a combined square footage of 128.50. After deducting the storage used by prime-eligible items (500,000 - 499,680 = 320), there is room for 2 combinations of non-prime items, accommodating a total of 8 non-prime items within the available 320 square footage.
 Output table is ordered by item count in descending order.</pre>
 
-## 解法
+## Solutions
 
-### 方法一：连接查询 + 合并
+### Solution 1: Join Query + Union All
 
-我们先计算出所有 prime_eligible 类型的物品的总面积，记录在 `T` 表的 `s` 字段中。
+First, we calculate the total area of all items of type `prime_eligible` and record it in the `s` field of table `T`.
 
-接下来，我们分别计算 prime_eligible 和 not_prime 类型的物品的数量。对于 prime_eligible 类型的物品，我们可以存储的份数是 $\lfloor \frac{500000}{s} \rfloor$，对于 not_prime 类型的物品，我们可以存储的份数是 $\lfloor \frac{500000 \mod s}{\sum \text{s1}} \rfloor$。其中 $\sum \text{s1}$ 是所有 not_prime 类型的物品的总面积。再分别乘上 prime_eligible 和 not_prime 类型的物品的数量，就是我们的结果。
+Next, we calculate the number of items of type `prime_eligible` and `not_prime` respectively. For items of type `prime_eligible`, the number of portions we can store is $\lfloor \frac{500000}{s} \rfloor$. For items of type `not_prime`, the number of portions we can store is $\lfloor \frac{500000 \mod s}{\sum \text{s1}} \rfloor$. Where $\sum \text{s1}$ is the total area of all items of type `not_prime`. Multiplying by the number of items of type `prime_eligible` and `not_prime` respectively gives us our result.
 
 <!-- tabs:start -->
 

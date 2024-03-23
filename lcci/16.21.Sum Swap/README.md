@@ -1,40 +1,46 @@
-# [面试题 16.21. 交换和](https://leetcode.cn/problems/sum-swap-lcci)
+# [16.21. Sum Swap](https://leetcode.cn/problems/sum-swap-lcci)
 
-[English Version](/lcci/16.21.Sum%20Swap/README_EN.md)
+[中文文档](/lcci/16.21.Sum%20Swap/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>给定两个整数数组，请交换一对数值（每个数组中取一个数值），使得两个数组所有元素的和相等。</p>
+<p>Given two arrays of integers, find a pair of values (one value from each array) that you can swap to give the two arrays the same sum.</p>
 
-<p>返回一个数组，第一个元素是第一个数组中要交换的元素，第二个元素是第二个数组中要交换的元素。若有多个答案，返回任意一个均可。若无满足条件的数值，返回空数组。</p>
+<p>Return an array, where the first element is the element in the first array that will be swapped, and the second element is another one in the second array. If there are more than one answers, return any one of them. If there is no answer, return an empty array.</p>
 
-<p><strong>示例:</strong></p>
+<p><strong>Example:</strong></p>
 
-<pre><strong>输入:</strong> array1 = [4, 1, 2, 1, 1, 2], array2 = [3, 6, 3, 3]
-<strong>输出:</strong> [1, 3]
+<pre>
+
+<strong>Input:</strong> array1 = [4, 1, 2, 1, 1, 2], array2 = [3, 6, 3, 3]
+
+<strong>Output:</strong> [1, 3]
+
 </pre>
 
-<p><strong>示例:</strong></p>
+<p><strong>Example:</strong></p>
 
-<pre><strong>输入:</strong> array1 = <code>[1, 2, 3], array2 = [4, 5, 6]</code>
-<strong>输出: </strong>[]</pre>
+<pre>
 
-<p><strong>提示：</strong></p>
+<strong>Input:</strong> array1 = <code>[1, 2, 3], array2 = [4, 5, 6]</code>
+
+<strong>Output: </strong>[]</pre>
+
+<p><strong>Note: </strong></p>
 
 <ul>
 	<li><code>1 &lt;= array1.length, array2.length &lt;= 100000</code></li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：哈希表
+### Solution 1: Hash Table
 
-我们先求出两个数组的和，然后计算两个数组和的差值 $diff$。如果 $diff$ 为奇数，则说明两个数组的和不可能相等，直接返回空数组。
+We first calculate the sum of the two arrays, and then calculate the difference $diff$ between the sums. If $diff$ is odd, it means that the sums of the two arrays cannot be equal, so we directly return an empty array.
 
-如果 $diff$ 为偶数，那么我们可以遍历其中一个数组，假设当前遍历到的元素为 $a$，则另一个数组中需要找到一个元素 $b$，使得 $a - b = diff / 2$，即 $b = a - diff / 2$。我们可以使用哈希表来快速查找 $b$ 是否存在。如果存在，则说明找到了一对符合条件的元素，直接返回即可。
+If $diff$ is even, we can traverse one of the arrays. Suppose the current element being traversed is $a$, then we need to find an element $b$ in the other array such that $a - b = diff / 2$, i.e., $b = a - diff / 2$. We can use a hash table to quickly check whether $b$ exists. If it exists, it means that we have found a pair of elements that meet the conditions, and we can return them directly.
 
-时间复杂度 $O(m + n)$，空间复杂度 $O(n)$。其中 $m$ 和 $n$ 分别为两个数组的长度。
+The time complexity is $O(m + n)$, and the space complexity is $O(n)$. Here, $m$ and $n$ are the lengths of the two arrays.
 
 <!-- tabs:start -->
 

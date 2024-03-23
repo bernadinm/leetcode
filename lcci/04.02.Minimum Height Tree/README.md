@@ -1,19 +1,38 @@
-# [面试题 04.02. 最小高度树](https://leetcode.cn/problems/minimum-height-tree-lcci)
+# [04.02. Minimum Height Tree](https://leetcode.cn/problems/minimum-height-tree-lcci)
 
-[English Version](/lcci/04.02.Minimum%20Height%20Tree/README_EN.md)
+[中文文档](/lcci/04.02.Minimum%20Height%20Tree/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>给定一个有序整数数组，元素各不相同且按升序排列，编写一个算法，创建一棵高度最小的二叉搜索树。</p><strong>示例:</strong><pre>给定有序数组: [-10,-3,0,5,9],<br><br>一个可能的答案是：[0,-3,9,-10,null,5]，它可以表示下面这个高度平衡二叉搜索树：<br><br>          0 <br>         / &#92 <br>       -3   9 <br>       /   / <br>     -10  5 <br></pre>
+<p>Given a sorted (increasing order) array with unique integer elements, write an algo&shy;rithm to create a binary search tree with minimal height.</p>
 
-## 解法
+<p><strong>Example:</strong></p>
 
-### 方法一：递归
+<pre>
 
-先找到数组的中间点，作为二叉搜索树的根节点，然后递归左右子树即可。
+Given sorted array: [-10,-3,0,5,9],
 
-时间复杂度 $O(n)$，空间复杂度 $O(\log n)$。其中 $n$ 为数组长度。
+
+
+One possible answer is: [0,-3,9,-10,null,5]，which represents the following tree: 
+
+
+
+          0 
+
+         / \ 
+
+       -3   9 
+
+       /   / 
+
+     -10  5 
+
+</pre>
+
+## Solutions
+
+### Solution 1
 
 <!-- tabs:start -->
 

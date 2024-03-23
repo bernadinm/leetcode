@@ -1,61 +1,61 @@
-# [面试题 01.09. 字符串轮转](https://leetcode.cn/problems/string-rotation-lcci)
+# [01.09. String Rotation](https://leetcode.cn/problems/string-rotation-lcci)
 
-[English Version](/lcci/01.09.String%20Rotation/README_EN.md)
+[中文文档](/lcci/01.09.String%20Rotation/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>字符串轮转。给定两个字符串<code>s1</code>和<code>s2</code>，请编写代码检查<code>s2</code>是否为<code>s1</code>旋转而成（比如，<code>waterbottle</code>是<code>erbottlewat</code>旋转后的字符串）。</p>
+<p>Given two strings, <code>s1</code>&nbsp;and <code>s2</code>, write code to check if <code>s2</code> is a rotation of <code>s1</code> (e.g.,&quot;waterbottle&quot; is a rotation of&quot;erbottlewat&quot;).&nbsp;Can you use&nbsp;only one call to the method that&nbsp;checks if one word is a substring of another?</p>
 
-<p><strong>示例1:</strong></p>
+<p><strong>Example 1:</strong></p>
 
-<pre><strong> 输入</strong>：s1 = &quot;waterbottle&quot;, s2 = &quot;erbottlewat&quot;
-<strong> 输出</strong>：True
+<pre>
+
+<strong>Input: </strong>s1 = &quot;waterbottle&quot;, s2 = &quot;erbottlewat&quot;
+
+<strong>Output: </strong>True
+
 </pre>
 
-<p><strong>示例2:</strong></p>
+<p><strong>Example 2:</strong></p>
 
-<pre><strong> 输入</strong>：s1 = &quot;aa&quot;, &quot;aba&quot;
-<strong> 输出</strong>：False
+<pre>
+
+<strong>Input: </strong>s1 = &quot;aa&quot;, &quot;aba&quot;
+
+<strong>Output: </strong>False
+
 </pre>
 
-<ol>
-</ol>
+<p>&nbsp;</p>
 
-<p><strong>提示：</strong></p>
-
-<ol>
-	<li>字符串长度在[0, 100000]范围内。</li>
-</ol>
-
-<p><strong>说明:</strong></p>
+<p><strong>Note:</strong></p>
 
 <ol>
-	<li>你能只调用一次检查子串的方法吗？</li>
+	<li><code><font face="monospace">0 &lt;= s1.length, s1.length &lt;=&nbsp;</font>100000</code></li>
 </ol>
 
-## 解法
+## Solutions
 
-### 方法一：字符串匹配
+### Solution 1: String Matching
 
-首先，如果字符串 $s1$ 和 $s2$ 长度不相等，那么肯定不是旋转字符串。
+First, if the lengths of strings $s1$ and $s2$ are not equal, they are definitely not rotation strings of each other.
 
-其次，如果字符串 $s1$ 和 $s2$ 长度相等，那么将两个 $s1$ 连接，得到的 $s1 + s1$ 这个字符串一定包含了 $s1$ 旋转的所有情况，这时候我们只要判断 $s2$ 是否是 $s1 + s1$ 的子串即可。
+Second, if the lengths of strings $s1$ and $s2$ are equal, then by concatenating two $s1$ together, the resulting string $s1 + s1$ will definitely include all rotation cases of $s1$. At this point, we just need to check whether $s2$ is a substring of $s1 + s1$.
 
 ```bash
-# 成立
+# True
 s1 = "aba"
 s2 = "baa"
 s1 + s1 = "abaaba"
             ^^^
 
-# 不成立
+# False
 s1 = "aba"
 s2 = "bab"
 s1 + s1 = "abaaba"
 ```
 
-时间复杂度 $O(n)$，空间复杂度 $O(n)$。其中 $n$ 为字符串 $s1$ 的长度。
+The time complexity is $O(n)$, and the space complexity is $O(n)$. Here, $n$ is the length of string $s1$.
 
 <!-- tabs:start -->
 

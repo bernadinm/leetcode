@@ -1,35 +1,41 @@
-# [面试题 05.07. 配对交换](https://leetcode.cn/problems/exchange-lcci)
+# [05.07. Exchange](https://leetcode.cn/problems/exchange-lcci)
 
-[English Version](/lcci/05.07.Exchange/README_EN.md)
+[中文文档](/lcci/05.07.Exchange/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>配对交换。编写程序，交换某个整数的奇数位和偶数位，尽量使用较少的指令（也就是说，位0与位1交换，位2与位3交换，以此类推）。</p>
+<p>Write a program to swap odd and even bits in an integer with as few instructions as possible (e.g., bit 0 and bit 1 are swapped, bit 2 and bit 3 are swapped, and so on).</p>
 
-<p> <strong>示例1:</strong></p>
-
-<pre>
-<strong> 输入</strong>：num = 2（或者0b10）
-<strong> 输出</strong> 1 (或者 0b01)
-</pre>
-
-<p> <strong>示例2:</strong></p>
+<p><strong>Example1:</strong></p>
 
 <pre>
-<strong> 输入</strong>：num = 3
-<strong> 输出</strong>：3
+
+<strong> Input</strong>: num = 2（0b10）
+
+<strong> Output</strong> 1 (0b01)
+
 </pre>
 
-<p> <strong>提示:</strong></p>
+<p><strong>Example2:</strong></p>
+
+<pre>
+
+<strong> Input</strong>: num = 3
+
+<strong> Output</strong>: 3
+
+</pre>
+
+<p><strong>Note:</strong></p>
 
 <ol>
-<li><code>num</code>的范围在[0, 2^30 - 1]之间，不会发生整数溢出。</li>
+	<li><code>0 &lt;= num &lt;=</code>&nbsp;2^30 - 1</li>
+	<li>The result integer fits into 32-bit integer.</li>
 </ol>
 
-## 解法
+## Solutions
 
-### 方法一
+### Solution 1
 
 <!-- tabs:start -->
 

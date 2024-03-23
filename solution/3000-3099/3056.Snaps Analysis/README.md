@@ -1,12 +1,10 @@
-# [3056. Snaps Analysis](https://leetcode.cn/problems/snaps-analysis)
+# [3056. Snaps Analysis](https://leetcode.com/problems/snaps-analysis)
 
-[English Version](/solution/3000-3099/3056.Snaps%20Analysis/README_EN.md)
+[中文文档](/solution/3000-3099/3056.Snaps%20Analysis/README.md)
 
-<!-- tags:数据库 -->
+<!-- tags:Database -->
 
-## 题目描述
-
-<!-- 这里写题目描述 -->
+## Description
 
 <p>Table: <code>Activities</code></p>
 
@@ -96,11 +94,11 @@ For age group 21-25:
 All percentages in output table rounded to the two decimal places.
 </pre>
 
-## 解法
+## Solutions
 
-### 方法一：等值连接 + 分组求和
+### Solution 1: Equi-Join + Group By Summation
 
-我们可以通过等值连接，将 `Activities` 表和 `Age` 表按照 `user_id` 进行连接，然后再按照 `age_bucket` 进行分组，最后计算每个年龄段的发送和打开的百分比。
+We can perform an equi-join to connect the `Activities` table and the `Age` table based on `user_id`. Then, group by `age_bucket` and finally calculate the percentage of sends and opens for each age group.
 
 <!-- tabs:start -->
 

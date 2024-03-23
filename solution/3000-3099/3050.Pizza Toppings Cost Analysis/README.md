@@ -1,12 +1,10 @@
-# [3050. Pizza Toppings Cost Analysis](https://leetcode.cn/problems/pizza-toppings-cost-analysis)
+# [3050. Pizza Toppings Cost Analysis](https://leetcode.com/problems/pizza-toppings-cost-analysis)
 
-[English Version](/solution/3000-3099/3050.Pizza%20Toppings%20Cost%20Analysis/README_EN.md)
+[中文文档](/solution/3000-3099/3050.Pizza%20Toppings%20Cost%20Analysis/README.md)
 
-<!-- tags:数据库 -->
+<!-- tags:Database -->
 
-## 题目描述
-
-<!-- 这里写题目描述 -->
+## Description
 
 <p>Table: <code><font face="monospace">Toppings</font></code></p>
 
@@ -65,13 +63,13 @@ There are only four different combinations possible with the three topings:
 - Chicken, Extra Cheese, Pepperoni: Total cost is $1.45 (Chicken $0.55, Extra Cheese $0.40, Pepperoni $0.50).
 Output table is ordered by the total cost in descending order.</pre>
 
-## 解法
+## Solutions
 
-### 方法一：窗口函数 + 条件连接
+### Solution 1: Window Function + Conditional Join
 
-我们先使用窗口函数，按照 `topping_name` 字段对表进行排序，并为每一行添加一个 `rk` 字段，表示当前行的排名。
+First, we use a window function to sort the table by the `topping_name` field and add a `rk` field to each row, representing the ranking of the current row.
 
-然后我们使用条件连接，连接三次表 `T`，分别为 `t1`, `t2`, `t3`。连接条件是 `t1.rk < t2.rk` 和 `t2.rk < t3.rk`。然后我们计算三个配料的总价，按照总价降序排序，再按照配料名升序排序。
+Then we use conditional join to join the table `T` three times, named as `t1`, `t2`, `t3` respectively. The join conditions are `t1.rk < t2.rk` and `t2.rk < t3.rk`. After that, we calculate the total price of the three toppings, sort by total price in descending order, and then sort by topping name in ascending order.
 
 <!-- tabs:start -->
 

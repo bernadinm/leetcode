@@ -1,71 +1,57 @@
-# [面试题 17.23. 最大黑方阵](https://leetcode.cn/problems/max-black-square-lcci)
+# [17.23. Max Black Square](https://leetcode.cn/problems/max-black-square-lcci)
 
-[English Version](/lcci/17.23.Max%20Black%20Square/README_EN.md)
+[中文文档](/lcci/17.23.Max%20Black%20Square/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>给定一个方阵，其中每个单元(像素)非黑即白。设计一个算法，找出 4 条边皆为黑色像素的最大子方阵。</p>
-<p>返回一个数组 <code>[r, c, size]</code> ，其中&nbsp;<code>r</code>,&nbsp;<code>c</code>&nbsp;分别代表子方阵左上角的行号和列号，<code>size</code> 是子方阵的边长。若有多个满足条件的子方阵，返回 <code>r</code> 最小的，若 <code>r</code> 相同，返回 <code>c</code> 最小的子方阵。若无满足条件的子方阵，返回空数组。</p>
-<p><strong>示例 1:</strong></p>
-<pre><strong>输入:
+<p>Imagine you have a square matrix, where each cell (pixel) is either black or white Design an algorithm to find the maximum subsquare such that all four borders are filled with black pixels.</p>
+<p>Return an array&nbsp;<code>[r, c, size]</code>, where&nbsp;<code>r</code>,&nbsp;<code>c</code>&nbsp;are the row number and the column number of the subsquare&#39;s upper left corner respectively, and <code>size</code>&nbsp;is the side length of the subsquare. If there are more than one answers, return the one that has smallest <code>r</code>. If there are more than one answers that have the same <code>r</code>, return the one that has smallest <code>c</code>. If there&#39;s no answer, return an empty array.</p>
+<p><strong>Example 1:</strong></p>
+<pre>
+
+<strong>Input:
+
 </strong>[
-&nbsp;  [1,0,1],
-&nbsp;  [<strong>0,0</strong>,1],
-&nbsp;  [<strong>0,0</strong>,1]
+
+&nbsp; [1,0,1],
+
+&nbsp; [<strong>0,0</strong>,1],
+
+&nbsp; [<strong>0,0</strong>,1]
+
 ]
-<strong>输出: </strong>[1,0,2]
-<strong>解释: </strong>输入中 0 代表黑色，1 代表白色，标粗的元素即为满足条件的最大子方阵
+
+<strong>Output: </strong>[1,0,2]
+
+<strong>Explanation:</strong> 0 represents black, and 1 represents white, bold elements in the input is the answer.
+
 </pre>
-<p><strong>示例 2:</strong></p>
-<pre><strong>输入:
+<p><strong>Example 2:</strong></p>
+<pre>
+
+<strong>Input:
+
 </strong>[
-&nbsp;  [<strong>0</strong>,1,1],
-&nbsp;  [1,0,1],
-&nbsp;  [1,1,0]
+
+&nbsp; [<strong>0</strong>,1,1],
+
+&nbsp; [1,0,1],
+
+&nbsp; [1,1,0]
+
 ]
-<strong>输出: </strong>[0,0,1]
+
+<strong>Output: </strong>[0,0,1]
+
 </pre>
-<p><strong>提示：</strong></p>
+<p><strong>Note: </strong></p>
 <ul>
 	<li><code>matrix.length == matrix[0].length &lt;= 200</code></li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：预处理 + 枚举
-
-我们可以预处理出每个位置 $(i, j)$ 向下和向右的连续 $0$ （黑色像素）的个数，记为 $down[i][j]$ 和 $right[i][j]$。递推公式如下：
-
-$$
-down[i][j] = \begin{cases}
-down[i + 1][j] + 1, & matrix[i][j] = 0 \text{ 且 } i + 1 < n \\
-1, & matrix[i][j] = 0 \text{ 且 } i + 1 = n \\
-0, & matrix[i][j] = 1
-\end{cases}
-$$
-
-$$
-right[i][j] = \begin{cases}
-right[i][j + 1] + 1, & matrix[i][j] = 0 \text{ 且 } j + 1 < n \\
-1, & matrix[i][j] = 0 \text{ 且 } j + 1 = n \\
-0, & matrix[i][j] = 1
-\end{cases}
-$$
-
-需要注意的是，由于 $down[i][j]$ 依赖于 $down[i + 1][j]$，而 $right[i][j]$ 依赖于 $right[i][j + 1]$，所以，我们在预处理 $down[i][j]$ 和 $right[i][j]$ 时，是从大到小枚举 $i$ 和 $j$ 的。
-
-接下来，我们从大到小枚举正方形的边长 $k$，从小到大枚举正方形的左上角位置 $(i, j)$，如果满足 $down[i][j] \ge k$ 且 $right[i][j] \ge k$ 且 $right[i + k - 1][j] \ge k$ 且 $down[i][j + k - 1] \ge k$，说明我们找到了一个边长最大为 $k$ 且左上角位置为 $(i, j)$ 的黑方阵，直接返回 $[i, j, k]$ 即可。
-
-如果枚举完所有的正方形都没有满足条件的，那么返回空数组。
-
-<p><img alt="" src="https://fastly.jsdelivr.net/gh/doocs/leetcode@main/lcci/17.23.Max%20Black%20Square/images/max_black_square.png" /></p>
-
-时间复杂度 $O(n^3)$，空间复杂度 $O(n^2)$。其中 $n$ 是方阵的边长。
-
-相似题目：
-
--   [1139. 最大的以 1 为边界的正方形](https://github.com/doocs/leetcode/blob/main/solution/1100-1199/1139.Largest%201-Bordered%20Square/README.md)
+### Solution 1
 
 <!-- tabs:start -->
 

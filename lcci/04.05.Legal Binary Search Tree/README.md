@@ -1,15 +1,52 @@
-# [面试题 04.05. 合法二叉搜索树](https://leetcode.cn/problems/legal-binary-search-tree-lcci)
+# [04.05. Legal Binary Search Tree](https://leetcode.cn/problems/legal-binary-search-tree-lcci)
 
-[English Version](/lcci/04.05.Legal%20Binary%20Search%20Tree/README_EN.md)
+[中文文档](/lcci/04.05.Legal%20Binary%20Search%20Tree/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>实现一个函数，检查一棵二叉树是否为二叉搜索树。</p><strong>示例 1:</strong><pre><strong>输入:</strong><br>    2<br>   / &#92<br>  1   3<br><strong>输出:</strong> true<br></pre><strong>示例 2:</strong><pre><strong>输入:</strong><br>    5<br>   / &#92<br>  1   4<br>     / &#92<br>    3   6<br><strong>输出:</strong> false<br><strong>解释:</strong> 输入为: [5,1,4,null,null,3,6]。<br>     根节点的值为 5 ，但是其右子节点值为 4 。</pre>
+<p>Implement a function to check if a binary tree is a binary search tree.</p>
 
-## 解法
+<p><strong>Example&nbsp;1:</strong></p>
 
-### 方法一
+<pre>
+
+<strong>Input:</strong>
+
+    2
+
+   / \
+
+  1   3
+
+<strong>Output:</strong> true
+
+</pre>
+
+<p><strong>Example&nbsp;2:</strong></p>
+
+<pre>
+
+<strong>Input:</strong>
+
+    5
+
+   / \
+
+  1   4
+
+&nbsp;    / \
+
+&nbsp;   3   6
+
+<strong>Output:</strong> false
+
+<strong>Explanation:</strong> Input: [5,1,4,null,null,3,6].
+
+&nbsp;    the value of root node is 5, but its right child has value 4.</pre>
+
+## Solutions
+
+### Solution 1
 
 <!-- tabs:start -->
 
@@ -210,7 +247,7 @@ impl Solution {
 
 <!-- tabs:end -->
 
-### 方法二
+### Solution 2
 
 <!-- tabs:start -->
 

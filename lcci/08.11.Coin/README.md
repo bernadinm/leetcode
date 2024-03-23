@@ -1,55 +1,67 @@
-# [面试题 08.11. 硬币](https://leetcode.cn/problems/coin-lcci)
+# [08.11. Coin](https://leetcode.cn/problems/coin-lcci)
 
-[English Version](/lcci/08.11.Coin/README_EN.md)
+[中文文档](/lcci/08.11.Coin/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>硬币。给定数量不限的硬币，币值为25分、10分、5分和1分，编写代码计算n分有几种表示法。(结果可能会很大，你需要将结果模上1000000007)</p>
-<p> <strong>示例1:</strong></p>
+<p>Given an infinite number of quarters (25 cents), dimes (10 cents), nickels (5 cents), and pennies (1 cent), write code to calculate the number of ways of representing n cents.&nbsp;(The result may be large, so you should return it modulo 1000000007)</p>
+<p><strong>Example1:</strong></p>
 <pre>
-<strong> 输入</strong>: n = 5
-<strong> 输出</strong>：2
-<strong> 解释</strong>: 有两种方式可以凑成总金额:
+
+<strong> Input</strong>: n = 5
+
+<strong> Output</strong>: 2
+
+<strong> Explanation</strong>: There are two ways:
+
 5=5
+
 5=1+1+1+1+1
+
 </pre>
-<p> <strong>示例2:</strong></p>
+<p><strong>Example2:</strong></p>
 <pre>
-<strong> 输入</strong>: n = 10
-<strong> 输出</strong>：4
-<strong> 解释</strong>: 有四种方式可以凑成总金额:
+
+<strong> Input</strong>: n = 10
+
+<strong> Output</strong>: 4
+
+<strong> Explanation</strong>: There are four ways:
+
 10=10
+
 10=5+5
+
 10=5+1+1+1+1+1
+
 10=1+1+1+1+1+1+1+1+1+1
+
 </pre>
-<p> <strong>说明：</strong></p>
-<p>注意:</p>
-<p>你可以假设：</p>
+<p><strong>Notes: </strong></p>
+<p>You can assume:</p>
 <ul>
-    <li>0 &lt;= n (总金额) &lt;= 1000000</li>
+	<li>0 &lt;= n&nbsp;&lt;= 1000000</li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：动态规划
+### Solution 1: Dynamic Programming
 
-我们定义 $f[i][j]$ 表示只使用前 $i$ 种硬币的情况下，凑成总金额为 $j$ 的方案数。初始时 $f[0][0]=1$，其余元素都为 $0$。答案为 $f[4][n]$。
+We define $f[i][j]$ as the number of ways to make up the total amount $j$ using only the first $i$ types of coins. Initially, $f[0][0]=1$, and the rest of the elements are $0$. The answer is $f[4][n]$.
 
-考虑 $f[i][j]$，我们可以枚举使用的第 $i$ 种硬币的个数 $k$，其中 $0 \leq k \leq j / c_i$，那么 $f[i][j]$ 就等于所有 $f[i−1][j−k \times c_i]$ 之和。由于硬币的数量是无限的，因此 $k$ 可以从 $0$ 开始取。即状态转移方程如下：
+Considering $f[i][j]$, we can enumerate the number of the $i$-th type of coin used, $k$, where $0 \leq k \leq j / c_i$, then $f[i][j]$ is equal to the sum of all $f[i−1][j−k \times c_i]$. Since the number of coins is infinite, $k$ can start from $0$. That is, the state transition equation is as follows:
 
 $$
 f[i][j] = f[i - 1][j] + f[i - 1][j - c_i] + \cdots + f[i - 1][j - k \times c_i]
 $$
 
-不妨令 $j = j - c_i$，那么上面的状态转移方程可以写成：
+Let $j = j - c_i$, then the above state transition equation can be written as:
 
 $$
 f[i][j - c_i] = f[i - 1][j - c_i] + f[i - 1][j - 2 \times c_i] + \cdots + f[i - 1][j - k \times c_i]
 $$
 
-将二式代入一式，得到：
+Substitute the second equation into the first equation to get:
 
 $$
 f[i][j]=
@@ -59,11 +71,11 @@ f[i - 1][j], & j < c_i
 \end{cases}
 $$
 
-最后的答案即为 $f[4][n]$。
+The final answer is $f[4][n]$.
 
-时间复杂度 $O(C \times n)$，空间复杂度 $O(C \times n)$，其中 $C$ 为硬币的种类数。
+The time complexity is $O(C \times n)$, and the space complexity is $O(C \times n)$, where $C$ is the number of types of coins.
 
-我们注意到，$f[i][j]$ 的计算只与 $f[i−1][..]$ 有关，因此我们可以去掉第一维，将空间复杂度优化到 $O(n)$。
+We notice that the calculation of $f[i][j]$ is only related to $f[i−1][..]$, so we can remove the first dimension and optimize the space complexity to $O(n)$.
 
 <!-- tabs:start -->
 
@@ -167,7 +179,7 @@ function waysToChange(n: number): number {
 
 <!-- tabs:end -->
 
-### 方法二
+### Solution 2
 
 <!-- tabs:start -->
 

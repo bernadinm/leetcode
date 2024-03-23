@@ -1,58 +1,36 @@
-# [面试题 02.04. 分割链表](https://leetcode.cn/problems/partition-list-lcci)
+# [02.04. Partition List](https://leetcode.cn/problems/partition-list-lcci)
 
-[English Version](/lcci/02.04.Partition%20List/README_EN.md)
+[中文文档](/lcci/02.04.Partition%20List/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>Write code to partition a linked list around a value x, such that all nodes less than x come before all nodes greater than or equal to x. If x is contained within the list, the values of x only need to be after the elements less than x (see below). The partition element x can appear anywhere in the &quot;right partition&quot;; it does not need to appear between the left and right partitions.</p>
 
-<p>给你一个链表的头节点 <code>head</code> 和一个特定值<em> </em><code>x</code> ，请你对链表进行分隔，使得所有 <strong>小于</strong> <code>x</code> 的节点都出现在 <strong>大于或等于</strong> <code>x</code> 的节点之前。</p>
-
-<p>你不需要&nbsp;<strong>保留</strong>&nbsp;每个分区中各节点的初始相对位置。</p>
-
-<p>&nbsp;</p>
-
-<p><strong>示例 1：</strong></p>
-
-<img alt="" src="https://fastly.jsdelivr.net/gh/doocs/leetcode@main/lcci/02.04.Partition%20List/images/partition.jpg" style="width: 662px; height: 222px;" />
+<p><strong>Example:</strong></p>
 
 <pre>
-<strong>输入：</strong>head = [1,4,3,2,5,2], x = 3
-<strong>输出</strong>：[1,2,2,4,3,5]
+
+<strong>Input:</strong> head = 3-&gt;5-&gt;8-&gt;5-&gt;10-&gt;2-&gt;1, <em>x</em> = 5
+
+<strong>Output:</strong> 3-&gt;1-&gt;2-&gt;10-&gt;5-&gt;5-&gt;8
+
 </pre>
 
-<p><strong>示例 2：</strong></p>
+## Solutions
 
-<pre>
-<strong>输入：</strong>head = [2,1], x = 2
-<strong>输出</strong>：[1,2]
-</pre>
+### Solution 1: Concatenating Lists
 
-<p>&nbsp;</p>
+We create two lists, `left` and `right`, to store nodes that are less than `x` and nodes that are greater than or equal to `x`, respectively.
 
-<p><strong>提示：</strong></p>
+Then we use two pointers `p1` and `p2` to point to the last node of `left` and `right` respectively, initially both `p1` and `p2` point to a dummy head node.
 
-<ul>
-    <li>链表中节点的数目在范围 <code>[0, 200]</code> 内</li>
-    <li><code>-100 &lt;= Node.val &lt;= 100</code></li>
-    <li><code>-200 &lt;= x &lt;= 200</code></li>
-</ul>
+Next, we traverse the list `head`. If the value of the current node is less than `x`, we add the current node to the end of the `left` list, i.e., `p1.next = head`, and then set `p1 = p1.next`; otherwise, we add the current node to the end of the `right` list, i.e., `p2.next = head`, and then set `p2 = p2.next`.
 
-## 解法
+After the traversal, we point the tail node of the `left` list to the first valid node of the `right` list, i.e., `p1.next = right.next`, and then point the tail node of the `right` list to a null node, i.e., `p2.next = null`.
 
-### 方法一：拼接链表
+Finally, we return the first valid node of the `left` list.
 
-我们创建两个链表 $left$ 和 $right$，分别用于存储小于 $x$ 的节点和大于等于 $x$ 的节点。
-
-然后我们用两个指针 $p1$ 和 $p2$ 分别指向 $left$ 和 $right$ 的最后一个节点，初始时 $p1$ 和 $p2$ 都指向一个虚拟头节点。
-
-接下来我们遍历链表 $head$，如果当前节点的值小于 $x$，我们就将当前节点添加到 $left$ 链表的末尾，即 $p1.next = head$，然后令 $p1 = p1.next$；否则我们就将当前节点添加到 $right$ 链表的末尾，即 $p2.next = head$，然后令 $p2 = p2.next$。
-
-遍历结束后，我们将 $left$ 链表的尾节点指向 $right$ 链表的第一个有效节点，即 $p1.next = right.next$，然后将 $right$ 链表的尾节点指向空节点，即 $p2.next = null$。
-
-最后我们返回 $left$ 链表的第一个有效节点。
-
-时间复杂度 $O(n)$，其中 $n$ 是链表的长度。空间复杂度 $O(1)$。
+The time complexity is $O(n)$, where $n$ is the length of the list. The space complexity is $O(1)$.
 
 <!-- tabs:start -->
 

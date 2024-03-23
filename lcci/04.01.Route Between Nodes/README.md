@@ -1,35 +1,42 @@
-# [面试题 04.01. 节点间通路](https://leetcode.cn/problems/route-between-nodes-lcci)
+# [04.01. Route Between Nodes](https://leetcode.cn/problems/route-between-nodes-lcci)
 
-[English Version](/lcci/04.01.Route%20Between%20Nodes/README_EN.md)
+[中文文档](/lcci/04.01.Route%20Between%20Nodes/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>节点间通路。给定有向图，设计一个算法，找出两个节点之间是否存在一条路径。</p>
+<p>Given a directed graph, design an algorithm to find out whether there is a route between two nodes.</p>
 
-<p><strong>示例1:</strong></p>
+<p><strong>Example1:</strong></p>
 
-<pre><strong> 输入</strong>：n = 3, graph = [[0, 1], [0, 2], [1, 2], [1, 2]], start = 0, target = 2
-<strong> 输出</strong>：true
+<pre>
+
+<strong> Input</strong>: n = 3, graph = [[0, 1], [0, 2], [1, 2], [1, 2]], start = 0, target = 2
+
+<strong> Output</strong>: true
+
 </pre>
 
-<p><strong>示例2:</strong></p>
+<p><strong>Example2:</strong></p>
 
-<pre><strong> 输入</strong>：n = 5, graph = [[0, 1], [0, 2], [0, 4], [0, 4], [0, 1], [1, 3], [1, 4], [1, 3], [2, 3], [3, 4]], start = 0, target = 4
-<strong> 输出</strong> true
+<pre>
+
+<strong> Input</strong>: n = 5, graph = [[0, 1], [0, 2], [0, 4], [0, 4], [0, 1], [1, 3], [1, 4], [1, 3], [2, 3], [3, 4]], start = 0, target = 4
+
+<strong> Output</strong> true
+
 </pre>
 
-<p><strong>提示：</strong></p>
+<p><strong>Note: </strong></p>
 
 <ol>
-	<li>节点数量n在[0, 1e5]范围内。</li>
-	<li>节点编号大于等于 0 小于 n。</li>
-	<li>图中可能存在自环和平行边。</li>
+	<li><code>0 &lt;= n &lt;= 100000</code></li>
+	<li>All node numbers are within the range [0, n].</li>
+	<li>There might be self cycles and duplicated edges.</li>
 </ol>
 
-## 解法
+## Solutions
 
-### 方法一：DFS
+### Solution 1
 
 <!-- tabs:start -->
 
@@ -136,7 +143,7 @@ func findWhetherExistsPath(n int, graph [][]int, start int, target int) bool {
 
 <!-- tabs:end -->
 
-### 方法二：BFS
+### Solution 2
 
 <!-- tabs:start -->
 

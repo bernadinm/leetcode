@@ -1,40 +1,45 @@
-# [面试题 17.25. 单词矩阵](https://leetcode.cn/problems/word-rectangle-lcci)
+# [17.25. Word Rectangle](https://leetcode.cn/problems/word-rectangle-lcci)
 
-[English Version](/lcci/17.25.Word%20Rectangle/README_EN.md)
+[中文文档](/lcci/17.25.Word%20Rectangle/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>Given a list of millions of words, design an algorithm to create the largest possible rectangle of letters such that every row forms a word (reading left to right) and every column forms a word (reading top to bottom). The words need not be chosen consecutively from the list but all rows must be the same length and all columns must be the same height.</p>
+<p>If there are more than one answer, return any one of them. A word can be used more than once.</p>
+<p><strong>Example 1:</strong></p>
+<pre>
 
-<p>给定一份单词的清单，设计一个算法，创建由字母组成的面积最大的矩形，其中每一行组成一个单词(自左向右)，每一列也组成一个单词(自上而下)。不要求这些单词在清单里连续出现，但要求所有行等长，所有列等高。</p>
-<p>如果有多个面积最大的矩形，输出任意一个均可。一个单词可以重复使用。</p>
-<p><strong>示例 1:</strong></p>
-<pre><strong>输入:</strong> [&quot;this&quot;, &quot;real&quot;, &quot;hard&quot;, &quot;trh&quot;, &quot;hea&quot;, &quot;iar&quot;, &quot;sld&quot;]
-<strong>输出:
+<strong>Input:</strong> [&quot;this&quot;, &quot;real&quot;, &quot;hard&quot;, &quot;trh&quot;, &quot;hea&quot;, &quot;iar&quot;, &quot;sld&quot;]
+
+<strong>Output:
+
 </strong>[
-&nbsp;  &quot;this&quot;,
-&nbsp;  &quot;real&quot;,
-&nbsp;  &quot;hard&quot;
+
+&nbsp; &quot;this&quot;,
+
+&nbsp; &quot;real&quot;,
+
+&nbsp; &quot;hard&quot;
+
 ]</pre>
-<p><strong>示例 2:</strong></p>
-<pre><strong>输入:</strong> [&quot;aa&quot;]
-<strong>输出: </strong>[&quot;aa&quot;,&quot;aa&quot;]</pre>
-<p><strong>说明：</strong></p>
+
+<p><strong>Example 2:</strong></p>
+<pre>
+
+<strong>Input:</strong> [&quot;aa&quot;]
+
+<strong>Output: </strong>[&quot;aa&quot;,&quot;aa&quot;]</pre>
+
+<p><strong>Notes: </strong></p>
 <ul>
 	<li><code>words.length &lt;= 1000</code></li>
 	<li><code>words[i].length &lt;= 100</code></li>
-	<li>数据保证单词足够随机</li>
+	<li>It&#39;s guaranteed that&nbsp;all the words are randomly generated.</li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：分组 + 回溯 + 字典树
-
-我们注意到，构建单词矩阵时所用的单词长度是相同的，因此，我们可以将单词按照长度分组，记录在哈希表 $d$ 中。对于每个长度，我们只需要考虑该长度的单词即可。
-
-我们使用回溯的方法来构建单词矩阵。我们使用一个列表 $t$ 来记录当前已经构建好的单词矩阵，列表中的每个单词都具有相同的长度。我们从哈希表 $d$ 中取出长度为 $n$ 的单词列表，从中选择一个单词 $w$，加入到 $t$ 中。如果此时不是一个合法的单词矩阵，那么我们就不继续往下搜索，而是尝试选择另一个单词。如果是一个合法的单词矩阵，并且已经构建完成，那么我们更新最大面积以及答案矩阵；然后，我们递归地进行搜索，寻找下一个单词。最后，我们将 $w$ 从 $t$ 中移除，进入下一轮搜索。
-
-在判断单词矩阵是否合法时，我们可以使用字典树来进行优化。我们将所有的单词加入到字典树中，然后对于每一列，我们检查其是否是一个单词。如果是一个单词，那么我们就检查下一列，否则我们就可以停止对该单词矩阵的搜索了。
+### Solution 1
 
 <!-- tabs:start -->
 

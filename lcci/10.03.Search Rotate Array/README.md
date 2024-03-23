@@ -1,46 +1,52 @@
-# [面试题 10.03. 搜索旋转数组](https://leetcode.cn/problems/search-rotate-array-lcci)
+# [10.03. Search Rotate Array](https://leetcode.cn/problems/search-rotate-array-lcci)
 
-[English Version](/lcci/10.03.Search%20Rotate%20Array/README_EN.md)
+[中文文档](/lcci/10.03.Search%20Rotate%20Array/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>Given a sorted array of n integers that has been rotated an unknown number of times, write code to find an element in the array. You may assume that the array was originally sorted in increasing order. If there are more than one target elements in the array, return the smallest index.</p>
+<p><strong>Example1:</strong></p>
+<pre>
 
-<p>搜索旋转数组。给定一个排序后的数组，包含n个整数，但这个数组已被旋转过很多次了，次数不详。请编写代码找出数组中的某个元素，假设数组元素原先是按升序排列的。若有多个相同元素，返回索引值最小的一个。</p>
-<p><strong>示例1:</strong></p>
-<pre><strong> 输入</strong>: arr = [15, 16, 19, 20, 25, 1, 3, 4, 5, 7, 10, 14], target = 5
-<strong> 输出</strong>: 8（元素5在该数组中的索引）
+<strong> Input</strong>: arr = [15, 16, 19, 20, 25, 1, 3, 4, 5, 7, 10, 14], target = 5
+
+<strong> Output</strong>: 8 (the index of 5 in the array)
+
 </pre>
-<p><strong>示例2:</strong></p>
-<pre><strong> 输入</strong>：arr = [15, 16, 19, 20, 25, 1, 3, 4, 5, 7, 10, 14], target = 11
-<strong> 输出</strong>：-1 （没有找到）
+<p><strong>Example2:</strong></p>
+<pre>
+
+<strong> Input</strong>: arr = [15, 16, 19, 20, 25, 1, 3, 4, 5, 7, 10, 14], target = 11
+
+<strong> Output</strong>: -1 (not found)
+
 </pre>
-<p><strong>提示:</strong></p>
+<p><strong>Note:</strong></p>
 <ol>
-	<li>arr 长度范围在[1, 1000000]之间</li>
+	<li><code>1 &lt;= arr.length &lt;= 1000000</code></li>
 </ol>
 
-## 解法
+## Solutions
 
-### 方法一：二分查找
+### Solution 1: Binary Search
 
-我们定义二分查找的左边界 $l=0$，右边界 $r=n-1$，其中 $n$ 为数组的长度。
+We define the left boundary of the binary search as $l=0$ and the right boundary as $r=n-1$, where $n$ is the length of the array.
 
-每次在二分查找的过程中，我们会得到当前的中点 $mid=(l+r)/2$。
+In each binary search process, we get the current midpoint $mid=(l+r)/2$.
 
--   如果 $nums[mid] \gt nums[r]$，说明 $[l,mid]$ 是有序的，此时如果 $nums[l] \le target \le nums[mid]$，说明 $target$ 位于 $[l,mid]$，否则 $target$ 位于 $[mid+1,r]$。
--   如果 $nums[mid] \lt nums[r]$，说明 $[mid+1,r]$ 是有序的，此时如果 $nums[mid] \lt target \le nums[r]$，说明 $target$ 位于 $[mid+1,r]$，否则 $target$ 位于 $[l,mid]$。
--   如果 $nums[mid] = nums[r]$，说明元素 $nums[mid]$ 和 $nums[r]$ 相等，此时无法判断 $target$ 位于哪个区间，我们只能将 $r$ 减少 $1$。
+-   If $nums[mid] > nums[r]$, it means that $[l,mid]$ is ordered. If $nums[l] \leq target \leq nums[mid]$, it means that $target$ is in $[l,mid]$, otherwise $target$ is in $[mid+1,r]$.
+-   If $nums[mid] < nums[r]$, it means that $[mid+1,r]$ is ordered. If $nums[mid] < target \leq nums[r]$, it means that $target$ is in $[mid+1,r]$, otherwise $target$ is in $[l,mid]$.
+-   If $nums[mid] = nums[r]$, it means that the elements $nums[mid]$ and $nums[r]$ are equal. At this time, we cannot determine which interval $target$ is in, we can only decrease $r$ by $1$.
 
-二分查找结束后，如果 $nums[l] = target$，则说明数组中存在目标值 $target$，否则说明不存在。
+After the binary search ends, if $nums[l] = target$, it means that the target value $target$ exists in the array, otherwise it does not exist.
 
-注意，如果一开始 $nums[l] = nums[r]$，我们循环将 $r$ 减少 $1$，直到 $nums[l] \ne nums[r]$。
+Note that if initially $nums[l] = nums[r]$, we loop to decrease $r$ by $1$ until $nums[l] \neq nums[r]$.
 
-时间复杂度近似 $O(\log n)$，空间复杂度 $O(1)$。其中 $n$ 为数组的长度。
+The time complexity is approximately $O(\log n)$, and the space complexity is $O(1)$. Here, $n$ is the length of the array.
 
-相似题目：
+Similar problems:
 
--   [81. 搜索旋转排序数组 II](https://github.com/doocs/leetcode/blob/main/solution/0000-0099/0081.Search%20in%20Rotated%20Sorted%20Array%20II/README.md)
+-   [81. Search in Rotated Sorted Array II](https://github.com/doocs/leetcode/blob/main/solution/0000-0099/0081.Search%20in%20Rotated%20Sorted%20Array%20II/README.md)
 
 <!-- tabs:start -->
 

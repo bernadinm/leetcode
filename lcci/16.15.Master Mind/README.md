@@ -1,33 +1,40 @@
-# [面试题 16.15. 珠玑妙算](https://leetcode.cn/problems/master-mind-lcci)
+# [16.15. Master Mind](https://leetcode.cn/problems/master-mind-lcci)
 
-[English Version](/lcci/16.15.Master%20Mind/README_EN.md)
+[中文文档](/lcci/16.15.Master%20Mind/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>珠玑妙算游戏（the game of master mind）的玩法如下。</p>
-<p>计算机有4个槽，每个槽放一个球，颜色可能是红色（R）、黄色（Y）、绿色（G）或蓝色（B）。例如，计算机可能有RGGB 4种（槽1为红色，槽2、3为绿色，槽4为蓝色）。作为用户，你试图猜出颜色组合。打个比方，你可能会猜YRGB。要是猜对某个槽的颜色，则算一次“猜中”；要是只猜对颜色但槽位猜错了，则算一次“伪猜中”。注意，“猜中”不能算入“伪猜中”。</p>
-<p>给定一种颜色组合<code>solution</code>和一个猜测<code>guess</code>，编写一个方法，返回猜中和伪猜中的次数<code>answer</code>，其中<code>answer[0]</code>为猜中的次数，<code>answer[1]</code>为伪猜中的次数。</p>
-<p><strong>示例：</strong></p>
-<pre><strong>输入：</strong> solution="RGBY",guess="GGRR"
-<strong>输出：</strong> [1,1]
-<strong>解释：</strong> 猜中1次，伪猜中1次。
+<p>The Game of Master Mind is played as follows:</p>
+<p>The computer has four slots, and each slot will contain a ball that is red (R). yellow (Y). green (G) or blue (B). For example, the computer might have RGGB (Slot #1 is red, Slots #2 and #3 are green, Slot #4 is blue).</p>
+<p>You, the user, are trying to guess the solution. You might, for example, guess YRGB.</p>
+<p>When you guess the correct color for the correct slot, you get a &quot;hit:&#39; If you guess a color that exists but is in the wrong slot, you get a &quot;pseudo-hit:&#39; Note that a slot that is a hit can never count as a pseudo-hit.</p>
+<p>For example, if the actual solution is RGBY and you guess GGRR, you have one hit and one pseudo-hit. Write a method that, given a guess and a solution, returns the number of hits and pseudo-hits.</p>
+<p>Given a sequence of colors <code>solution</code>, and a <code>guess</code>, write a method that return the number of hits and pseudo-hit <code>answer</code>, where <code>answer[0]</code> is the number of hits and <code>answer[1]</code> is the number of pseudo-hit.</p>
+<p><strong>Example: </strong></p>
+<pre>
+
+<strong>Input: </strong> solution=&quot;RGBY&quot;,guess=&quot;GGRR&quot;
+
+<strong>Output: </strong> [1,1]
+
+<strong>Explanation: </strong> hit once, pseudo-hit once.
+
 </pre>
-<p><strong>提示：</strong></p>
+<p><strong>Note: </strong></p>
 <ul>
-<li><code>len(solution) = len(guess) = 4</code></li>
-<li><code>solution</code>和<code>guess</code>仅包含<code>"R"</code>,<code>"G"</code>,<code>"B"</code>,<code>"Y"</code>这4种字符</li>
+	<li><code>len(solution) = len(guess) = 4</code></li>
+	<li>There are only <code>&quot;R&quot;</code>,<code>&quot;G&quot;</code>,<code>&quot;B&quot;</code>,<code>&quot;Y&quot;</code> in <code>solution</code>&nbsp;and&nbsp;<code>guess</code>.</li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：哈希表
+### Solution 1: Hash Table
 
-同时遍历两个字符串，算出对应位置字符相同的个数，累加到 $x$ 中，然后将两个字符串出现的字符以及出现的次数分别记录在哈希表 $cnt1$ 和 $cnt2$ 中。
+We simultaneously traverse both strings, count the number of corresponding characters that are the same, and accumulate them in $x$. Then we record the characters and their frequencies in both strings in hash tables $cnt1$ and $cnt2$, respectively.
 
-接着遍历两个哈希表，算出有多少共同出现的字符，累加到 $y$ 中。那么答案就是 $[x, y - x]$。
+Next, we traverse both hash tables, count the number of common characters, and accumulate them in $y$. The answer is then $[x, y - x]$.
 
-时间复杂度 $O(C)$，空间复杂度 $O(C)$。本题中 $C=4$。
+The time complexity is $O(C)$, and the space complexity is $O(C)$. Here, $C=4$ for this problem.
 
 <!-- tabs:start -->
 

@@ -1,78 +1,74 @@
-# [3077. K 个不相交子数组的最大能量值](https://leetcode.cn/problems/maximum-strength-of-k-disjoint-subarrays)
+# [3077. Maximum Strength of K Disjoint Subarrays](https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays)
 
-[English Version](/solution/3000-3099/3077.Maximum%20Strength%20of%20K%20Disjoint%20Subarrays/README_EN.md)
+[中文文档](/solution/3000-3099/3077.Maximum%20Strength%20of%20K%20Disjoint%20Subarrays/README.md)
 
-<!-- tags:数组,动态规划,前缀和 -->
+<!-- tags:Array,Dynamic Programming,Prefix Sum -->
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>You are given a <strong>0-indexed</strong> array of integers <code>nums</code> of length <code>n</code>, and a <strong>positive</strong> <strong>odd</strong> integer <code>k</code>.</p>
 
-<p>给你一个长度为 <code>n</code>&nbsp;下标从 <strong>0</strong>&nbsp;开始的整数数组&nbsp;<code>nums</code>&nbsp;和一个 <strong>正奇数</strong>&nbsp;整数&nbsp;<code>k</code>&nbsp;。</p>
+<p>The strength of <code>x</code> subarrays is defined as <code>strength = sum[1] * x - sum[2] * (x - 1) + sum[3] * (x - 2) - sum[4] * (x - 3) + ... + sum[x] * 1</code> where <code>sum[i]</code> is the sum of the elements in the <code>i<sup>th</sup></code> subarray. Formally, strength is sum of <code>(-1)<sup>i+1</sup> * sum[i] * (x - i + 1)</code> over all <code>i</code>&#39;s such that <code>1 &lt;= i &lt;= x</code>.</p>
 
-<p><code>x</code> 个子数组的能量值定义为&nbsp;<code>strength = sum[1] * x - sum[2] * (x - 1) + sum[3] * (x - 2) - sum[4] * (x - 3) + ... + sum[x] * 1</code> ，其中&nbsp;<code>sum[i]</code>&nbsp;是第 <code>i</code>&nbsp;个子数组的和。更正式的，能量值是满足&nbsp;<code>1 &lt;= i &lt;= x</code>&nbsp;的所有&nbsp;<code>i</code>&nbsp;对应的&nbsp;<code>(-1)<sup>i+1</sup> * sum[i] * (x - i + 1)</code>&nbsp;之和。</p>
+<p>You need to select <code>k</code> <strong>disjoint <span data-keyword="subarray-nonempty">subarrays</span></strong> from <code>nums</code>, such that their <strong>strength</strong> is <strong>maximum</strong>.</p>
 
-<p>你需要在 <code>nums</code>&nbsp;中选择 <code>k</code>&nbsp;个 <strong>不相交</strong><strong>子数组</strong>&nbsp;，使得&nbsp;<strong>能量值最大</strong>&nbsp;。</p>
+<p>Return <em>the <strong>maximum</strong> possible <strong>strength</strong> that can be obtained</em>.</p>
 
-<p>请你返回可以得到的 <strong>最大</strong><strong>能量值</strong>&nbsp;。</p>
-
-<p><strong>注意</strong>，选出来的所有子数组&nbsp;<strong>不</strong>&nbsp;需要覆盖整个数组。</p>
+<p><strong>Note</strong> that the selected subarrays <strong>don&#39;t</strong> need to cover the entire array.</p>
 
 <p>&nbsp;</p>
-
-<p><strong class="example">示例 1：</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
-<b>输入：</b>nums = [1,2,3,-1,2], k = 3
-<b>输出：</b>22
-<b>解释：</b>选择 3 个子数组的最好方式是选择：nums[0..2] ，nums[3..3] 和 nums[4..4] 。能量值为 (1 + 2 + 3) * 3 - (-1) * 2 + 2 * 1 = 22 。
+<strong>Input:</strong> nums = [1,2,3,-1,2], k = 3
+<strong>Output:</strong> 22
+<strong>Explanation:</strong> The best possible way to select 3 subarrays is: nums[0..2], nums[3..3], and nums[4..4]. The strength is (1 + 2 + 3) * 3 - (-1) * 2 + 2 * 1 = 22.
 </pre>
 
-<p><strong class="example">示例 2：</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
-<b>输入：</b>nums = [12,-2,-2,-2,-2], k = 5
-<b>输出：</b>64
-<b>解释：</b>唯一一种选 5 个不相交子数组的方案是：nums[0..0] ，nums[1..1] ，nums[2..2] ，nums[3..3] 和 nums[4..4] 。能量值为 12 * 5 - (-2) * 4 + (-2) * 3 - (-2) * 2 + (-2) * 1 = 64 。
+<strong>Input:</strong> nums = [12,-2,-2,-2,-2], k = 5
+<strong>Output:</strong> 64
+<strong>Explanation:</strong> The only possible way to select 5 disjoint subarrays is: nums[0..0], nums[1..1], nums[2..2], nums[3..3], and nums[4..4]. The strength is 12 * 5 - (-2) * 4 + (-2) * 3 - (-2) * 2 + (-2) * 1 = 64.
 </pre>
 
-<p><strong class="example">示例 3：</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <pre>
-<b>输入：</b>nums = [-1,-2,-3], k = 1
-<b>输出：</b>-1
-<b>解释：</b>选择 1 个子数组的最优方案是：nums[0..0] 。能量值为 -1 。
+<strong>Input:</strong> nums = [-1,-2,-3], k = 1
+<strong>Output:</strong> -1
+<strong>Explanation:</strong> The best possible way to select 1 subarray is: nums[0..0]. The strength is -1.
 </pre>
 
 <p>&nbsp;</p>
-
-<p><strong>提示：</strong></p>
+<p><strong>Constraints:</strong></p>
 
 <ul>
 	<li><code>1 &lt;= n &lt;= 10<sup>4</sup></code></li>
 	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
 	<li><code>1 &lt;= k &lt;= n</code></li>
 	<li><code>1 &lt;= n * k &lt;= 10<sup>6</sup></code></li>
-	<li><code>k</code> 是奇数。</li>
+	<li><code>k</code> is odd.</li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：动态规划
+### Solution 1: Dynamic Programming
 
-对于第 $i$ 个数 $nums[i - 1]$，如果它被选择，且位于第 $j$ 个子数组，那么它对答案的贡献是 $nums[i - 1] \times (k - j + 1) \times (-1)^{j+1}$，我们不妨将 $(-1)^{j+1}$ 记为 $sign$，那么它对答案的贡献是 $sign \times nums[i - 1] \times (k - j + 1)$。
+For the $i$th number $nums[i - 1]$, if it is selected and is in the $j$th subarray, then its contribution to the answer is $nums[i - 1] \times (k - j + 1) \times (-1)^{j+1}$. We denote $(-1)^{j+1}$ as $sign$, so its contribution to the answer is $sign \times nums[i - 1] \times (k - j + 1)$.
 
-我们定义 $f[i][j][0]$ 表示从前 $i 个数中选择 $j$ 个子数组，且第 $i$ 个数不被选的最大能量值，定义 $f[i][j][1]$ 表示从前 $i$ 个数中选择 $j$ 个子数组，且第 $i$ 个数被选的最大能量值。初始时 $f[0][0][1] = 0$，其余的值都是 $-\infty$。
+We define $f[i][j][0]$ as the maximum energy value when selecting $j$ subarrays from the first $i$ numbers, and the $i$th number is not selected. We define $f[i][j][1]$ as the maximum energy value when selecting $j$ subarrays from the first $i$ numbers, and the $i$th number is selected. Initially, $f[0][0][1] = 0$, and the rest of the values are $-\infty$.
 
-当 $i > 0$ 时，我们考虑 $f[i][j]$ 如何进行状态转移。
+When $i > 0$, we consider how $f[i][j]$ transitions.
 
-如果第 $i$ 个数不被选，那么第 $i-1$ 个数既可以被选，也可以不被选，所以 $f[i][j][0] = \max(f[i-1][j][0], f[i-1][j][1])$。
+If the $i$th number is not selected, then the $i-1$th number can either be selected or not selected, so $f[i][j][0] = \max(f[i-1][j][0], f[i-1][j][1])$.
 
-如果第 $i$ 个数被选，此时如果第 $i-1$ 个数与第 $i$ 个数位于同一个子数组中，那么 $f[i][j][1] = \max(f[i][j][1], f[i-1][j][1] + sign \times nums[i-1] \times (k - j + 1))$，否则 $f[i][j][1] = \max(f[i][j][1], \max(f[i-1][j-1][0], f[i-1][j-1][1]) + sign \times nums[i-1] \times (k - j + 1))$。我们取这两种情况的最大值作为 $f[i][j][1]$。
+If the $i$th number is selected, if the $i-1$th number and the $i$th number are in the same subarray, then $f[i][j][1] = \max(f[i][j][1], f[i-1][j][1] + sign \times nums[i-1] \times (k - j + 1))$, otherwise $f[i][j][1] = \max(f[i][j][1], \max(f[i-1][j-1][0], f[i-1][j-1][1]) + sign \times nums[i-1] \times (k - j + 1))$.
 
-最终答案是 $\max(f[n][k][0], f[n][k][1])$。
+The final answer is $\max(f[n][k][0], f[n][k][1])$.
 
-时间复杂度 $O(n \times k)$，空间复杂度 $O(n \times k)$。其中 $n$ 是数组 $nums$ 的长度。
+The time complexity is $O(n \times k)$, and the space complexity is $O(n \times k)$. Where $n$ is the length of the array $nums$.
 
 <!-- tabs:start -->
 

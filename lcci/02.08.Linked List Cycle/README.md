@@ -1,15 +1,44 @@
-# [面试题 02.08. 环路检测](https://leetcode.cn/problems/linked-list-cycle-lcci)
+# [02.08. Linked List Cycle](https://leetcode.cn/problems/linked-list-cycle-lcci)
 
-[English Version](/lcci/02.08.Linked%20List%20Cycle/README_EN.md)
+[中文文档](/lcci/02.08.Linked%20List%20Cycle/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>给定一个有环链表，实现一个算法返回环路的开头节点。<br>有环链表的定义：在链表中某个节点的next元素指向在它前面出现过的节点，则表明该链表存在环路。</p><br><p><strong>示例 1：</strong><pre><strong>输入：</strong>head = [3,2,0,-4], pos = 1<br><strong>输出：</strong>tail connects to node index 1<br><strong>解释：</strong>链表中有一个环，其尾部连接到第二个节点。</pre></p><br><p><strong>示例 2：</strong><pre><strong>输入：</strong>head = [1,2], pos = 0<br><strong>输出：</strong>tail connects to node index 0<br><strong>解释：</strong>链表中有一个环，其尾部连接到第一个节点。</pre></p><br><p><strong>示例 3：</strong><pre><strong>输入：</strong>head = [1], pos = -1<br><strong>输出：</strong>no cycle<br><strong>解释：</strong>链表中没有环。</pre></p><br><p><strong>进阶：</strong><br>你是否可以不用额外空间解决此题？</p>
+<p>Given a circular linked list, implement an algorithm that returns the node at the beginning of the loop.</p>
 
-## 解法
+<p>Circular linked list: A (corrupt) linked list in which a node&#39;s next pointer points to an earlier node, so as to make a loop in the linked list.</p>
 
-### 方法一
+<p><strong>Example 1: </strong></p>
+
+<pre>
+
+<strong>Input: </strong>head = [3,2,0,-4], pos = 1
+
+<strong>Output: </strong>tail connects to node index 1</pre>
+
+<p><strong>Example 2: </strong></p>
+
+<pre>
+
+<strong>Input: </strong>head = [1,2], pos = 0
+
+<strong>Output: </strong>tail connects to node index 0</pre>
+
+<p><strong>Example 3: </strong></p>
+
+<pre>
+
+<strong>Input: </strong>head = [1], pos = -1
+
+<strong>Output: </strong>no cycle</pre>
+
+<p><strong>Follow Up: </strong><br />
+
+Can you solve it without using additional space?</p>
+
+## Solutions
+
+### Solution 1
 
 <!-- tabs:start -->
 

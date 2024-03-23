@@ -1,25 +1,39 @@
-# [面试题 16.08. 整数的英语表示](https://leetcode.cn/problems/english-int-lcci)
+# [16.08. English Int](https://leetcode.cn/problems/english-int-lcci)
 
-[English Version](/lcci/16.08.English%20Int/README_EN.md)
+[中文文档](/lcci/16.08.English%20Int/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>给定一个整数，打印该整数的英文描述。</p>
-<p><strong>示例 1:</strong></p>
-<pre><strong>输入:</strong> 123
-<strong>输出:</strong> &quot;One Hundred Twenty Three&quot;
+<p>Given any integer, print an English phrase that describes the integer (e.g., &quot;One Thousand Two Hundred Thirty Four&quot;).</p>
+<p><strong>Example 1:</strong></p>
+<pre>
+
+<strong>Input:</strong> 123
+
+<strong>Output:</strong> &quot;One Hundred Twenty Three&quot;
+
 </pre>
-<p><strong>示例 2:</strong></p>
-<pre><strong>输入:</strong> 12345
-<strong>输出:</strong> &quot;Twelve Thousand Three Hundred Forty Five&quot;</pre>
-<p><strong>示例 3:</strong></p>
-<pre><strong>输入:</strong> 1234567
-<strong>输出:</strong> &quot;One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven&quot;</pre>
-<p><strong>示例 4:</strong></p>
-<pre><strong>输入:</strong> 1234567891
-<strong>输出:</strong> &quot;One Billion Two Hundred Thirty Four Million Five Hundred Sixty Seven Thousand Eight Hundred Ninety One&quot;</pre>
+<p><strong>Example 2:</strong></p>
+<pre>
 
-## 解法
+<strong>Input:</strong> 12345
+
+<strong>Output:</strong> &quot;Twelve Thousand Three Hundred Forty Five&quot;</pre>
+
+<p><strong>Example 3:</strong></p>
+<pre>
+
+<strong>Input:</strong> 1234567
+
+<strong>Output:</strong> &quot;One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven&quot;</pre>
+
+<p><strong>Example 4:</strong></p>
+<pre>
+
+<strong>Input:</strong> 1234567891
+
+<strong>Output:</strong> &quot;One Billion Two Hundred Thirty Four Million Five Hundred Sixty Seven Thousand Eight Hundred Ninety One&quot;</pre>
+
+## Solutions
 
 <!-- end -->

@@ -1,34 +1,42 @@
-# [面试题 02.06. 回文链表](https://leetcode.cn/problems/palindrome-linked-list-lcci)
+# [02.06. Palindrome Linked List](https://leetcode.cn/problems/palindrome-linked-list-lcci)
 
-[English Version](/lcci/02.06.Palindrome%20Linked%20List/README_EN.md)
+[中文文档](/lcci/02.06.Palindrome%20Linked%20List/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>编写一个函数，检查输入的链表是否是回文的。</p>
-
-<p>&nbsp;</p>
-
-<p><strong>示例 1：</strong></p>
-
-<pre><strong>输入： </strong>1-&gt;2
-<strong>输出：</strong> false
-</pre>
-
-<p><strong>示例 2：</strong></p>
-
-<pre><strong>输入： </strong>1-&gt;2-&gt;2-&gt;1
-<strong>输出：</strong> true
-</pre>
+<p>Implement a function to check if a linked list is a palindrome.</p>
 
 <p>&nbsp;</p>
 
-<p><strong>进阶：</strong><br>
-你能否用 O(n) 时间复杂度和 O(1) 空间复杂度解决此题？</p>
+<p><strong>Example 1: </strong></p>
 
-## 解法
+<pre>
 
-### 方法一
+<strong>Input:  </strong>1-&gt;2
+
+<strong>Output: </strong> false
+
+</pre>
+
+<p><strong>Example 2: </strong></p>
+
+<pre>
+
+<strong>Input:  </strong>1-&gt;2-&gt;2-&gt;1
+
+<strong>Output: </strong> true
+
+</pre>
+
+<p>&nbsp;</p>
+
+<p><b>Follow up:</b><br />
+
+Could you do it in O(n) time and O(1) space?</p>
+
+## Solutions
+
+### Solution 1
 
 <!-- tabs:start -->
 
@@ -278,7 +286,7 @@ public class Solution {
 
 <!-- tabs:end -->
 
-### 方法二
+### Solution 2
 
 <!-- tabs:start -->
 

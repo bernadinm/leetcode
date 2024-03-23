@@ -1,54 +1,66 @@
-# [面试题 04.12. 求和路径](https://leetcode.cn/problems/paths-with-sum-lcci)
+# [04.12. Paths with Sum](https://leetcode.cn/problems/paths-with-sum-lcci)
 
-[English Version](/lcci/04.12.Paths%20with%20Sum/README_EN.md)
+[中文文档](/lcci/04.12.Paths%20with%20Sum/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>给定一棵二叉树，其中每个节点都含有一个整数数值(该值或正或负)。设计一个算法，打印节点数值总和等于某个给定值的所有路径的数量。注意，路径不一定非得从二叉树的根节点或叶节点开始或结束，但是其方向必须向下(只能从父节点指向子节点方向)。</p>
+<p>You are given a binary tree in which each node contains an integer value (which might be positive or negative). Design an algorithm to count the number of paths that sum to a given value. The path does not need to start or end at the root or a leaf, but it must go downwards (traveling only from parent nodes to child nodes).</p>
 
-<p><strong>示例:</strong><br>
-给定如下二叉树，以及目标和&nbsp;<code>sum = 22</code>，</p>
+<p><strong>Example:</strong><br />
 
-<pre>              5
+Given the following tree and &nbsp;<code>sum = 22,</code></p>
+
+<pre>
+
+              5
+
              / \
+
             4   8
+
            /   / \
+
           11  13  4
+
          /  \    / \
+
         7    2  5   1
+
 </pre>
 
-<p>返回:</p>
+<p>Output:</p>
 
-<pre>3
-<strong>解释：</strong>和为 22&nbsp;的路径有：[5,4,11,2], [5,8,4,5], [4,11,7]</pre>
+<pre>
 
-<p>提示：</p>
+3
+
+<strong>Explanation: </strong>Paths that have sum 22 are: [5,4,11,2], [5,8,4,5], [4,11,7]</pre>
+
+<p>Note:</p>
 
 <ul>
-	<li><code>节点总数 &lt;= 10000</code></li>
+	<li><code>node number &lt;= 10000</code></li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：哈希表 + 前缀和 + 递归
+### Solution 1: Hash Table + Prefix Sum + Recursion
 
-我们可以运用前缀和的思想，对二叉树进行递归遍历，同时用哈希表 $cnt$ 统计从根节点到当前节点的路径上各个前缀和出现的次数。
+We can use the idea of prefix sum to recursively traverse the binary tree, and use a hash table $cnt$ to count the occurrence of each prefix sum on the path from the root node to the current node.
 
-我们设计一个递归函数 $dfs(node, s)$，表示当前遍历到的节点为 $node$，从根节点到当前节点的路径上的前缀和为 $s$。函数的返回值是统计以 $node$ 节点及其子树节点作为路径终点且路径和为 $sum$ 的路径数目。那么答案就是 $dfs(root, 0)$。
+We design a recursive function $dfs(node, s)$, where the current node being traversed is $node$, and the prefix sum on the path from the root node to the current node is $s$. The return value of the function is the number of paths with the path sum equal to $sum$ and the path ends at the $node$ node or its subtree nodes. Therefore, the answer is $dfs(root, 0)$.
 
-函数 $dfs(node, s)$ 的递归过程如下：
+The recursive process of the function $dfs(node, s)$ is as follows:
 
--   如果当前节点 $node$ 为空，则返回 $0$。
--   计算从根节点到当前节点的路径上的前缀和 $s$。
--   用 $cnt[s - sum]$ 表示以当前节点为路径终点且路径和为 $sum$ 的路径数目，其中 $cnt[s - sum]$ 即为 $cnt$ 中前缀和为 $s - sum$ 的个数。
--   将前缀和 $s$ 的计数值加 $1$，即 $cnt[s] = cnt[s] + 1$。
--   递归地遍历当前节点的左右子节点，即调用函数 $dfs(node.left, s)$ 和 $dfs(node.right, s)$，并将它们的返回值相加。
--   在返回值计算完成以后，需要将当前节点的前缀和 $s$ 的计数值减 $1$，即执行 $cnt[s] = cnt[s] - 1$。
--   最后返回答案。
+-   If the current node $node$ is null, return $0$.
+-   Calculate the prefix sum $s$ on the path from the root node to the current node.
+-   Use $cnt[s - sum]$ to represent the number of paths with the path sum equal to $sum$ and the path ends at the current node, where $cnt[s - sum]$ is the count of the prefix sum equal to $s - sum$ in $cnt$.
+-   Add the count of the prefix sum $s$ by $1$, i.e., $cnt[s] = cnt[s] + 1$.
+-   Recursively traverse the left and right child nodes of the current node, i.e., call the functions $dfs(node.left, s)$ and $dfs(node.right, s)$, and add their return values.
+-   After the return value is calculated, subtract the count of the prefix sum $s$ of the current node by $1$, i.e., execute $cnt[s] = cnt[s] - 1$.
+-   Finally, return the answer.
 
-时间复杂度 $O(n)$，空间复杂度 $O(n)$。其中 $n$ 是二叉树的节点个数。
+The time complexity is $O(n)$, and the space complexity is $O(n)$. Here, $n$ is the number of nodes in the binary tree.
 
 <!-- tabs:start -->
 

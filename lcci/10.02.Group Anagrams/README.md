@@ -1,34 +1,41 @@
-# [面试题 10.02. 变位词组](https://leetcode.cn/problems/group-anagrams-lcci)
+# [10.02. Group Anagrams](https://leetcode.cn/problems/group-anagrams-lcci)
 
-[English Version](/lcci/10.02.Group%20Anagrams/README_EN.md)
+[中文文档](/lcci/10.02.Group%20Anagrams/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>编写一种方法，对字符串数组进行排序，将所有变位词组合在一起。变位词是指字母相同，但排列不同的字符串。</p>
+<p>Write a method to sort an array of strings so that all the anagrams are in the same group.</p>
 
-<p><strong>注意：</strong>本题相对原题稍作修改</p>
+<p><b>Note:&nbsp;</b>This problem is slightly different from the original one the book.</p>
 
-<p><strong>示例:</strong></p>
+<p><strong>Example:</strong></p>
 
-<pre><strong>输入:</strong> <code>[&quot;eat&quot;, &quot;tea&quot;, &quot;tan&quot;, &quot;ate&quot;, &quot;nat&quot;, &quot;bat&quot;]</code>,
-<strong>输出:</strong>
+<pre>
+
+<strong>Input:</strong> <code>[&quot;eat&quot;, &quot;tea&quot;, &quot;tan&quot;, &quot;ate&quot;, &quot;nat&quot;, &quot;bat&quot;]</code>,
+
+<strong>Output:</strong>
+
 [
+
   [&quot;ate&quot;,&quot;eat&quot;,&quot;tea&quot;],
+
   [&quot;nat&quot;,&quot;tan&quot;],
+
   [&quot;bat&quot;]
+
 ]</pre>
 
-<p><strong>说明：</strong></p>
+<p><strong>Notes: </strong></p>
 
 <ul>
-	<li>所有输入均为小写字母。</li>
-	<li>不考虑答案输出的顺序。</li>
+	<li>All inputs will be in lowercase.</li>
+	<li>The order of your output does not&nbsp;matter.</li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一
+### Solution 1
 
 <!-- tabs:start -->
 

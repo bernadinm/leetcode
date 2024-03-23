@@ -1,49 +1,64 @@
-# [面试题 16.18. 模式匹配](https://leetcode.cn/problems/pattern-matching-lcci)
+# [16.18. Pattern Matching](https://leetcode.cn/problems/pattern-matching-lcci)
 
-[English Version](/lcci/16.18.Pattern%20Matching/README_EN.md)
+[中文文档](/lcci/16.18.Pattern%20Matching/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>You are given two strings, pattern and value. The pattern string consists of just the letters a and b, describing a pattern within a string. For example, the string catcatgocatgo matches the pattern aabab (where cat is a and go is b). It also matches patterns like a, ab, and b. Write a method to determine if value matches pattern. a and b cannot be the same string.</p>
+<p><strong>Example 1: </strong></p>
+<pre>
 
-<p>你有两个字符串，即<code>pattern</code>和<code>value</code>。 <code>pattern</code>字符串由字母<code>"a"</code>和<code>"b"</code>组成，用于描述字符串中的模式。例如，字符串<code>"catcatgocatgo"</code>匹配模式<code>"aabab"</code>（其中<code>"cat"</code>是<code>"a"</code>，<code>"go"</code>是<code>"b"</code>），该字符串也匹配像<code>"a"</code>、<code>"ab"</code>和<code>"b"</code>这样的模式。但需注意<code>"a"</code>和<code>"b"</code>不能同时表示相同的字符串。编写一个方法判断<code>value</code>字符串是否匹配<code>pattern</code>字符串。</p>
-<p><strong>示例 1：</strong></p>
-<pre><strong>输入：</strong> pattern = "abba", value = "dogcatcatdog"
-<strong>输出：</strong> true
+<strong>Input: </strong> pattern = &quot;abba&quot;, value = &quot;dogcatcatdog&quot;
+
+<strong>Output: </strong> true
+
 </pre>
-<p><strong>示例 2：</strong></p>
-<pre><strong>输入：</strong> pattern = "abba", value = "dogcatcatfish"
-<strong>输出：</strong> false
+<p><strong>Example 2: </strong></p>
+<pre>
+
+<strong>Input: </strong> pattern = &quot;abba&quot;, value = &quot;dogcatcatfish&quot;
+
+<strong>Output: </strong> false
+
 </pre>
-<p><strong>示例 3：</strong></p>
-<pre><strong>输入：</strong> pattern = "aaaa", value = "dogcatcatdog"
-<strong>输出：</strong> false
+<p><strong>Example 3: </strong></p>
+<pre>
+
+<strong>Input: </strong> pattern = &quot;aaaa&quot;, value = &quot;dogcatcatdog&quot;
+
+<strong>Output: </strong> false
+
 </pre>
-<p><strong>示例 4：</strong></p>
-<pre><strong>输入：</strong> pattern = "abba", value = "dogdogdogdog"
-<strong>输出：</strong> true
-<strong>解释：</strong> "a"="dogdog",b=""，反之也符合规则
+<p><strong>Example 4: </strong></p>
+<pre>
+
+<strong>Input: </strong> pattern = &quot;abba&quot;, value = &quot;dogdogdogdog&quot;
+
+<strong>Output: </strong> true
+
+<strong>Explanation: </strong> &quot;a&quot;=&quot;dogdog&quot;,b=&quot;&quot;，vice versa.
+
 </pre>
-<p><strong>提示：</strong></p>
+<p><strong>Note: </strong></p>
 <ul>
-<li><code>0 <= len(pattern) <= 1000</code></li>
-<li><code>0 <= len(value) <= 1000</code></li>
-<li>你可以假设<code>pattern</code>只包含字母<code>"a"</code>和<code>"b"</code>，<code>value</code>仅包含小写字母。</li>
+	<li><code>0 &lt;= len(pattern) &lt;= 1000</code></li>
+	<li><code>0 &lt;= len(value) &lt;= 1000</code></li>
+	<li><code>pattern</code>&nbsp;only contains&nbsp;<code>&quot;a&quot;</code>&nbsp;and&nbsp;<code>&quot;b&quot;</code>,&nbsp;<code>value</code> only contains lowercase letters.</li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：枚举
+### Solution 1: Enumeration
 
-我们先统计出模式串 $pattern$ 中 `'a'` 和 `'b'` 的个数，分别为 $cnt[0]$ 和 $cnt[1]$。记字符串 $value$ 的长度为 $n$。
+We first count the number of characters `'a'` and `'b'` in the pattern string $pattern$, denoted as $cnt[0]$ and $cnt[1]$, respectively. Let the length of the string $value$ be $n$.
 
-如果 $cnt[0]=0$，说明模式串中只包含字符 `'b'`，那么我们需要判断 $n$ 是否是 $cnt[1]$ 的倍数，以及 $value$ 是否可以分割成 $cnt[1]$ 个长度为 $n/cnt[1]$ 的子串，且这些子串都相同。如果不满足，直接返回 $false$ 即可。
+If $cnt[0]=0$, it means that the pattern string only contains the character `'b'`. We need to check whether $n$ is a multiple of $cnt[1]$, and whether $value$ can be divided into $cnt[1]$ substrings of length $n/cnt[1]$, and all these substrings are the same. If not, return $false$ directly.
 
-如果 $cnt[1]=0$，说明模式串中只包含字符 `'a'`，那么我们需要判断 $n$ 是否是 $cnt[0]$ 的倍数，以及 $value$ 是否可以分割成 $cnt[0]$ 个长度为 $n/cnt[0]$ 的子串，且这些子串都相同。如果不满足，直接返回 $false$ 即可。
+If $cnt[1]=0$, it means that the pattern string only contains the character `'a'`. We need to check whether $n$ is a multiple of $cnt[0]$, and whether $value$ can be divided into $cnt[0]$ substrings of length $n/cnt[0]$, and all these substrings are the same. If not, return $false$ directly.
 
-接下来，我们记字符 `'a'` 所匹配的字符串的长度 $la$，字符 `'b'` 所匹配的字符串的长度 $lb$。那么有 $la \times cnt[0] + lb \times cnt[1] = n$。如果我们枚举 $la$，就可以知道 $lb$ 的值了。因此我们可以枚举 $la$，只需要判断是否存在一个整数 $lb$，满足上述等式即可。
+Next, we denote the length of the string matched by the character `'a'` as $la$, and the length of the string matched by the character `'b'` as $lb$. Then we have $la \times cnt[0] + lb \times cnt[1] = n$. If we enumerate $la$, we can determine the value of $lb$. Therefore, we can enumerate $la$ and check whether there exists an integer $lb$ that satisfies the above equation.
 
-时间复杂度 $O(n^2)$，空间复杂度 $O(n)$。其中 $n$ 为字符串 $value$ 的长度。
+The time complexity is $O(n^2)$, and the space complexity is $O(n)$. Here, $n$ is the length of the string $value$.
 
 <!-- tabs:start -->
 

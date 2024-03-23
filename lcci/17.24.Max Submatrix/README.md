@@ -1,35 +1,40 @@
-# [面试题 17.24. 最大子矩阵](https://leetcode.cn/problems/max-submatrix-lcci)
+# [17.24. Max Submatrix](https://leetcode.cn/problems/max-submatrix-lcci)
 
-[English Version](/lcci/17.24.Max%20Submatrix/README_EN.md)
+[中文文档](/lcci/17.24.Max%20Submatrix/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>给定一个正整数和负整数组成的 N &times; M&nbsp;矩阵，编写代码找出元素总和最大的子矩阵。</p>
+<p>Given an NxN matrix of positive and negative integers, write code to find the submatrix with the largest possible sum.</p>
 
-<p>返回一个数组 <code>[r1, c1, r2, c2]</code>，其中 <code>r1</code>, <code>c1</code> 分别代表子矩阵左上角的行号和列号，<code>r2</code>, <code>c2</code> 分别代表右下角的行号和列号。若有多个满足条件的子矩阵，返回任意一个均可。</p>
+<p>Return an array&nbsp;<code>[r1, c1, r2, c2]</code>, where&nbsp;<code>r1</code>, <code>c1</code> are the row number and the column number of the submatrix&#39;s upper left corner respectively, and&nbsp;<code>r2</code>, <code>c2</code> are the row number of and the column number of lower right corner. If there are more than one answers, return any one of them.</p>
 
-<p><strong>注意：</strong>本题相对书上原题稍作改动</p>
+<p><b>Note:&nbsp;</b>This problem is slightly different from the original one in the book.</p>
 
-<p><strong>示例:</strong></p>
+<p><strong>Example:</strong></p>
 
-<pre><strong>输入:
+<pre>
+
+<strong>Input:
+
 </strong><code>[
-&nbsp;  [-1,<strong>0</strong>],
-&nbsp;  [0,-1]
-]</code>
-<strong>输出: </strong>[0,1,0,1]
-<strong>解释: </strong>输入中标粗的元素即为输出所表示的矩阵</pre>
 
-<p><strong>说明：</strong></p>
+&nbsp;  [-1,<strong>0</strong>],
+
+&nbsp;  [0,-1]
+
+]</code>
+
+<strong>Output: </strong>[0,1,0,1]</pre>
+
+<p><strong>Note: </strong></p>
 
 <ul>
 	<li><code>1 &lt;= matrix.length, matrix[0].length &lt;= 200</code></li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一
+### Solution 1
 
 <!-- tabs:start -->
 

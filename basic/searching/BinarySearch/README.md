@@ -1,10 +1,10 @@
-# 二分查找
+# Binary Search
 
-二分的本质并非“单调性”，而是“边界”，只要找到某种性质，使得整个区间一分为二，那么就可以用二分把边界点二分出来。
+## Algorithm Templates
 
-## 算法模板
+The essence of binary search is not "monotonicity", but "boundary". As long as a certain property is found that divides the entire interval into two, the boundary point can be found using binary search.
 
-### 模板 1
+### Template 1
 
 ```java
 boolean check(int x) {
@@ -23,7 +23,7 @@ int search(int left, int right) {
 }
 ```
 
-### 模板 2
+### Template 2
 
 ```java
 boolean check(int x) {
@@ -42,21 +42,21 @@ int search(int left, int right) {
 }
 ```
 
-做二分题目时，可以按照以下套路：
+When doing binary search problems, you can follow the following routine:
 
-1. 写出循环条件 $left < right$；
-1. 循环体内，不妨先写 $mid = \lfloor \frac{left + right}{2} \rfloor$；
-1. 根据具体题目，实现 $check()$ 函数（有时很简单的逻辑，可以不定义 $check$），想一下究竟要用 $right = mid$（模板 $1$） 还是 $left = mid$（模板 $2$）；
-       - 如果 $right = mid$，那么写出 else 语句 $left = mid + 1$，并且不需要更改 mid 的计算，即保持 $mid = \lfloor \frac{left + right}{2} \rfloor$；
-       - 如果 $left = mid$，那么写出 else 语句 $right = mid - 1$，并且在 $mid$ 计算时补充 +1，即 $mid = \lfloor \frac{left + right + 1}{2} \rfloor$；
-1. 循环结束时，$left$ 与 $right$ 相等。
+1. Write out the loop condition $left < right$;
+2. Inside the loop, you might as well write $mid = \lfloor \frac{left + right}{2} \rfloor$ first;
+3. According to the specific problem, implement the $check()$ function (sometimes the logic is very simple, you can not define $check$), think about whether to use $right = mid$ (Template $1$) or $left = mid$ (Template $2$);
+    - If $right = mid$, then write the else statement $left = mid + 1$, and there is no need to change the calculation of $mid$, that is, keep $mid = \lfloor \frac{left + right}{2} \rfloor$;
+    - If $left = mid$, then write the else statement $right = mid - 1$, and add +1 when calculating $mid$, that is, $mid = \lfloor \frac{left + right + 1}{2} \rfloor$;
+4. When the loop ends, $left$ equals $right$.
 
-注意，这两个模板的优点是始终保持答案位于二分区间内，二分结束条件对应的值恰好在答案所处的位置。 对于可能无解的情况，只要判断二分结束后的 $left$ 或者 $right$ 是否满足题意即可。
+Note that the advantage of these two templates is that they always keep the answer within the binary search interval, and the value corresponding to the end condition of the binary search is exactly at the position of the answer. For the case that may have no solution, just check whether the $left$ or $right$ after the binary search ends satisfies the problem.
 
-## 例题
+## Examples
 
--   [在排序数组中查找元素的第一个和最后一个位置](/solution/0000-0099/0034.Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array/README.md)
--   [x 的平方根](/solution/0000-0099/0069.Sqrt%28x%29/README.md)
--   [寻找峰值](/solution/0100-0199/0162.Find%20Peak%20Element/README.md)
--   [第一个错误的版本](/solution/0200-0299/0278.First%20Bad%20Version/README.md)
--   [不动点](/solution/1000-1099/1064.Fixed%20Point/README.md)
+-   [Find First and Last Position of Element in Sorted Array](/solution/0000-0099/0034.Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array/README_EN.md)
+-   [Sqrt(x)](/solution/0000-0099/0069.Sqrt%28x%29/README_EN.md)
+-   [Find Peak Element](/solution/0100-0199/0162.Find%20Peak%20Element/README_EN.md)
+-   [First Bad Version](/solution/0200-0299/0278.First%20Bad%20Version/README_EN.md)
+-   [Fixed Point](/solution/1000-1099/1064.Fixed%20Point/README_EN.md)

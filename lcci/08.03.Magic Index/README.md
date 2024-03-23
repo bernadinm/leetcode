@@ -1,34 +1,40 @@
-# [面试题 08.03. 魔术索引](https://leetcode.cn/problems/magic-index-lcci)
+# [08.03. Magic Index](https://leetcode.cn/problems/magic-index-lcci)
 
-[English Version](/lcci/08.03.Magic%20Index/README_EN.md)
+[中文文档](/lcci/08.03.Magic%20Index/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>魔术索引。 在数组<code>A[0...n-1]</code>中，有所谓的魔术索引，满足条件<code>A[i] = i</code>。给定一个有序整数数组，编写一种方法找出魔术索引，若有的话，在数组A中找出一个魔术索引，如果没有，则返回-1。若有多个魔术索引，返回索引值最小的一个。</p>
+<p>A magic index in an array <code>A[0...n-1]</code> is defined to be an index such that <code>A[i] = i</code>. Given a sorted array of distinct integers, write a method to find a magic index, if one exists, in array A. If not, return -1. If there are more than one magic index, return the smallest one.</p>
 
-<p><strong>示例1:</strong></p>
+<p><strong>Example1:</strong></p>
 
-<pre><strong> 输入</strong>：nums = [0, 2, 3, 4, 5]
-<strong> 输出</strong>：0
-<strong> 说明</strong>: 0下标的元素为0
+<pre>
+
+<strong> Input</strong>: nums = [0, 2, 3, 4, 5]
+
+<strong> Output</strong>: 0
+
 </pre>
 
-<p><strong>示例2:</strong></p>
+<p><strong>Example2:</strong></p>
 
-<pre><strong> 输入</strong>：nums = [1, 1, 1]
-<strong> 输出</strong>：1
+<pre>
+
+<strong> Input</strong>: nums = [1, 1, 1]
+
+<strong> Output</strong>: 1
+
 </pre>
 
-<p><strong>提示:</strong></p>
+<p><strong>Note:</strong></p>
 
 <ol>
-	<li>nums长度在[1, 1000000]之间</li>
+	<li><code>1 &lt;= nums.length &lt;= 1000000</code></li>
 </ol>
 
-## 解法
+## Solutions
 
-### 方法一
+### Solution 1
 
 <!-- tabs:start -->
 
@@ -187,7 +193,7 @@ function helper(nums, left, right) {
 
 <!-- tabs:end -->
 
-### 方法二
+### Solution 2
 
 <!-- tabs:start -->
 

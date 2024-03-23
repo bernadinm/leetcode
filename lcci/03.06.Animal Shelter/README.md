@@ -1,43 +1,56 @@
-# [面试题 03.06. 动物收容所](https://leetcode.cn/problems/animal-shelter-lcci)
+# [03.06. Animal Shelter](https://leetcode.cn/problems/animal-shelter-lcci)
 
-[English Version](/lcci/03.06.Animal%20Shelter/README_EN.md)
+[中文文档](/lcci/03.06.Animal%20Shelter/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>动物收容所。有家动物收容所只收容狗与猫，且严格遵守&ldquo;先进先出&rdquo;的原则。在收养该收容所的动物时，收养人只能收养所有动物中&ldquo;最老&rdquo;（由其进入收容所的时间长短而定）的动物，或者可以挑选猫或狗（同时必须收养此类动物中&ldquo;最老&rdquo;的）。换言之，收养人不能自由挑选想收养的对象。请创建适用于这个系统的数据结构，实现各种操作方法，比如<code>enqueue</code>、<code>dequeueAny</code>、<code>dequeueDog</code>和<code>dequeueCat</code>。允许使用Java内置的LinkedList数据结构。</p>
+<p>An animal shelter, which holds only dogs and cats, operates on a strictly&quot;first in, first out&quot; basis. People must adopt either the&quot;oldest&quot; (based on arrival time) of all animals at the shelter, or they can select whether they would prefer a dog or a cat (and will receive the oldest animal of that type). They cannot select which specific animal they would like. Create the data structures to maintain this system and implement operations such as <code>enqueue</code>, <code>dequeueAny</code>, <code>dequeueDog</code>, and <code>dequeueCat</code>. You may use the built-in Linked list data structure.</p>
 
-<p><code>enqueue</code>方法有一个<code>animal</code>参数，<code>animal[0]</code>代表动物编号，<code>animal[1]</code>代表动物种类，其中 0 代表猫，1 代表狗。</p>
+<p><code>enqueue</code> method has a <code>animal</code> parameter, <code>animal[0]</code> represents the number of the animal, <code>animal[1]</code> represents the type of the animal, 0 for cat and 1 for dog.</p>
 
-<p><code>dequeue*</code>方法返回一个列表<code>[动物编号, 动物种类]</code>，若没有可以收养的动物，则返回<code>[-1,-1]</code>。</p>
+<p><code>dequeue*</code> method returns <code>[animal number, animal type]</code>, if there&#39;s no animal that can be adopted, return <code>[-1, -1]</code>.</p>
 
-<p><strong>示例1:</strong></p>
+<p><strong>Example1:</strong></p>
 
-<pre><strong> 输入</strong>：
+<pre>
+
+<strong> Input</strong>: 
+
 [&quot;AnimalShelf&quot;, &quot;enqueue&quot;, &quot;enqueue&quot;, &quot;dequeueCat&quot;, &quot;dequeueDog&quot;, &quot;dequeueAny&quot;]
+
 [[], [[0, 0]], [[1, 0]], [], [], []]
-<strong> 输出</strong>：
+
+<strong> Output</strong>: 
+
 [null,null,null,[0,0],[-1,-1],[1,0]]
+
 </pre>
 
-<p><strong>示例2:</strong></p>
+<p><strong>Example2:</strong></p>
 
-<pre><strong> 输入</strong>：
+<pre>
+
+<strong> Input</strong>: 
+
 [&quot;AnimalShelf&quot;, &quot;enqueue&quot;, &quot;enqueue&quot;, &quot;enqueue&quot;, &quot;dequeueDog&quot;, &quot;dequeueCat&quot;, &quot;dequeueAny&quot;]
+
 [[], [[0, 0]], [[1, 0]], [[2, 1]], [], [], []]
-<strong> 输出</strong>：
+
+<strong> Output</strong>: 
+
 [null,null,null,null,[2,1],[0,0],[1,0]]
+
 </pre>
 
-<p><strong>说明:</strong></p>
+<p><strong>Note:</strong></p>
 
 <ol>
-	<li>收纳所的最大容量为20000</li>
+	<li>The number of animals in the shelter will not exceed 20000.</li>
 </ol>
 
-## 解法
+## Solutions
 
-### 方法一
+### Solution 1
 
 <!-- tabs:start -->
 

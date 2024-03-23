@@ -1,38 +1,52 @@
-# [面试题 03.01. 三合一](https://leetcode.cn/problems/three-in-one-lcci)
+# [03.01. Three in One](https://leetcode.cn/problems/three-in-one-lcci)
 
-[English Version](/lcci/03.01.Three%20in%20One/README_EN.md)
+[中文文档](/lcci/03.01.Three%20in%20One/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>三合一。描述如何只用一个数组来实现三个栈。</p>
+<p>Describe how you could use a single array to implement three stacks.</p>
 
-<p>你应该实现<code>push(stackNum, value)</code>、<code>pop(stackNum)</code>、<code>isEmpty(stackNum)</code>、<code>peek(stackNum)</code>方法。<code>stackNum</code>表示栈下标，<code>value</code>表示压入的值。</p>
+<p>Yout should implement&nbsp;<code>push(stackNum, value)</code>、<code>pop(stackNum)</code>、<code>isEmpty(stackNum)</code>、<code>peek(stackNum)</code>&nbsp;methods.&nbsp;<code>stackNum<font face="sans-serif, Arial, Verdana, Trebuchet MS">&nbsp;</font></code><font face="sans-serif, Arial, Verdana, Trebuchet MS">is the index of the stack.&nbsp;</font><code>value</code>&nbsp;is the value that pushed to the stack.</p>
 
-<p>构造函数会传入一个<code>stackSize</code>参数，代表每个栈的大小。</p>
+<p>The constructor requires a&nbsp;<code>stackSize</code>&nbsp;parameter, which represents the size of each stack.</p>
 
-<p><strong>示例1:</strong></p>
+<p><strong>Example1:</strong></p>
 
-<pre><strong> 输入</strong>：
+<pre>
+
+<strong> Input</strong>:
+
 [&quot;TripleInOne&quot;, &quot;push&quot;, &quot;push&quot;, &quot;pop&quot;, &quot;pop&quot;, &quot;pop&quot;, &quot;isEmpty&quot;]
+
 [[1], [0, 1], [0, 2], [0], [0], [0], [0]]
-<strong> 输出</strong>：
+
+<strong> Output</strong>:
+
 [null, null, null, 1, -1, -1, true]
-<strong>说明</strong>：当栈为空时`pop, peek`返回-1，当栈满时`push`不压入元素。
+
+<b>Explanation</b>: When the stack is empty, `pop, peek` return -1. When the stack is full, `push` does nothing.
+
 </pre>
 
-<p><strong>示例2:</strong></p>
+<p><strong>Example2:</strong></p>
 
-<pre><strong> 输入</strong>：
+<pre>
+
+<strong> Input</strong>:
+
 [&quot;TripleInOne&quot;, &quot;push&quot;, &quot;push&quot;, &quot;push&quot;, &quot;pop&quot;, &quot;pop&quot;, &quot;pop&quot;, &quot;peek&quot;]
+
 [[2], [0, 1], [0, 2], [0, 3], [0], [0], [0], [0]]
-<strong> 输出</strong>：
+
+<strong> Output</strong>:
+
 [null, null, null, null, 2, 1, -1, -1]
+
 </pre>
 
-## 解法
+## Solutions
 
-### 方法一
+### Solution 1
 
 <!-- tabs:start -->
 

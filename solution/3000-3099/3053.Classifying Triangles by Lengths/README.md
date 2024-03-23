@@ -1,12 +1,10 @@
-# [3053. Classifying Triangles by Lengths](https://leetcode.cn/problems/classifying-triangles-by-lengths)
+# [3053. Classifying Triangles by Lengths](https://leetcode.com/problems/classifying-triangles-by-lengths)
 
-[English Version](/solution/3000-3099/3053.Classifying%20Triangles%20by%20Lengths/README_EN.md)
+[中文文档](/solution/3000-3099/3053.Classifying%20Triangles%20by%20Lengths/README.md)
 
-<!-- tags:数据库 -->
+<!-- tags:Database -->
 
-## 题目描述
-
-<!-- 这里写题目描述 -->
+## Description
 
 <p>Table: <font face="monospace"><code>Triangles</code></font></p>
 
@@ -64,19 +62,19 @@ Triangles table:
 - Values in the third row from an Scalene triangle, because A != B != C.
 - Values in the fourth row cannot form a triangle, because the combined value of sides A and B is not larger than that of side C.</pre>
 
-## 解法
+## Solutions
 
-### 方法一：使用 CASE WHEN 语句
+### Solution 1: Using CASE WHEN Statement
 
-我们可以使用 `CASE WHEN` 语句来判断三角形的类型。
+We can use the `CASE WHEN` statement to determine the type of the triangle.
 
-首先，我们需要判断三个边是否能够构成一个三角形。如果不能，我们返回 `Not A Triangle`。
+First, we need to determine whether the three sides can form a triangle. If not, we return `Not A Triangle`.
 
-然后，我们判断三个边的长度是否相等。如果相等，我们返回 `Equilateral`。
+Then, we check if the lengths of the three sides are equal. If they are, we return `Equilateral`.
 
-接着，我们判断是否有两个边的长度相等。如果有，我们返回 `Isosceles`。
+Next, we check if there are two sides with equal length. If there are, we return `Isosceles`.
 
-否则，说明三个边的长度都不相等，我们返回 `Scalene`。
+Otherwise, it means that the lengths of the three sides are all different, so we return `Scalene`.
 
 <!-- tabs:start -->
 

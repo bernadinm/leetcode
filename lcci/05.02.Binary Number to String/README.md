@@ -1,50 +1,57 @@
-# [面试题 05.02. 二进制数转字符串](https://leetcode.cn/problems/binary-number-to-string-lcci)
+# [05.02. Binary Number to String](https://leetcode.cn/problems/binary-number-to-string-lcci)
 
-[English Version](/lcci/05.02.Binary%20Number%20to%20String/README_EN.md)
+[中文文档](/lcci/05.02.Binary%20Number%20to%20String/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>Given a real number between O and 1 (e.g., 0.72) that is passed in as a double, print the binary representation. If the number cannot be represented accurately in binary with at most 32 characters, print &quot;ERROR&quot;.</p>
+<p><strong>Example1:</strong></p>
+<pre>
 
-<p>二进制数转字符串。给定一个介于0和1之间的实数（如0.72），类型为double，打印它的二进制表达式。如果该数字不在0和1之间，<strong>或者</strong>无法精确地用32位以内的二进制表示，则打印&ldquo;ERROR&rdquo;。</p>
-<p><strong>示例1:</strong></p>
-<pre><strong> 输入</strong>：0.625
-<strong> 输出</strong>：&quot;0.101&quot;
+<strong> Input</strong>: 0.625
+
+<strong> Output</strong>: &quot;0.101&quot;
+
 </pre>
-<p><strong>示例2:</strong></p>
-<pre><strong> 输入</strong>：0.1
-<strong> 输出</strong>：&quot;ERROR&quot;
-<strong> 提示</strong>：0.1无法被二进制准确表示
+<p><strong>Example2:</strong></p>
+<pre>
+
+<strong> Input</strong>: 0.1
+
+<strong> Output</strong>: &quot;ERROR&quot;
+
+<strong> Note</strong>: 0.1 cannot be represented accurately in binary.
+
 </pre>
-<p><strong>提示：</strong></p>
+<p><strong>Note: </strong></p>
 <ol>
-	<li>32位包括输出中的&quot;0.&quot;这两位。</li>
+	<li>This two characters &quot;0.&quot; should be counted into 32 characters.</li>
 </ol>
 
-## 解法
+## Solutions
 
-### 方法一：十进制小数转二进制小数
+### Solution 1: Decimal Fraction to Binary Fraction
 
-十进制小数转二进制小数的方法是：小数部分乘以 $2$，取整数部分作为二进制小数的下一位，小数部分作为下一次乘法的被乘数，直到小数部分为 $0$ 或者二进制小数的长度超过 $32$ 位。
+The method of converting a decimal fraction to a binary fraction is as follows: multiply the decimal part by $2$, take the integer part as the next digit of the binary fraction, and take the decimal part as the multiplicand for the next multiplication, until the decimal part is $0$ or the length of the binary fraction exceeds $32$ bits.
 
-我们不妨举个例子，比如说我们要将 $0.8125$ 转换为二进制小数，过程如下：
+Let's take an example, suppose we want to convert $0.8125$ to a binary fraction, the process is as follows:
 
 $$
 \begin{aligned}
-0.8125 \times 2 &= 1.625 \quad \text{取整数部分} \quad 1 \\
-0.625 \times 2 &= 1.25 \quad \text{取整数部分} \quad 1 \\
-0.25 \times 2 &= 0.5 \quad \text{取整数部分} \quad 0 \\
-0.5 \times 2 &= 1 \quad \text{取整数部分} \quad 1 \\
+0.8125 \times 2 &= 1.625 \quad \text{take the integer part} \quad 1 \\
+0.625 \times 2 &= 1.25 \quad \text{take the integer part} \quad 1 \\
+0.25 \times 2 &= 0.5 \quad \text{take the integer part} \quad 0 \\
+0.5 \times 2 &= 1 \quad \text{take the integer part} \quad 1 \\
 \end{aligned}
 $$
 
-所以十进制小数 $0.8125$ 的二进制小数表示为 $0.1101_{(2)}$。
+So the binary fraction representation of the decimal fraction $0.8125$ is $0.1101_{(2)}$.
 
-对于本题，由于实数介于 $0$ 和 $1$ 之间，所以其整数部分一定是 $0$，我们只需要将小数部分，按照上述方法转换为二进制小数即可。当小数部分为 $0$ 或者二进制小数的长度不小于 $32$ 位时，停止转换。
+For this problem, since the real number is between $0$ and $1$, its integer part must be $0$. We only need to convert the decimal part into a binary fraction according to the above method. Stop the conversion when the decimal part is $0$ or the length of the binary fraction is not less than $32$ bits.
 
-最后，如果小数部分不为 $0$，说明该实数无法用 $32$ 位以内的二进制表示，返回字符串 `"ERROR"`，否则返回转换后的二进制小数。
+Finally, if the decimal part is not $0$, it means that the real number cannot be represented in binary within $32$ bits, return the string `"ERROR"`. Otherwise, return the converted binary fraction.
 
-时间复杂度 $O(C)$，空间复杂度 $O(C)$。其中 $C$ 为二进制小数的长度，最大为 $32$。
+The time complexity is $O(C)$, and the space complexity is $O(C)$. Here, $C$ is the length of the binary fraction, with a maximum of $32$.
 
 <!-- tabs:start -->
 

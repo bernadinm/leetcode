@@ -1,12 +1,10 @@
-# [3055. Top Percentile Fraud](https://leetcode.cn/problems/top-percentile-fraud)
+# [3055. Top Percentile Fraud](https://leetcode.com/problems/top-percentile-fraud)
 
-[English Version](/solution/3000-3099/3055.Top%20Percentile%20Fraud/README_EN.md)
+[中文文档](/solution/3000-3099/3055.Top%20Percentile%20Fraud/README.md)
 
-<!-- tags:数据库 -->
+<!-- tags:Database -->
 
-## 题目描述
-
-<!-- 这里写题目描述 -->
+## Description
 
 <p>Table: <code>Fraud</code></p>
 
@@ -71,11 +69,11 @@ Fraud table:
 Output table is ordered by state in ascending order, fraud score in descending order, and policy ID in ascending order.
 </pre>
 
-## 解法
+## Solutions
 
-### 方法一：使用窗口函数
+### Solution 1: Using Window Function
 
-我们可以使用 `RANK()` 窗口函数来计算每个州的欺诈分数的排名，然后筛选出排名为 1 的记录，并且按照题目要求排序。
+We can use the `RANK()` window function to calculate the ranking of fraud scores for each state, then filter out the records with a rank of 1, and sort them as required by the problem.
 
 <!-- tabs:start -->
 

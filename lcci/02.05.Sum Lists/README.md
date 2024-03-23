@@ -1,43 +1,46 @@
-# [面试题 02.05. 链表求和](https://leetcode.cn/problems/sum-lists-lcci)
+# [02.05. Sum Lists](https://leetcode.cn/problems/sum-lists-lcci)
 
-[English Version](/lcci/02.05.Sum%20Lists/README_EN.md)
+[中文文档](/lcci/02.05.Sum%20Lists/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>给定两个用链表表示的整数，每个节点包含一个数位。</p>
-<p>这些数位是反向存放的，也就是个位排在链表首部。</p>
-<p>编写函数对这两个整数求和，并用链表形式返回结果。</p>
+<p>You have two numbers represented by a linked list, where each node contains a single digit. The digits are stored in reverse order, such that the 1&#39;s digit is at the head of the list. Write a function that adds the two numbers and returns the sum as a linked list.</p>
 
 <p>&nbsp;</p>
 
-<p><strong>示例：</strong></p>
+<p><strong>Example: </strong></p>
 
 <pre>
-<strong>输入：</strong>(7 -&gt; 1 -&gt; 6) + (5 -&gt; 9 -&gt; 2)，即617 + 295
-<strong>输出：</strong>2 -&gt; 1 -&gt; 9，即912
+
+<strong>Input: </strong>(7 -&gt; 1 -&gt; 6) + (5 -&gt; 9 -&gt; 2). That is, 617 + 295.
+
+<strong>Output: </strong>2 -&gt; 1 -&gt; 9. That is, 912.
+
 </pre>
 
-<p><strong>进阶：</strong>假设这些数位是正向存放的，请再做一遍。</p>
+<p><strong>Follow Up:&nbsp;</strong>Suppose the digits are stored in forward order. Repeat the above problem.</p>
 
-<p><strong>示例：</strong></p>
+<p><strong>Example: </strong></p>
 
 <pre>
-<strong>输入：</strong>(6 -&gt; 1 -&gt; 7) + (2 -&gt; 9 -&gt; 5)，即617 + 295
-<strong>输出：</strong>9 -&gt; 1 -&gt; 2，即912
+
+<strong>Input: </strong>(6 -&gt; 1 -&gt; 7) + (2 -&gt; 9 -&gt; 5). That is, 617 + 295.
+
+<strong>Output: </strong>9 -&gt; 1 -&gt; 2. That is, 912.
+
 </pre>
 
-## 解法
+## Solutions
 
-### 方法一：模拟
+### Solution 1: Simulation
 
-我们同时遍历两个链表 $l_1$ 和 $l_2$，并使用变量 $carry$ 表示当前是否有进位。
+We traverse two linked lists $l_1$ and $l_2$ simultaneously, and use a variable $carry$ to indicate whether there is a carry-over currently.
 
-每次遍历时，我们取出对应链表的当前位，计算它们与进位 $carry$ 的和，然后更新进位的值，最后将当前位的值加入答案链表。如果两个链表都遍历完了，并且进位为 $0$ 时，遍历结束。
+During each traversal, we take out the current digit of the corresponding linked list, calculate the sum of them and the carry-over $carry$, then update the value of the carry-over, and finally add the value of the current digit to the answer linked list. The traversal ends when both linked lists have been traversed and the carry-over is $0$.
 
-最后我们返回答案链表的头节点即可。
+Finally, we return the head node of the answer linked list.
 
-时间复杂度 $O(\max(m, n))$，其中 $m$ 和 $n$ 分别为两个链表的长度。我们需要遍历两个链表的全部位置，而处理每个位置只需要 $O(1)$ 的时间。忽略答案的空间消耗，空间复杂度 $O(1)$。
+The time complexity is $O(\max(m, n))$, where $m$ and $n$ are the lengths of the two linked lists respectively. We need to traverse all positions of the two linked lists, and it only takes $O(1)$ time to process each position. Ignoring the space consumption of the answer, the space complexity is $O(1)$.
 
 <!-- tabs:start -->
 

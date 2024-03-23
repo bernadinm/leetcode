@@ -1,46 +1,52 @@
-# [面试题 01.02. 判定是否互为字符重排](https://leetcode.cn/problems/check-permutation-lcci)
+# [01.02. Check Permutation](https://leetcode.cn/problems/check-permutation-lcci)
 
-[English Version](/lcci/01.02.Check%20Permutation/README_EN.md)
+[中文文档](/lcci/01.02.Check%20Permutation/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>给定两个字符串 <code>s1</code> 和 <code>s2</code>，请编写一个程序，确定其中一个字符串的字符重新排列后，能否变成另一个字符串。</p>
+<p>Given two strings,write a method to decide if one is a permutation of the other.</p>
 
-<p><strong>示例 1：</strong></p>
+<p><strong>Example 1:</strong></p>
 
-<pre><strong>输入:</strong> s1 = &quot;abc&quot;, s2 = &quot;bca&quot;
-<strong>输出:</strong> true
+<pre>
+
+<strong>Input: </strong>s1 = &quot;abc&quot;, s2 = &quot;bca&quot;
+
+<strong>Output: </strong>true
+
 </pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong>Example 2:</strong></p>
 
-<pre><strong>输入:</strong> s1 = &quot;abc&quot;, s2 = &quot;bad&quot;
-<strong>输出:</strong> false
+<pre>
+
+<strong>Input: </strong>s1 = &quot;abc&quot;, s2 = &quot;bad&quot;
+
+<strong>Output: </strong>false
+
 </pre>
 
-<p><strong>说明：</strong></p>
-
-<ul>
+<p><strong>Note:</strong></p>
+<ol>
 	<li><code>0 &lt;= len(s1) &lt;= 100 </code></li>
-	<li><code>0 &lt;= len(s2) &lt;= 100 </code></li>
-</ul>
+	<li><code>0 &lt;= len(s2) &lt;= 100</code></li>
+</ol>
 
-## 解法
+## Solutions
 
-### 方法一：数组或哈希表
+### Solution 1: Array or Hash Table
 
-我们先判断两个字符串的长度是否相等，若不相等则直接返回 `false`。
+First, we check whether the lengths of the two strings are equal. If they are not equal, we directly return `false`.
 
-然后用一个数组或哈希表统计字符串 $s1$ 中字符出现的次数。
+Then, we use an array or hash table to count the occurrence of each character in string $s1$.
 
-接着遍历另一个字符串 $s2$，每遍历到一个字符，就将该字符对应的次数减一，如果减一后的次数小于 $0$，则说明两个字符串中字符出现的次数不同，直接返回 `false`。
+Next, we traverse the other string $s2$. For each character we encounter, we decrement its corresponding count. If the count after decrementing is less than $0$, it means that the occurrence of characters in the two strings is different, so we directly return `false`.
 
-最后遍历完字符串 $s2$，返回 `true`。
+Finally, after traversing string $s2$, we return `true`.
 
-注意：本题测试用例所有字符串仅包含小写字母，因此我们可以直接开一个长度为 $26$ 的数组来计数。
+Note: In this problem, all test case strings only contain lowercase letters, so we can directly create an array of length $26$ for counting.
 
-时间复杂度 $O(n)$，空间复杂度 $O(C)$。其中 $n$ 为字符串的长度，而 $C$ 为字符集的大小，本题 $C=26$。
+The time complexity is $O(n)$, and the space complexity is $O(C)$. Here, $n$ is the length of the string, and $C$ is the size of the character set. In this problem, $C=26$.
 
 <!-- tabs:start -->
 
@@ -172,11 +178,11 @@ var CheckPermutation = function (s1, s2) {
 
 <!-- tabs:end -->
 
-### 方法二：排序
+### Solution 2: Sorting
 
-我们也按照字典序对两个字符串进行排序，然后比较两个字符串是否相等。
+We can also sort the two strings in lexicographical order, and then compare whether the two strings are equal.
 
-时间复杂度 $O(n \times \log n)$，空间复杂度 $O(n)$。其中 $n$ 为字符串的长度。
+The time complexity is $O(n \times \log n)$, and the space complexity is $O(n)$. Here, $n$ is the length of the string.
 
 <!-- tabs:start -->
 

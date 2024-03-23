@@ -1,37 +1,47 @@
-# [面试题 16.11. 跳水板](https://leetcode.cn/problems/diving-board-lcci)
+# [16.11. Diving Board](https://leetcode.cn/problems/diving-board-lcci)
 
-[English Version](/lcci/16.11.Diving%20Board/README_EN.md)
+[中文文档](/lcci/16.11.Diving%20Board/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>You are building a diving board by placing a bunch of planks of wood end-to-end. There are two types of planks, one of length <code>shorter</code> and one of length <code>longer</code>. You must use exactly <code>K</code> planks of wood. Write a method to generate all possible lengths for the diving board.</p>
 
-<p>你正在使用一堆木板建造跳水板。有两种类型的木板，其中长度较短的木板长度为<code>shorter</code>，长度较长的木板长度为<code>longer</code>。你必须正好使用<code>k</code>块木板。编写一个方法，生成跳水板所有可能的长度。</p>
-<p>返回的长度需要从小到大排列。</p>
-<p><strong>示例：</strong></p>
-<pre><strong>输入：</strong>
+<p>return all lengths in non-decreasing order.</p>
+
+<p><strong>Example: </strong></p>
+
+<pre>
+
+<strong>Input: </strong>
+
 shorter = 1
+
 longer = 2
+
 k = 3
-<strong>输出：</strong> {3,4,5,6}
+
+<strong>Output: </strong> {3,4,5,6}
+
 </pre>
-<p><strong>提示：</strong></p>
+
+<p><strong>Note: </strong></p>
+
 <ul>
-<li>0 < shorter <= longer</li>
-<li>0 <= k <= 100000</li>
+	<li>0 &lt; shorter &lt;= longer</li>
+	<li>0 &lt;= k &lt;= 100000</li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：分类讨论
+### Solution 1: Case Analysis
 
-如果 $k=0$，则不存在任何一种方案，我们可以直接返回空列表。
+If $k=0$, there is no solution, and we can directly return an empty list.
 
-如果 $shorter=longer$，则我们只能使用长度为 $longer \times k$ 的木板，因此我们直接返回长度为 $longer \times k$ 的列表。
+If $shorter=longer$, we can only use a board with length $longer \times k$, so we directly return a list with length $longer \times k$.
 
-否则，我们可以使用长度为 $shorter \times (k-i) + longer \times i$ 的木板，其中 $0 \leq i \leq k$。我们在 $[0, k]$ 的范围内枚举 $i$，并计算对应的长度即可。对于不同的 $i$，我们不会得到相同的长度，这是因为，假如有 $0 \leq i \lt j \leq k$，那么两者长度差为 $shorter \times (k-i) + longer \times i - shorter \times (k-j) - longer \times j$，整理得到长度差 $(i - j) \times (longer - shorter) \lt 0$。因此，对于不同的 $i$，我们会得到不同的长度。
+Otherwise, we can use a board with length $shorter \times (k-i) + longer \times i$, where $0 \leq i \leq k$. We enumerate $i$ in the range $[0, k]$, and calculate the corresponding length. For different values of $i$, we will not get the same length, because if $0 \leq i \lt j \leq k$, then the difference in length is $(i - j) \times (longer - shorter) \lt 0$. Therefore, for different values of $i$, we will get different lengths.
 
-时间复杂度 $O(k)$，其中 $k$ 为木板数量。忽略答案的空间消耗，空间复杂度 $O(1)$。
+The time complexity is $O(k)$, where $k$ is the number of boards. Ignoring the space consumption of the answer, the space complexity is $O(1)$.
 
 <!-- tabs:start -->
 

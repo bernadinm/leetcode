@@ -8,14 +8,14 @@
 <p>求在该柱状图中，能够勾勒出来的矩形的最大面积。</p>
 <p>&nbsp;</p>
 <p><strong>示例 1:</strong></p>
-<p><img src="https://fastly.jsdelivr.net/gh/doocs/leetcode@main/lcof2/%E5%89%91%E6%8C%87%20Offer%20II%20039.%20%E7%9B%B4%E6%96%B9%E5%9B%BE%E6%9C%80%E5%A4%A7%E7%9F%A9%E5%BD%A2%E9%9D%A2%E7%A7%AF/images/histogram.jpg" /></p>
+<p><img src="./images/histogram.jpg" /></p>
 <pre>
 <strong>输入：</strong>heights = [2,1,5,6,2,3]
 <strong>输出：</strong>10
 <strong>解释：</strong>最大的矩形为图中红色区域，面积为 10
 </pre>
 <p><strong>示例 2：</strong></p>
-<p><img src="https://fastly.jsdelivr.net/gh/doocs/leetcode@main/lcof2/%E5%89%91%E6%8C%87%20Offer%20II%20039.%20%E7%9B%B4%E6%96%B9%E5%9B%BE%E6%9C%80%E5%A4%A7%E7%9F%A9%E5%BD%A2%E9%9D%A2%E7%A7%AF/images/histogram-1.jpg" /></p>
+<p><img src="./images/histogram-1.jpg" /></p>
 <pre>
 <strong>输入：</strong> heights = [2,4]
 <b>输出：</b> 4</pre>

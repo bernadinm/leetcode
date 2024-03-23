@@ -1,30 +1,31 @@
-# [面试题 17.01. 不用加号的加法](https://leetcode.cn/problems/add-without-plus-lcci)
+# [17.01. Add Without Plus](https://leetcode.cn/problems/add-without-plus-lcci)
 
-[English Version](/lcci/17.01.Add%20Without%20Plus/README_EN.md)
+[中文文档](/lcci/17.01.Add%20Without%20Plus/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>Write a function that adds two numbers. You should not use + or any arithmetic operators.</p>
 
-<p>设计一个函数把两个数字相加。不得使用 + 或者其他算术运算符。</p>
+<p><strong>Example:</strong></p>
 
-<p><strong>示例:</strong></p>
+<pre>
 
-<pre><strong>输入:</strong> a = 1, b = 1
-<strong>输出:</strong> 2</pre>
+<strong>Input:</strong> a = 1, b = 1
+
+<strong>Output:</strong> 2</pre>
 
 <p>&nbsp;</p>
 
-<p><strong>提示：</strong></p>
+<p><strong>Note: </strong></p>
 
 <ul>
-	<li><code>a</code>,&nbsp;<code>b</code>&nbsp;均可能是负数或 0</li>
-	<li>结果不会溢出 32 位整数</li>
+	<li><code>a</code>&nbsp;and&nbsp;<code>b</code>&nbsp;may be 0 or negative.</li>
+	<li>The result fits in 32-bit integer.</li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一
+### Solution 1
 
 <!-- tabs:start -->
 

@@ -1,45 +1,38 @@
-# [面试题 17.19. 消失的两个数字](https://leetcode.cn/problems/missing-two-lcci)
+# [17.19. Missing Two](https://leetcode.cn/problems/missing-two-lcci)
 
-[English Version](/lcci/17.19.Missing%20Two/README_EN.md)
+[中文文档](/lcci/17.19.Missing%20Two/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>给定一个数组，包含从 1 到 N 所有的整数，但其中缺了两个数字。你能在 O(N) 时间内只用 O(1) 的空间找到它们吗？</p>
+<p>You are given an array with all the numbers from 1 to N appearing exactly once, except for two number that is missing. How can you find the missing number in O(N) time and 0(1) space?</p>
 
-<p>以任意顺序返回这两个数字均可。</p>
+<p>You can return the missing numbers in any order.</p>
 
-<p><strong>示例 1:</strong></p>
+<p><strong>Example 1:</strong></p>
 
-<pre><strong>输入:</strong> [1]
-<strong>输出: </strong>[2,3]</pre>
+<pre>
 
-<p><strong>示例 2:</strong></p>
+<strong>Input:</strong> [1]
 
-<pre><strong>输入:</strong> [2,3]
-<strong>输出: </strong>[1,4]</pre>
+<strong>Output: </strong>[2,3]</pre>
 
-<p><strong>提示：</strong></p>
+<p><strong>Example 2:</strong></p>
+
+<pre>
+
+<strong>Input:</strong> [2,3]
+
+<strong>Output: </strong>[1,4]</pre>
+
+<p><strong>Note: </strong></p>
 
 <ul>
 	<li><code>nums.length &lt;=&nbsp;30000</code></li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：位运算
-
-利用位运算的性质：
-
-1. 对于任何数 $x$，都有 $x \oplus x = 0$
-1. 异或运算满足结合律，即 $(a \oplus b) \oplus c = a \oplus (b \oplus c)$
-1. lowbit 运算获取最低一位的 $1$ 及其后面的所有 $0$，公式为 `lowbit(x) = x & (-x)`
-
-我们将 nums 中所有数进行异或到 $x$，再将 $[1,2..n]$ 的所有数也异或到 $x$。得到的 $x$ 是两个缺失的正整数的异或和。
-
-然后我们运用 lowbit 获取最低一位的 $1$，那么这两个缺失的正整数在这一位上必然一个为 $1$，一个为 $0$。我们据此进行分组异或。最终得到两个缺失的正整数 $a$ 和 $b$。
-
-时间复杂度 $O(n)$，空间复杂度 $O(1)$。其中 $n$ 为数组长度。
+### Solution 1
 
 <!-- tabs:start -->
 

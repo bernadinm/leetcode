@@ -1,41 +1,46 @@
-# [面试题 16.13. 平分正方形](https://leetcode.cn/problems/bisect-squares-lcci)
+# [16.13. Bisect Squares](https://leetcode.cn/problems/bisect-squares-lcci)
 
-[English Version](/lcci/16.13.Bisect%20Squares/README_EN.md)
+[中文文档](/lcci/16.13.Bisect%20Squares/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>Given two squares on a two-dimensional plane, find a line that would cut these two squares in half. Assume that the top and the bottom sides of the square run parallel to the x-axis.</p>
+<p>Each square consists of three values,&nbsp;the coordinate of bottom left corner&nbsp;<code>[X,Y] = [square[0],square[1]]</code>, and the side length&nbsp;of the square <code>square[2]</code>. The line will intersect to the two squares in four points. Return the coordinates of two intersection points <code>[X<sub>1</sub>,Y<sub>1</sub>]</code>&nbsp;and&nbsp;<code>[X<sub>2</sub>,Y<sub>2</sub>]</code>&nbsp;that the forming segment covers the other two intersection points in format of <code>{X<sub>1</sub>,Y<sub>1</sub>,X<sub>2</sub>,Y<sub>2</sub>}</code>. If <code>X<sub>1</sub> != X<sub>2</sub></code>, there should be&nbsp;<code>X<sub>1</sub> &lt; X<sub>2</sub></code>, otherwise there should be&nbsp;<code>Y<sub>1</sub> &lt;= Y<sub>2</sub></code>.</p>
+<p>If there are more than one line that can cut these two squares in half, return the one that has biggest slope (slope of a line parallel to the y-axis is considered as infinity).</p>
+<p><strong>Example: </strong></p>
+<pre>
 
-<p>给定两个正方形及一个二维平面。请找出将这两个正方形分割成两半的一条直线。假设正方形顶边和底边与 x 轴平行。</p>
-<p>每个正方形的数据<code>square</code>包含3个数值，正方形的左下顶点坐标<code>[X,Y] = [square[0],square[1]]</code>，以及正方形的边长<code>square[2]</code>。所求直线穿过两个正方形会形成4个交点，请返回4个交点形成线段的两端点坐标（两个端点即为4个交点中距离最远的2个点，这2个点所连成的线段一定会穿过另外2个交点）。2个端点坐标<code>[X<sub>1</sub>,Y<sub>1</sub>]</code>和<code>[X<sub>2</sub>,Y<sub>2</sub>]</code>的返回格式为<code>{X<sub>1</sub>,Y<sub>1</sub>,X<sub>2</sub>,Y<sub>2</sub>}</code>，要求若<code>X<sub>1</sub> != X<sub>2</sub></code>，需保证<code>X<sub>1</sub> &lt; X<sub>2</sub></code>，否则需保证<code>Y<sub>1</sub> &lt;= Y<sub>2</sub></code>。</p>
-<p>若同时有多条直线满足要求，则选择斜率最大的一条计算并返回（与Y轴平行的直线视为斜率无穷大）。</p>
-<p><strong>示例：</strong></p>
-<pre><strong>输入：</strong>
+<strong>Input: </strong>
+
 square1 = {-1, -1, 2}
+
 square2 = {0, -1, 2}
-<strong>输出：</strong> {-1,0,2,0}
-<strong>解释：</strong> 直线 y = 0 能将两个正方形同时分为等面积的两部分，返回的两线段端点为[-1,0]和[2,0]
+
+<strong>Output:</strong> {-1,0,2,0}
+
+<strong>Explanation:</strong> y = 0 is the line that can cut these two squares in half.
+
 </pre>
-<p><strong>提示：</strong></p>
+<p><strong>Note: </strong></p>
 <ul>
 	<li><code>square.length == 3</code></li>
 	<li><code>square[2] &gt; 0</code></li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：几何数学
+### Solution 1: Geometric Mathematics
 
-我们知道，如果一条直线可以将两个正方形平分，那么这条直线一定会经过两个正方形的中心点。因此，我们可以先求出两个正方形的中心点，分别记为 $(x_1, y_1)$ 和 $(x_2, y_2)$。
+We know that if a line can bisect two squares, then the line must pass through the centers of the two squares. Therefore, we can first calculate the centers of the two squares, denoted as $(x_1, y_1)$ and $(x_2, y_2)$, respectively.
 
-如果 $x_1 = x_2$，那么这条直线一定垂直于 $x$ 轴，此时我们只需要求出两个正方形的上下边界的交点即可。
+If $x_1 = x_2$, then the line is perpendicular to the $x$-axis, and we only need to find the intersection point of the top and bottom edges of the two squares.
 
-否则，我们可以根据两个中心点求出这条直线的斜率 $k$ 和截距 $b$，然后根据斜率的绝对值的大小，分为两种情况：
+Otherwise, we can calculate the slope $k$ and the intercept $b$ of the line passing through the two centers, and then divide into two cases based on the absolute value of the slope:
 
--   当 $|k| \gt 1$ 时，经过两个中心点的直线与两个正方形的上下边相交，我们求出上下边的纵坐标的最大值和最小值，然后根据直线方程求出对应的横坐标，即为两个正方形的交点。
--   当 $|k| \le 1$ 时，经过两个中心点的直线与两个正方形的左右边相交，我们求出左右边的横坐标的最大值和最小值，然后根据直线方程求出对应的纵坐标，即为两个正方形的交点。
+-   When $|k| \gt 1$, the line passing through the two centers intersects with the top and bottom edges of the two squares. We calculate the maximum and minimum values of the vertical coordinates of the top and bottom edges, and then calculate the corresponding horizontal coordinate using the equation of the line, which is the intersection point of the two squares.
+-   When $|k| \le 1$, the line passing through the two centers intersects with the left and right edges of the two squares. We calculate the maximum and minimum values of the horizontal coordinates of the left and right edges, and then calculate the corresponding vertical coordinate using the equation of the line, which is the intersection point of the two squares.
 
-时间复杂度 $O(1)$，空间复杂度 $O(1)$。
+The time complexity is $O(1)$, and the space complexity is $O(1)$.
 
 <!-- tabs:start -->
 

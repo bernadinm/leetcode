@@ -1,55 +1,51 @@
-# [3030. 找出网格的区域平均强度](https://leetcode.cn/problems/find-the-grid-of-region-average)
+# [3030. Find the Grid of Region Average](https://leetcode.com/problems/find-the-grid-of-region-average)
 
-[English Version](/solution/3000-3099/3030.Find%20the%20Grid%20of%20Region%20Average/README_EN.md)
+[中文文档](/solution/3000-3099/3030.Find%20the%20Grid%20of%20Region%20Average/README.md)
 
-<!-- tags:数组,矩阵 -->
+<!-- tags:Array,Matrix -->
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>You are given a <strong>0-indexed</strong> <code>m x n</code> grid <code>image</code> which represents a grayscale image, where <code>image[i][j]</code> represents a pixel with intensity in the range<code>[0..255]</code>. You are also given a <strong>non-negative</strong> integer <code>threshold</code>.</p>
 
-<p>给你一个下标从 <strong>0</strong> 开始、大小为 <code>m x n</code> 的网格 <code>image</code> ，表示一个灰度图像，其中 <code>image[i][j]</code> 表示在范围 <code>[0..255]</code> 内的某个像素强度。另给你一个<strong> 非负 </strong>整数 <code>threshold</code> 。</p>
+<p>Two pixels <code>image[a][b]</code> and <code>image[c][d]</code> are said to be <strong>adjacent</strong> if <code>|a - c| + |b - d| == 1</code>.</p>
 
-<p>如果 <code>image[a][b]</code> 和 <code>image[c][d]</code> 满足 <code>|a - c| + |b - d| == 1</code> ，则称这两个像素是<strong> 相邻像素</strong> 。</p>
+<p>A <strong>region</strong> is a <code>3 x 3</code> subgrid where the <strong>absolute difference</strong> in intensity between any two <strong>adjacent</strong> pixels is <strong>less than or equal to</strong> <code>threshold</code>.</p>
 
-<p><strong>区域 </strong>是一个 <code>3 x 3</code> 的子网格，且满足区域中任意两个 <strong>相邻</strong> 像素之间，像素强度的<strong> 绝对差 </strong><strong> 小于或等于 </strong><code>threshold</code> 。</p>
+<p>All pixels in a <strong>region</strong> belong to that region, note that a pixel <strong>can</strong> belong to <strong>multiple</strong> regions.</p>
 
-<p><strong>区域</strong> 内的所有像素都认为属于该区域，而一个像素 <strong>可以 </strong>属于 <strong>多个</strong> 区域。</p>
+<p>You need to calculate a <strong>0-indexed</strong> <code>m x n</code> grid <code>result</code>, where <code>result[i][j]</code> is the <strong>average</strong> intensity of the region to which <code>image[i][j]</code> belongs, <strong>rounded down</strong> to the nearest integer. If <code>image[i][j]</code> belongs to multiple regions, <code>result[i][j]</code> is the <strong>average </strong>of the<strong> rounded down average </strong>intensities of these regions, <strong>rounded down</strong> to the nearest integer. If <code>image[i][j]</code> does<strong> not</strong> belong to any region, <code>result[i][j]</code> is <strong>equal to</strong> <code>image[i][j]</code>.</p>
 
-<p>你需要计算一个下标从 <strong>0</strong> 开始、大小为 <code>m x n</code> 的网格 <code>result</code> ，其中 <code>result[i][j]</code> 是 <code>image[i][j]</code> 所属区域的 <strong>平均 </strong>强度，<strong>向下取整 </strong>到最接近的整数。如果 <code>image[i][j]</code> 属于多个区域，<code>result[i][j]</code> 是这些区域的<strong> </strong><strong>“取整后的平均强度”</strong> 的<strong> 平均值</strong>，也 <strong>向下取整 </strong>到最接近的整数。如果 <code>image[i][j]</code> 不属于任何区域，则 <code>result[i][j]</code><strong> 等于 </strong><code>image[i][j]</code> 。</p>
-
-<p>返回网格 <code>result</code> 。</p>
+<p>Return <em>the grid</em> <code>result</code>.</p>
 
 <p>&nbsp;</p>
-
-<p><strong class="example">示例 1：</strong></p>
-<img alt="" src="https://fastly.jsdelivr.net/gh/doocs/leetcode@main/solution/3000-3099/3030.Find%20the%20Grid%20of%20Region%20Average/images/example0corrected.png" style="width: 832px; height: 275px;" />
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="./images/example0corrected.png" style="width: 832px; height: 275px;" />
 <pre>
-<strong>输入：</strong>image = [[5,6,7,10],[8,9,10,10],[11,12,13,10]], threshold = 3
-<strong>输出：</strong>[[9,9,9,9],[9,9,9,9],[9,9,9,9]]
-<strong>解释：</strong>图像中存在两个区域，如图片中的阴影区域所示。第一个区域的平均强度为 9 ，而第二个区域的平均强度为 9.67 ，向下取整为 9 。两个区域的平均强度为 (9 + 9) / 2 = 9 。由于所有像素都属于区域 1 、区域 2 或两者，因此 result 中每个像素的强度都为 9 。
-注意，在计算多个区域的平均值时使用了向下取整的值，因此使用区域 2 的平均强度 9 来进行计算，而不是 9.67 。
+<strong>Input:</strong> image = [[5,6,7,10],[8,9,10,10],[11,12,13,10]], threshold = 3
+<strong>Output:</strong> [[9,9,9,9],[9,9,9,9],[9,9,9,9]]
+<strong>Explanation:</strong> There exist two regions in the image, which are shown as the shaded areas in the picture. The average intensity of the first region is 9, while the average intensity of the second region is 9.67 which is rounded down to 9. The average intensity of both of the regions is (9 + 9) / 2 = 9. As all the pixels belong to either region 1, region 2, or both of them, the intensity of every pixel in the result is 9. 
+Please note that the rounded-down values are used when calculating the average of multiple regions, hence the calculation is done using 9 as the average intensity of region 2, not 9.67.
 </pre>
 
-<p><strong class="example">示例 2：</strong></p>
-<img alt="" src="https://fastly.jsdelivr.net/gh/doocs/leetcode@main/solution/3000-3099/3030.Find%20the%20Grid%20of%20Region%20Average/images/example1corrected.png" style="width: 805px; height: 377px;" />
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="./images/example1corrected.png" style="width: 805px; height: 377px;" />
 <pre>
-<strong>输入：</strong>image = [[10,20,30],[15,25,35],[20,30,40],[25,35,45]], threshold = 12
-<strong>输出：</strong>[[25,25,25],[27,27,27],[27,27,27],[30,30,30]]
-<strong>解释：</strong>图像中存在两个区域，如图片中的阴影区域所示。第一个区域的平均强度为 25 ，而第二个区域的平均强度为 30 。两个区域的平均强度为 (25 + 30) / 2 = 27.5 ，向下取整为 27 。图像中第 0 行的所有像素属于区域 1 ，因此 result 中第 0 行的所有像素为 25 。同理，result 中第 3 行的所有像素为 30 。图像中第 1 行和第 2 行的像素属于区域 1 和区域 2 ，因此它们在 result 中的值为 27 。
+<strong>Input:</strong> image = [[10,20,30],[15,25,35],[20,30,40],[25,35,45]], threshold = 12
+<strong>Output:</strong> [[25,25,25],[27,27,27],[27,27,27],[30,30,30]]
+<strong>Explanation:</strong> There exist two regions in the image, which are shown as the shaded areas in the picture. The average intensity of the first region is 25, while the average intensity of the second region is 30. The average intensity of both of the regions is (25 + 30) / 2 = 27.5 which is rounded down to 27. All the pixels in row 0 of the image belong to region 1, hence all the pixels in row 0 in the result are 25. Similarly, all the pixels in row 3 in the result are 30. The pixels in rows 1 and 2 of the image belong to region 1 and region 2, hence their assigned value is 27 in the result.
 </pre>
 
-<p><strong class="example">示例 3：</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <pre>
-<strong>输入：</strong>image = [[5,6,7],[8,9,10],[11,12,13]], threshold = 1
-<strong>输出：</strong>[[5,6,7],[8,9,10],[11,12,13]]
-<strong>解释：</strong>图像中不存在任何区域，因此对于所有像素，result[i][j] == image[i][j] 。
+<strong>Input:</strong> image = [[5,6,7],[8,9,10],[11,12,13]], threshold = 1
+<strong>Output:</strong> [[5,6,7],[8,9,10],[11,12,13]]
+<strong>Explanation:</strong> There does not exist any region in image, hence result[i][j] == image[i][j] for all the pixels.
 </pre>
 
 <p>&nbsp;</p>
-
-<p><strong>提示：</strong></p>
+<p><strong>Constraints:</strong></p>
 
 <ul>
 	<li><code>3 &lt;= n, m &lt;= 500</code></li>
@@ -57,9 +53,9 @@
 	<li><code>0 &lt;= threshold &lt;= 255</code></li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一
+### Solution 1
 
 <!-- tabs:start -->
 

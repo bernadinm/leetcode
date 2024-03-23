@@ -1,24 +1,43 @@
-# [面试题 03.02. 栈的最小值](https://leetcode.cn/problems/min-stack-lcci)
+# [03.02. Min Stack](https://leetcode.cn/problems/min-stack-lcci)
 
-[English Version](/lcci/03.02.Min%20Stack/README_EN.md)
+[中文文档](/lcci/03.02.Min%20Stack/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>请设计一个栈，除了常规栈支持的pop与push函数以外，还支持min函数，该函数返回栈元素中的最小值。执行push、pop和min操作的时间复杂度必须为O(1)。</p><br><p><strong>示例：</strong><pre>MinStack minStack = new MinStack();<br>minStack.push(-2);<br>minStack.push(0);<br>minStack.push(-3);<br>minStack.getMin();   --> 返回 -3.<br>minStack.pop();<br>minStack.top();      --> 返回 0.<br>minStack.getMin();   --> 返回 -2.</pre></p>
+<p>How would you design a stack which, in addition to push and pop, has a function min which returns the minimum element? Push, pop and min should all operate in 0(1) time.</p>
 
-## 解法
+<p><strong>Example: </strong></p>
 
-### 方法一：双栈
+<pre>
 
-我们用两个栈来实现，其中`stk1` 用来存储数据，`stk2` 用来存储当前栈中的最小值。初始时，`stk2` 中存储一个极大值。
+MinStack minStack = new MinStack();
 
--   当我们向栈中压入一个元素 `x` 时，我们将 `x` 压入 `stk1`，并将 `min(x, stk2[-1])` 压入 `stk2`。
--   当我们从栈中弹出一个元素时，我们将 `stk1` 和 `stk2` 的栈顶元素都弹出。
--   当我们要获取当前栈中的栈顶元素时，我们只需要返回 `stk1` 的栈顶元素即可。
--   当我们要获取当前栈中的最小值时，我们只需要返回 `stk2` 的栈顶元素即可。
+minStack.push(-2);
 
-时间复杂度：对于每个操作，时间复杂度均为 $O(1)$，空间复杂度 $O(n)$。
+minStack.push(0);
+
+minStack.push(-3);
+
+minStack.getMin();   --&gt; return -3.
+
+minStack.pop();
+
+minStack.top();      --&gt; return 0.
+
+minStack.getMin();   --&gt; return -2.</pre>
+
+## Solutions
+
+### Solution 1: Double Stack
+
+We use two stacks to implement this, where `stk1` is used to store data, and `stk2` is used to store the current minimum value in the stack. Initially, `stk2` stores a very large value.
+
+-   When we push an element `x` into the stack, we push `x` into `stk1`, and push `min(x, stk2[-1])` into `stk2`.
+-   When we pop an element from the stack, we pop the top elements of both `stk1` and `stk2`.
+-   When we want to get the top element in the current stack, we just need to return the top element of `stk1`.
+-   When we want to get the minimum value in the current stack, we just need to return the top element of `stk2`.
+
+For each operation, the time complexity is $O(1)$, and the space complexity is $O(n)$.
 
 <!-- tabs:start -->
 

@@ -1,39 +1,44 @@
-# [面试题 08.06. 汉诺塔问题](https://leetcode.cn/problems/hanota-lcci)
+# [08.06. Hanota](https://leetcode.cn/problems/hanota-lcci)
 
-[English Version](/lcci/08.06.Hanota/README_EN.md)
+[中文文档](/lcci/08.06.Hanota/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>In the classic problem of the Towers of Hanoi, you have 3 towers and N disks of different sizes which can slide onto any tower. The puzzle starts with disks sorted in ascending order of size from top to bottom (i.e., each disk sits on top of an even larger one). You have the following constraints:</p>
+<p>(1) Only one disk can be moved at a time.<br />
+(2) A disk is slid off the top of one tower onto another tower.<br />
+(3) A disk cannot be placed on top of a smaller disk.</p>
+<p>Write a program to move the disks from the first tower to the last using stacks.</p>
+<p><strong>Example1:</strong></p>
+<pre>
 
-<p>在经典汉诺塔问题中，有 3 根柱子及 N 个不同大小的穿孔圆盘，盘子可以滑入任意一根柱子。一开始，所有盘子自上而下按升序依次套在第一根柱子上(即每一个盘子只能放在更大的盘子上面)。移动圆盘时受到以下限制:<br>
-(1) 每次只能移动一个盘子;<br>
-(2) 盘子只能从柱子顶端滑出移到下一根柱子;<br>
-(3) 盘子只能叠在比它大的盘子上。</p>
-<p>请编写程序，用栈将所有盘子从第一根柱子移到最后一根柱子。</p>
-<p>你需要原地修改栈。</p>
-<p><strong>示例1:</strong></p>
-<pre><strong> 输入</strong>：A = [2, 1, 0], B = [], C = []
-<strong> 输出</strong>：C = [2, 1, 0]
+<strong> Input</strong>: A = [2, 1, 0], B = [], C = []
+
+<strong> Output</strong>: C = [2, 1, 0]
+
 </pre>
-<p><strong>示例2:</strong></p>
-<pre><strong> 输入</strong>：A = [1, 0], B = [], C = []
-<strong> 输出</strong>：C = [1, 0]
+<p><strong>Example2:</strong></p>
+<pre>
+
+<strong> Input</strong>: A = [1, 0], B = [], C = []
+
+<strong> Output</strong>: C = [1, 0]
+
 </pre>
-<p><strong>提示:</strong></p>
+<p><strong>Note:</strong></p>
 <ol>
-	<li>A中盘子的数目不大于14个。</li>
+	<li><code>A.length &lt;= 14</code></li>
 </ol>
 
-## 解法
+## Solutions
 
-### 方法一：递归
+### Solution 1: Recursion
 
-我们设计一个函数 $dfs(n, a, b, c)$，表示将 $n$ 个盘子从 $a$ 移动到 $c$，其中 $b$ 为辅助柱子。
+We design a function $dfs(n, a, b, c)$, which represents moving $n$ disks from $a$ to $c$, with $b$ as the auxiliary rod.
 
-我们先将 $n - 1$ 个盘子从 $a$ 移动到 $b$，然后将第 $n$ 个盘子从 $a$ 移动到 $c$，最后将 $n - 1$ 个盘子从 $b$ 移动到 $c$。
+First, we move $n - 1$ disks from $a$ to $b$, then move the $n$-th disk from $a$ to $c$, and finally move $n - 1$ disks from $b$ to $c$.
 
-时间复杂度 $O(2^n)$，空间复杂度 $O(n)$。其中 $n$ 是盘子的数目。
+The time complexity is $O(2^n)$, and the space complexity is $O(n)$. Here, $n$ is the number of disks.
 
 <!-- tabs:start -->
 
@@ -128,23 +133,23 @@ function hanota(A: number[], B: number[], C: number[]): void {
 
 <!-- tabs:end -->
 
-### 方法二：迭代（栈）
+### Solution 2: Iteration (Stack)
 
-我们可以用栈来模拟递归的过程。
+We can use a stack to simulate the recursive process.
 
-我们定义一个结构体 $Task$，表示一个任务，其中 $n$ 表示盘子的数目，而 $a$, $b$, $c$ 表示三根柱子。
+We define a struct $Task$, which represents a task, where $n$ represents the number of disks, and $a$, $b$, $c$ represent the three rods.
 
-我们将初始任务 $Task(len(A), A, B, C)$ 压入栈中，然后不断取出栈顶任务进行处理，直到栈为空。
+We push the initial task $Task(len(A), A, B, C)$ into the stack, and then continuously process the task at the top of the stack until the stack is empty.
 
-如果 $n = 1$，那么我们直接将盘子从 $a$ 移动到 $c$。
+If $n = 1$, then we directly move the disk from $a$ to $c$.
 
-否则，我们将三个子任务压入栈中，分别是：
+Otherwise, we push three subtasks into the stack, which are:
 
-1. 将 $n - 1$ 个盘子从 $b$ 借助 $a$ 移动到 $c$；
-2. 将第 $n$ 个盘子从 $a$ 移动到 $c$；
-3. 将 $n - 1$ 个盘子从 $a$ 借助 $c$ 移动到 $b$。
+1. Move $n - 1$ disks from $b$ to $c$ with the help of $a$;
+2. Move the $n$-th disk from $a$ to $c$;
+3. Move $n - 1$ disks from $a$ to $b$ with the help of $c$.
 
-时间复杂度 $O(2^n)$，空间复杂度 $O(n)$。其中 $n$ 是盘子的数目。
+The time complexity is $O(2^n)$, and the space complexity is $O(n)$. Here, $n$ is the number of disks.
 
 <!-- tabs:start -->
 

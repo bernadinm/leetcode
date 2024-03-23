@@ -1,40 +1,46 @@
-# [面试题 08.08. 有重复字符串的排列组合](https://leetcode.cn/problems/permutation-ii-lcci)
+# [08.08. Permutation II](https://leetcode.cn/problems/permutation-ii-lcci)
 
-[English Version](/lcci/08.08.Permutation%20II/README_EN.md)
+[中文文档](/lcci/08.08.Permutation%20II/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>Write a method to compute all permutations of a string whose charac&shy; ters are not necessarily unique. The list of permutations should not have duplicates.</p>
+<p><strong>Example1:</strong></p>
+<pre>
 
-<p>有重复字符串的排列组合。编写一种方法，计算某字符串的所有排列组合。</p>
-<p><strong>示例1:</strong></p>
-<pre><strong> 输入</strong>：S = &quot;qqe&quot;
-<strong> 输出</strong>：[&quot;eqq&quot;,&quot;qeq&quot;,&quot;qqe&quot;]
+<strong> Input</strong>: S = &quot;qqe&quot;
+
+<strong> Output</strong>: [&quot;eqq&quot;,&quot;qeq&quot;,&quot;qqe&quot;]
+
 </pre>
-<p><strong>示例2:</strong></p>
-<pre><strong> 输入</strong>：S = &quot;ab&quot;
-<strong> 输出</strong>：[&quot;ab&quot;, &quot;ba&quot;]
+<p><strong>Example2:</strong></p>
+<pre>
+
+<strong> Input</strong>: S = &quot;ab&quot;
+
+<strong> Output</strong>: [&quot;ab&quot;, &quot;ba&quot;]
+
 </pre>
-<p><strong>提示:</strong></p>
+<p><strong>Note:</strong></p>
 <ol>
-	<li>字符都是英文字母。</li>
-	<li>字符串长度在[1, 9]之间。</li>
+	<li>All characters are English letters.</li>
+	<li><code>1 &lt;= S.length &lt;= 9</code></li>
 </ol>
 
-## 解法
+## Solutions
 
-### 方法一：排序 + 回溯
+### Solution 1: Sorting + Backtracking
 
-我们可以先对字符串按照字符进行排序，这样就可以将重复的字符放在一起，方便我们进行去重。
+We can first sort the string by characters, which allows us to put duplicate characters together and makes it easier for us to remove duplicates.
 
-然后，我们设计一个函数 $dfs(i)$，表示当前需要填写第 $i$ 个位置的字符。函数的具体实现如下：
+Then, we design a function $dfs(i)$, which means that we need to fill in the character at the $i$-th position. The specific implementation of the function is as follows:
 
--   如果 $i = n$，说明我们已经填写完毕，将当前排列加入答案数组中，然后返回。
--   否则，我们枚举第 $i$ 个位置的字符 $s[j]$，其中 $j$ 的范围是 $[0, n - 1]$。我们需要保证 $s[j]$ 没有被使用过，并且与前面枚举的字符不同，这样才能保证当前排列不重复。如果满足条件，我们就可以填写 $s[j]$，并继续递归地填写下一个位置，即调用 $dfs(i + 1)$。在递归调用结束后，我们需要将 $s[j]$ 标记为未使用，以便于进行后面的枚举。
+-   If $i = n$, it means that we have finished filling in, add the current permutation to the answer array, and then return.
+-   Otherwise, we enumerate the character $s[j]$ at the $i$-th position, where the range of $j$ is $[0, n - 1]$. We need to ensure that $s[j]$ has not been used and is different from the previously enumerated characters, so as to ensure that the current permutation is not repeated. If the conditions are met, we can fill in $s[j]$, and continue to recursively fill in the next position, that is, call $dfs(i + 1)$. After the recursive call ends, we need to mark $s[j]$ as unused for later enumeration.
 
-在主函数中，我们首先对字符串进行排序，然后调用 $dfs(0)$，即从第 $0$ 个位置开始填写，最终返回答案数组即可。
+In the main function, we first sort the string, then call $dfs(0)$, that is, start filling from the $0$-th position, and finally return the answer array.
 
-时间复杂度 $O(n \times n!)$，空间复杂度 $O(n)$。其中 $n$ 是字符串 $s$ 的长度。需要进行 $n!$ 次枚举，每次枚举需要 $O(n)$ 的时间来判断是否重复。另外，我们需要一个标记数组来标记每个位置是否被使用过，因此空间复杂度为 $O(n)$。
+The time complexity is $O(n \times n!)$, and the space complexity is $O(n)$. Here, $n$ is the length of the string $s$. $n!$ enumerations need to be performed, and each enumeration requires $O(n)$ time to determine whether it is repeated. In addition, we need a marker array to mark whether each position has been used, so the space complexity is $O(n)$.
 
 <!-- tabs:start -->
 

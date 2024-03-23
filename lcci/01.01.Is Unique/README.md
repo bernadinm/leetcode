@@ -1,39 +1,46 @@
-# [面试题 01.01. 判定字符是否唯一](https://leetcode.cn/problems/is-unique-lcci)
+# [01.01. Is Unique](https://leetcode.cn/problems/is-unique-lcci)
 
-[English Version](/lcci/01.01.Is%20Unique/README_EN.md)
+[中文文档](/lcci/01.01.Is%20Unique/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>实现一个算法，确定一个字符串 <code>s</code> 的所有字符是否全都不同。</p>
+<p>Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?</p>
 
-<p><strong>示例 1：</strong></p>
+<p><strong>Example 1:</strong></p>
 
-<pre><strong>输入:</strong> s = &quot;leetcode&quot;
-<strong>输出:</strong> false 
+<pre>
+
+<strong>Input: </strong> = &quot;leetcode&quot;
+
+<strong>Output: </strong>false
+
 </pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong>Example 2:</strong></p>
 
-<pre><strong>输入:</strong> s = &quot;abc&quot;
-<strong>输出:</strong> true
+<pre>
+
+<strong>Input: </strong>s = &quot;abc&quot;
+
+<strong>Output: </strong>true
+
 </pre>
 
-<p><strong>限制：</strong></p>
+<p><strong>Note:</strong></p>
+
 <ul>
-	<li><code>0 <= len(s) <= 100 </code></li>
-	<li>如果你不使用额外的数据结构，会很加分。</li>
+	<li><code>0 &lt;= len(s) &lt;= 100 </code></li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：位运算
+### Solution 1: Bit Manipulation
 
-根据示例，可以假定字符串中只包含小写字母（实际验证，也符合假设）。
+Based on the examples, we can assume that the string only contains lowercase letters (which is confirmed by actual verification).
 
-因此，我们可以使用一个 $32$ 位整数 `mask` 的每一位来表示字符串中的每一个字符是否出现过。
+Therefore, we can use each bit of a $32$-bit integer `mask` to represent whether each character in the string has appeared.
 
-时间复杂度 $O(n)$，其中 $n$ 为字符串长度。空间复杂度 $O(1)$。
+The time complexity is $O(n)$, where $n$ is the length of the string. The space complexity is $O(1)$.
 
 <!-- tabs:start -->
 

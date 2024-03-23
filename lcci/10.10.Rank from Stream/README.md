@@ -1,50 +1,39 @@
-# [面试题 10.10. 数字流的秩](https://leetcode.cn/problems/rank-from-stream-lcci)
+# [10.10. Rank from Stream](https://leetcode.cn/problems/rank-from-stream-lcci)
 
-[English Version](/lcci/10.10.Rank%20from%20Stream/README_EN.md)
+[中文文档](/lcci/10.10.Rank%20from%20Stream/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>假设你正在读取一串整数。每隔一段时间，你希望能找出数字 x 的秩(小于或等于 x 的值的个数)。请实现数据结构和算法来支持这些操作，也就是说：</p>
+<p>Imagine you are reading in a stream of integers. Periodically, you wish to be able to look up the rank of a number <code>x</code> (the number of values less than or equal to <code>x</code>). lmplement the data structures and algorithms to support these operations. That is, implement the method <code>track (int x)</code>, which is called when each number is generated, and the method <code>getRankOfNumber(int x)</code>, which returns the number of values less than or equal to <code>x</code>.</p>
 
-<p>实现 <code>track(int x)</code>&nbsp;方法，每读入一个数字都会调用该方法；</p>
+<p><b>Note:&nbsp;</b>This problem is slightly different from the original one in the book.</p>
 
-<p>实现 <code>getRankOfNumber(int x)</code> 方法，返回小于或等于 x 的值的个数。</p>
+<p><strong>Example:</strong></p>
 
-<p><strong>注意：</strong>本题相对原题稍作改动</p>
+<pre>
 
-<p><strong>示例:</strong></p>
+<strong>Input:</strong>
 
-<pre><strong>输入:</strong>
 [&quot;StreamRank&quot;, &quot;getRankOfNumber&quot;, &quot;track&quot;, &quot;getRankOfNumber&quot;]
+
 [[], [1], [0], [0]]
-<strong>输出:
+
+<strong>Output:
+
 </strong>[null,0,null,1]
+
 </pre>
 
-<p><strong>提示：</strong></p>
+<p><strong>Note: </strong></p>
 
 <ul>
 	<li><code>x &lt;= 50000</code></li>
-	<li><code>track</code>&nbsp;和&nbsp;<code>getRankOfNumber</code> 方法的调用次数均不超过 2000 次</li>
+	<li>The number of calls of both&nbsp;<code>track</code>&nbsp;and&nbsp;<code>getRankOfNumber</code>&nbsp;methods are less than or equal to 2000.</li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：树状数组
-
-树状数组，也称作“二叉索引树”（Binary Indexed Tree）或 Fenwick 树。 它可以高效地实现如下两个操作：
-
-1. **单点更新** `update(x, delta)`： 把序列 x 位置的数加上一个值 delta；
-1. **前缀和查询** `query(x)`：查询序列 `[1,...x]` 区间的区间和，即位置 x 的前缀和。
-
-这两个操作的时间复杂度均为 $O(\log n)$。
-
-树状数组最基本的功能就是求比某点 x 小的点的个数（这里的比较是抽象的概念，可以是数的大小、坐标的大小、质量的大小等等）。
-
-比如给定数组 `a[5] = {2, 5, 3, 4, 1}`，求 `b[i] = 位置 i 左边小于等于 a[i] 的数的个数`。对于此例，`b[5] = {0, 1, 1, 2, 0}`。
-
-解决方案是直接遍历数组，每个位置先求出 `query(a[i])`，然后再修改树状数组 `update(a[i], 1)` 即可。当数的范围比较大时，需要进行离散化，即先进行去重并排序，然后对每个数字进行编号。
+### Solution 1
 
 <!-- tabs:start -->
 

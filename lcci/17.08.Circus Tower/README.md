@@ -1,30 +1,27 @@
-# [面试题 17.08. 马戏团人塔](https://leetcode.cn/problems/circus-tower-lcci)
+# [17.08. Circus Tower](https://leetcode.cn/problems/circus-tower-lcci)
 
-[English Version](/lcci/17.08.Circus%20Tower/README_EN.md)
+[中文文档](/lcci/17.08.Circus%20Tower/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>A circus is designing a tower routine consisting of people standing atop one anoth&shy;er&#39;s shoulders. For practical and aesthetic reasons, each person must be both shorter and lighter than the person below him or her. Given the heights and weights of each person in the circus, write a method to compute the largest possible number of people in such a tower.</p>
+<p><strong>Example: </strong></p>
+<pre>
 
-<p>有个马戏团正在设计叠罗汉的表演节目，一个人要站在另一人的肩膀上。出于实际和美观的考虑，在上面的人要比下面的人矮一点且轻一点。已知马戏团每个人的身高和体重，请编写代码计算叠罗汉最多能叠几个人。</p>
-<p><strong>示例：</strong></p>
-<pre><strong>输入：</strong>height = [65,70,56,75,60,68] weight = [100,150,90,190,95,110]
-<strong>输出：</strong>6
-<strong>解释：</strong>从上往下数，叠罗汉最多能叠 6 层：(56,90), (60,95), (65,100), (68,110), (70,150), (75,190)</pre>
-<p>提示：</p>
+<strong>Input: </strong>height = [65,70,56,75,60,68] weight = [100,150,90,190,95,110]
+
+<strong>Output: </strong>6
+
+<strong>Explanation: </strong>The longest tower is length 6 and includes from top to bottom: (56,90), (60,95), (65,100), (68,110), (70,150), (75,190)</pre>
+
+<p>Note:</p>
 <ul>
 	<li><code>height.length == weight.length &lt;= 10000</code></li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：排序 + 离散化 + 树状数组
-
-我们现将所有人按照身高从小到大排序，若身高相同，则按照体重从大到小排序。这样我们可以将问题转换为求体重数组的最长递增子序列的问题。
-
-最长递增子序列的问题可以使用动态规划求解，时间复杂度 $O(n^2)$。但是我们可以使用树状数组来优化求解过程，时间复杂度 $O(n \log n)$。
-
-空间复杂度 $O(n)$。其中 $n$ 为人数。
+### Solution 1
 
 <!-- tabs:start -->
 

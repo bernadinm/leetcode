@@ -1,30 +1,32 @@
-# [面试题 02.02. 返回倒数第 k 个节点](https://leetcode.cn/problems/kth-node-from-end-of-list-lcci)
+# [02.02. Kth Node From End of List](https://leetcode.cn/problems/kth-node-from-end-of-list-lcci)
 
-[English Version](/lcci/02.02.Kth%20Node%20From%20End%20of%20List/README_EN.md)
+[中文文档](/lcci/02.02.Kth%20Node%20From%20End%20of%20List/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>实现一种算法，找出单向链表中倒数第 k 个节点。返回该节点的值。</p>
+<p>Implement an algorithm to find the kth to last element of a singly linked list.&nbsp;Return the value of the element.</p>
 
-<p><strong>注意：</strong>本题相对原题稍作改动</p>
+<p><strong>Note: </strong>This problem is slightly different from the original one in the book.</p>
 
-<p><strong>示例：</strong></p>
+<p><strong>Example: </strong></p>
 
-<pre><strong>输入：</strong> 1-&gt;2-&gt;3-&gt;4-&gt;5 和 <em>k</em> = 2
-<strong>输出： </strong>4</pre>
+<pre>
 
-<p><strong>说明：</strong></p>
+<strong>Input: </strong> 1-&gt;2-&gt;3-&gt;4-&gt;5 和 <em>k</em> = 2
 
-<p>给定的 <em>k</em>&nbsp;保证是有效的。</p>
+<strong>Output:  </strong>4</pre>
 
-## 解法
+<p><strong>Note: </strong></p>
 
-### 方法一：快慢指针
+<p>k is always valid.</p>
 
-我们定义两个指针 `slow` 和 `fast`，初始时都指向链表头节点 `head`。然后 `fast` 指针先向前移动 $k$ 步，然后 `slow` 和 `fast` 指针同时向前移动，直到 `fast` 指针指向链表末尾。此时 `slow` 指针指向的节点就是倒数第 $k$ 个节点。
+## Solutions
 
-时间复杂度 $O(n)$，其中 $n$ 是链表的长度。空间复杂度 $O(1)$。
+### Solution 1: Two Pointers
+
+We define two pointers `slow` and `fast`, both initially pointing to the head node `head`. Then the `fast` pointer moves forward $k$ steps first, and then the `slow` and `fast` pointers move forward together until the `fast` pointer points to the end of the list. At this point, the node pointed to by the `slow` pointer is the $k$-th node from the end of the list.
+
+The time complexity is $O(n)$, where $n$ is the length of the list. The space complexity is $O(1)$.
 
 <!-- tabs:start -->
 

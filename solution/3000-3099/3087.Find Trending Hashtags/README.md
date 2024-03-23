@@ -1,14 +1,12 @@
-# [3087. 查找热门话题标签](https://leetcode.cn/problems/find-trending-hashtags)
+# [3087. Find Trending Hashtags](https://leetcode.com/problems/find-trending-hashtags)
 
-[English Version](/solution/3000-3099/3087.Find%20Trending%20Hashtags/README_EN.md)
+[中文文档](/solution/3000-3099/3087.Find%20Trending%20Hashtags/README.md)
 
 <!-- tags: -->
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-
-<p>表：<code>Tweets</code></p>
+<p>Table: <code>Tweets</code></p>
 
 <pre>
 +-------------+---------+
@@ -19,23 +17,23 @@
 | tweet_date  | date    |
 | tweet       | varchar |
 +-------------+---------+
-tweet_id 是这张表的主键 (值互不相同的列)。
-这张表的每一行都包含 user_id, tweet_id, tweet_date 和 tweet。
+tweet_id is the primary key (column with unique values) for this table.
+Each row of this table contains user_id, tweet_id, tweet_date and tweet.
 </pre>
 
-<p>编写一个解决方案来找到&nbsp;<code>2024</code>&nbsp;年 <strong>二月&nbsp;</strong>的 <strong>前</strong>&nbsp;<code>3</code>&nbsp;热门话题 <strong>标签</strong>。</p>
+<p>Write a solution to find the <strong>top</strong> <code>3</code> trending <strong>hashtags</strong>&nbsp;in&nbsp;<strong>February</strong> <code>2024</code>. Each tweet only contains one hashtag.</p>
 
-<p>返回结果表，根据标签的数量和标签&nbsp;<strong>降序</strong> 排序。</p>
+<p>Return <em>the result table orderd by count of hashtag, hashtag in </em><strong>descending</strong><em> order.</em></p>
 
-<p>结果格式如下所示。</p>
+<p>The result format is in the following example.</p>
 
 <p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
 
-<p><strong class="example">示例 1：</strong></p>
+<div class="example-block">
+<p><strong>Input:</strong></p>
 
-<p><b>输入：</b></p>
-
-<p>Tweets 表：</p>
+<p>Tweets table:</p>
 
 <pre class="example-io">
 +---------+----------+----------------------------------------------+------------+
@@ -45,13 +43,13 @@ tweet_id 是这张表的主键 (值互不相同的列)。
 | 136     | 14       | Another #HappyDay with good vibes!           | 2024-02-03 |
 | 137     | 15       | Productivity peaks! #WorkLife                | 2024-02-04 |
 | 138     | 16       | Exploring new tech frontiers. #TechLife      | 2024-02-04 |
-| 139     | 17       | Gratitude for today's moments. #HappyDay     | 2024-02-05 |
+| 139     | 17       | Gratitude for today&#39;s moments. #HappyDay     | 2024-02-05 |
 | 140     | 18       | Innovation drives us. #TechLife              | 2024-02-07 |
-| 141     | 19       | Connecting with nature's serenity. #Nature   | 2024-02-09 |
+| 141     | 19       | Connecting with nature&#39;s serenity. #Nature   | 2024-02-09 |
 +---------+----------+----------------------------------------------+------------+
  </pre>
 
-<p><strong>输出：</strong></p>
+<p><strong>Output:</strong></p>
 
 <pre class="example-io">
 +-----------+--------------+
@@ -64,21 +62,22 @@ tweet_id 是这张表的主键 (值互不相同的列)。
 
 </pre>
 
-<p><strong>解释：</strong></p>
+<p><strong>Explanation:</strong></p>
 
 <ul>
-	<li><strong>#HappyDay：</strong>在 ID 为 13，14，17 的推文中出现，总共提及&nbsp;3 次。</li>
-	<li><strong>#TechLife：</strong>在 ID 为 16，18 的推文中出现，总共提及 2&nbsp;次。</li>
-	<li><strong>#WorkLife：</strong>在 ID 为 15 的推文中出现，总共提及 1&nbsp;次。</li>
+	<li><strong>#HappyDay:</strong> Appeared in tweet IDs 13, 14, and 17, with a total count of 3 mentions.</li>
+	<li><strong>#TechLife:</strong> Appeared in tweet IDs 16 and 18, with a total count of 2 mentions.</li>
+	<li><strong>#WorkLife:</strong> Appeared in tweet ID 15, with a total count of 1 mention.</li>
 </ul>
 
-<p><b>注意：</b>输出表分别按 hashtag_count 和 hashtag 降序排序。</p>
+<p><b>Note:</b> Output table is sorted in descending order by hashtag_count and hashtag respectively.</p>
+</div>
 
-## 解法
+## Solutions
 
-### 方法一：提取子串 + 分组
+### Solution 1: Extract Substring + Grouping
 
-我们可以查询得到 2024 年 2 月的所有 tweet，利用 `SUBSTRING_INDEX` 函数提取 Hashtag，然后使用 `GROUP BY` 和 `COUNT` 函数统计每个 Hashtag 出现的次数，最后按照出现次数降序、Hashtag 降序排序，取前三个热门 Hashtag。
+We can query all tweets from February 2024, use the `SUBSTRING_INDEX` function to extract Hashtags, then use the `GROUP BY` and `COUNT` functions to count the occurrences of each Hashtag. Finally, we sort by the number of occurrences in descending order and by Hashtag in descending order, and take the top three popular Hashtags.
 
 <!-- tabs:start -->
 
@@ -99,24 +98,14 @@ import pandas as pd
 
 
 def find_trending_hashtags(tweets: pd.DataFrame) -> pd.DataFrame:
-    # 过滤数据框以获取特定日期的数据
     tweets = tweets[tweets["tweet_date"].dt.strftime("%Y%m") == "202402"]
-
-    # 提取 Hashtag
     tweets["hashtag"] = "#" + tweets["tweet"].str.extract(r"#(\w+)")
-
-    # 统计 Hashtag 出现次数
     hashtag_counts = tweets["hashtag"].value_counts().reset_index()
     hashtag_counts.columns = ["hashtag", "hashtag_count"]
-
-    # 根据出现次数降序排序 Hashtag
     hashtag_counts = hashtag_counts.sort_values(
         by=["hashtag_count", "hashtag"], ascending=[False, False]
     )
-
-    # 返回前三个热门 Hashtag
     top_3_hashtags = hashtag_counts.head(3)
-
     return top_3_hashtags
 ```
 

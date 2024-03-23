@@ -1,55 +1,27 @@
-# [面试题 17.06. 2 出现的次数](https://leetcode.cn/problems/number-of-2s-in-range-lcci)
+# [17.06. Number Of 2s In Range](https://leetcode.cn/problems/number-of-2s-in-range-lcci)
 
-[English Version](/lcci/17.06.Number%20Of%202s%20In%20Range/README_EN.md)
+[中文文档](/lcci/17.06.Number%20Of%202s%20In%20Range/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>Write a method to count the number of 2s that appear in all the numbers between 0&nbsp;and n (inclusive).</p>
+<p><strong>Example:</strong></p>
+<pre>
 
-<p>编写一个方法，计算从 0 到 n (含 n) 中数字 2 出现的次数。</p>
-<p><strong>示例:</strong></p>
-<pre><strong>输入: </strong>25
-<strong>输出: </strong>9
-<strong>解释: </strong>(2, 12, 20, 21, 22, 23, 24, 25)(注意 22 应该算作两次)</pre>
-<p>提示：</p>
+<strong>Input: </strong>25
+
+<strong>Output: </strong>9
+
+<strong>Explanation: </strong>(2, 12, 20, 21, 22, 23, 24, 25)(Note that 22 counts for two 2s.)</pre>
+
+<p>Note:</p>
 <ul>
 	<li><code>n &lt;= 10^9</code></li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：数位 DP
-
-这道题实际上是求在给定区间 $[l,..r]$ 中，数字中出现 $2$ 个数。个数与数的位数以及每一位上的数字有关。我们可以用数位 DP 的思路来解决这道题。数位 DP 中，数的大小对复杂度的影响很小。
-
-对于区间 $[l,..r]$ 问题，我们一般会将其转化为 $[1,..r]$ 然后再减去 $[1,..l - 1]$ 的问题，即：
-
-$$
-ans = \sum_{i=1}^{r} ans_i -  \sum_{i=1}^{l-1} ans_i
-$$
-
-不过对于本题而言，我们只需要求出区间 $[1,..r]$ 的值即可。
-
-这里我们用记忆化搜索来实现数位 DP。从起点向下搜索，到最底层得到方案数，一层层向上返回答案并累加，最后从搜索起点得到最终的答案。
-
-基本步骤如下：
-
-1. 将数字 $n$ 转为 int 数组 $a$，其中 $a[1]$ 为最低位，而 $a[len]$ 为最高位；
-1. 根据题目信息，设计函数 $dfs()$，对于本题，我们定义 $dfs(pos, cnt, limit)$，答案为 $dfs(len, 0, true)$。
-
-其中：
-
--   `pos` 表示数字的位数，从末位或者第一位开始，一般根据题目的数字构造性质来选择顺序。对于本题，我们选择从高位开始，因此，`pos` 的初始值为 `len`；
--   `cnt` 表示当前数字中包含的 $2$ 的个数。
--   `limit` 表示可填的数字的限制，如果无限制，那么可以选择 $[0,1,..9]$，否则，只能选择 $[0,..a[pos]]$。如果 `limit` 为 `true` 且已经取到了能取到的最大值，那么下一个 `limit` 同样为 `true`；如果 `limit` 为 `true` 但是还没有取到最大值，或者 `limit` 为 `false`，那么下一个 `limit` 为 `false`。
-
-关于函数的实现细节，可以参考下面的代码。
-
-时间复杂度 $O(\log n)$。
-
-相似题目：
-
--   [233. 数字 1 的个数](https://github.com/doocs/leetcode/blob/main/solution/0200-0299/0233.Number%20of%20Digit%20One/README.md)
+### Solution 1
 
 <!-- tabs:start -->
 

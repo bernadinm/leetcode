@@ -1,36 +1,44 @@
-# [面试题 08.02. 迷路的机器人](https://leetcode.cn/problems/robot-in-a-grid-lcci)
+# [08.02. Robot in a Grid](https://leetcode.cn/problems/robot-in-a-grid-lcci)
 
-[English Version](/lcci/08.02.Robot%20in%20a%20Grid/README_EN.md)
+[中文文档](/lcci/08.02.Robot%20in%20a%20Grid/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>设想有个机器人坐在一个网格的左上角，网格 r 行 c 列。机器人只能向下或向右移动，但不能走到一些被禁止的网格（有障碍物）。设计一种算法，寻找机器人从左上角移动到右下角的路径。</p>
+<p>Imagine a robot sitting on the upper left corner of grid with r rows and c columns. The robot can only move in two directions, right and down, but certain cells are &quot;off limits&quot; such that the robot cannot step on them. Design an algorithm to find a path for the robot from the top left to the bottom right.</p>
 ![](https://fastly.jsdelivr.net/gh/doocs/leetcode@main/lcci/08.02.Robot%20in%20a%20Grid/images/robot_maze.png)
-<p>网格中的障碍物和空位置分别用 <code>1</code> 和 <code>0</code> 来表示。</p>
-<p>返回一条可行的路径，路径由经过的网格的行号和列号组成。左上角为 0 行 0 列。</p>
-<p><strong>示例&nbsp;1:</strong></p>
-<pre><strong>输入:
+<p>&quot;off limits&quot; and empty grid are represented by&nbsp;<code>1</code> and&nbsp;<code>0</code>&nbsp;respectively.</p>
+<p>Return a valid path, consisting of row number and column number of grids in the path.</p>
+<p><strong>Example&nbsp;1:</strong></p>
+<pre>
+
+<strong>Input:
+
 </strong>[
+
 &nbsp; [<strong>0</strong>,<strong>0</strong>,<strong>0</strong>],
+
 &nbsp; [0,1,<strong>0</strong>],
+
 &nbsp; [0,0,<strong>0</strong>]
+
 ]
-<strong>输出:</strong> [[0,0],[0,1],[0,2],[1,2],[2,2]]
-<strong>解释: 
-</strong>输入中标粗的位置即为输出表示的路径，即
-0行0列（左上角） -&gt; 0行1列 -&gt; 0行2列 -&gt; 1行2列 -&gt; 2行2列（右下角）</pre>
-<p><strong>说明：</strong><em>r</em>&nbsp;和 <em>c </em>的值均不超过 100。</p>
 
-## 解法
+<strong>Output:</strong> [[0,0],[0,1],[0,2],[1,2],[2,2]]</pre>
 
-### 方法一：DFS
+<p><strong>Note: </strong></p>
+<ul>
+	<li><code>r,&nbsp;c &lt;= 100</code></li>
+</ul>
 
-我们可以使用深度优先搜索来解决本题。我们从左上角开始，向右或向下移动，直到到达右下角。如果在某一步，我们发现当前位置是障碍物，或者当前位置已经在路径中，那么我们就返回，否则我们将当前位置加入路径中，并且标记当前位置为已经访问过，然后继续向右或向下移动。
+## Solutions
 
-如果最终能够到达右下角，那么我们就找到了一条可行的路径，否则说明不存在可行的路径。
+### Solution 1: DFS (Depth-First Search)
 
-时间复杂度 $O(m \times n)$，空间复杂度 $O(m \times n)$。其中 $m$ 和 $n$ 分别是网格的行数和列数。
+We can use depth-first search to solve this problem. We start from the top left corner and move right or down until we reach the bottom right corner. If at some step, we find that the current position is an obstacle, or the current position is already in the path, then we return. Otherwise, we add the current position to the path and mark the current position as visited, then continue to move right or down.
+
+If we can finally reach the bottom right corner, then we have found a feasible path, otherwise, it means there is no feasible path.
+
+The time complexity is $O(m \times n)$, and the space complexity is $O(m \times n)$. Here, $m$ and $n$ are the number of rows and columns of the grid, respectively.
 
 <!-- tabs:start -->
 

@@ -1,39 +1,52 @@
-# [面试题 08.04. 幂集](https://leetcode.cn/problems/power-set-lcci)
+# [08.04. Power Set](https://leetcode.cn/problems/power-set-lcci)
 
-[English Version](/lcci/08.04.Power%20Set/README_EN.md)
+[中文文档](/lcci/08.04.Power%20Set/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>幂集。编写一种方法，返回某集合的所有子集。集合中<strong>不包含重复的元素</strong>。</p>
+<p>Write a method to return all subsets of a set. The elements in a set are&nbsp;pairwise distinct.</p>
 
-<p>说明：解集不能包含重复的子集。</p>
+<p>Note: The result set should not contain duplicated subsets.</p>
 
-<p><strong>示例:</strong></p>
+<p><strong>Example:</strong></p>
 
-<pre><strong> 输入</strong>： nums = [1,2,3]
-<strong> 输出</strong>：
+<pre>
+
+<strong> Input</strong>:  nums = [1,2,3]
+
+<strong> Output</strong>: 
+
 [
+
   [3],
+
 &nbsp; [1],
+
 &nbsp; [2],
+
 &nbsp; [1,2,3],
+
 &nbsp; [1,3],
+
 &nbsp; [2,3],
+
 &nbsp; [1,2],
+
 &nbsp; []
+
 ]
+
 </pre>
 
-## 解法
+## Solutions
 
-### 方法一：递归枚举
+### Solution 1: Recursive Enumeration
 
-我们设计一个递归函数 $dfs(u, t)$，它的参数为当前枚举到的元素的下标 $u$，以及当前的子集 $t$。
+We design a recursive function $dfs(u, t)$, where $u$ is the index of the current element being enumerated, and $t$ is the current subset.
 
-当前枚举到的元素下标为 $u$，我们可以选择将其加入子集 $t$ 中，也可以选择不加入子集 $t$ 中。递归这两种选择，即可得到所有的子集。
+For the current element with index $u$, we can choose to add it to the subset $t$, or we can choose not to add it to the subset $t$. Recursively making these two choices will yield all subsets.
 
-时间复杂度 $O(n \times 2^n)$，空间复杂度 $O(n)$。其中 $n$ 为数组的长度。数组中每个元素有两种状态，即选择或不选择，共 $2^n$ 种状态，每种状态需要 $O(n)$ 的时间来构造子集。
+The time complexity is $O(n \times 2^n)$, and the space complexity is $O(n)$. Here, $n$ is the length of the array. Each element in the array has two states, namely chosen or not chosen, for a total of $2^n$ states. Each state requires $O(n)$ time to construct the subset.
 
 <!-- tabs:start -->
 
@@ -173,13 +186,13 @@ function dfs(nums, depth, prev, res) {
 
 <!-- tabs:end -->
 
-### 方法二：二进制枚举
+### Solution 2: Binary Enumeration
 
-我们可以将方法一中的递归过程改写成迭代的形式，即使用二进制枚举的方法来枚举所有的子集。
+We can rewrite the recursive process in Method 1 into an iterative form, that is, using binary enumeration to enumerate all subsets.
 
-我们可以使用 $2^n$ 个二进制数来表示 $n$ 个元素的所有子集，若某个二进制数 `mask` 的第 $i$ 位为 $1$，表示子集中包含数组第 $i$ 个元素 $v$；若为 $0$，表示子集中不包含数组第 $i$ 个元素 $v$。
+We can use $2^n$ binary numbers to represent all subsets of $n$ elements. If the $i$-th bit of a binary number `mask` is $1$, it means that the subset contains the $i$-th element $v$ of the array; if it is $0$, it means that the subset does not contain the $i$-th element $v$ of the array.
 
-时间复杂度 $O(n \times 2^n)$，空间复杂度 $O(n)$。其中 $n$ 为数组的长度。一共有 $2^n$ 个子集，每个子集需要 $O(n)$ 的时间来构造。
+The time complexity is $O(n \times 2^n)$, and the space complexity is $O(n)$. Here, $n$ is the length of the array. There are a total of $2^n$ subsets, and each subset requires $O(n)$ time to construct.
 
 <!-- tabs:start -->
 

@@ -1,36 +1,28 @@
-# [面试题 17.07. 婴儿名字](https://leetcode.cn/problems/baby-names-lcci)
+# [17.07. Baby Names](https://leetcode.cn/problems/baby-names-lcci)
 
-[English Version](/lcci/17.07.Baby%20Names/README_EN.md)
+[中文文档](/lcci/17.07.Baby%20Names/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>每年，政府都会公布一万个最常见的婴儿名字和它们出现的频率，也就是同名婴儿的数量。有些名字有多种拼法，例如，John 和 Jon 本质上是相同的名字，但被当成了两个名字公布出来。给定两个列表，一个是名字及对应的频率，另一个是本质相同的名字对。设计一个算法打印出每个真实名字的实际频率。注意，如果 John 和 Jon 是相同的，并且 Jon 和 Johnny 相同，则 John 与 Johnny 也相同，即它们有传递和对称性。</p>
+<p>Each year, the government releases a list of the 10000 most common baby names and their frequencies (the number of babies with that name). The only problem with this is that some names have multiple spellings. For example,&quot;John&quot; and &#39;&#39;Jon&quot; are essentially the same name but would be listed separately in the list. Given two lists, one of names/frequencies and the other of pairs of equivalent names, write an algorithm to print a new list of the true frequency of each name. Note that if John and Jon are synonyms, and Jon and Johnny are synonyms, then John and Johnny are synonyms. (It is both transitive and symmetric.) In the final list, choose the name that are <strong>lexicographically smallest</strong> as the &quot;real&quot; name.</p>
 
-<p>在结果列表中，选择<strong>字典序最小</strong>的名字作为真实名字。</p>
+<p><strong>Example: </strong></p>
 
-<p><strong>示例：</strong></p>
+<pre>
 
-<pre><strong>输入：</strong>names = [&quot;John(15)&quot;,&quot;Jon(12)&quot;,&quot;Chris(13)&quot;,&quot;Kris(4)&quot;,&quot;Christopher(19)&quot;], synonyms = [&quot;(Jon,John)&quot;,&quot;(John,Johnny)&quot;,&quot;(Chris,Kris)&quot;,&quot;(Chris,Christopher)&quot;]
-<strong>输出：</strong>[&quot;John(27)&quot;,&quot;Chris(36)&quot;]</pre>
+<strong>Input: </strong>names = [&quot;John(15)&quot;,&quot;Jon(12)&quot;,&quot;Chris(13)&quot;,&quot;Kris(4)&quot;,&quot;Christopher(19)&quot;], synonyms = [&quot;(Jon,John)&quot;,&quot;(John,Johnny)&quot;,&quot;(Chris,Kris)&quot;,&quot;(Chris,Christopher)&quot;]
 
-<p>提示：</p>
+<strong>Output: </strong>[&quot;John(27)&quot;,&quot;Chris(36)&quot;]</pre>
+
+<p>Note:</p>
 
 <ul>
 	<li><code>names.length &lt;= 100000</code></li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：哈希表 + DFS
-
-对于每个同义词对，我们将其两个名字建立双向边，存放在邻接表 $g$ 中，然后，我们遍历所有名字，将其存放在集合 $s$ 中，同时将其频率存放在哈希表 $cnt$ 中。
-
-接下来，我们遍历集合 $s$ 中的每个名字，如果该名字未被访问过，则进行深度优先搜索，找到该名字所在的连通分量中的所有名字，以字典序最小的名字为真实名字，将其频率求和，即为真实名字的频率。然后，我们将该名字以及其频率存放在答案数组中。
-
-遍历完所有名字后，答案数组即为所求。
-
-时间复杂度 $O(n + m)$，空间复杂度 $O(n + m)$。其中 $n$ 和 $m$ 分别为名字数组和同义词数组的长度。
+### Solution 1
 
 <!-- tabs:start -->
 

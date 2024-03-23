@@ -1,77 +1,73 @@
-# [3018. 可处理的最大删除操作数 I](https://leetcode.cn/problems/maximum-number-of-removal-queries-that-can-be-processed-i)
+# [3018. Maximum Number of Removal Queries That Can Be Processed I](https://leetcode.com/problems/maximum-number-of-removal-queries-that-can-be-processed-i)
 
-[English Version](/solution/3000-3099/3018.Maximum%20Number%20of%20Removal%20Queries%20That%20Can%20Be%20Processed%20I/README_EN.md)
+[中文文档](/solution/3000-3099/3018.Maximum%20Number%20of%20Removal%20Queries%20That%20Can%20Be%20Processed%20I/README.md)
 
-<!-- tags:数组,动态规划 -->
+<!-- tags:Array,Dynamic Programming -->
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>You are given a <strong>0-indexed</strong> array <code>nums</code> and a <strong>0-indexed</strong> array <code>queries</code>.</p>
 
-<p>给定一个下标&nbsp;<strong>从&nbsp;0 开始</strong>&nbsp;的数组&nbsp;<code>nums</code> 和一个下标&nbsp;<strong>从</strong>&nbsp;<strong>0 开始&nbsp;</strong>的数组&nbsp;<code>queries</code>。</p>
-
-<p>你可以在开始时执行以下操作 <strong>最多一次</strong>：</p>
+<p>You can do the following operation at the beginning <strong>at most once</strong>:</p>
 
 <ul>
-	<li>用&nbsp;<code>nums</code>&nbsp;的 <span data-keyword="subsequence-array">子序列</span> 替换&nbsp;<code>nums</code>。</li>
+	<li>Replace <code>nums</code> with a <span data-keyword="subsequence-array">subsequence</span> of <code>nums</code>.</li>
 </ul>
 
-<p>我们以给定的<code>queries</code>顺序处理查询；对于<code>queries[i]</code>，我们执行以下操作：</p>
+<p>We start processing queries in the given order; for each query, we do the following:</p>
 
 <ul>
-	<li>如果&nbsp;<code>nums</code> 的第一个 <strong>和</strong> 最后一个元素 <strong>小于</strong>&nbsp;<code>queries[i]</code>，则查询处理 <strong>结束</strong>。</li>
-	<li>否则，从&nbsp;<code>nums</code>&nbsp;选择第一个 <strong>或</strong> 最后一个元素，要求其<strong>大于或等于</strong> <code>queries[i]</code>，然后将其从&nbsp;<code>nums</code> 中 <strong>删除</strong>。</li>
+	<li>If the first <strong>and</strong> the last element of <code>nums</code> is <strong>less than</strong> <code>queries[i]</code>, the processing of queries <strong>ends</strong>.</li>
+	<li>Otherwise, we choose either the first <strong>or</strong> the last element of <code>nums</code> if it is <strong>greater than or equal to</strong> <code>queries[i]</code>, and we <strong>remove</strong> the chosen element from <code>nums</code>.</li>
 </ul>
 
-<p>返回通过以最佳方式执行该操作可以处理的&nbsp;<strong>最多&nbsp;</strong>次数。</p>
+<p>Return <em>the <strong>maximum</strong> number of queries that can be processed by doing the operation optimally.</em></p>
 
 <p>&nbsp;</p>
-
-<p><strong class="example">示例 1：</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
-<strong>输入：</strong>nums = [1,2,3,4,5], queries = [1,2,3,4,6]
-<strong>输出：</strong>4
-<strong>解释：</strong>我们不执行任何操作，并按如下方式处理查询：
-1- 我们选择并移除 nums[0]，因为 1 &lt;= 1，那么 nums 就变成 [2,3,4,5]。
-2- 我们选择并移除 nums[0]，因为 2 &lt;= 2，那么 nums 就变成 [3,4,5]。
-3- 我们选择并移除 nums[0]，因为 3 &lt;= 3，那么 nums 就变成 [4,5]。
-4- 我们选择并移除 nums[0]，因为 4 &lt;= 4，那么 nums 就变成 [5]。
-5- 我们不能从 nums 中选择任何元素，因为它们不大于或等于 5。
-因此，答案为 4。
-可以看出，我们不能处理超过 4 个查询。
+<strong>Input:</strong> nums = [1,2,3,4,5], queries = [1,2,3,4,6]
+<strong>Output:</strong> 4
+<strong>Explanation:</strong> We don&#39;t do any operation and process the queries as follows:
+1- We choose and remove nums[0] since 1 &lt;= 1, then nums becomes [2,3,4,5].
+2- We choose and remove nums[0] since 2 &lt;= 2, then nums becomes [3,4,5].
+3- We choose and remove nums[0] since 3 &lt;= 3, then nums becomes [4,5].
+4- We choose and remove nums[0] since 4 &lt;= 4, then nums becomes [5].
+5- We can not choose any elements from nums since they are not greater than or equal to 5.
+Hence, the answer is 4.
+It can be shown that we can&#39;t process more than 4 queries.
 </pre>
 
-<p><strong class="example">示例 2：</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
-<strong>输入：</strong>nums = [2,3,2], queries = [2,2,3]
-<b>输出：</b>3
-<strong>解释：</strong>我们不做任何操作，按如下方式处理查询：
-1- 我们选择并移除 nums[0]，因为 2 &lt;= 2，那么 nums 就变成 [3,2]。
-2- 我们选择并移除 nums[1]，因为 2 &lt;= 2，那么 nums 就变成 [3]。
-3- 我们选择并移除 nums[0]，因为 3 &lt;= 3，那么 nums 就变成 []。
-因此，答案为 3。
-可以看出，我们不能处理超过 3 个查询。
+<strong>Input:</strong> nums = [2,3,2], queries = [2,2,3]
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> We don&#39;t do any operation and process the queries as follows:
+1- We choose and remove nums[0] since 2 &lt;= 2, then nums becomes [3,2].
+2- We choose and remove nums[1] since 2 &lt;= 2, then nums becomes [3].
+3- We choose and remove nums[0] since 3 &lt;= 3, then nums becomes [].
+Hence, the answer is 3.
+It can be shown that we can&#39;t process more than 3 queries.
 </pre>
 
-<p><strong class="example">示例 3：</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <pre>
-<strong>输入：</strong>nums = [3,4,3], queries = [4,3,2]
-<strong>输出：</strong>2
-<strong>解释：</strong>首先，我们用 nums 的子序列 [4,3] 替换 nums。
-然后，我们可以按如下方式处理查询：
-1- 我们选择并移除 nums[0]，因为 4 &lt;= 4，那么 nums 就变成 [3]。
-2- 我们选择并移除 nums[0]，因为 3 &lt;= 3，那么 nums 就变成 []。
-3- 我们无法处理更多查询，因为 nums 为空。
-因此，答案为 2。
-可以看出，我们不能处理超过 2 个查询。
+<strong>Input:</strong> nums = [3,4,3], queries = [4,3,2]
+<strong>Output:</strong> 2
+<strong>Explanation:</strong> First we replace nums with the subsequence of nums [4,3].
+Then we can process the queries as follows:
+1- We choose and remove nums[0] since 4 &lt;= 4, then nums becomes [3].
+2- We choose and remove nums[0] since 3 &lt;= 3, then nums becomes [].
+3- We can not process any more queries since nums is empty.
+Hence, the answer is 2.
+It can be shown that we can&#39;t process more than 2 queries.
 </pre>
 
 <p>&nbsp;</p>
-
-<p><strong>提示：</strong></p>
+<p><strong>Constraints:</strong></p>
 
 <ul>
 	<li><code>1 &lt;= nums.length &lt;= 1000</code></li>
@@ -79,21 +75,21 @@
 	<li><code>1 &lt;= nums[i], queries[i] &lt;= 10<sup>9</sup></code></li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：动态规划
+### Solution 1: Dynamic Programming
 
-我们定义 $f[i][j]$ 表示区间 $[i, j]$ 的数还没有被删除时，我们能够处理的查询的最大数量。
+We define $f[i][j]$ as the maximum number of queries we can handle when the numbers in the interval $[i, j]$ have not been deleted yet.
 
-考虑 $f[i][j]$：
+Consider $f[i][j]$:
 
--   如果 $i \gt 0$，此时 $f[i][j]$ 的值可以由 $f[i - 1][j]$ 转移而来。如果 $nums[i - 1] \ge queries[f[i - 1][j]]$，那么我们可以选择删除 $nums[i - 1]$，因此我们有 $f[i][j] = f[i - 1][j] + (nums[i - 1] \ge queries[f[i - 1][j]])$。
--   如果 $j + 1 \lt n$，此时 $f[i][j]$ 的值可以由 $f[i][j + 1]$ 转移而来。如果 $nums[j + 1] \ge queries[f[i][j + 1]]$，那么我们可以选择删除 $nums[j + 1]$，因此我们有 $f[i][j] = f[i][j + 1] + (nums[j + 1] \ge queries[f[i][j + 1]])$。
--   如果 $f[i][j] = m$，那么我们就可以直接返回 $m$。
+-   If $i > 0$, the value of $f[i][j]$ can be transferred from $f[i - 1][j]$. If $nums[i - 1] \ge queries[f[i - 1][j]]$, we can choose to delete $nums[i - 1]$. Therefore, we have $f[i][j] = f[i - 1][j] + (nums[i - 1] \ge queries[f[i - 1][j]])$.
+-   If $j + 1 < n$, the value of $f[i][j]$ can be transferred from $f[i][j + 1]$. If $nums[j + 1] \ge queries[f[i][j + 1]]$, we can choose to delete $nums[j + 1]$. Therefore, we have $f[i][j] = f[i][j + 1] + (nums[j + 1] \ge queries[f[i][j + 1]])$.
+-   If $f[i][j] = m$, we can directly return $m$.
 
-最后的答案即为 $\max\limits_{0 \le i \lt n} f[i][i] + (nums[i] \ge queries[f[i][i]])$。
+The final answer is $\max\limits_{0 \le i < n} f[i][i] + (nums[i] \ge queries[f[i][i]])$.
 
-时间复杂度 $O(n^2)$，空间复杂度 $O(n^2)$。其中 $n$ 为数组 $nums$ 的长度。
+The time complexity is $O(n^2)$, and the space complexity is $O(n^2)$. Here, $n$ is the length of the array $nums$.
 
 <!-- tabs:start -->
 

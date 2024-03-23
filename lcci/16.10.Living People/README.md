@@ -1,37 +1,45 @@
-# [面试题 16.10. 生存人数](https://leetcode.cn/problems/living-people-lcci)
+# [16.10. Living People](https://leetcode.cn/problems/living-people-lcci)
 
-[English Version](/lcci/16.10.Living%20People/README_EN.md)
+[中文文档](/lcci/16.10.Living%20People/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>Given a list of people with their birth and death years, implement a method to compute the year with the most number of people alive. You may assume that all people were born between 1900 and 2000 (inclusive). If a person was alive during any portion of that year, they should be included in that year&#39;s count. For example, Person (birth= 1908, death= 1909) is included in the counts for both 1908 and 1909.</p>
 
-<p>给定N个人的出生年份和死亡年份，第<code>i</code>个人的出生年份为<code>birth[i]</code>，死亡年份为<code>death[i]</code>，实现一个方法以计算生存人数最多的年份。</p>
-<p>你可以假设所有人都出生于1900年至2000年（含1900和2000）之间。如果一个人在某一年的任意时期都处于生存状态，那么他们应该被纳入那一年的统计中。例如，生于1908年、死于1909年的人应当被列入1908年和1909年的计数。</p>
-<p>如果有多个年份生存人数相同且均为最大值，输出其中最小的年份。</p>
-<p><strong>示例：</strong></p>
-<pre><strong>输入：</strong>
+<p>If there are more than one years&nbsp;that have the most number of people alive, return the smallest one.</p>
+
+<p><strong>Example: </strong></p>
+
+<pre>
+
+<strong>Input: </strong>
+
 birth = {1900, 1901, 1950}
+
 death = {1948, 1951, 2000}
-<strong>输出：</strong> 1901
+
+<strong>Output: </strong> 1901
+
 </pre>
-<p><strong>提示：</strong></p>
+
+<p><strong>Note: </strong></p>
+
 <ul>
-<li><code>0 < birth.length == death.length <= 10000</code></li>
-<li><code>birth[i] <= death[i]</code></li>
+	<li><code>0 &lt; birth.length == death.length &lt;= 10000</code></li>
+	<li><code>birth[i] &lt;= death[i]</code></li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：差分数组
+### Solution 1: Difference Array
 
-题目实际上是对一个连续的区间进行加减操作，然后求最大值。这种情况下可以使用差分数组来解决。
+The problem is actually about performing addition and subtraction operations on a continuous interval, and then finding the maximum value. This can be solved using a difference array.
 
-由于题目中的年份范围是固定的，所以可以使用一个长度为 $102$ 的数组来表示 $1900$ 年到 $2000$ 年的人口变化情况。数组中的每个元素表示该年份的人口变化，正数表示出生人数，负数表示死亡人数。
+Since the year range in the problem is fixed, we can use an array of length $102$ to represent the population changes from 1900 to 2000. Each element in the array represents the population change in that year, with positive numbers indicating the number of births and negative numbers indicating the number of deaths.
 
-遍历每个人的出生年份和死亡年份，对应的年份的人口变化加一和减一。然后遍历差分数组，求出差分数组的前缀和的最大值，最大值对应的年份即为答案。
+We traverse the birth and death years of each person, and add one and subtract one from the corresponding year's population change, respectively. Then we traverse the difference array, and find the maximum value of the prefix sum of the difference array. The year corresponding to the maximum value is the answer.
 
-时间复杂度 $O(n)$，空间复杂度 $O(C)$。其中 $n$ 是出生年份和死亡年份的长度，而 $C$ 是年份的范围。
+The time complexity is $O(n)$, and the space complexity is $O(C)$. Here, $n$ is the length of the birth and death years, and $C$ is the range of years.
 
 <!-- tabs:start -->
 

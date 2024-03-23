@@ -1,38 +1,51 @@
-# [面试题 16.19. 水域大小](https://leetcode.cn/problems/pond-sizes-lcci)
+# [16.19. Pond Sizes](https://leetcode.cn/problems/pond-sizes-lcci)
 
-[English Version](/lcci/16.19.Pond%20Sizes/README_EN.md)
+[中文文档](/lcci/16.19.Pond%20Sizes/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>你有一个用于表示一片土地的整数矩阵<code>land</code>，该矩阵中每个点的值代表对应地点的海拔高度。若值为0则表示水域。由垂直、水平或对角连接的水域为池塘。池塘的大小是指相连接的水域的个数。编写一个方法来计算矩阵中所有池塘的大小，返回值需要从小到大排序。</p>
-<p><strong>示例：</strong></p>
-<pre><strong>输入：</strong>
+<p>You have an integer matrix representing a plot of land, where the value at that loca&shy;tion represents the height above sea level. A value of zero indicates water. A pond is a region of water connected vertically, horizontally, or diagonally. The size of the pond is the total number of connected water cells. Write a method to compute the sizes of all ponds in the matrix.</p>
+
+<p><strong>Example: </strong></p>
+
+<pre>
+
+<strong>Input: </strong>
+
 [
+
   [0,2,1,0],
+
   [0,1,0,1],
+
   [1,1,0,1],
+
   [0,1,0,1]
+
 ]
-<strong>输出：</strong> [1,2,4]
+
+<strong>Output: </strong> [1,2,4]
+
 </pre>
-<p><strong>提示：</strong></p>
+
+<p><strong>Note: </strong></p>
+
 <ul>
-<li><code>0 < len(land) <= 1000</code></li>
-<li><code>0 < len(land[i]) <= 1000</code></li>
+	<li><code>0 &lt; len(land) &lt;= 1000</code></li>
+	<li><code>0 &lt; len(land[i]) &lt;= 1000</code></li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：DFS
+### Solution 1: DFS
 
-我们可以遍历整数矩阵 $land$ 中的每个点 $(i, j)$，如果该点的值为 $0$，则从该点开始进行深度优先搜索，直到搜索到的点的值不为 $0$，则停止搜索，此时搜索到的点的个数即为池塘的大小，将其加入答案数组中。
+We can traverse each point $(i, j)$ in the integer matrix $land$. If the value of the point is $0$, we start a depth-first search from this point until we reach a point with a non-zero value. The number of points searched during this process is the size of the pond, which is added to the answer array.
 
-> 注意：在进行深度优先搜索时，为了避免重复搜索，我们将搜索到的点的值置为 $1$。
+> Note: To avoid duplicate searches, we set the value of the searched points to $1$.
 
-最后，我们对答案数组进行排序，即可得到最终答案。
+Finally, we sort the answer array to obtain the final answer.
 
-时间复杂度 $O(m \times n \times \log (m \times n))，空间复杂度 O(m \times n)$。其中 $m$ 和 $n$ 分别为矩阵 $land$ 的行数和列数。
+The time complexity is $O(m \times n \times \log (m \times n))$, and the space complexity is $O(m \times n)$. Here, $m$ and $n$ are the number of rows and columns in the matrix $land$, respectively.
 
 <!-- tabs:start -->
 

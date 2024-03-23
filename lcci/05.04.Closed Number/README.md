@@ -1,43 +1,47 @@
-# [面试题 05.04. 下一个数](https://leetcode.cn/problems/closed-number-lcci)
+# [05.04. Closed Number](https://leetcode.cn/problems/closed-number-lcci)
 
-[English Version](/lcci/05.04.Closed%20Number/README_EN.md)
+[中文文档](/lcci/05.04.Closed%20Number/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-
-<p>下一个数。给定一个正整数，找出与其二进制表达式中1的个数相同且大小最接近的那两个数（一个略大，一个略小）。</p>
-<p> <strong>示例1:</strong></p>
+<p>Given a positive integer, print the next smallest and the next largest number that have the same number of 1 bits in their binary representation.</p>
+<p><strong>Example1:</strong></p>
 <pre>
-<strong> 输入</strong>：num = 2（或者0b10）
-<strong> 输出</strong>：[4, 1] 或者（[0b100, 0b1]）
+
+<strong> Input</strong>: num = 2 (0b10)
+
+<strong> Output</strong>: [4, 1] ([0b100, 0b1])
+
 </pre>
-<p> <strong>示例2:</strong></p>
+<p><strong>Example2:</strong></p>
 <pre>
-<strong> 输入</strong>：num = 1
-<strong> 输出</strong>：[2, -1]
+
+<strong> Input</strong>: num = 1
+
+<strong> Output</strong>: [2, -1]
+
 </pre>
-<p> <strong>提示:</strong></p>
+<p><strong>Note:</strong></p>
 <ol>
-<li><code>num</code>的范围在[1, 2147483647]之间；</li>
-<li>如果找不到前一个或者后一个满足条件的正数，那么输出 -1。</li>
+	<li><code>1 &lt;= num &lt;=&nbsp;2147483647</code></li>
+	<li>If there is no next smallest or next largest number, output -1.</li>
 </ol>
 
-## 解法
+## Solutions
 
-### 方法一：位运算
+### Solution 1: Bit Manipulation
 
-我们先考虑如何找出第一个比 $num$ 大且二进制表示中 $1$ 的个数相同的数。
+First, let's consider how to find the first number that is larger than $num$ and has the same number of $1$s in its binary representation.
 
-我们可以从低位到高位遍历 $num$ 的相邻两个二进制位，如果低位为 $1$，且相邻的较高一位为 $0$，那么我们就找到了一个位置，我们可以将这个位置的 $0$ 变成 $1$，将这个位置的 $1$ 变成 $0$。然后我们把其余低位的 $1$ 全部移动到最低位，这样我们就得到了一个比 $num$ 大且二进制表示中 $1$ 的个数相同的数。
+We can traverse the adjacent two binary bits of $num$ from low to high. If the lower bit is $1$ and the adjacent higher bit is $0$, then we have found a position where we can change the $0$ at this position to $1$ and change the $1$ at this position to $0$. Then we move all the remaining lower bits of $1$ to the lowest bit, so we get a number that is larger than $num$ and has the same number of $1$s in its binary representation.
 
-同理，我们可以找到第一个比 $num$ 小且二进制表示中 $1$ 的个数相同的数。
+Similarly, we can find the first number that is smaller than $num$ and has the same number of $1$s in its binary representation.
 
-我们可以从低位到高位遍历 $num$ 的相邻两个二进制位，如果低位为 $0$，且相邻的较高一位为 $1$，那么我们就找到了一个位置，我们可以将这个位置的 $1$ 变成 $0$，将这个位置的 $0$ 变成 $1$。然后我们把其余低位的 $0$ 全部移动到最低位，这样我们就得到了一个比 $num$ 小且二进制表示中 $1$ 的个数相同的数。
+We can traverse the adjacent two binary bits of $num$ from low to high. If the lower bit is $0$ and the adjacent higher bit is $1$, then we have found a position where we can change the $1$ at this position to $0$ and change the $0$ at this position to $1$. Then we move all the remaining lower bits of $0$ to the lowest bit, so we get a number that is smaller than $num$ and has the same number of $1$s in its binary representation.
 
-在实现上，我们可以用一段代码来统一处理以上两种情况。
+In implementation, we can use a piece of code to handle the above two situations uniformly.
 
-时间复杂度 $O(\log n)$，其中 $n$ 是 $num$ 的大小。空间复杂度 $O(1)$。
+The time complexity is $O(\log n)$, where $n$ is the size of $num$. The space complexity is $O(1)$.
 
 <!-- tabs:start -->
 

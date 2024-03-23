@@ -1,72 +1,68 @@
-# [3066. 超过阈值的最少操作数 II](https://leetcode.cn/problems/minimum-operations-to-exceed-threshold-value-ii)
+# [3066. Minimum Operations to Exceed Threshold Value II](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii)
 
-[English Version](/solution/3000-3099/3066.Minimum%20Operations%20to%20Exceed%20Threshold%20Value%20II/README_EN.md)
+[中文文档](/solution/3000-3099/3066.Minimum%20Operations%20to%20Exceed%20Threshold%20Value%20II/README.md)
 
-<!-- tags:数组,模拟,堆（优先队列） -->
+<!-- tags:Array,Simulation,Heap (Priority Queue) -->
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>You are given a <strong>0-indexed</strong> integer array <code>nums</code>, and an integer <code>k</code>.</p>
 
-<p>给你一个下标从 <strong>0</strong>&nbsp;开始的整数数组&nbsp;<code>nums</code>&nbsp;和一个整数&nbsp;<code>k</code>&nbsp;。</p>
-
-<p>一次操作中，你将执行：</p>
+<p>In one operation, you will:</p>
 
 <ul>
-	<li>选择 <code>nums</code>&nbsp;中最小的两个整数&nbsp;<code>x</code> 和&nbsp;<code>y</code>&nbsp;。</li>
-	<li>将&nbsp;<code>x</code> 和&nbsp;<code>y</code> 从&nbsp;<code>nums</code>&nbsp;中删除。</li>
-	<li>将&nbsp;<code>min(x, y) * 2 + max(x, y)</code>&nbsp;添加到数组中的任意位置。</li>
+	<li>Take the two smallest integers <code>x</code> and <code>y</code> in <code>nums</code>.</li>
+	<li>Remove <code>x</code> and <code>y</code> from <code>nums</code>.</li>
+	<li>Add <code>min(x, y) * 2 + max(x, y)</code> anywhere in the array.</li>
 </ul>
 
-<p><b>注意，</b>只有当&nbsp;<code>nums</code>&nbsp;至少包含两个元素时，你才可以执行以上操作。</p>
+<p><strong>Note</strong> that you can only apply the described operation if <code>nums</code> contains at least two elements.</p>
 
-<p>你需要使数组中的所有元素都大于或等于&nbsp;<code>k</code>&nbsp;，请你返回需要的&nbsp;<strong>最少</strong>&nbsp;操作次数。</p>
+<p>Return <em>the <strong>minimum</strong> number of operations needed so that all elements of the array are greater than or equal to</em> <code>k</code>.</p>
 
 <p>&nbsp;</p>
-
-<p><strong class="example">示例 1：</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
-<b>输入：</b>nums = [2,11,10,1,3], k = 10
-<b>输出：</b>2
-<b>解释：</b>第一次操作中，我们删除元素 1 和 2 ，然后添加 1 * 2 + 2 到 nums 中，nums 变为 [4, 11, 10, 3] 。
-第二次操作中，我们删除元素 3 和 4 ，然后添加 3 * 2 + 4 到 nums 中，nums 变为 [10, 11, 10] 。
-此时，数组中的所有元素都大于等于 10 ，所以我们停止操作。
-使数组中所有元素都大于等于 10 需要的最少操作次数为 2 。
+<strong>Input:</strong> nums = [2,11,10,1,3], k = 10
+<strong>Output:</strong> 2
+<strong>Explanation:</strong> In the first operation, we remove elements 1 and 2, then add 1 * 2 + 2 to nums. nums becomes equal to [4, 11, 10, 3].
+In the second operation, we remove elements 3 and 4, then add 3 * 2 + 4 to nums. nums becomes equal to [10, 11, 10].
+At this stage, all the elements of nums are greater than or equal to 10 so we can stop.
+It can be shown that 2 is the minimum number of operations needed so that all elements of the array are greater than or equal to 10.
 </pre>
 
-<p><strong class="example">示例 2：</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
-<b>输入：</b>nums = [1,1,2,4,9], k = 20
-<b>输出：</b>4
-<b>解释：</b>第一次操作后，nums 变为 [2, 4, 9, 3] 。
-第二次操作后，nums 变为 [7, 4, 9] 。
-第三次操作后，nums 变为 [15, 9] 。
-第四次操作后，nums 变为 [33] 。
-此时，数组中的所有元素都大于等于 20 ，所以我们停止操作。
-使数组中所有元素都大于等于 20 需要的最少操作次数为 4 。</pre>
+<strong>Input:</strong> nums = [1,1,2,4,9], k = 20
+<strong>Output:</strong> 4
+<strong>Explanation:</strong> After one operation, nums becomes equal to [2, 4, 9, 3].
+After two operations, nums becomes equal to [7, 4, 9].
+After three operations, nums becomes equal to [15, 9].
+After four operations, nums becomes equal to [33].
+At this stage, all the elements of nums are greater than 20 so we can stop.
+It can be shown that 4 is the minimum number of operations needed so that all elements of the array are greater than or equal to 20.</pre>
 
 <p>&nbsp;</p>
-
-<p><strong>提示：</strong></p>
+<p><strong>Constraints:</strong></p>
 
 <ul>
 	<li><code>2 &lt;= nums.length &lt;= 2 * 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
 	<li><code>1 &lt;= k &lt;= 10<sup>9</sup></code></li>
-	<li>输入保证答案一定存在，也就是说一定存在一个操作序列使数组中所有元素都大于等于&nbsp;<code>k</code> 。</li>
+	<li>The input is generated such that an answer always exists. That is, there exists some sequence of operations after which all elements of the array are greater than or equal to <code>k</code>.</li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：优先队列（小根堆）
+### Solution 1: Priority Queue (Min Heap)
 
-我们可以使用优先队列（小根堆）来模拟这个过程。
+We can use a priority queue (min heap) to simulate this process.
 
-具体地，我们先将数组中的元素加入优先队列 $pq$ 中。然后我们不断地从优先队列中取出两个最小的元素 $x$ 和 $y$，将 $\min(x, y) \times 2 + \max(x, y)$ 放回优先队列中。每次操作后，我们将操作次数加一。当队列中的元素个数小于 $2$ 或者队列中的最小元素大于等于 $k$ 时，我们停止操作。
+Specifically, we first add the elements in the array to the priority queue `pq`. Then we continuously take out the two smallest elements `x` and `y` from the priority queue, and put `min(x, y) * 2 + max(x, y)` back into the priority queue. After each operation, we increase the operation count by one. We stop the operation when the number of elements in the queue is less than 2 or the smallest element in the queue is greater than or equal to `k`.
 
-时间复杂度 $O(n \times \log n)$，空间复杂度 $O(n)$。其中 $n$ 为数组长度。
+The time complexity is $O(n \times \log n)$, and the space complexity is $O(n)$, where $n$ is the length of the array.
 
 <!-- tabs:start -->
 

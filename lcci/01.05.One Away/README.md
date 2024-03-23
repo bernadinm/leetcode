@@ -1,44 +1,52 @@
-# [面试题 01.05. 一次编辑](https://leetcode.cn/problems/one-away-lcci)
+# [01.05. One Away](https://leetcode.cn/problems/one-away-lcci)
 
-[English Version](/lcci/01.05.One%20Away/README_EN.md)
+[中文文档](/lcci/01.05.One%20Away/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>字符串有三种编辑操作:插入一个字符、删除一个字符或者替换一个字符。 给定两个字符串，编写一个函数判定它们是否只需要一次(或者零次)编辑。</p>
+<p>There are three types of edits that can be performed on strings: insert a character, remove a character, or replace a character. Given two strings, write a function to check if they are one edit (or zero edits) away.</p>
 
-<p>&nbsp;</p>
+<p><strong>Example&nbsp;1:</strong></p>
 
-<p><strong>示例&nbsp;1:</strong></p>
+<pre>
 
-<pre><strong>输入:</strong>
+<strong>Input:</strong>
+
 first = &quot;pale&quot;
+
 second = &quot;ple&quot;
-<strong>输出:</strong> True</pre>
 
-<p>&nbsp;</p>
+<strong>Output:</strong> True
 
-<p><strong>示例&nbsp;2:</strong></p>
-
-<pre><strong>输入:</strong>
-first = &quot;pales&quot;
-second = &quot;pal&quot;
-<strong>输出:</strong> False
 </pre>
 
-## 解法
+<p><strong>Example&nbsp;2:</strong></p>
 
-### 方法一：分情况讨论 + 双指针
+<pre>
 
-我们将字符串 $first$ 和 $second$ 的长度记为 $m$ 和 $n$，不妨设 $m \geq n$。
+<strong>Input:</strong>
 
-接下来分情况讨论：
+first = &quot;pales&quot;
 
--   当 $m - n \gt 1$ 时，$first$ 和 $second$ 无法通过一次编辑得到，返回 `false`；
--   当 $m = n$ 时，$first$ 和 $second$ 只有在且仅在有且仅有一个字符不同的情况下才能通过一次编辑得到；
--   当 $m - n = 1$ 时，$first$ 和 $second$ 只有在且仅在 $second$ 是 $first$ 删除一个字符后得到的情况下才能通过一次编辑得到，我们可以使用双指针来实现。
+second = &quot;pal&quot;
 
-时间复杂度 $O(n)$，其中 $n$ 为字符串长度。空间复杂度 $O(1)$。
+<strong>Output:</strong> False
+
+</pre>
+
+## Solutions
+
+### Solution 1: Case Discussion + Two Pointers
+
+We denote the lengths of strings $first$ and $second$ as $m$ and $n$, respectively, where $m \geq n$.
+
+Next, we discuss different cases:
+
+-   When $m - n > 1$, $first$ and $second$ cannot be obtained through a single edit, so we return `false`.
+-   When $m = n$, $first$ and $second$ can only be obtained through a single edit if and only if exactly one character is different.
+-   When $m - n = 1$, $first$ and $second$ can only be obtained through a single edit if and only if $second$ is obtained by deleting one character from $first$. We can use two pointers to implement this.
+
+The time complexity is $O(n)$, where $n$ is the length of the string. The space complexity is $O(1)$.
 
 <!-- tabs:start -->
 

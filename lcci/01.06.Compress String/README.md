@@ -1,42 +1,48 @@
-# [面试题 01.06. 字符串压缩](https://leetcode.cn/problems/compress-string-lcci)
+# [01.06. Compress String](https://leetcode.cn/problems/compress-string-lcci)
 
-[English Version](/lcci/01.06.Compress%20String/README_EN.md)
+[中文文档](/lcci/01.06.Compress%20String/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>字符串压缩。利用字符重复出现的次数，编写一种方法，实现基本的字符串压缩功能。比如，字符串<code>aabcccccaaa</code>会变为<code>a2b1c5a3</code>。若“压缩”后的字符串没有变短，则返回原先的字符串。你可以假设字符串中只包含大小写英文字母（a至z）。</p>
+<p>Implement a method to perform basic string compression using the counts of repeated characters. For example, the string aabcccccaaa would become a2blc5a3. If the &quot;compressed&quot; string would not become smaller than the original string, your method should return the original string. You can assume the string has only uppercase and lowercase letters (a - z).</p>
 
-<p> <strong>示例1:</strong></p>
-
-<pre>
-<strong> 输入</strong>："aabcccccaaa"
-<strong> 输出</strong>："a2b1c5a3"
-</pre>
-
-<p> <strong>示例2:</strong></p>
+<p><strong>Example 1:</strong></p>
 
 <pre>
-<strong> 输入</strong>："abbccd"
-<strong> 输出</strong>："abbccd"
-<strong> 解释</strong>："abbccd"压缩后为"a1b2c2d1"，比原字符串长度更长。
+
+<strong>Input: </strong>&quot;aabcccccaaa&quot;
+
+<strong>Output: </strong>&quot;a2b1c5a3&quot;
+
 </pre>
 
-<p><strong>提示：</strong></p>
+<p><strong>Example 2:</strong></p>
 
-<ol>
-<li>字符串长度在[0, 50000]范围内。</li>
-</ol>
+<pre>
 
-## 解法
+<strong>Input: </strong>&quot;abbccd&quot;
 
-### 方法一：双指针
+<strong>Output: </strong>&quot;abbccd&quot;
 
-我们可以利用双指针找出每个连续字符的起始位置和结束位置，计算出连续字符的长度，然后将字符和长度拼接到字符串 $t$ 中。
+<strong>Explanation: </strong>
 
-最后，我们比较 $t$ 和 $S$ 的长度，如果 $t$ 的长度小于 $S$，则返回 $t$，否则返回 $S$。
+The compressed string is &quot;a1b2c2d1&quot;, which is longer than the original string.
 
-时间复杂度 $O(n)$，空间复杂度 $O(n)$。其中 $n$ 为字符串长度。
+</pre>
+
+<p><strong>Note:</strong></p>
+
+-   `0 <= S.length <= 50000`
+
+## Solutions
+
+### Solution 1: Two Pointers
+
+We can use two pointers to find the start and end positions of each consecutive character, calculate the length of the consecutive characters, and then append the character and length to the string $t$.
+
+Finally, we compare the lengths of $t$ and $S$. If the length of $t$ is less than $S$, we return $t$, otherwise we return $S$.
+
+The time complexity is $O(n)$, and the space complexity is $O(n)$. Here, $n$ is the length of the string.
 
 <!-- tabs:start -->
 

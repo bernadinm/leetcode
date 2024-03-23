@@ -1,37 +1,48 @@
-# [面试题 08.14. 布尔运算](https://leetcode.cn/problems/boolean-evaluation-lcci)
+# [08.14. Boolean Evaluation](https://leetcode.cn/problems/boolean-evaluation-lcci)
 
-[English Version](/lcci/08.14.Boolean%20Evaluation/README_EN.md)
+[中文文档](/lcci/08.14.Boolean%20Evaluation/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>给定一个布尔表达式和一个期望的布尔结果 result，布尔表达式由 <code>0</code> (false)、<code>1</code> (true)、<code>&amp;</code> (AND)、 <code>|</code> (OR) 和 <code>^</code> (XOR) 符号组成。实现一个函数，算出有几种可使该表达式得出 result 值的括号方法。</p>
+<p>Given a boolean expression consisting of the symbols <code>0</code> (false), <code>1</code> (true), <code>&amp;</code> (AND), <code>|</code> (OR), and <code>^</code>&nbsp;(XOR), and a desired boolean result value result, implement a function to count the number of ways of parenthesizing the expression such that it evaluates to result.</p>
 
-<p><strong>示例 1:</strong></p>
+<p><strong>Example 1:</strong></p>
 
-<pre><strong>输入: </strong>s = &quot;1^0|0|1&quot;, result = 0
+<pre>
 
-<strong>输出: </strong>2
-<strong>解释:</strong>&nbsp;两种可能的括号方法是
+<strong>Input: </strong>s = &quot;1^0|0|1&quot;, result = 0
+
+
+
+<strong>Output: </strong>2
+
+<strong>Explanation:</strong>&nbsp;Two possible parenthesizing ways are:
+
 1^(0|(0|1))
+
 1^((0|0)|1)
+
 </pre>
 
-<p><strong>示例 2:</strong></p>
+<p><strong>Example 2:</strong></p>
 
-<pre><strong>输入: </strong>s = &quot;0&amp;0&amp;0&amp;1^1|0&quot;, result = 1
+<pre>
 
-<strong>输出: </strong>10</pre>
+<strong>Input: </strong>s = &quot;0&amp;0&amp;0&amp;1^1|0&quot;, result = 1
 
-<p><strong>提示：</strong></p>
+
+
+<strong>Output: </strong>10</pre>
+
+<p><strong>Note: </strong></p>
 
 <ul>
-	<li>运算符的数量不超过 19 个</li>
+	<li>There are no more than&nbsp;19 operators in <code>s</code>.</li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：记忆化搜索
+### Solution 1
 
 <!-- tabs:start -->
 

@@ -1,12 +1,10 @@
-# [3058. Friends With No Mutual Friends](https://leetcode.cn/problems/friends-with-no-mutual-friends)
+# [3058. Friends With No Mutual Friends](https://leetcode.com/problems/friends-with-no-mutual-friends)
 
-[English Version](/solution/3000-3099/3058.Friends%20With%20No%20Mutual%20Friends/README_EN.md)
+[中文文档](/solution/3000-3099/3058.Friends%20With%20No%20Mutual%20Friends/README.md)
 
-<!-- tags:数据库 -->
+<!-- tags:Database -->
 
-## 题目描述
-
-<!-- 这里写题目描述 -->
+## Description
 
 <p>Table: <code>Friends</code></p>
 
@@ -60,13 +58,13 @@ Friends table:
 - Users 3 and 4 are friends with each other, but their mutual connection with user ID 2 means they are not included, similarly for users 2 and 5 are friends but are excluded due to their mutual connection with user ID 1.
 Output table is ordered by user_id1 in ascending order.</pre>
 
-## 解法
+## Solutions
 
-### 方法一：子查询
+### Solution 1: Subquery
 
-我们先把所有的朋友关系都列出来，记录在 `T` 表中。然后再找出没有共同朋友的朋友对。
+First, we list all the friend relationships and record them in table `T`. Then we find the pairs of friends who do not have common friends.
 
-接下来，我们可以使用子查询来找出没有共同朋友的朋友对，即这个朋友对不属于其他某个人的朋友。
+Next, we can use a subquery to find pairs of friends who do not have common friends, i.e., this pair of friends does not belong to any other person's friends.
 
 <!-- tabs:start -->
 

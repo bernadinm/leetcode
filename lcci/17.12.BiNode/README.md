@@ -1,39 +1,36 @@
-# [面试题 17.12. BiNode](https://leetcode.cn/problems/binode-lcci)
+# [17.12. BiNode](https://leetcode.cn/problems/binode-lcci)
 
-[English Version](/lcci/17.12.BiNode/README_EN.md)
+[中文文档](/lcci/17.12.BiNode/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>二叉树数据结构<code>TreeNode</code>可用来表示单向链表（其中<code>left</code>置空，<code>right</code>为下一个链表节点）。实现一个方法，把二叉搜索树转换为单向链表，要求值的顺序保持不变，转换操作应是原址的，也就是在原始的二叉搜索树上直接修改。</p>
+<p>The data structure&nbsp;<code>TreeNode</code>&nbsp;is used for binary tree, but it can also used to represent a single linked list (where left is null, and right is the next node in the list). Implement a method to convert a binary search tree (implemented with <code>TreeNode</code>) into a single&nbsp;linked list. The values should be kept in order and the operation should be performed in place (that is, on the original data structure).</p>
 
-<p>返回转换后的单向链表的头节点。</p>
+<p>Return the head node of the linked list after converting.</p>
 
-<p><strong>注意：</strong>本题相对原题稍作改动</p>
+<p><b>Note:&nbsp;</b>This problem is slightly different from the original one in the book.</p>
 
 <p>&nbsp;</p>
 
-<p><strong>示例：</strong></p>
+<p><strong>Example: </strong></p>
 
-<pre><strong>输入：</strong> [4,2,5,1,3,null,6,0]
-<strong>输出：</strong> [0,null,1,null,2,null,3,null,4,null,5,null,6]
+<pre>
+
+<strong>Input: </strong> [4,2,5,1,3,null,6,0]
+
+<strong>Output: </strong> [0,null,1,null,2,null,3,null,4,null,5,null,6]
+
 </pre>
 
-<p><strong>提示：</strong></p>
+<p><strong>Note: </strong></p>
 
 <ul>
-	<li>节点数量不会超过 100000。</li>
+	<li>The number of nodes will not exceed&nbsp;100000.</li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：中序遍历
-
-中序遍历过程中改变指针指向。
-
-时间复杂度 $O(n)$。
-
-同 [897. 递增顺序查找树](https://github.com/doocs/leetcode/blob/main/solution/0800-0899/0897.Increasing%20Order%20Search%20Tree/README.md)。
+### Solution 1
 
 <!-- tabs:start -->
 

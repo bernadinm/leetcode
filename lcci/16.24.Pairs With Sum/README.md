@@ -1,34 +1,38 @@
-# [面试题 16.24. 数对和](https://leetcode.cn/problems/pairs-with-sum-lcci)
+# [16.24. Pairs With Sum](https://leetcode.cn/problems/pairs-with-sum-lcci)
 
-[中文文档](/lcci/16.24.Pairs%20With%20Sum/README.md)
+## Description
 
-## 题目描述
+<p>Design an algorithm to find all pairs of integers within an array which sum to a specified value.</p>
+<p><strong>Example 1:</strong></p>
+<pre>
 
-<!-- 这里写题目描述 -->
+<strong>Input:</strong> nums = [5,6,5], target = 11
 
-<p>设计一个算法，找出数组中两数之和为指定值的所有整数对。一个数只能属于一个数对。</p>
-<p><strong>示例 1:</strong></p>
-<pre><strong>输入:</strong> nums = [5,6,5], target = 11
-<strong>输出: </strong>[[5,6]]</pre>
-<p><strong>示例 2:</strong></p>
-<pre><strong>输入:</strong> nums = [5,6,5,6], target = 11
-<strong>输出: </strong>[[5,6],[5,6]]</pre>
-<p><strong>提示：</strong></p>
+<strong>Output: </strong>[[5,6]]</pre>
+
+<p><strong>Example 2:</strong></p>
+<pre>
+
+<strong>Input:</strong> nums = [5,6,5,6], target = 11
+
+<strong>Output: </strong>[[5,6],[5,6]]</pre>
+
+<p><strong>Note: </strong></p>
 <ul>
 	<li><code>nums.length &lt;= 100000</code></li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：哈希表
+### Solution 1: Hash Table
 
-我们可以使用哈希表来存储数组中的元素，键为数组中的元素，值为该元素出现的次数。
+We can use a hash table to store the elements in the array, with the keys being the elements in the array and the values being the number of times the element appears.
 
-遍历数组，对于每个元素 $x$，我们计算 $y = target - x$，如果哈希表中存在 $y$，则说明存在一对数 $(x, y)$，我们将其加入答案，并减少 $y$ 的出现次数。如果哈希表中不存在 $y$，则说明不存在这样的数对，我们将 $x$ 的出现次数加 $1$。
+We traverse the array, and for each element $x$, we calculate $y = target - x$. If $y$ exists in the hash table, it means that there is a pair of numbers $(x, y)$ that add up to the target, and we add it to the answer and reduce the count of $y$ by $1$. If $y$ does not exist in the hash table, it means that there is no such pair of numbers, and we increase the count of $x$ by $1$.
 
-遍历结束后，即可得到答案。
+After the traversal, we can obtain the answer.
 
-时间复杂度 $O(n)$，空间复杂度 $O(n)$。其中 $n$ 为数组的长度。
+The time complexity is $O(n)$, and the space complexity is $O(n)$. Here, $n$ is the length of the array.
 
 <!-- tabs:start -->
 

@@ -1,64 +1,48 @@
-# [866. 回文质数](https://leetcode.cn/problems/prime-palindrome)
+# [866. Prime Palindrome](https://leetcode.com/problems/prime-palindrome)
 
-[English Version](/solution/0800-0899/0866.Prime%20Palindrome/README_EN.md)
+[中文文档](/solution/0800-0899/0866.Prime%20Palindrome/README.md)
 
-<!-- tags:数学 -->
+<!-- tags:Math -->
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>Given an integer n, return <em>the smallest <strong>prime palindrome</strong> greater than or equal to </em><code>n</code>.</p>
 
-<p>给你一个整数 <code>n</code> ，返回大于或等于 <code>n</code> 的最小<stron>回文质数</stron>。</p>
-<!-- 一个整数是素数的定义，以及1不是素数的说明 -->
-
-<p>一个整数如果恰好有两个除数：<code>1</code> 和它本身，那么它是 <strong>质数</strong> 。注意，<code>1</code> 不是质数。</p>
+<p>An integer is <strong>prime</strong> if it has exactly two divisors: <code>1</code> and itself. Note that <code>1</code> is not a prime number.</p>
 
 <ul>
-	<li>例如，<code>2</code>、<code>3</code>、<code>5</code>、<code>7</code>、<code>11</code> 和 <code>13</code> 都是质数。</li>
+	<li>For example, <code>2</code>, <code>3</code>, <code>5</code>, <code>7</code>, <code>11</code>, and <code>13</code> are all primes.</li>
 </ul>
 
-<p>一个整数如果从左向右读和从右向左读是相同的，那么它是<strong> 回文数 </strong>。</p>
+<p>An integer is a <strong>palindrome</strong> if it reads the same from left to right as it does from right to left.</p>
 
 <ul>
-	<li>例如，<code>101</code> 和 <code>12321</code> 都是回文数。</li>
+	<li>For example, <code>101</code> and <code>12321</code> are palindromes.</li>
 </ul>
 
-<p>测试用例保证答案总是存在，并且在 <code>[2, 2 * 10<sup>8</sup>]</code> 范围内。</p>
+<p>The test cases are generated so that the answer always exists and is in the range <code>[2, 2 * 10<sup>8</sup>]</code>.</p>
 
 <p>&nbsp;</p>
-
-<p><strong class="example">示例 1：</strong></p>
-
-<pre>
-<strong>输入：</strong>n = 6
-<strong>输出：</strong>7
+<p><strong class="example">Example 1:</strong></p>
+<pre><strong>Input:</strong> n = 6
+<strong>Output:</strong> 7
+</pre><p><strong class="example">Example 2:</strong></p>
+<pre><strong>Input:</strong> n = 8
+<strong>Output:</strong> 11
+</pre><p><strong class="example">Example 3:</strong></p>
+<pre><strong>Input:</strong> n = 13
+<strong>Output:</strong> 101
 </pre>
-
-<p><strong class="example">示例 2：</strong></p>
-
-<pre>
-<strong>输入：</strong>n = 8
-<strong>输出：</strong>11
-</pre>
-
-<p><strong class="example">示例 3：</strong></p>
-
-<pre>
-<strong>输入：</strong>n = 13
-<strong>输出：</strong>101
-</pre>
-
 <p>&nbsp;</p>
-
-<p><strong>提示：</strong></p>
+<p><strong>Constraints:</strong></p>
 
 <ul>
 	<li><code>1 &lt;= n &lt;= 10<sup>8</sup></code></li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一
+### Solution 1
 
 <!-- tabs:start -->
 

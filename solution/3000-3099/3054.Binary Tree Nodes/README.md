@@ -1,12 +1,10 @@
-# [3054. Binary Tree Nodes](https://leetcode.cn/problems/binary-tree-nodes)
+# [3054. Binary Tree Nodes](https://leetcode.com/problems/binary-tree-nodes)
 
-[English Version](/solution/3000-3099/3054.Binary%20Tree%20Nodes/README_EN.md)
+[中文文档](/solution/3000-3099/3054.Binary%20Tree%20Nodes/README.md)
 
-<!-- tags:数据库 -->
+<!-- tags:Database -->
 
-## 题目描述
-
-<!-- 这里写题目描述 -->
+## Description
 
 <p>Table: <font face="monospace"><code>Tree</code></font></p>
 
@@ -68,13 +66,13 @@ Tree table:
 - Nodes 2, 4, and 7 are inner nodes as they serve as parents to some of the nodes in the structure.
 </pre>
 
-## 解法
+## Solutions
 
-### 方法一：左连接
+### Solution 1: Left Join
 
-如果一个节点的父节点为空，则它是根节点；如果一个节点不是任何节点的父节点，则它是叶子节点；否则它是内部节点。
+If a node's parent is null, then it is a root node; if a node is not the parent of any node, then it is a leaf node; otherwise, it is an internal node.
 
-因此，我们使用左连接来连接两次 `Tree` 表，连接条件是 `t1.N = t2.P`。那么如果 `t1.P` 为空，则 `t1.N` 是根节点；如果 `t2.P` 为空，则 `t1.N` 是叶子节点；否则 `t1.N` 是内部节点。
+Therefore, we use left join to join the `Tree` table twice, with the join condition being `t1.N = t2.P`. If `t1.P` is null, then `t1.N` is a root node; if `t2.P` is null, then `t1.N` is a leaf node; otherwise, `t1.N` is an internal node.
 
 <!-- tabs:start -->
 

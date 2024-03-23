@@ -1,42 +1,50 @@
-# [面试题 17.26. 稀疏相似度](https://leetcode.cn/problems/sparse-similarity-lcci)
+# [17.26. Sparse Similarity](https://leetcode.cn/problems/sparse-similarity-lcci)
 
-[English Version](/lcci/17.26.Sparse%20Similarity/README_EN.md)
+[中文文档](/lcci/17.26.Sparse%20Similarity/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
-<p>两个(具有不同单词的)文档的交集(intersection)中元素的个数除以并集(union)中元素的个数，就是这两个文档的相似度。例如，{1, 5, 3} 和 {1, 7, 2, 3} 的相似度是 0.4，其中，交集的元素有 2 个，并集的元素有 5 个。给定一系列的长篇文档，每个文档元素各不相同，并与一个 ID 相关联。它们的相似度非常&ldquo;稀疏&rdquo;，也就是说任选 2 个文档，相似度都很接近 0。请设计一个算法返回每对文档的 ID 及其相似度。只需输出相似度大于 0 的组合。请忽略空文档。为简单起见，可以假定每个文档由一个含有不同整数的数组表示。</p>
-<p>输入为一个二维数组 <code>docs</code>，<code>docs[i]</code>&nbsp;表示&nbsp;id 为 <code>i</code> 的文档。返回一个数组，其中每个元素是一个字符串，代表每对相似度大于 0 的文档，其格式为 <code>{id1},{id2}: {similarity}</code>，其中 <code>id1</code> 为两个文档中较小的 id，<code>similarity</code> 为相似度，精确到小数点后 4 位。以任意顺序返回数组均可。</p>
-<p><strong>示例:</strong></p>
-<pre><strong>输入:</strong> 
+<p>The similarity of two documents (each with distinct words) is defined to be the size of the intersection divided by the size of the union. For example, if the documents consist of integers, the similarity of {1, 5, 3} and {1, 7, 2, 3} is 0.4, because the intersection has size 2 and the union has size 5.&nbsp;We have a long list of documents (with distinct values and each with an associated ID) where the similarity is believed to be &quot;sparse&quot;. That is, any two arbitrarily selected documents are very likely to have similarity 0. Design an algorithm that returns a list of pairs of document IDs and the associated similarity.</p>
+<p>Input is a 2D array&nbsp;<code>docs</code>, where&nbsp;<code>docs[i]</code>&nbsp;is the document with id&nbsp;<code>i</code>. Return an array of strings, where each string represents a pair of documents with similarity greater than 0. The string should be formatted as&nbsp; <code>{id1},{id2}: {similarity}</code>, where <code>id1</code>&nbsp;is the smaller id in the two documents, and <code>similarity</code> is the similarity rounded to four decimal places. You can return the array in any order.</p>
+<p><strong>Example:</strong></p>
+<pre>
+
+<strong>Input:</strong>
+
 <code>[
+
 &nbsp; [14, 15, 100, 9, 3],
+
 &nbsp; [32, 1, 9, 3, 5],
+
 &nbsp; [15, 29, 2, 6, 8, 7],
+
 &nbsp; [7, 10]
+
 ]</code>
-<strong>输出:</strong>
+
+<strong>Output:</strong>
+
 [
+
 &nbsp; &quot;0,1: 0.2500&quot;,
+
 &nbsp; &quot;0,2: 0.1000&quot;,
+
 &nbsp; &quot;2,3: 0.1429&quot;
+
 ]</pre>
-<p><strong>提示：</strong></p>
+
+<p><strong>Note: </strong></p>
 <ul>
 	<li><code>docs.length &lt;= 500</code></li>
 	<li><code>docs[i].length &lt;= 500</code></li>
-	<li>相似度大于 0 的文档对数不会超过 1000</li>
+	<li>The number of document pairs with similarity greater than 0 will not exceed 1000.</li>
 </ul>
 
-## 解法
+## Solutions
 
-### 方法一：哈希表
-
-用哈希表 $d$ 记录每个单词对应了哪些文档。
-
-遍历 $d$ 的每一个文档列表，其任意两个文档都有相似度，我们用哈希表 $s$ 累加两个文档同时出现的单词个数。最后遍历 $s$，计算相似度。
-
-时间复杂度 $O(n^3)$。
+### Solution 1
 
 <!-- tabs:start -->
 

@@ -1,37 +1,43 @@
-# [面试题 08.13. 堆箱子](https://leetcode.cn/problems/pile-box-lcci)
+# [08.13. Pile Box](https://leetcode.cn/problems/pile-box-lcci)
 
-[English Version](/lcci/08.13.Pile%20Box/README_EN.md)
+[中文文档](/lcci/08.13.Pile%20Box/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>You have a stack of n boxes, with widths wi, heights hi, and depths di. The boxes cannot be rotated and can only be stacked on top of one another if each box in the stack is strictly larger than the box above it in width, height, and depth. Implement a method to compute the height of the tallest possible stack. The height of a stack is the sum of the heights of each box.</p>
+<p>The input use <code>[wi, di, hi]</code>&nbsp;to represents each box.</p>
+<p><strong>Example1:</strong></p>
+<pre>
 
-<p>堆箱子。给你一堆n个箱子，箱子宽 wi、高hi、深di。箱子不能翻转，将箱子堆起来时，下面箱子的宽度、高度和深度必须大于上面的箱子。实现一种方法，搭出最高的一堆箱子。箱堆的高度为每个箱子高度的总和。</p>
-<p>输入使用数组<code>[wi, di, hi]</code>表示每个箱子。</p>
-<p><strong>示例1:</strong></p>
-<pre><strong> 输入</strong>：box = [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
-<strong> 输出</strong>：6
+<strong> Input</strong>: box = [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
+
+<strong> Output</strong>: 6
+
 </pre>
-<p><strong>示例2:</strong></p>
-<pre><strong> 输入</strong>：box = [[1, 1, 1], [2, 3, 4], [2, 6, 7], [3, 4, 5]]
-<strong> 输出</strong>：10
+<p><strong>Example2:</strong></p>
+<pre>
+
+<strong> Input</strong>: box = [[1, 1, 1], [2, 3, 4], [2, 6, 7], [3, 4, 5]]
+
+<strong> Output</strong>: 10
+
 </pre>
-<p><strong>提示:</strong></p>
+<p><strong>Note:</strong></p>
 <ol>
-	<li>箱子的数目不大于3000个。</li>
+	<li><code>box.length &lt;= 3000</code></li>
 </ol>
 
-## 解法
+## Solutions
 
-### 方法一：排序 + 动态规划
+### Solution 1: Sorting + Dynamic Programming
 
-我们先将箱子按照宽度升序、深度降序的顺序进行排序，然后使用动态规划求解。
+First, we sort the boxes in ascending order by width and descending order by depth, then use dynamic programming to solve the problem.
 
-定义 $f[i]$ 表示以第 $i$ 个箱子为底部的最大高度。对于 $f[i]$，我们枚举 $j \in [0, i)$，如果 $box[j][1] \lt box[i][1]$ 且 $box[j][2] \lt box[i][2]$，那么我们可以将第 $j$ 个箱子放在第 $i$ 个箱子上面，此时 $f[i] = \max\{f[i], f[j]\}$。最后我们将 $f[i]$ 加上第 $i$ 个箱子的高度，即可得到 $f[i]$ 的最终值。
+We define $f[i]$ as the maximum height with the $i$-th box at the bottom. For $f[i]$, we enumerate $j \in [0, i)$, if $box[j][1] < box[i][1]$ and $box[j][2] < box[i][2]$, then we can put the $j$-th box on top of the $i$-th box, in which case $f[i] = \max\{f[i], f[j]\}$. Finally, we add the height of the $i$-th box to $f[i]$ to get the final value of $f[i]$.
 
-答案为 $f$ 中的最大值。
+The answer is the maximum value in $f$.
 
-时间复杂度 $O(n^2)$，空间复杂度 $O(n)$。其中 $n$ 是箱子的数目。
+The time complexity is $O(n^2)$, and the space complexity is $O(n)$. Here, $n$ is the number of boxes.
 
 <!-- tabs:start -->
 

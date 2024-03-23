@@ -1,30 +1,36 @@
-# [面试题 05.03. 翻转数位](https://leetcode.cn/problems/reverse-bits-lcci)
+# [05.03. Reverse Bits](https://leetcode.cn/problems/reverse-bits-lcci)
 
-[English Version](/lcci/05.03.Reverse%20Bits/README_EN.md)
+[中文文档](/lcci/05.03.Reverse%20Bits/README.md)
 
-## 题目描述
+## Description
 
-<!-- 这里写题目描述 -->
+<p>You have an integer and you can flip exactly one bit from a 0 to a 1. Write code to find the length of the longest sequence of 1s you could create.</p>
+<p><strong>Example 1: </strong></p>
+<pre>
 
-<p>给定一个32位整数 <code>num</code>，你可以将一个数位从0变为1。请编写一个程序，找出你能够获得的最长的一串1的长度。</p>
-<p><strong>示例 1：</strong></p>
-<pre><strong>输入:</strong> <code>num</code> = 1775(11011101111<sub>2</sub>)
-<strong>输出:</strong> 8
+<strong>Input:</strong> <code>num</code> = 1775(11011101111<sub>2</sub>)
+
+<strong>Output:</strong> 8
+
 </pre>
-<p><strong>示例 2：</strong></p>
-<pre><strong>输入:</strong> <code>num</code> = 7(0111<sub>2</sub>)
-<strong>输出:</strong> 4
+<p><strong>Example 2: </strong></p>
+<pre>
+
+<strong>Input:</strong> <code>num</code> = 7(0111<sub>2</sub>)
+
+<strong>Output:</strong> 4
+
 </pre>
 
-## 解法
+## Solutions
 
-### 方法一：双指针
+### Solution 1: Two Pointers
 
-我们可以使用双指针 $i$ 和 $j$ 维护一个滑动窗口，其中 $i$ 为右指针，$j$ 为左指针。每次右指针 $i$ 向右移动一位，如果此时窗口内的 $0$ 的个数超过 $1$ 个，则左指针 $j$ 向右移动一位，直到窗口内的 $0$ 的个数不超过 $1$ 个为止。然后计算此时窗口的长度，与当前最大长度进行比较，取较大值作为当前最大长度。
+We can use two pointers $i$ and $j$ to maintain a sliding window, where $i$ is the right pointer and $j$ is the left pointer. Each time the right pointer $i$ moves one bit to the right, if the number of $0$s in the window exceeds $1$, then the left pointer $j$ moves one bit to the right, until the number of $0$s in the window does not exceed $1$. Then calculate the length of the window at this time, compare it with the current maximum length, and take the larger value as the current maximum length.
 
-最后返回最大长度即可。
+Finally, return the maximum length.
 
-时间复杂度 $O(\log M)$，空间复杂度 $O(1)$。其中 $M$ 为 $32$ 位整数的最大值。
+The time complexity is $O(\log M)$, and the space complexity is $O(1)$. Here, $M$ is the maximum value of a 32-bit integer.
 
 <!-- tabs:start -->
 
