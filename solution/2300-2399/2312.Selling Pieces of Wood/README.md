@@ -224,7 +224,7 @@ The time complexity is $O(m \times n \times (m + n) + p)$, and the space complex
 
 Similar problems:
 
--   [1444. Number of Ways of Cutting a Pizza](https://github.com/doocs/leetcode/blob/main/solution/1400-1499/1444.Number%20of%20Ways%20of%20Cutting%20a%20Pizza/README_EN.md)
+-   [1444. Number of Ways of Cutting a Pizza](https://github.com/doocs/leetcode/blob/main/solution/1400-1499/1444.Number%20of%20Ways%20of%20Cutting%20a%20Pizza/README.md)
 
 <!-- tabs:start -->
 

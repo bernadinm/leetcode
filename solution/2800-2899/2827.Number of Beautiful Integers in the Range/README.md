@@ -84,7 +84,7 @@ The time complexity is $O((\log M)^2 \times k \times |\Sigma|)$, and the space c
 
 Similar problems:
 
--   [2719. Count of Integers](https://github.com/doocs/leetcode/blob/main/solution/2700-2799/2719.Count%20of%20Integers/README_EN.md)
+-   [2719. Count of Integers](https://github.com/doocs/leetcode/blob/main/solution/2700-2799/2719.Count%20of%20Integers/README.md)
 
 <!-- tabs:start -->
 

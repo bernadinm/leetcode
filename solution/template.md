@@ -2,7 +2,7 @@
 
 # {}专项练习
 
-[English Version](/solution/{}_README_EN.md)
+[English Version](/solution/{}_README.md)
 
 ## 题解
 
@@ -66,7 +66,7 @@ This work is licensed under a <a rel="license" href="http://creativecommons.org/
 
 # LeetCode
 
-[English Version](/solution/README_EN.md)
+[English Version](/solution/README.md)
 
 ## 题解
 
@@ -126,7 +126,7 @@ This work is licensed under a <a rel="license" href="http://creativecommons.org/
 
 # 力扣竞赛
 
-[English Version](/solution/CONTEST_README_EN.md)
+[English Version](/solution/CONTEST_README.md)
 
 ## 段位与荣誉勋章
 

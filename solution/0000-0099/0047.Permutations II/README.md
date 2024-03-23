@@ -51,7 +51,7 @@ The time complexity is $O(n \times n!)$, and the space complexity is $O(n)$. Her
 
 Similar problems:
 
--   [46. Permutations](https://github.com/doocs/leetcode/blob/main/solution/0000-0099/0046.Permutations/README_EN.md)
+-   [46. Permutations](https://github.com/doocs/leetcode/blob/main/solution/0000-0099/0046.Permutations/README.md)
 
 <!-- tabs:start -->
 

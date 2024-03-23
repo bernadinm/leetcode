@@ -1,6 +1,6 @@
 # 力扣竞赛
 
-[English Version](/solution/CONTEST_README_EN.md)
+[English Version](/solution/CONTEST_README.md)
 
 ## 段位与荣誉勋章
 

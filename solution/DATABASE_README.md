@@ -1,6 +1,6 @@
 # 数据库专项练习
 
-[English Version](/solution/DATABASE_README_EN.md)
+[English Version](/solution/DATABASE_README.md)
 
 ## 题解
 

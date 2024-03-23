@@ -59,7 +59,7 @@ The time complexity is $O(m \times n)$, and the space complexity is $O(m \times 
 
 Similar problems:
 
--   [2328. Number of Increasing Paths in a Grid](https://github.com/doocs/leetcode/blob/main/solution/2300-2399/2328.Number%20of%20Increasing%20Paths%20in%20a%20Grid/README_EN.md)
+-   [2328. Number of Increasing Paths in a Grid](https://github.com/doocs/leetcode/blob/main/solution/2300-2399/2328.Number%20of%20Increasing%20Paths%20in%20a%20Grid/README.md)
 
 <!-- tabs:start -->
 
