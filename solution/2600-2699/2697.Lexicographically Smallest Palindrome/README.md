@@ -1,6 +1,6 @@
 # [2697. Lexicographically Smallest Palindrome](https://leetcode.com/problems/lexicographically-smallest-palindrome)
 
-[中文文档](/solution/2600-2699/2697.Lexicographically%20Smallest%20Palindrome/README.md)
+[中文文档](./solution/2600-2699/2697.Lexicographically%20Smallest%20Palindrome/README.md)
 
 <!-- tags:Greedy,Two Pointers,String -->
 

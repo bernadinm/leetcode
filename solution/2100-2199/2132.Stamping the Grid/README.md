@@ -1,6 +1,6 @@
 # [2132. Stamping the Grid](https://leetcode.com/problems/stamping-the-grid)
 
-[中文文档](/solution/2100-2199/2132.Stamping%20the%20Grid/README.md)
+[中文文档](./solution/2100-2199/2132.Stamping%20the%20Grid/README.md)
 
 <!-- tags:Greedy,Array,Matrix,Prefix Sum -->
 

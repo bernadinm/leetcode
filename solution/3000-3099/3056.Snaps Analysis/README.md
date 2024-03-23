@@ -1,6 +1,6 @@
 # [3056. Snaps Analysis](https://leetcode.com/problems/snaps-analysis)
 
-[中文文档](/solution/3000-3099/3056.Snaps%20Analysis/README.md)
+[中文文档](./solution/3000-3099/3056.Snaps%20Analysis/README.md)
 
 <!-- tags:Database -->
 

@@ -1,6 +1,6 @@
 # [08.03. Magic Index](https://leetcode.cn/problems/magic-index-lcci)
 
-[中文文档](/lcci/08.03.Magic%20Index/README.md)
+[中文文档](./lcci/08.03.Magic%20Index/README.md)
 
 ## Description
 

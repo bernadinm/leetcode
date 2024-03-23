@@ -1,6 +1,6 @@
 # [812. Largest Triangle Area](https://leetcode.com/problems/largest-triangle-area)
 
-[中文文档](/solution/0800-0899/0812.Largest%20Triangle%20Area/README.md)
+[中文文档](./solution/0800-0899/0812.Largest%20Triangle%20Area/README.md)
 
 <!-- tags:Geometry,Array,Math -->
 

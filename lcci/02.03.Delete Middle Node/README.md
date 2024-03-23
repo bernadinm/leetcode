@@ -1,6 +1,6 @@
 # [02.03. Delete Middle Node](https://leetcode.cn/problems/delete-middle-node-lcci)
 
-[中文文档](/lcci/02.03.Delete%20Middle%20Node/README.md)
+[中文文档](./lcci/02.03.Delete%20Middle%20Node/README.md)
 
 ## Description
 

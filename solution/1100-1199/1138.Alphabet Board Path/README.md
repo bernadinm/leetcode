@@ -1,6 +1,6 @@
 # [1138. Alphabet Board Path](https://leetcode.com/problems/alphabet-board-path)
 
-[中文文档](/solution/1100-1199/1138.Alphabet%20Board%20Path/README.md)
+[中文文档](./solution/1100-1199/1138.Alphabet%20Board%20Path/README.md)
 
 <!-- tags:Hash Table,String -->
 

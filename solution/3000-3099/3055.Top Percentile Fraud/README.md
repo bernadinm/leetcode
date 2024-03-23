@@ -1,6 +1,6 @@
 # [3055. Top Percentile Fraud](https://leetcode.com/problems/top-percentile-fraud)
 
-[中文文档](/solution/3000-3099/3055.Top%20Percentile%20Fraud/README.md)
+[中文文档](./solution/3000-3099/3055.Top%20Percentile%20Fraud/README.md)
 
 <!-- tags:Database -->
 

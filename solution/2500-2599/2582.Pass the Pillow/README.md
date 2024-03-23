@@ -1,6 +1,6 @@
 # [2582. Pass the Pillow](https://leetcode.com/problems/pass-the-pillow)
 
-[中文文档](/solution/2500-2599/2582.Pass%20the%20Pillow/README.md)
+[中文文档](./solution/2500-2599/2582.Pass%20the%20Pillow/README.md)
 
 <!-- tags:Math,Simulation -->
 

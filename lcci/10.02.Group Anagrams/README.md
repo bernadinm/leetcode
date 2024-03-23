@@ -1,6 +1,6 @@
 # [10.02. Group Anagrams](https://leetcode.cn/problems/group-anagrams-lcci)
 
-[中文文档](/lcci/10.02.Group%20Anagrams/README.md)
+[中文文档](./lcci/10.02.Group%20Anagrams/README.md)
 
 ## Description
 

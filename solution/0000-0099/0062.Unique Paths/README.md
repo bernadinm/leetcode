@@ -1,6 +1,6 @@
 # [62. Unique Paths](https://leetcode.com/problems/unique-paths)
 
-[中文文档](/solution/0000-0099/0062.Unique%20Paths/README.md)
+[中文文档](./solution/0000-0099/0062.Unique%20Paths/README.md)
 
 <!-- tags:Math,Dynamic Programming,Combinatorics -->
 

@@ -1,6 +1,6 @@
 # [1786. Number of Restricted Paths From First to Last Node](https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node)
 
-[中文文档](/solution/1700-1799/1786.Number%20of%20Restricted%20Paths%20From%20First%20to%20Last%20Node/README.md)
+[中文文档](./solution/1700-1799/1786.Number%20of%20Restricted%20Paths%20From%20First%20to%20Last%20Node/README.md)
 
 <!-- tags:Graph,Topological Sort,Dynamic Programming,Shortest Path,Heap (Priority Queue) -->
 

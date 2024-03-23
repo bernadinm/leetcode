@@ -1,6 +1,6 @@
 # [2070. Most Beautiful Item for Each Query](https://leetcode.com/problems/most-beautiful-item-for-each-query)
 
-[中文文档](/solution/2000-2099/2070.Most%20Beautiful%20Item%20for%20Each%20Query/README.md)
+[中文文档](./solution/2000-2099/2070.Most%20Beautiful%20Item%20for%20Each%20Query/README.md)
 
 <!-- tags:Array,Binary Search,Sorting -->
 

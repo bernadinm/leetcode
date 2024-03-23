@@ -1,6 +1,6 @@
 # [2551. Put Marbles in Bags](https://leetcode.com/problems/put-marbles-in-bags)
 
-[中文文档](/solution/2500-2599/2551.Put%20Marbles%20in%20Bags/README.md)
+[中文文档](./solution/2500-2599/2551.Put%20Marbles%20in%20Bags/README.md)
 
 <!-- tags:Greedy,Array,Sorting,Heap (Priority Queue) -->
 

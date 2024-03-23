@@ -1,6 +1,6 @@
 # [721. Accounts Merge](https://leetcode.com/problems/accounts-merge)
 
-[中文文档](/solution/0700-0799/0721.Accounts%20Merge/README.md)
+[中文文档](./solution/0700-0799/0721.Accounts%20Merge/README.md)
 
 <!-- tags:Depth-First Search,Breadth-First Search,Union Find,Array,Hash Table,String,Sorting -->
 

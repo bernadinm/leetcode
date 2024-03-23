@@ -1,6 +1,6 @@
 # [2951. Find the Peaks](https://leetcode.com/problems/find-the-peaks)
 
-[中文文档](/solution/2900-2999/2951.Find%20the%20Peaks/README.md)
+[中文文档](./solution/2900-2999/2951.Find%20the%20Peaks/README.md)
 
 <!-- tags:Array,Enumeration -->
 

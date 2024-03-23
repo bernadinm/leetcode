@@ -1,6 +1,6 @@
 # [2627. Debounce](https://leetcode.com/problems/debounce)
 
-[中文文档](/solution/2600-2699/2627.Debounce/README.md)
+[中文文档](./solution/2600-2699/2627.Debounce/README.md)
 
 <!-- tags: -->
 

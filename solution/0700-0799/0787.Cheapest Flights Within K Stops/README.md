@@ -1,6 +1,6 @@
 # [787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops)
 
-[中文文档](/solution/0700-0799/0787.Cheapest%20Flights%20Within%20K%20Stops/README.md)
+[中文文档](./solution/0700-0799/0787.Cheapest%20Flights%20Within%20K%20Stops/README.md)
 
 <!-- tags:Depth-First Search,Breadth-First Search,Graph,Dynamic Programming,Shortest Path,Heap (Priority Queue) -->
 

@@ -1,6 +1,6 @@
 # [2053. Kth Distinct String in an Array](https://leetcode.com/problems/kth-distinct-string-in-an-array)
 
-[中文文档](/solution/2000-2099/2053.Kth%20Distinct%20String%20in%20an%20Array/README.md)
+[中文文档](./solution/2000-2099/2053.Kth%20Distinct%20String%20in%20an%20Array/README.md)
 
 <!-- tags:Array,Hash Table,String,Counting -->
 

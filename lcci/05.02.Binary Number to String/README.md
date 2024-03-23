@@ -1,6 +1,6 @@
 # [05.02. Binary Number to String](https://leetcode.cn/problems/binary-number-to-string-lcci)
 
-[中文文档](/lcci/05.02.Binary%20Number%20to%20String/README.md)
+[中文文档](./lcci/05.02.Binary%20Number%20to%20String/README.md)
 
 ## Description
 

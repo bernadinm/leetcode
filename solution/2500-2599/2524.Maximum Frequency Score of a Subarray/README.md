@@ -1,6 +1,6 @@
 # [2524. Maximum Frequency Score of a Subarray](https://leetcode.com/problems/maximum-frequency-score-of-a-subarray)
 
-[中文文档](/solution/2500-2599/2524.Maximum%20Frequency%20Score%20of%20a%20Subarray/README.md)
+[中文文档](./solution/2500-2599/2524.Maximum%20Frequency%20Score%20of%20a%20Subarray/README.md)
 
 <!-- tags:Array,Hash Table,Math,Sliding Window -->
 

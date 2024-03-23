@@ -1,6 +1,6 @@
 # [2720. Popularity Percentage](https://leetcode.com/problems/popularity-percentage)
 
-[中文文档](/solution/2700-2799/2720.Popularity%20Percentage/README.md)
+[中文文档](./solution/2700-2799/2720.Popularity%20Percentage/README.md)
 
 <!-- tags:Database -->
 

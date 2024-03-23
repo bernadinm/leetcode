@@ -1,6 +1,6 @@
 # [2016. Maximum Difference Between Increasing Elements](https://leetcode.com/problems/maximum-difference-between-increasing-elements)
 
-[中文文档](/solution/2000-2099/2016.Maximum%20Difference%20Between%20Increasing%20Elements/README.md)
+[中文文档](./solution/2000-2099/2016.Maximum%20Difference%20Between%20Increasing%20Elements/README.md)
 
 <!-- tags:Array -->
 

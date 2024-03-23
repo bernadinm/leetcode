@@ -1,6 +1,6 @@
 # [16.25. LRU Cache](https://leetcode.cn/problems/lru-cache-lcci)
 
-[中文文档](/lcci/16.25.LRU%20Cache/README.md)
+[中文文档](./lcci/16.25.LRU%20Cache/README.md)
 
 ## Description
 

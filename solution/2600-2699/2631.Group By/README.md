@@ -1,6 +1,6 @@
 # [2631. Group By](https://leetcode.com/problems/group-by)
 
-[中文文档](/solution/2600-2699/2631.Group%20By/README.md)
+[中文文档](./solution/2600-2699/2631.Group%20By/README.md)
 
 <!-- tags: -->
 

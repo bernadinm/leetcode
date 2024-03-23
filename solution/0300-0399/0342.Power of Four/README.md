@@ -1,6 +1,6 @@
 # [342. Power of Four](https://leetcode.com/problems/power-of-four)
 
-[中文文档](/solution/0300-0399/0342.Power%20of%20Four/README.md)
+[中文文档](./solution/0300-0399/0342.Power%20of%20Four/README.md)
 
 <!-- tags:Bit Manipulation,Recursion,Math -->
 

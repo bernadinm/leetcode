@@ -1,6 +1,6 @@
 # [1245. Tree Diameter](https://leetcode.com/problems/tree-diameter)
 
-[中文文档](/solution/1200-1299/1245.Tree%20Diameter/README.md)
+[中文文档](./solution/1200-1299/1245.Tree%20Diameter/README.md)
 
 <!-- tags:Tree,Depth-First Search,Breadth-First Search,Graph,Topological Sort -->
 

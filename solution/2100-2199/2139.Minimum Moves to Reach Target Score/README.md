@@ -1,6 +1,6 @@
 # [2139. Minimum Moves to Reach Target Score](https://leetcode.com/problems/minimum-moves-to-reach-target-score)
 
-[中文文档](/solution/2100-2199/2139.Minimum%20Moves%20to%20Reach%20Target%20Score/README.md)
+[中文文档](./solution/2100-2199/2139.Minimum%20Moves%20to%20Reach%20Target%20Score/README.md)
 
 <!-- tags:Greedy,Math -->
 

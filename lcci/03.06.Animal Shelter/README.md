@@ -1,6 +1,6 @@
 # [03.06. Animal Shelter](https://leetcode.cn/problems/animal-shelter-lcci)
 
-[中文文档](/lcci/03.06.Animal%20Shelter/README.md)
+[中文文档](./lcci/03.06.Animal%20Shelter/README.md)
 
 ## Description
 

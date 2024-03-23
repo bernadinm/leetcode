@@ -1,6 +1,6 @@
 # [2429. Minimize XOR](https://leetcode.com/problems/minimize-xor)
 
-[中文文档](/solution/2400-2499/2429.Minimize%20XOR/README.md)
+[中文文档](./solution/2400-2499/2429.Minimize%20XOR/README.md)
 
 <!-- tags:Greedy,Bit Manipulation -->
 

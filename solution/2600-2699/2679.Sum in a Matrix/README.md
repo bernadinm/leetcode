@@ -1,6 +1,6 @@
 # [2679. Sum in a Matrix](https://leetcode.com/problems/sum-in-a-matrix)
 
-[中文文档](/solution/2600-2699/2679.Sum%20in%20a%20Matrix/README.md)
+[中文文档](./solution/2600-2699/2679.Sum%20in%20a%20Matrix/README.md)
 
 <!-- tags:Array,Matrix,Sorting,Simulation,Heap (Priority Queue) -->
 

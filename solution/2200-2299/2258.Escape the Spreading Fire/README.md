@@ -1,6 +1,6 @@
 # [2258. Escape the Spreading Fire](https://leetcode.com/problems/escape-the-spreading-fire)
 
-[中文文档](/solution/2200-2299/2258.Escape%20the%20Spreading%20Fire/README.md)
+[中文文档](./solution/2200-2299/2258.Escape%20the%20Spreading%20Fire/README.md)
 
 <!-- tags:Breadth-First Search,Array,Binary Search,Matrix -->
 

@@ -1,6 +1,6 @@
 # [2305. Fair Distribution of Cookies](https://leetcode.com/problems/fair-distribution-of-cookies)
 
-[中文文档](/solution/2300-2399/2305.Fair%20Distribution%20of%20Cookies/README.md)
+[中文文档](./solution/2300-2399/2305.Fair%20Distribution%20of%20Cookies/README.md)
 
 <!-- tags:Bit Manipulation,Array,Dynamic Programming,Backtracking,Bitmask -->
 

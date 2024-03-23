@@ -1,6 +1,6 @@
 # [2003. Smallest Missing Genetic Value in Each Subtree](https://leetcode.com/problems/smallest-missing-genetic-value-in-each-subtree)
 
-[中文文档](/solution/2000-2099/2003.Smallest%20Missing%20Genetic%20Value%20in%20Each%20Subtree/README.md)
+[中文文档](./solution/2000-2099/2003.Smallest%20Missing%20Genetic%20Value%20in%20Each%20Subtree/README.md)
 
 <!-- tags:Tree,Depth-First Search,Union Find,Dynamic Programming -->
 

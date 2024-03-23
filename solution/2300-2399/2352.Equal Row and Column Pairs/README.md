@@ -1,6 +1,6 @@
 # [2352. Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs)
 
-[中文文档](/solution/2300-2399/2352.Equal%20Row%20and%20Column%20Pairs/README.md)
+[中文文档](./solution/2300-2399/2352.Equal%20Row%20and%20Column%20Pairs/README.md)
 
 <!-- tags:Array,Hash Table,Matrix,Simulation -->
 

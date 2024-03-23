@@ -1,6 +1,6 @@
 # [86. Partition List](https://leetcode.com/problems/partition-list)
 
-[中文文档](/solution/0000-0099/0086.Partition%20List/README.md)
+[中文文档](./solution/0000-0099/0086.Partition%20List/README.md)
 
 <!-- tags:Linked List,Two Pointers -->
 

@@ -1,6 +1,6 @@
 # [2888. Reshape Data Concatenate](https://leetcode.com/problems/reshape-data-concatenate)
 
-[中文文档](/solution/2800-2899/2888.Reshape%20Data%20Concatenate/README.md)
+[中文文档](./solution/2800-2899/2888.Reshape%20Data%20Concatenate/README.md)
 
 <!-- tags: -->
 

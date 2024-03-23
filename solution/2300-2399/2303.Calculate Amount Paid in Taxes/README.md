@@ -1,6 +1,6 @@
 # [2303. Calculate Amount Paid in Taxes](https://leetcode.com/problems/calculate-amount-paid-in-taxes)
 
-[中文文档](/solution/2300-2399/2303.Calculate%20Amount%20Paid%20in%20Taxes/README.md)
+[中文文档](./solution/2300-2399/2303.Calculate%20Amount%20Paid%20in%20Taxes/README.md)
 
 <!-- tags:Array,Simulation -->
 

@@ -1,6 +1,6 @@
 # [207. Course Schedule](https://leetcode.com/problems/course-schedule)
 
-[中文文档](/solution/0200-0299/0207.Course%20Schedule/README.md)
+[中文文档](./solution/0200-0299/0207.Course%20Schedule/README.md)
 
 <!-- tags:Depth-First Search,Breadth-First Search,Graph,Topological Sort -->
 

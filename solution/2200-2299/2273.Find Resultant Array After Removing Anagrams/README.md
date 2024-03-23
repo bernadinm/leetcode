@@ -1,6 +1,6 @@
 # [2273. Find Resultant Array After Removing Anagrams](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams)
 
-[中文文档](/solution/2200-2299/2273.Find%20Resultant%20Array%20After%20Removing%20Anagrams/README.md)
+[中文文档](./solution/2200-2299/2273.Find%20Resultant%20Array%20After%20Removing%20Anagrams/README.md)
 
 <!-- tags:Array,Hash Table,String,Sorting -->
 

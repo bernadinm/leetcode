@@ -1,6 +1,6 @@
 # [1483. Kth Ancestor of a Tree Node](https://leetcode.com/problems/kth-ancestor-of-a-tree-node)
 
-[中文文档](/solution/1400-1499/1483.Kth%20Ancestor%20of%20a%20Tree%20Node/README.md)
+[中文文档](./solution/1400-1499/1483.Kth%20Ancestor%20of%20a%20Tree%20Node/README.md)
 
 <!-- tags:Tree,Depth-First Search,Breadth-First Search,Design,Binary Search,Dynamic Programming -->
 

@@ -1,6 +1,6 @@
 # [2027. Minimum Moves to Convert String](https://leetcode.com/problems/minimum-moves-to-convert-string)
 
-[中文文档](/solution/2000-2099/2027.Minimum%20Moves%20to%20Convert%20String/README.md)
+[中文文档](./solution/2000-2099/2027.Minimum%20Moves%20to%20Convert%20String/README.md)
 
 <!-- tags:Greedy,String -->
 

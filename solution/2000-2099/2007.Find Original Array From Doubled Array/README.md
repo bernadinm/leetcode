@@ -1,6 +1,6 @@
 # [2007. Find Original Array From Doubled Array](https://leetcode.com/problems/find-original-array-from-doubled-array)
 
-[中文文档](/solution/2000-2099/2007.Find%20Original%20Array%20From%20Doubled%20Array/README.md)
+[中文文档](./solution/2000-2099/2007.Find%20Original%20Array%20From%20Doubled%20Array/README.md)
 
 <!-- tags:Greedy,Array,Hash Table,Sorting -->
 

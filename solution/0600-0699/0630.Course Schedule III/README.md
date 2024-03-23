@@ -1,6 +1,6 @@
 # [630. Course Schedule III](https://leetcode.com/problems/course-schedule-iii)
 
-[中文文档](/solution/0600-0699/0630.Course%20Schedule%20III/README.md)
+[中文文档](./solution/0600-0699/0630.Course%20Schedule%20III/README.md)
 
 <!-- tags:Greedy,Array,Sorting,Heap (Priority Queue) -->
 

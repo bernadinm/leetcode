@@ -1,6 +1,6 @@
 # [2468. Split Message Based on Limit](https://leetcode.com/problems/split-message-based-on-limit)
 
-[中文文档](/solution/2400-2499/2468.Split%20Message%20Based%20on%20Limit/README.md)
+[中文文档](./solution/2400-2499/2468.Split%20Message%20Based%20on%20Limit/README.md)
 
 <!-- tags:String,Binary Search -->
 

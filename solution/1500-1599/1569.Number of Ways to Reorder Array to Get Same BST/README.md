@@ -1,6 +1,6 @@
 # [1569. Number of Ways to Reorder Array to Get Same BST](https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst)
 
-[中文文档](/solution/1500-1599/1569.Number%20of%20Ways%20to%20Reorder%20Array%20to%20Get%20Same%20BST/README.md)
+[中文文档](./solution/1500-1599/1569.Number%20of%20Ways%20to%20Reorder%20Array%20to%20Get%20Same%20BST/README.md)
 
 <!-- tags:Tree,Union Find,Binary Search Tree,Memoization,Array,Math,Divide and Conquer,Dynamic Programming,Binary Tree,Combinatorics -->
 

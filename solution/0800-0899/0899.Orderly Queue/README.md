@@ -1,6 +1,6 @@
 # [899. Orderly Queue](https://leetcode.com/problems/orderly-queue)
 
-[中文文档](/solution/0800-0899/0899.Orderly%20Queue/README.md)
+[中文文档](./solution/0800-0899/0899.Orderly%20Queue/README.md)
 
 <!-- tags:Math,String,Sorting -->
 

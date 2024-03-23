@@ -1,6 +1,6 @@
 # [490. The Maze](https://leetcode.com/problems/the-maze)
 
-[中文文档](/solution/0400-0499/0490.The%20Maze/README.md)
+[中文文档](./solution/0400-0499/0490.The%20Maze/README.md)
 
 <!-- tags:Depth-First Search,Breadth-First Search,Array,Matrix -->
 

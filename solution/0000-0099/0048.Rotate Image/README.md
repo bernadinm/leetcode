@@ -1,6 +1,6 @@
 # [48. Rotate Image](https://leetcode.com/problems/rotate-image)
 
-[中文文档](/solution/0000-0099/0048.Rotate%20Image/README.md)
+[中文文档](./solution/0000-0099/0048.Rotate%20Image/README.md)
 
 <!-- tags:Array,Math,Matrix -->
 

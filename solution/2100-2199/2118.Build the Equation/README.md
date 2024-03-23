@@ -1,6 +1,6 @@
 # [2118. Build the Equation](https://leetcode.com/problems/build-the-equation)
 
-[中文文档](/solution/2100-2199/2118.Build%20the%20Equation/README.md)
+[中文文档](./solution/2100-2199/2118.Build%20the%20Equation/README.md)
 
 <!-- tags:Database -->
 

@@ -1,6 +1,6 @@
 # [2392. Build a Matrix With Conditions](https://leetcode.com/problems/build-a-matrix-with-conditions)
 
-[中文文档](/solution/2300-2399/2392.Build%20a%20Matrix%20With%20Conditions/README.md)
+[中文文档](./solution/2300-2399/2392.Build%20a%20Matrix%20With%20Conditions/README.md)
 
 <!-- tags:Graph,Topological Sort,Array,Matrix -->
 

@@ -1,6 +1,6 @@
 # [2906. Construct Product Matrix](https://leetcode.com/problems/construct-product-matrix)
 
-[中文文档](/solution/2900-2999/2906.Construct%20Product%20Matrix/README.md)
+[中文文档](./solution/2900-2999/2906.Construct%20Product%20Matrix/README.md)
 
 <!-- tags:Array,Matrix,Prefix Sum -->
 

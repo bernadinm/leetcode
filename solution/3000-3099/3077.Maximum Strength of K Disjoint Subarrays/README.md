@@ -1,6 +1,6 @@
 # [3077. Maximum Strength of K Disjoint Subarrays](https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays)
 
-[中文文档](/solution/3000-3099/3077.Maximum%20Strength%20of%20K%20Disjoint%20Subarrays/README.md)
+[中文文档](./solution/3000-3099/3077.Maximum%20Strength%20of%20K%20Disjoint%20Subarrays/README.md)
 
 <!-- tags:Array,Dynamic Programming,Prefix Sum -->
 

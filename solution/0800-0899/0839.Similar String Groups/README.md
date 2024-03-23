@@ -1,6 +1,6 @@
 # [839. Similar String Groups](https://leetcode.com/problems/similar-string-groups)
 
-[中文文档](/solution/0800-0899/0839.Similar%20String%20Groups/README.md)
+[中文文档](./solution/0800-0899/0839.Similar%20String%20Groups/README.md)
 
 <!-- tags:Depth-First Search,Breadth-First Search,Union Find,Array,Hash Table,String -->
 

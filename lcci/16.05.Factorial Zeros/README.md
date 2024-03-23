@@ -1,6 +1,6 @@
 # [16.05. Factorial Zeros](https://leetcode.cn/problems/factorial-zeros-lcci)
 
-[中文文档](/lcci/16.05.Factorial%20Zeros/README.md)
+[中文文档](./lcci/16.05.Factorial%20Zeros/README.md)
 
 ## Description
 

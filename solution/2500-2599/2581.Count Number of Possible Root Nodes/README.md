@@ -1,6 +1,6 @@
 # [2581. Count Number of Possible Root Nodes](https://leetcode.com/problems/count-number-of-possible-root-nodes)
 
-[中文文档](/solution/2500-2599/2581.Count%20Number%20of%20Possible%20Root%20Nodes/README.md)
+[中文文档](./solution/2500-2599/2581.Count%20Number%20of%20Possible%20Root%20Nodes/README.md)
 
 <!-- tags:Tree,Depth-First Search,Hash Table,Dynamic Programming -->
 

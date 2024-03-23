@@ -1,6 +1,6 @@
 # [2208. Minimum Operations to Halve Array Sum](https://leetcode.com/problems/minimum-operations-to-halve-array-sum)
 
-[中文文档](/solution/2200-2299/2208.Minimum%20Operations%20to%20Halve%20Array%20Sum/README.md)
+[中文文档](./solution/2200-2299/2208.Minimum%20Operations%20to%20Halve%20Array%20Sum/README.md)
 
 <!-- tags:Greedy,Array,Heap (Priority Queue) -->
 

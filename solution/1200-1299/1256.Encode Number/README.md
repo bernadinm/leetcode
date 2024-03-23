@@ -1,6 +1,6 @@
 # [1256. Encode Number](https://leetcode.com/problems/encode-number)
 
-[中文文档](/solution/1200-1299/1256.Encode%20Number/README.md)
+[中文文档](./solution/1200-1299/1256.Encode%20Number/README.md)
 
 <!-- tags:Bit Manipulation,Math,String -->
 

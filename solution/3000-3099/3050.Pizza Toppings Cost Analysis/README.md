@@ -1,6 +1,6 @@
 # [3050. Pizza Toppings Cost Analysis](https://leetcode.com/problems/pizza-toppings-cost-analysis)
 
-[中文文档](/solution/3000-3099/3050.Pizza%20Toppings%20Cost%20Analysis/README.md)
+[中文文档](./solution/3000-3099/3050.Pizza%20Toppings%20Cost%20Analysis/README.md)
 
 <!-- tags:Database -->
 

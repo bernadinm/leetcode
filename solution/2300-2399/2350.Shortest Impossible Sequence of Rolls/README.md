@@ -1,6 +1,6 @@
 # [2350. Shortest Impossible Sequence of Rolls](https://leetcode.com/problems/shortest-impossible-sequence-of-rolls)
 
-[中文文档](/solution/2300-2399/2350.Shortest%20Impossible%20Sequence%20of%20Rolls/README.md)
+[中文文档](./solution/2300-2399/2350.Shortest%20Impossible%20Sequence%20of%20Rolls/README.md)
 
 <!-- tags:Greedy,Array,Hash Table -->
 

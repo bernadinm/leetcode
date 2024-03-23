@@ -1,6 +1,6 @@
 # [01.07. Rotate Matrix](https://leetcode.cn/problems/rotate-matrix-lcci)
 
-[中文文档](/lcci/01.07.Rotate%20Matrix/README.md)
+[中文文档](./lcci/01.07.Rotate%20Matrix/README.md)
 
 ## Description
 

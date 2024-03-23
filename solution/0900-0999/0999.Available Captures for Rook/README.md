@@ -1,6 +1,6 @@
 # [999. Available Captures for Rook](https://leetcode.com/problems/available-captures-for-rook)
 
-[中文文档](/solution/0900-0999/0999.Available%20Captures%20for%20Rook/README.md)
+[中文文档](./solution/0900-0999/0999.Available%20Captures%20for%20Rook/README.md)
 
 <!-- tags:Array,Matrix,Simulation -->
 

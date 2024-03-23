@@ -1,6 +1,6 @@
 # [04.02. Minimum Height Tree](https://leetcode.cn/problems/minimum-height-tree-lcci)
 
-[中文文档](/lcci/04.02.Minimum%20Height%20Tree/README.md)
+[中文文档](./lcci/04.02.Minimum%20Height%20Tree/README.md)
 
 ## Description
 

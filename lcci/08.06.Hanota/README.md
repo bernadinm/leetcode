@@ -1,6 +1,6 @@
 # [08.06. Hanota](https://leetcode.cn/problems/hanota-lcci)
 
-[中文文档](/lcci/08.06.Hanota/README.md)
+[中文文档](./lcci/08.06.Hanota/README.md)
 
 ## Description
 

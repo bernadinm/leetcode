@@ -1,6 +1,6 @@
 # [08.08. Permutation II](https://leetcode.cn/problems/permutation-ii-lcci)
 
-[中文文档](/lcci/08.08.Permutation%20II/README.md)
+[中文文档](./lcci/08.08.Permutation%20II/README.md)
 
 ## Description
 

@@ -1,6 +1,6 @@
 # [01.01. Is Unique](https://leetcode.cn/problems/is-unique-lcci)
 
-[中文文档](/lcci/01.01.Is%20Unique/README.md)
+[中文文档](./lcci/01.01.Is%20Unique/README.md)
 
 ## Description
 

@@ -1,6 +1,6 @@
 # [2623. Memoize](https://leetcode.com/problems/memoize)
 
-[中文文档](/solution/2600-2699/2623.Memoize/README.md)
+[中文文档](./solution/2600-2699/2623.Memoize/README.md)
 
 <!-- tags: -->
 

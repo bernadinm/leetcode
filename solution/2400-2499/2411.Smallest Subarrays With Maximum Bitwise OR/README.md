@@ -1,6 +1,6 @@
 # [2411. Smallest Subarrays With Maximum Bitwise OR](https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or)
 
-[中文文档](/solution/2400-2499/2411.Smallest%20Subarrays%20With%20Maximum%20Bitwise%20OR/README.md)
+[中文文档](./solution/2400-2499/2411.Smallest%20Subarrays%20With%20Maximum%20Bitwise%20OR/README.md)
 
 <!-- tags:Bit Manipulation,Array,Binary Search,Sliding Window -->
 

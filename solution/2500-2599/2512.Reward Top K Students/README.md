@@ -1,6 +1,6 @@
 # [2512. Reward Top K Students](https://leetcode.com/problems/reward-top-k-students)
 
-[中文文档](/solution/2500-2599/2512.Reward%20Top%20K%20Students/README.md)
+[中文文档](./solution/2500-2599/2512.Reward%20Top%20K%20Students/README.md)
 
 <!-- tags:Array,Hash Table,String,Sorting,Heap (Priority Queue) -->
 

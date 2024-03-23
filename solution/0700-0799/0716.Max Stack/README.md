@@ -1,6 +1,6 @@
 # [716. Max Stack](https://leetcode.com/problems/max-stack)
 
-[中文文档](/solution/0700-0799/0716.Max%20Stack/README.md)
+[中文文档](./solution/0700-0799/0716.Max%20Stack/README.md)
 
 <!-- tags:Stack,Design,Linked List,Doubly-Linked List,Ordered Set -->
 

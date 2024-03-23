@@ -1,6 +1,6 @@
 # [2680. Maximum OR](https://leetcode.com/problems/maximum-or)
 
-[中文文档](/solution/2600-2699/2680.Maximum%20OR/README.md)
+[中文文档](./solution/2600-2699/2680.Maximum%20OR/README.md)
 
 <!-- tags:Greedy,Bit Manipulation,Array,Prefix Sum -->
 

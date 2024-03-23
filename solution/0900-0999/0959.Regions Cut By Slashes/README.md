@@ -1,6 +1,6 @@
 # [959. Regions Cut By Slashes](https://leetcode.com/problems/regions-cut-by-slashes)
 
-[中文文档](/solution/0900-0999/0959.Regions%20Cut%20By%20Slashes/README.md)
+[中文文档](./solution/0900-0999/0959.Regions%20Cut%20By%20Slashes/README.md)
 
 <!-- tags:Depth-First Search,Breadth-First Search,Union Find,Array,Hash Table,Matrix -->
 

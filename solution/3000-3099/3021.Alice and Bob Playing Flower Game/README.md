@@ -1,6 +1,6 @@
 # [3021. Alice and Bob Playing Flower Game](https://leetcode.com/problems/alice-and-bob-playing-flower-game)
 
-[中文文档](/solution/3000-3099/3021.Alice%20and%20Bob%20Playing%20Flower%20Game/README.md)
+[中文文档](./solution/3000-3099/3021.Alice%20and%20Bob%20Playing%20Flower%20Game/README.md)
 
 <!-- tags:Math -->
 

@@ -1,6 +1,6 @@
 # [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal)
 
-[中文文档](/solution/0100-0199/0102.Binary%20Tree%20Level%20Order%20Traversal/README.md)
+[中文文档](./solution/0100-0199/0102.Binary%20Tree%20Level%20Order%20Traversal/README.md)
 
 <!-- tags:Tree,Breadth-First Search,Binary Tree -->
 

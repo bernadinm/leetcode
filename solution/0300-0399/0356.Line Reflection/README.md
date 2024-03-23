@@ -1,6 +1,6 @@
 # [356. Line Reflection](https://leetcode.com/problems/line-reflection)
 
-[中文文档](/solution/0300-0399/0356.Line%20Reflection/README.md)
+[中文文档](./solution/0300-0399/0356.Line%20Reflection/README.md)
 
 <!-- tags:Array,Hash Table,Math -->
 

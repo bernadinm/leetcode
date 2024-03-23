@@ -1,6 +1,6 @@
 # [2671. Frequency Tracker](https://leetcode.com/problems/frequency-tracker)
 
-[中文文档](/solution/2600-2699/2671.Frequency%20Tracker/README.md)
+[中文文档](./solution/2600-2699/2671.Frequency%20Tracker/README.md)
 
 <!-- tags:Design,Hash Table -->
 

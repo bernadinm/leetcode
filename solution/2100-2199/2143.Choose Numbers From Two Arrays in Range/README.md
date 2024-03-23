@@ -1,6 +1,6 @@
 # [2143. Choose Numbers From Two Arrays in Range](https://leetcode.com/problems/choose-numbers-from-two-arrays-in-range)
 
-[中文文档](/solution/2100-2199/2143.Choose%20Numbers%20From%20Two%20Arrays%20in%20Range/README.md)
+[中文文档](./solution/2100-2199/2143.Choose%20Numbers%20From%20Two%20Arrays%20in%20Range/README.md)
 
 <!-- tags:Array,Dynamic Programming -->
 

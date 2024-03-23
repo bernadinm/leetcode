@@ -1,6 +1,6 @@
 # [1993. Operations on Tree](https://leetcode.com/problems/operations-on-tree)
 
-[中文文档](/solution/1900-1999/1993.Operations%20on%20Tree/README.md)
+[中文文档](./solution/1900-1999/1993.Operations%20on%20Tree/README.md)
 
 <!-- tags:Tree,Depth-First Search,Breadth-First Search,Design,Array,Hash Table -->
 

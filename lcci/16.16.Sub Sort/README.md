@@ -1,6 +1,6 @@
 # [16.16. Sub Sort](https://leetcode.cn/problems/sub-sort-lcci)
 
-[中文文档](/lcci/16.15.Master%20Mind/README.md)
+[中文文档](./lcci/16.15.Master%20Mind/README.md)
 
 ## Description
 

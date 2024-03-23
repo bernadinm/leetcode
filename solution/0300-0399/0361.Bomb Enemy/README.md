@@ -1,6 +1,6 @@
 # [361. Bomb Enemy](https://leetcode.com/problems/bomb-enemy)
 
-[中文文档](/solution/0300-0399/0361.Bomb%20Enemy/README.md)
+[中文文档](./solution/0300-0399/0361.Bomb%20Enemy/README.md)
 
 <!-- tags:Array,Dynamic Programming,Matrix -->
 

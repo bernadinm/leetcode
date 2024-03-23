@@ -1,6 +1,6 @@
 # [16.10. Living People](https://leetcode.cn/problems/living-people-lcci)
 
-[中文文档](/lcci/16.10.Living%20People/README.md)
+[中文文档](./lcci/16.10.Living%20People/README.md)
 
 ## Description
 

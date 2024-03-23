@@ -1,6 +1,6 @@
 # [1976. Number of Ways to Arrive at Destination](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination)
 
-[中文文档](/solution/1900-1999/1976.Number%20of%20Ways%20to%20Arrive%20at%20Destination/README.md)
+[中文文档](./solution/1900-1999/1976.Number%20of%20Ways%20to%20Arrive%20at%20Destination/README.md)
 
 <!-- tags:Graph,Topological Sort,Dynamic Programming,Shortest Path -->
 

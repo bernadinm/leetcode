@@ -1,6 +1,6 @@
 # [3040. Maximum Number of Operations With the Same Score II](https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii)
 
-[中文文档](/solution/3000-3099/3040.Maximum%20Number%20of%20Operations%20With%20the%20Same%20Score%20II/README.md)
+[中文文档](./solution/3000-3099/3040.Maximum%20Number%20of%20Operations%20With%20the%20Same%20Score%20II/README.md)
 
 <!-- tags:Memoization,Array,Dynamic Programming -->
 

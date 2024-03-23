@@ -1,6 +1,6 @@
 # [2420. Find All Good Indices](https://leetcode.com/problems/find-all-good-indices)
 
-[中文文档](/solution/2400-2499/2420.Find%20All%20Good%20Indices/README.md)
+[中文文档](./solution/2400-2499/2420.Find%20All%20Good%20Indices/README.md)
 
 <!-- tags:Array,Dynamic Programming,Prefix Sum -->
 

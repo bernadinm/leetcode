@@ -1,6 +1,6 @@
 # [04.03. List of Depth](https://leetcode.cn/problems/list-of-depth-lcci)
 
-[中文文档](/lcci/04.03.List%20of%20Depth/README.md)
+[中文文档](./lcci/04.03.List%20of%20Depth/README.md)
 
 ## Description
 

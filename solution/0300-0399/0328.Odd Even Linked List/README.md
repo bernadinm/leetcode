@@ -1,6 +1,6 @@
 # [328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)
 
-[中文文档](/solution/0300-0399/0328.Odd%20Even%20Linked%20List/README.md)
+[中文文档](./solution/0300-0399/0328.Odd%20Even%20Linked%20List/README.md)
 
 <!-- tags:Linked List -->
 

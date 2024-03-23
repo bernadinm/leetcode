@@ -1,6 +1,6 @@
 # [420. Strong Password Checker](https://leetcode.com/problems/strong-password-checker)
 
-[中文文档](/solution/0400-0499/0420.Strong%20Password%20Checker/README.md)
+[中文文档](./solution/0400-0499/0420.Strong%20Password%20Checker/README.md)
 
 <!-- tags:Greedy,String,Heap (Priority Queue) -->
 

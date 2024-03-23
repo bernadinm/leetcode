@@ -1,6 +1,6 @@
 # [705. Design HashSet](https://leetcode.com/problems/design-hashset)
 
-[中文文档](/solution/0700-0799/0705.Design%20HashSet/README.md)
+[中文文档](./solution/0700-0799/0705.Design%20HashSet/README.md)
 
 <!-- tags:Design,Array,Hash Table,Linked List,Hash Function -->
 

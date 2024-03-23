@@ -1,6 +1,6 @@
 # [112. Path Sum](https://leetcode.com/problems/path-sum)
 
-[中文文档](/solution/0100-0199/0112.Path%20Sum/README.md)
+[中文文档](./solution/0100-0199/0112.Path%20Sum/README.md)
 
 <!-- tags:Tree,Depth-First Search,Breadth-First Search,Binary Tree -->
 

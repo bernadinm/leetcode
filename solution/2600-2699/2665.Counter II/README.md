@@ -1,6 +1,6 @@
 # [2665. Counter II](https://leetcode.com/problems/counter-ii)
 
-[中文文档](/solution/2600-2699/2665.Counter%20II/README.md)
+[中文文档](./solution/2600-2699/2665.Counter%20II/README.md)
 
 <!-- tags: -->
 

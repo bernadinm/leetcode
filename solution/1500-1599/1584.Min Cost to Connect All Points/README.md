@@ -1,6 +1,6 @@
 # [1584. Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points)
 
-[中文文档](/solution/1500-1599/1584.Min%20Cost%20to%20Connect%20All%20Points/README.md)
+[中文文档](./solution/1500-1599/1584.Min%20Cost%20to%20Connect%20All%20Points/README.md)
 
 <!-- tags:Union Find,Graph,Array,Minimum Spanning Tree -->
 

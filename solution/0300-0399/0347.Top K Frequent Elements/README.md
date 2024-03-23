@@ -1,6 +1,6 @@
 # [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)
 
-[中文文档](/solution/0300-0399/0347.Top%20K%20Frequent%20Elements/README.md)
+[中文文档](./solution/0300-0399/0347.Top%20K%20Frequent%20Elements/README.md)
 
 <!-- tags:Array,Hash Table,Divide and Conquer,Bucket Sort,Counting,Quickselect,Sorting,Heap (Priority Queue) -->
 

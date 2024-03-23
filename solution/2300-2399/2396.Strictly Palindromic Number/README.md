@@ -1,6 +1,6 @@
 # [2396. Strictly Palindromic Number](https://leetcode.com/problems/strictly-palindromic-number)
 
-[中文文档](/solution/2300-2399/2396.Strictly%20Palindromic%20Number/README.md)
+[中文文档](./solution/2300-2399/2396.Strictly%20Palindromic%20Number/README.md)
 
 <!-- tags:Brainteaser,Math,Two Pointers -->
 

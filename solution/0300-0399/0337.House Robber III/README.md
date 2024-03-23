@@ -1,6 +1,6 @@
 # [337. House Robber III](https://leetcode.com/problems/house-robber-iii)
 
-[中文文档](/solution/0300-0399/0337.House%20Robber%20III/README.md)
+[中文文档](./solution/0300-0399/0337.House%20Robber%20III/README.md)
 
 <!-- tags:Tree,Depth-First Search,Dynamic Programming,Binary Tree -->
 

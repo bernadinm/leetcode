@@ -1,6 +1,6 @@
 # [1507. Reformat Date](https://leetcode.com/problems/reformat-date)
 
-[中文文档](/solution/1500-1599/1507.Reformat%20Date/README.md)
+[中文文档](./solution/1500-1599/1507.Reformat%20Date/README.md)
 
 <!-- tags:String -->
 

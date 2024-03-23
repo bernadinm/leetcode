@@ -1,6 +1,6 @@
 # [2234. Maximum Total Beauty of the Gardens](https://leetcode.com/problems/maximum-total-beauty-of-the-gardens)
 
-[中文文档](/solution/2200-2299/2234.Maximum%20Total%20Beauty%20of%20the%20Gardens/README.md)
+[中文文档](./solution/2200-2299/2234.Maximum%20Total%20Beauty%20of%20the%20Gardens/README.md)
 
 <!-- tags:Greedy,Array,Two Pointers,Binary Search,Sorting -->
 

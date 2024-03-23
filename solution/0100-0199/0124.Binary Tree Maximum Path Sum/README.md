@@ -1,6 +1,6 @@
 # [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum)
 
-[中文文档](/solution/0100-0199/0124.Binary%20Tree%20Maximum%20Path%20Sum/README.md)
+[中文文档](./solution/0100-0199/0124.Binary%20Tree%20Maximum%20Path%20Sum/README.md)
 
 <!-- tags:Tree,Depth-First Search,Dynamic Programming,Binary Tree -->
 

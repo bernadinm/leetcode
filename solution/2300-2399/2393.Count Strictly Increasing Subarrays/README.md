@@ -1,6 +1,6 @@
 # [2393. Count Strictly Increasing Subarrays](https://leetcode.com/problems/count-strictly-increasing-subarrays)
 
-[中文文档](/solution/2300-2399/2393.Count%20Strictly%20Increasing%20Subarrays/README.md)
+[中文文档](./solution/2300-2399/2393.Count%20Strictly%20Increasing%20Subarrays/README.md)
 
 <!-- tags:Array,Math,Dynamic Programming -->
 

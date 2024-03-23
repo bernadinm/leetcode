@@ -1,6 +1,6 @@
 # [2067. Number of Equal Count Substrings](https://leetcode.com/problems/number-of-equal-count-substrings)
 
-[中文文档](/solution/2000-2099/2067.Number%20of%20Equal%20Count%20Substrings/README.md)
+[中文文档](./solution/2000-2099/2067.Number%20of%20Equal%20Count%20Substrings/README.md)
 
 <!-- tags:String,Counting,Prefix Sum -->
 

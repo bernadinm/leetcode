@@ -1,6 +1,6 @@
 # [2297. Jump Game VIII](https://leetcode.com/problems/jump-game-viii)
 
-[中文文档](/solution/2200-2299/2297.Jump%20Game%20VIII/README.md)
+[中文文档](./solution/2200-2299/2297.Jump%20Game%20VIII/README.md)
 
 <!-- tags:Stack,Graph,Array,Dynamic Programming,Shortest Path,Monotonic Stack -->
 

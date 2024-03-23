@@ -1,6 +1,6 @@
 # [2725. Interval Cancellation](https://leetcode.com/problems/interval-cancellation)
 
-[中文文档](/solution/2700-2799/2725.Interval%20Cancellation/README.md)
+[中文文档](./solution/2700-2799/2725.Interval%20Cancellation/README.md)
 
 <!-- tags: -->
 

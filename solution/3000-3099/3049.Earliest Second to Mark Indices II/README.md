@@ -1,6 +1,6 @@
 # [3049. Earliest Second to Mark Indices II](https://leetcode.com/problems/earliest-second-to-mark-indices-ii)
 
-[中文文档](/solution/3000-3099/3049.Earliest%20Second%20to%20Mark%20Indices%20II/README.md)
+[中文文档](./solution/3000-3099/3049.Earliest%20Second%20to%20Mark%20Indices%20II/README.md)
 
 <!-- tags:Greedy,Array,Binary Search,Heap (Priority Queue) -->
 

@@ -1,6 +1,6 @@
 # [850. Rectangle Area II](https://leetcode.com/problems/rectangle-area-ii)
 
-[中文文档](/solution/0800-0899/0850.Rectangle%20Area%20II/README.md)
+[中文文档](./solution/0800-0899/0850.Rectangle%20Area%20II/README.md)
 
 <!-- tags:Segment Tree,Array,Ordered Set,Line Sweep -->
 

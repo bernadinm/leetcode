@@ -1,6 +1,6 @@
 # [2949. Count Beautiful Substrings II](https://leetcode.com/problems/count-beautiful-substrings-ii)
 
-[中文文档](/solution/2900-2999/2949.Count%20Beautiful%20Substrings%20II/README.md)
+[中文文档](./solution/2900-2999/2949.Count%20Beautiful%20Substrings%20II/README.md)
 
 <!-- tags:Hash Table,Math,String,Number Theory,Prefix Sum -->
 

@@ -1,6 +1,6 @@
 # [2938. Separate Black and White Balls](https://leetcode.com/problems/separate-black-and-white-balls)
 
-[中文文档](/solution/2900-2999/2938.Separate%20Black%20and%20White%20Balls/README.md)
+[中文文档](./solution/2900-2999/2938.Separate%20Black%20and%20White%20Balls/README.md)
 
 <!-- tags:Greedy,Two Pointers,String -->
 

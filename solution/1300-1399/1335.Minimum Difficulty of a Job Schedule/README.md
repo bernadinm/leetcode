@@ -1,6 +1,6 @@
 # [1335. Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule)
 
-[中文文档](/solution/1300-1399/1335.Minimum%20Difficulty%20of%20a%20Job%20Schedule/README.md)
+[中文文档](./solution/1300-1399/1335.Minimum%20Difficulty%20of%20a%20Job%20Schedule/README.md)
 
 <!-- tags:Array,Dynamic Programming -->
 

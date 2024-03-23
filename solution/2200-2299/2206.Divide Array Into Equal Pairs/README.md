@@ -1,6 +1,6 @@
 # [2206. Divide Array Into Equal Pairs](https://leetcode.com/problems/divide-array-into-equal-pairs)
 
-[中文文档](/solution/2200-2299/2206.Divide%20Array%20Into%20Equal%20Pairs/README.md)
+[中文文档](./solution/2200-2299/2206.Divide%20Array%20Into%20Equal%20Pairs/README.md)
 
 <!-- tags:Bit Manipulation,Array,Hash Table,Counting -->
 

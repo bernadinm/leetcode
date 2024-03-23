@@ -1,6 +1,6 @@
 # [16.21. Sum Swap](https://leetcode.cn/problems/sum-swap-lcci)
 
-[中文文档](/lcci/16.21.Sum%20Swap/README.md)
+[中文文档](./lcci/16.21.Sum%20Swap/README.md)
 
 ## Description
 

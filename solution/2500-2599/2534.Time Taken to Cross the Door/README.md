@@ -1,6 +1,6 @@
 # [2534. Time Taken to Cross the Door](https://leetcode.com/problems/time-taken-to-cross-the-door)
 
-[中文文档](/solution/2500-2599/2534.Time%20Taken%20to%20Cross%20the%20Door/README.md)
+[中文文档](./solution/2500-2599/2534.Time%20Taken%20to%20Cross%20the%20Door/README.md)
 
 <!-- tags:Queue,Array,Simulation -->
 

@@ -1,6 +1,6 @@
 # [1325. Delete Leaves With a Given Value](https://leetcode.com/problems/delete-leaves-with-a-given-value)
 
-[中文文档](/solution/1300-1399/1325.Delete%20Leaves%20With%20a%20Given%20Value/README.md)
+[中文文档](./solution/1300-1399/1325.Delete%20Leaves%20With%20a%20Given%20Value/README.md)
 
 <!-- tags:Tree,Depth-First Search,Binary Tree -->
 

@@ -1,6 +1,6 @@
 # [466. Count The Repetitions](https://leetcode.com/problems/count-the-repetitions)
 
-[中文文档](/solution/0400-0499/0466.Count%20The%20Repetitions/README.md)
+[中文文档](./solution/0400-0499/0466.Count%20The%20Repetitions/README.md)
 
 <!-- tags:String,Dynamic Programming -->
 

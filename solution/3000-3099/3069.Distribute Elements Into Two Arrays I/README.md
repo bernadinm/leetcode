@@ -1,6 +1,6 @@
 # [3069. Distribute Elements Into Two Arrays I](https://leetcode.com/problems/distribute-elements-into-two-arrays-i)
 
-[中文文档](/solution/3000-3099/3069.Distribute%20Elements%20Into%20Two%20Arrays%20I/README.md)
+[中文文档](./solution/3000-3099/3069.Distribute%20Elements%20Into%20Two%20Arrays%20I/README.md)
 
 <!-- tags:Array,Simulation -->
 

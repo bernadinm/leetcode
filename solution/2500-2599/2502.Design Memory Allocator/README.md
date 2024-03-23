@@ -1,6 +1,6 @@
 # [2502. Design Memory Allocator](https://leetcode.com/problems/design-memory-allocator)
 
-[中文文档](/solution/2500-2599/2502.Design%20Memory%20Allocator/README.md)
+[中文文档](./solution/2500-2599/2502.Design%20Memory%20Allocator/README.md)
 
 <!-- tags:Design,Array,Hash Table,Simulation -->
 

@@ -1,6 +1,6 @@
 # [2079. Watering Plants](https://leetcode.com/problems/watering-plants)
 
-[中文文档](/solution/2000-2099/2079.Watering%20Plants/README.md)
+[中文文档](./solution/2000-2099/2079.Watering%20Plants/README.md)
 
 <!-- tags:Array,Simulation -->
 

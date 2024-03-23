@@ -1,6 +1,6 @@
 # [2343. Query Kth Smallest Trimmed Number](https://leetcode.com/problems/query-kth-smallest-trimmed-number)
 
-[中文文档](/solution/2300-2399/2343.Query%20Kth%20Smallest%20Trimmed%20Number/README.md)
+[中文文档](./solution/2300-2399/2343.Query%20Kth%20Smallest%20Trimmed%20Number/README.md)
 
 <!-- tags:Array,String,Divide and Conquer,Quickselect,Radix Sort,Sorting,Heap (Priority Queue) -->
 

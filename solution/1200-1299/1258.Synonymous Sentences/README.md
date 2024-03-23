@@ -1,6 +1,6 @@
 # [1258. Synonymous Sentences](https://leetcode.com/problems/synonymous-sentences)
 
-[中文文档](/solution/1200-1299/1258.Synonymous%20Sentences/README.md)
+[中文文档](./solution/1200-1299/1258.Synonymous%20Sentences/README.md)
 
 <!-- tags:Union Find,Array,Hash Table,String,Backtracking -->
 

@@ -1,6 +1,6 @@
 # [2592. Maximize Greatness of an Array](https://leetcode.com/problems/maximize-greatness-of-an-array)
 
-[中文文档](/solution/2500-2599/2592.Maximize%20Greatness%20of%20an%20Array/README.md)
+[中文文档](./solution/2500-2599/2592.Maximize%20Greatness%20of%20an%20Array/README.md)
 
 <!-- tags:Greedy,Array,Two Pointers,Sorting -->
 

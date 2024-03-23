@@ -1,6 +1,6 @@
 # [01.02. Check Permutation](https://leetcode.cn/problems/check-permutation-lcci)
 
-[中文文档](/lcci/01.02.Check%20Permutation/README.md)
+[中文文档](./lcci/01.02.Check%20Permutation/README.md)
 
 ## Description
 

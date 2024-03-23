@@ -1,6 +1,6 @@
 # [2761. Prime Pairs With Target Sum](https://leetcode.com/problems/prime-pairs-with-target-sum)
 
-[中文文档](/solution/2700-2799/2761.Prime%20Pairs%20With%20Target%20Sum/README.md)
+[中文文档](./solution/2700-2799/2761.Prime%20Pairs%20With%20Target%20Sum/README.md)
 
 <!-- tags:Array,Math,Enumeration,Number Theory -->
 

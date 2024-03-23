@@ -1,6 +1,6 @@
 # [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers)
 
-[中文文档](/solution/0000-0099/0002.Add%20Two%20Numbers/README.md)
+[中文文档](./solution/0000-0099/0002.Add%20Two%20Numbers/README.md)
 
 <!-- tags:Recursion,Linked List,Math -->
 

@@ -1,6 +1,6 @@
 # [582. Kill Process](https://leetcode.com/problems/kill-process)
 
-[中文文档](/solution/0500-0599/0582.Kill%20Process/README.md)
+[中文文档](./solution/0500-0599/0582.Kill%20Process/README.md)
 
 <!-- tags:Tree,Depth-First Search,Breadth-First Search,Array,Hash Table -->
 

@@ -1,6 +1,6 @@
 # [970. Powerful Integers](https://leetcode.com/problems/powerful-integers)
 
-[中文文档](/solution/0900-0999/0970.Powerful%20Integers/README.md)
+[中文文档](./solution/0900-0999/0970.Powerful%20Integers/README.md)
 
 <!-- tags:Hash Table,Math,Enumeration -->
 

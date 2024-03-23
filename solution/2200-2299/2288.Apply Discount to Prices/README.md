@@ -1,6 +1,6 @@
 # [2288. Apply Discount to Prices](https://leetcode.com/problems/apply-discount-to-prices)
 
-[中文文档](/solution/2200-2299/2288.Apply%20Discount%20to%20Prices/README.md)
+[中文文档](./solution/2200-2299/2288.Apply%20Discount%20to%20Prices/README.md)
 
 <!-- tags:String -->
 

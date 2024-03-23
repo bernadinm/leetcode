@@ -1,6 +1,6 @@
 # [2561. Rearranging Fruits](https://leetcode.com/problems/rearranging-fruits)
 
-[中文文档](/solution/2500-2599/2561.Rearranging%20Fruits/README.md)
+[中文文档](./solution/2500-2599/2561.Rearranging%20Fruits/README.md)
 
 <!-- tags:Greedy,Array,Hash Table -->
 

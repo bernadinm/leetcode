@@ -1,6 +1,6 @@
 # [133. Clone Graph](https://leetcode.com/problems/clone-graph)
 
-[中文文档](/solution/0100-0199/0133.Clone%20Graph/README.md)
+[中文文档](./solution/0100-0199/0133.Clone%20Graph/README.md)
 
 <!-- tags:Depth-First Search,Breadth-First Search,Graph,Hash Table -->
 

@@ -2,7 +2,7 @@
 
 # {}专项练习
 
-[English Version](/solution/{}_README.md)
+[English Version](./solution/{}_README.md)
 
 ## 题解
 
@@ -35,7 +35,7 @@
 
 # {} Practice
 
-[中文文档](/solution/{}_README.md)
+[中文文档](./solution/{}_README.md)
 
 ## Solutions
 
@@ -66,7 +66,7 @@ This work is licensed under a <a rel="license" href="http://creativecommons.org/
 
 # LeetCode
 
-[English Version](/solution/README.md)
+[English Version](./solution/README.md)
 
 ## 题解
 
@@ -95,7 +95,7 @@ This work is licensed under a <a rel="license" href="http://creativecommons.org/
 
 # LeetCode
 
-[中文文档](/solution/README.md)
+[中文文档](./solution/README.md)
 
 ## Solutions
 
@@ -126,7 +126,7 @@ This work is licensed under a <a rel="license" href="http://creativecommons.org/
 
 # 力扣竞赛
 
-[English Version](/solution/CONTEST_README.md)
+[English Version](./solution/CONTEST_README.md)
 
 ## 段位与荣誉勋章
 
@@ -158,7 +158,7 @@ This work is licensed under a <a rel="license" href="http://creativecommons.org/
 
 # LeetCode Contest
 
-[中文文档](/solution/CONTEST_README.md)
+[中文文档](./solution/CONTEST_README.md)
 
 ## Contest Rating & Badge
 

@@ -1,6 +1,6 @@
 # [2606. Find the Substring With Maximum Cost](https://leetcode.com/problems/find-the-substring-with-maximum-cost)
 
-[中文文档](/solution/2600-2699/2606.Find%20the%20Substring%20With%20Maximum%20Cost/README.md)
+[中文文档](./solution/2600-2699/2606.Find%20the%20Substring%20With%20Maximum%20Cost/README.md)
 
 <!-- tags:Array,Hash Table,String,Dynamic Programming -->
 

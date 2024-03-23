@@ -1,6 +1,6 @@
 # [223. Rectangle Area](https://leetcode.com/problems/rectangle-area)
 
-[中文文档](/solution/0200-0299/0223.Rectangle%20Area/README.md)
+[中文文档](./solution/0200-0299/0223.Rectangle%20Area/README.md)
 
 <!-- tags:Geometry,Math -->
 

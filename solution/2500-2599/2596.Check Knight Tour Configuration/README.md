@@ -1,6 +1,6 @@
 # [2596. Check Knight Tour Configuration](https://leetcode.com/problems/check-knight-tour-configuration)
 
-[中文文档](/solution/2500-2599/2596.Check%20Knight%20Tour%20Configuration/README.md)
+[中文文档](./solution/2500-2599/2596.Check%20Knight%20Tour%20Configuration/README.md)
 
 <!-- tags:Depth-First Search,Breadth-First Search,Array,Matrix,Simulation -->
 

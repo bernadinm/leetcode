@@ -1,6 +1,6 @@
 # [2978. Symmetric Coordinates](https://leetcode.com/problems/symmetric-coordinates)
 
-[中文文档](/solution/2900-2999/2978.Symmetric%20Coordinates/README.md)
+[中文文档](./solution/2900-2999/2978.Symmetric%20Coordinates/README.md)
 
 <!-- tags:Database -->
 

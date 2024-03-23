@@ -1,6 +1,6 @@
 # [488. Zuma Game](https://leetcode.com/problems/zuma-game)
 
-[中文文档](/solution/0400-0499/0488.Zuma%20Game/README.md)
+[中文文档](./solution/0400-0499/0488.Zuma%20Game/README.md)
 
 <!-- tags:Stack,Breadth-First Search,Memoization,String,Dynamic Programming -->
 

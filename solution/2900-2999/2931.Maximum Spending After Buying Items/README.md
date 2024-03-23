@@ -1,6 +1,6 @@
 # [2931. Maximum Spending After Buying Items](https://leetcode.com/problems/maximum-spending-after-buying-items)
 
-[中文文档](/solution/2900-2999/2931.Maximum%20Spending%20After%20Buying%20Items/README.md)
+[中文文档](./solution/2900-2999/2931.Maximum%20Spending%20After%20Buying%20Items/README.md)
 
 <!-- tags:Greedy,Array,Matrix,Sorting,Heap (Priority Queue) -->
 

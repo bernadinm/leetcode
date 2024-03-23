@@ -1,6 +1,6 @@
 # [05.06. Convert Integer](https://leetcode.cn/problems/convert-integer-lcci)
 
-[中文文档](/lcci/05.06.Convert%20Integer/README.md)
+[中文文档](./lcci/05.06.Convert%20Integer/README.md)
 
 ## Description
 

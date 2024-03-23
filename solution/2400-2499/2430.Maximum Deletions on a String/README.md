@@ -1,6 +1,6 @@
 # [2430. Maximum Deletions on a String](https://leetcode.com/problems/maximum-deletions-on-a-string)
 
-[中文文档](/solution/2400-2499/2430.Maximum%20Deletions%20on%20a%20String/README.md)
+[中文文档](./solution/2400-2499/2430.Maximum%20Deletions%20on%20a%20String/README.md)
 
 <!-- tags:String,Dynamic Programming,String Matching,Hash Function,Rolling Hash -->
 

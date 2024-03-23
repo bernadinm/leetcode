@@ -1,6 +1,6 @@
 # [2641. Cousins in Binary Tree II](https://leetcode.com/problems/cousins-in-binary-tree-ii)
 
-[中文文档](/solution/2600-2699/2641.Cousins%20in%20Binary%20Tree%20II/README.md)
+[中文文档](./solution/2600-2699/2641.Cousins%20in%20Binary%20Tree%20II/README.md)
 
 <!-- tags:Tree,Depth-First Search,Breadth-First Search,Hash Table,Binary Tree -->
 

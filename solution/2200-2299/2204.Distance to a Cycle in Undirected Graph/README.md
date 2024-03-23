@@ -1,6 +1,6 @@
 # [2204. Distance to a Cycle in Undirected Graph](https://leetcode.com/problems/distance-to-a-cycle-in-undirected-graph)
 
-[中文文档](/solution/2200-2299/2204.Distance%20to%20a%20Cycle%20in%20Undirected%20Graph/README.md)
+[中文文档](./solution/2200-2299/2204.Distance%20to%20a%20Cycle%20in%20Undirected%20Graph/README.md)
 
 <!-- tags:Depth-First Search,Breadth-First Search,Union Find,Graph -->
 

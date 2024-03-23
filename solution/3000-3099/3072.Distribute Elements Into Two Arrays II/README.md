@@ -1,6 +1,6 @@
 # [3072. Distribute Elements Into Two Arrays II](https://leetcode.com/problems/distribute-elements-into-two-arrays-ii)
 
-[中文文档](/solution/3000-3099/3072.Distribute%20Elements%20Into%20Two%20Arrays%20II/README.md)
+[中文文档](./solution/3000-3099/3072.Distribute%20Elements%20Into%20Two%20Arrays%20II/README.md)
 
 <!-- tags:Binary Indexed Tree,Segment Tree,Array,Simulation -->
 

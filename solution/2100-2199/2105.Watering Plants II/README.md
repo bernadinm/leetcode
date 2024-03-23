@@ -1,6 +1,6 @@
 # [2105. Watering Plants II](https://leetcode.com/problems/watering-plants-ii)
 
-[中文文档](/solution/2100-2199/2105.Watering%20Plants%20II/README.md)
+[中文文档](./solution/2100-2199/2105.Watering%20Plants%20II/README.md)
 
 <!-- tags:Array,Two Pointers,Simulation -->
 

@@ -1,6 +1,6 @@
 # [17.08. Circus Tower](https://leetcode.cn/problems/circus-tower-lcci)
 
-[中文文档](/lcci/17.08.Circus%20Tower/README.md)
+[中文文档](./lcci/17.08.Circus%20Tower/README.md)
 
 ## Description
 

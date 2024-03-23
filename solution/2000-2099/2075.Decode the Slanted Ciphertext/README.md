@@ -1,6 +1,6 @@
 # [2075. Decode the Slanted Ciphertext](https://leetcode.com/problems/decode-the-slanted-ciphertext)
 
-[中文文档](/solution/2000-2099/2075.Decode%20the%20Slanted%20Ciphertext/README.md)
+[中文文档](./solution/2000-2099/2075.Decode%20the%20Slanted%20Ciphertext/README.md)
 
 <!-- tags:String,Simulation -->
 

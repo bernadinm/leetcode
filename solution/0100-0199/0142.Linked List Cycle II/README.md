@@ -1,6 +1,6 @@
 # [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)
 
-[中文文档](/solution/0100-0199/0142.Linked%20List%20Cycle%20II/README.md)
+[中文文档](./solution/0100-0199/0142.Linked%20List%20Cycle%20II/README.md)
 
 <!-- tags:Hash Table,Linked List,Two Pointers -->
 

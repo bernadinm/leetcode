@@ -1,6 +1,6 @@
 # [3057. Employees Project Allocation](https://leetcode.com/problems/employees-project-allocation)
 
-[中文文档](/solution/3000-3099/3057.Employees%20Project%20Allocation/README.md)
+[中文文档](./solution/3000-3099/3057.Employees%20Project%20Allocation/README.md)
 
 <!-- tags:Database -->
 

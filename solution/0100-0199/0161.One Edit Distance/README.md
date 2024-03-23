@@ -1,6 +1,6 @@
 # [161. One Edit Distance](https://leetcode.com/problems/one-edit-distance)
 
-[中文文档](/solution/0100-0199/0161.One%20Edit%20Distance/README.md)
+[中文文档](./solution/0100-0199/0161.One%20Edit%20Distance/README.md)
 
 <!-- tags:Two Pointers,String -->
 

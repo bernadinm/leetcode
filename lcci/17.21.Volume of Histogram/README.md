@@ -1,6 +1,6 @@
 # [17.21. Volume of Histogram](https://leetcode.cn/problems/volume-of-histogram-lcci)
 
-[中文文档](/lcci/17.21.Volume%20of%20Histogram/README.md)
+[中文文档](./lcci/17.21.Volume%20of%20Histogram/README.md)
 
 ## Description
 

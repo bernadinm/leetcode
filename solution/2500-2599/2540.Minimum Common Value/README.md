@@ -1,6 +1,6 @@
 # [2540. Minimum Common Value](https://leetcode.com/problems/minimum-common-value)
 
-[中文文档](/solution/2500-2599/2540.Minimum%20Common%20Value/README.md)
+[中文文档](./solution/2500-2599/2540.Minimum%20Common%20Value/README.md)
 
 <!-- tags:Array,Hash Table,Two Pointers,Binary Search -->
 

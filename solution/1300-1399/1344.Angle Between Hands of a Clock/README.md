@@ -1,6 +1,6 @@
 # [1344. Angle Between Hands of a Clock](https://leetcode.com/problems/angle-between-hands-of-a-clock)
 
-[中文文档](/solution/1300-1399/1344.Angle%20Between%20Hands%20of%20a%20Clock/README.md)
+[中文文档](./solution/1300-1399/1344.Angle%20Between%20Hands%20of%20a%20Clock/README.md)
 
 <!-- tags:Math -->
 

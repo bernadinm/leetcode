@@ -1,6 +1,6 @@
 # [765. Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands)
 
-[中文文档](/solution/0700-0799/0765.Couples%20Holding%20Hands/README.md)
+[中文文档](./solution/0700-0799/0765.Couples%20Holding%20Hands/README.md)
 
 <!-- tags:Greedy,Depth-First Search,Breadth-First Search,Union Find,Graph -->
 

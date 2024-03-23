@@ -1,6 +1,6 @@
 # [2727. Is Object Empty](https://leetcode.com/problems/is-object-empty)
 
-[中文文档](/solution/2700-2799/2727.Is%20Object%20Empty/README.md)
+[中文文档](./solution/2700-2799/2727.Is%20Object%20Empty/README.md)
 
 <!-- tags: -->
 

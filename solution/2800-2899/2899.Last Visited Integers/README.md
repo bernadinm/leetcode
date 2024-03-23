@@ -1,6 +1,6 @@
 # [2899. Last Visited Integers](https://leetcode.com/problems/last-visited-integers)
 
-[中文文档](/solution/2800-2899/2899.Last%20Visited%20Integers/README.md)
+[中文文档](./solution/2800-2899/2899.Last%20Visited%20Integers/README.md)
 
 <!-- tags:Array,Simulation -->
 

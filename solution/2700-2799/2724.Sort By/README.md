@@ -1,6 +1,6 @@
 # [2724. Sort By](https://leetcode.com/problems/sort-by)
 
-[中文文档](/solution/2700-2799/2724.Sort%20By/README.md)
+[中文文档](./solution/2700-2799/2724.Sort%20By/README.md)
 
 <!-- tags: -->
 

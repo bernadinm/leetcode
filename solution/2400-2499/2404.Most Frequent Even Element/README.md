@@ -1,6 +1,6 @@
 # [2404. Most Frequent Even Element](https://leetcode.com/problems/most-frequent-even-element)
 
-[中文文档](/solution/2400-2499/2404.Most%20Frequent%20Even%20Element/README.md)
+[中文文档](./solution/2400-2499/2404.Most%20Frequent%20Even%20Element/README.md)
 
 <!-- tags:Array,Hash Table,Counting -->
 

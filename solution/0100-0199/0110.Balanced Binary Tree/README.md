@@ -1,6 +1,6 @@
 # [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree)
 
-[中文文档](/solution/0100-0199/0110.Balanced%20Binary%20Tree/README.md)
+[中文文档](./solution/0100-0199/0110.Balanced%20Binary%20Tree/README.md)
 
 <!-- tags:Tree,Depth-First Search,Binary Tree -->
 

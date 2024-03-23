@@ -1,6 +1,6 @@
 # [1338. Reduce Array Size to The Half](https://leetcode.com/problems/reduce-array-size-to-the-half)
 
-[中文文档](/solution/1300-1399/1338.Reduce%20Array%20Size%20to%20The%20Half/README.md)
+[中文文档](./solution/1300-1399/1338.Reduce%20Array%20Size%20to%20The%20Half/README.md)
 
 <!-- tags:Greedy,Array,Hash Table,Sorting,Heap (Priority Queue) -->
 

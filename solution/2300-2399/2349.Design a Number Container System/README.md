@@ -1,6 +1,6 @@
 # [2349. Design a Number Container System](https://leetcode.com/problems/design-a-number-container-system)
 
-[中文文档](/solution/2300-2399/2349.Design%20a%20Number%20Container%20System/README.md)
+[中文文档](./solution/2300-2399/2349.Design%20a%20Number%20Container%20System/README.md)
 
 <!-- tags:Design,Hash Table,Ordered Set,Heap (Priority Queue) -->
 

@@ -1,6 +1,6 @@
 # [3086. Minimum Moves to Pick K Ones](https://leetcode.com/problems/minimum-moves-to-pick-k-ones)
 
-[中文文档](/solution/3000-3099/3086.Minimum%20Moves%20to%20Pick%20K%20Ones/README.md)
+[中文文档](./solution/3000-3099/3086.Minimum%20Moves%20to%20Pick%20K%20Ones/README.md)
 
 <!-- tags:Greedy,Array,Prefix Sum,Sliding Window -->
 

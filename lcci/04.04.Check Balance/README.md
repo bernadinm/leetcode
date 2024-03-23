@@ -1,6 +1,6 @@
 # [04.04. Check Balance](https://leetcode.cn/problems/check-balance-lcci)
 
-[中文文档](/lcci/04.04.Check%20Balance/README.md)
+[中文文档](./lcci/04.04.Check%20Balance/README.md)
 
 ## Description
 

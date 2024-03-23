@@ -1,6 +1,6 @@
 # [2737. Find the Closest Marked Node](https://leetcode.com/problems/find-the-closest-marked-node)
 
-[中文文档](/solution/2700-2799/2737.Find%20the%20Closest%20Marked%20Node/README.md)
+[中文文档](./solution/2700-2799/2737.Find%20the%20Closest%20Marked%20Node/README.md)
 
 <!-- tags:Graph,Array,Shortest Path,Heap (Priority Queue) -->
 

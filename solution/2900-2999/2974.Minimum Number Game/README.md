@@ -1,6 +1,6 @@
 # [2974. Minimum Number Game](https://leetcode.com/problems/minimum-number-game)
 
-[中文文档](/solution/2900-2999/2974.Minimum%20Number%20Game/README.md)
+[中文文档](./solution/2900-2999/2974.Minimum%20Number%20Game/README.md)
 
 <!-- tags:Array,Sorting,Simulation,Heap (Priority Queue) -->
 

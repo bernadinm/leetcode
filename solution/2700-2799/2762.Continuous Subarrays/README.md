@@ -1,6 +1,6 @@
 # [2762. Continuous Subarrays](https://leetcode.com/problems/continuous-subarrays)
 
-[中文文档](/solution/2700-2799/2762.Continuous%20Subarrays/README.md)
+[中文文档](./solution/2700-2799/2762.Continuous%20Subarrays/README.md)
 
 <!-- tags:Queue,Array,Ordered Set,Sliding Window,Monotonic Queue,Heap (Priority Queue) -->
 

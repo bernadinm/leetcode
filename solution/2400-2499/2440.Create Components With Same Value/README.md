@@ -1,6 +1,6 @@
 # [2440. Create Components With Same Value](https://leetcode.com/problems/create-components-with-same-value)
 
-[中文文档](/solution/2400-2499/2440.Create%20Components%20With%20Same%20Value/README.md)
+[中文文档](./solution/2400-2499/2440.Create%20Components%20With%20Same%20Value/README.md)
 
 <!-- tags:Tree,Depth-First Search,Array,Math,Enumeration -->
 

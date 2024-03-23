@@ -1,6 +1,6 @@
 # [2887. Fill Missing Data](https://leetcode.com/problems/fill-missing-data)
 
-[中文文档](/solution/2800-2899/2887.Fill%20Missing%20Data/README.md)
+[中文文档](./solution/2800-2899/2887.Fill%20Missing%20Data/README.md)
 
 <!-- tags: -->
 

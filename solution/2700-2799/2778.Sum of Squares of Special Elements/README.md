@@ -1,6 +1,6 @@
 # [2778. Sum of Squares of Special Elements](https://leetcode.com/problems/sum-of-squares-of-special-elements)
 
-[中文文档](/solution/2700-2799/2778.Sum%20of%20Squares%20of%20Special%20Elements/README.md)
+[中文文档](./solution/2700-2799/2778.Sum%20of%20Squares%20of%20Special%20Elements/README.md)
 
 <!-- tags:Array,Enumeration -->
 

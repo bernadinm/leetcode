@@ -1,6 +1,6 @@
 # [2427. Number of Common Factors](https://leetcode.com/problems/number-of-common-factors)
 
-[中文文档](/solution/2400-2499/2427.Number%20of%20Common%20Factors/README.md)
+[中文文档](./solution/2400-2499/2427.Number%20of%20Common%20Factors/README.md)
 
 <!-- tags:Math,Enumeration,Number Theory -->
 

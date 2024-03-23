@@ -1,6 +1,6 @@
 # [814. Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning)
 
-[中文文档](/solution/0800-0899/0814.Binary%20Tree%20Pruning/README.md)
+[中文文档](./solution/0800-0899/0814.Binary%20Tree%20Pruning/README.md)
 
 <!-- tags:Tree,Depth-First Search,Binary Tree -->
 

@@ -1,6 +1,6 @@
 # [867. Transpose Matrix](https://leetcode.com/problems/transpose-matrix)
 
-[中文文档](/solution/0800-0899/0867.Transpose%20Matrix/README.md)
+[中文文档](./solution/0800-0899/0867.Transpose%20Matrix/README.md)
 
 <!-- tags:Array,Matrix,Simulation -->
 

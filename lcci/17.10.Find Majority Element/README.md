@@ -1,6 +1,6 @@
 # [17.10. Find Majority Element](https://leetcode.cn/problems/find-majority-element-lcci)
 
-[中文文档](/lcci/17.10.Find%20Majority%20Element/README.md)
+[中文文档](./lcci/17.10.Find%20Majority%20Element/README.md)
 
 ## Description
 

@@ -1,6 +1,6 @@
 # [2699. Modify Graph Edge Weights](https://leetcode.com/problems/modify-graph-edge-weights)
 
-[中文文档](/solution/2600-2699/2699.Modify%20Graph%20Edge%20Weights/README.md)
+[中文文档](./solution/2600-2699/2699.Modify%20Graph%20Edge%20Weights/README.md)
 
 <!-- tags:Graph,Shortest Path,Heap (Priority Queue) -->
 

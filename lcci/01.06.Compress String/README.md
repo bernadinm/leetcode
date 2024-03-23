@@ -1,6 +1,6 @@
 # [01.06. Compress String](https://leetcode.cn/problems/compress-string-lcci)
 
-[中文文档](/lcci/01.06.Compress%20String/README.md)
+[中文文档](./lcci/01.06.Compress%20String/README.md)
 
 ## Description
 

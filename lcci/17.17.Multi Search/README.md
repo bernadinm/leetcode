@@ -1,6 +1,6 @@
 # [17.17. Multi Search](https://leetcode.cn/problems/multi-search-lcci)
 
-[中文文档](/lcci/17.17.Multi%20Search/README.md)
+[中文文档](./lcci/17.17.Multi%20Search/README.md)
 
 ## Description
 

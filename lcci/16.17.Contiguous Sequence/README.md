@@ -1,6 +1,6 @@
 # [16.17. Contiguous Sequence](https://leetcode.cn/problems/contiguous-sequence-lcci)
 
-[中文文档](/lcci/16.17.Contiguous%20Sequence/README.md)
+[中文文档](./lcci/16.17.Contiguous%20Sequence/README.md)
 
 ## Description
 

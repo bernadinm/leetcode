@@ -1,6 +1,6 @@
 # [3063. Linked List Frequency](https://leetcode.com/problems/linked-list-frequency)
 
-[中文文档](/solution/3000-3099/3063.Linked%20List%20Frequency/README.md)
+[中文文档](./solution/3000-3099/3063.Linked%20List%20Frequency/README.md)
 
 <!-- tags:Hash Table,Linked List,Counting -->
 

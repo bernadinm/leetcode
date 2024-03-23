@@ -1,6 +1,6 @@
 # [17.23. Max Black Square](https://leetcode.cn/problems/max-black-square-lcci)
 
-[中文文档](/lcci/17.23.Max%20Black%20Square/README.md)
+[中文文档](./lcci/17.23.Max%20Black%20Square/README.md)
 
 ## Description
 

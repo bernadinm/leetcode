@@ -1,6 +1,6 @@
 # [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)
 
-[中文文档](/solution/0200-0299/0226.Invert%20Binary%20Tree/README.md)
+[中文文档](./solution/0200-0299/0226.Invert%20Binary%20Tree/README.md)
 
 <!-- tags:Tree,Depth-First Search,Breadth-First Search,Binary Tree -->
 

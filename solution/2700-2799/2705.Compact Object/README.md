@@ -1,6 +1,6 @@
 # [2705. Compact Object](https://leetcode.com/problems/compact-object)
 
-[中文文档](/solution/2700-2799/2705.Compact%20Object/README.md)
+[中文文档](./solution/2700-2799/2705.Compact%20Object/README.md)
 
 <!-- tags: -->
 

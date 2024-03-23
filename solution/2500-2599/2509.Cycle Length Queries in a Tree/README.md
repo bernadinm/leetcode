@@ -1,6 +1,6 @@
 # [2509. Cycle Length Queries in a Tree](https://leetcode.com/problems/cycle-length-queries-in-a-tree)
 
-[中文文档](/solution/2500-2599/2509.Cycle%20Length%20Queries%20in%20a%20Tree/README.md)
+[中文文档](./solution/2500-2599/2509.Cycle%20Length%20Queries%20in%20a%20Tree/README.md)
 
 <!-- tags:Tree,Binary Tree -->
 

@@ -1,6 +1,6 @@
 # [692. Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words)
 
-[中文文档](/solution/0600-0699/0692.Top%20K%20Frequent%20Words/README.md)
+[中文文档](./solution/0600-0699/0692.Top%20K%20Frequent%20Words/README.md)
 
 <!-- tags:Trie,Hash Table,String,Bucket Sort,Counting,Sorting,Heap (Priority Queue) -->
 

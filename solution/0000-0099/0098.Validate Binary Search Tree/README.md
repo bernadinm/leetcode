@@ -1,6 +1,6 @@
 # [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)
 
-[中文文档](/solution/0000-0099/0098.Validate%20Binary%20Search%20Tree/README.md)
+[中文文档](./solution/0000-0099/0098.Validate%20Binary%20Search%20Tree/README.md)
 
 <!-- tags:Tree,Depth-First Search,Binary Search Tree,Binary Tree -->
 

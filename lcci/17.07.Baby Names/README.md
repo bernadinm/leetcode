@@ -1,6 +1,6 @@
 # [17.07. Baby Names](https://leetcode.cn/problems/baby-names-lcci)
 
-[中文文档](/lcci/17.07.Baby%20Names/README.md)
+[中文文档](./lcci/17.07.Baby%20Names/README.md)
 
 ## Description
 

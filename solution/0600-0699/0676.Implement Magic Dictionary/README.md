@@ -1,6 +1,6 @@
 # [676. Implement Magic Dictionary](https://leetcode.com/problems/implement-magic-dictionary)
 
-[中文文档](/solution/0600-0699/0676.Implement%20Magic%20Dictionary/README.md)
+[中文文档](./solution/0600-0699/0676.Implement%20Magic%20Dictionary/README.md)
 
 <!-- tags:Depth-First Search,Design,Trie,Hash Table,String -->
 

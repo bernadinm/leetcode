@@ -1,6 +1,6 @@
 # [1938. Maximum Genetic Difference Query](https://leetcode.com/problems/maximum-genetic-difference-query)
 
-[中文文档](/solution/1900-1999/1938.Maximum%20Genetic%20Difference%20Query/README.md)
+[中文文档](./solution/1900-1999/1938.Maximum%20Genetic%20Difference%20Query/README.md)
 
 <!-- tags:Bit Manipulation,Trie,Array -->
 

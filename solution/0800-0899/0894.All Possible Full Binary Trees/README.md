@@ -1,6 +1,6 @@
 # [894. All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees)
 
-[中文文档](/solution/0800-0899/0894.All%20Possible%20Full%20Binary%20Trees/README.md)
+[中文文档](./solution/0800-0899/0894.All%20Possible%20Full%20Binary%20Trees/README.md)
 
 <!-- tags:Tree,Recursion,Memoization,Dynamic Programming,Binary Tree -->
 

@@ -1,6 +1,6 @@
 # [2141. Maximum Running Time of N Computers](https://leetcode.com/problems/maximum-running-time-of-n-computers)
 
-[中文文档](/solution/2100-2199/2141.Maximum%20Running%20Time%20of%20N%20Computers/README.md)
+[中文文档](./solution/2100-2199/2141.Maximum%20Running%20Time%20of%20N%20Computers/README.md)
 
 <!-- tags:Greedy,Array,Binary Search,Sorting -->
 

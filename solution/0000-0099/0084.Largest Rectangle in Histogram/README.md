@@ -1,6 +1,6 @@
 # [84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram)
 
-[中文文档](/solution/0000-0099/0084.Largest%20Rectangle%20in%20Histogram/README.md)
+[中文文档](./solution/0000-0099/0084.Largest%20Rectangle%20in%20Histogram/README.md)
 
 <!-- tags:Stack,Array,Monotonic Stack -->
 

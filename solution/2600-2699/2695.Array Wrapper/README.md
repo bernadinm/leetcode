@@ -1,6 +1,6 @@
 # [2695. Array Wrapper](https://leetcode.com/problems/array-wrapper)
 
-[中文文档](/solution/2600-2699/2695.Array%20Wrapper/README.md)
+[中文文档](./solution/2600-2699/2695.Array%20Wrapper/README.md)
 
 <!-- tags: -->
 

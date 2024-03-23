@@ -1,6 +1,6 @@
 # [2687. Bikes Last Time Used](https://leetcode.com/problems/bikes-last-time-used)
 
-[中文文档](/solution/2600-2699/2687.Bikes%20Last%20Time%20Used/README.md)
+[中文文档](./solution/2600-2699/2687.Bikes%20Last%20Time%20Used/README.md)
 
 <!-- tags:Database -->
 

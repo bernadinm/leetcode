@@ -1,6 +1,6 @@
 # [2360. Longest Cycle in a Graph](https://leetcode.com/problems/longest-cycle-in-a-graph)
 
-[中文文档](/solution/2300-2399/2360.Longest%20Cycle%20in%20a%20Graph/README.md)
+[中文文档](./solution/2300-2399/2360.Longest%20Cycle%20in%20a%20Graph/README.md)
 
 <!-- tags:Depth-First Search,Graph,Topological Sort -->
 

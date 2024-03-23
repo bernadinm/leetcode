@@ -1,6 +1,6 @@
 # [04.10. Check SubTree](https://leetcode.cn/problems/check-subtree-lcci)
 
-[中文文档](/lcci/04.10.Check%20SubTree/README.md)
+[中文文档](./lcci/04.10.Check%20SubTree/README.md)
 
 ## Description
 

@@ -1,6 +1,6 @@
 # [1686. Stone Game VI](https://leetcode.com/problems/stone-game-vi)
 
-[中文文档](/solution/1600-1699/1686.Stone%20Game%20VI/README.md)
+[中文文档](./solution/1600-1699/1686.Stone%20Game%20VI/README.md)
 
 <!-- tags:Greedy,Array,Math,Game Theory,Sorting,Heap (Priority Queue) -->
 

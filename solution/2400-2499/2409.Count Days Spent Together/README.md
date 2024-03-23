@@ -1,6 +1,6 @@
 # [2409. Count Days Spent Together](https://leetcode.com/problems/count-days-spent-together)
 
-[中文文档](/solution/2400-2499/2409.Count%20Days%20Spent%20Together/README.md)
+[中文文档](./solution/2400-2499/2409.Count%20Days%20Spent%20Together/README.md)
 
 <!-- tags:Math,String -->
 

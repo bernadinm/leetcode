@@ -1,6 +1,6 @@
 # [2426. Number of Pairs Satisfying Inequality](https://leetcode.com/problems/number-of-pairs-satisfying-inequality)
 
-[中文文档](/solution/2400-2499/2426.Number%20of%20Pairs%20Satisfying%20Inequality/README.md)
+[中文文档](./solution/2400-2499/2426.Number%20of%20Pairs%20Satisfying%20Inequality/README.md)
 
 <!-- tags:Binary Indexed Tree,Segment Tree,Array,Binary Search,Divide and Conquer,Ordered Set,Merge Sort -->
 

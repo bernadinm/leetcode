@@ -1,6 +1,6 @@
 # [507. Perfect Number](https://leetcode.com/problems/perfect-number)
 
-[中文文档](/solution/0500-0599/0507.Perfect%20Number/README.md)
+[中文文档](./solution/0500-0599/0507.Perfect%20Number/README.md)
 
 <!-- tags:Math -->
 

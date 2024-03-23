@@ -1,6 +1,6 @@
 # [2613. Beautiful Pairs](https://leetcode.com/problems/beautiful-pairs)
 
-[中文文档](/solution/2600-2699/2613.Beautiful%20Pairs/README.md)
+[中文文档](./solution/2600-2699/2613.Beautiful%20Pairs/README.md)
 
 <!-- tags:Geometry,Array,Math,Divide and Conquer,Ordered Set,Sorting -->
 

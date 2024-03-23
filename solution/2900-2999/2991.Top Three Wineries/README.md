@@ -1,6 +1,6 @@
 # [2991. Top Three Wineries](https://leetcode.com/problems/top-three-wineries)
 
-[中文文档](/solution/2900-2999/2991.Top%20Three%20Wineries/README.md)
+[中文文档](./solution/2900-2999/2991.Top%20Three%20Wineries/README.md)
 
 <!-- tags:Database -->
 

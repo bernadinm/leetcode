@@ -1,6 +1,6 @@
 # [10.03. Search Rotate Array](https://leetcode.cn/problems/search-rotate-array-lcci)
 
-[中文文档](/lcci/10.03.Search%20Rotate%20Array/README.md)
+[中文文档](./lcci/10.03.Search%20Rotate%20Array/README.md)
 
 ## Description
 

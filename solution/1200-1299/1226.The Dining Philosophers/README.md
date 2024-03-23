@@ -1,6 +1,6 @@
 # [1226. The Dining Philosophers](https://leetcode.com/problems/the-dining-philosophers)
 
-[中文文档](/solution/1200-1299/1226.The%20Dining%20Philosophers/README.md)
+[中文文档](./solution/1200-1299/1226.The%20Dining%20Philosophers/README.md)
 
 <!-- tags:Concurrency -->
 

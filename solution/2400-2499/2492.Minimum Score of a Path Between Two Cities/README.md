@@ -1,6 +1,6 @@
 # [2492. Minimum Score of a Path Between Two Cities](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities)
 
-[中文文档](/solution/2400-2499/2492.Minimum%20Score%20of%20a%20Path%20Between%20Two%20Cities/README.md)
+[中文文档](./solution/2400-2499/2492.Minimum%20Score%20of%20a%20Path%20Between%20Two%20Cities/README.md)
 
 <!-- tags:Depth-First Search,Breadth-First Search,Union Find,Graph -->
 

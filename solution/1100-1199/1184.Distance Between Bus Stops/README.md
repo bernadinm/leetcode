@@ -1,6 +1,6 @@
 # [1184. Distance Between Bus Stops](https://leetcode.com/problems/distance-between-bus-stops)
 
-[中文文档](/solution/1100-1199/1184.Distance%20Between%20Bus%20Stops/README.md)
+[中文文档](./solution/1100-1199/1184.Distance%20Between%20Bus%20Stops/README.md)
 
 <!-- tags:Array -->
 

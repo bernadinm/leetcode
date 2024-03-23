@@ -1,6 +1,6 @@
 # [3022. Minimize OR of Remaining Elements Using Operations](https://leetcode.com/problems/minimize-or-of-remaining-elements-using-operations)
 
-[中文文档](/solution/3000-3099/3022.Minimize%20OR%20of%20Remaining%20Elements%20Using%20Operations/README.md)
+[中文文档](./solution/3000-3099/3022.Minimize%20OR%20of%20Remaining%20Elements%20Using%20Operations/README.md)
 
 <!-- tags:Greedy,Bit Manipulation,Array -->
 

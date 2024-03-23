@@ -1,6 +1,6 @@
 # [2591. Distribute Money to Maximum Children](https://leetcode.com/problems/distribute-money-to-maximum-children)
 
-[中文文档](/solution/2500-2599/2591.Distribute%20Money%20to%20Maximum%20Children/README.md)
+[中文文档](./solution/2500-2599/2591.Distribute%20Money%20to%20Maximum%20Children/README.md)
 
 <!-- tags:Greedy,Math -->
 

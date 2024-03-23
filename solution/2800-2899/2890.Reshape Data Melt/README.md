@@ -1,6 +1,6 @@
 # [2890. Reshape Data Melt](https://leetcode.com/problems/reshape-data-melt)
 
-[中文文档](/solution/2800-2899/2890.Reshape%20Data%20Melt/README.md)
+[中文文档](./solution/2800-2899/2890.Reshape%20Data%20Melt/README.md)
 
 <!-- tags: -->
 

@@ -1,6 +1,6 @@
 # [1316. Distinct Echo Substrings](https://leetcode.com/problems/distinct-echo-substrings)
 
-[中文文档](/solution/1300-1399/1316.Distinct%20Echo%20Substrings/README.md)
+[中文文档](./solution/1300-1399/1316.Distinct%20Echo%20Substrings/README.md)
 
 <!-- tags:Trie,String,Hash Function,Rolling Hash -->
 

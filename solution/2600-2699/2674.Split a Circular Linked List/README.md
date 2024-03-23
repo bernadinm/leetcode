@@ -1,6 +1,6 @@
 # [2674. Split a Circular Linked List](https://leetcode.com/problems/split-a-circular-linked-list)
 
-[中文文档](/solution/2600-2699/2674.Split%20a%20Circular%20Linked%20List/README.md)
+[中文文档](./solution/2600-2699/2674.Split%20a%20Circular%20Linked%20List/README.md)
 
 <!-- tags:Linked List,Two Pointers -->
 

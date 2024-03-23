@@ -1,6 +1,6 @@
 # [2968. Apply Operations to Maximize Frequency Score](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score)
 
-[中文文档](/solution/2900-2999/2968.Apply%20Operations%20to%20Maximize%20Frequency%20Score/README.md)
+[中文文档](./solution/2900-2999/2968.Apply%20Operations%20to%20Maximize%20Frequency%20Score/README.md)
 
 <!-- tags:Array,Binary Search,Prefix Sum,Sorting,Sliding Window -->
 

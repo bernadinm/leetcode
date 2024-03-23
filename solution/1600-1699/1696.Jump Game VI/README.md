@@ -1,6 +1,6 @@
 # [1696. Jump Game VI](https://leetcode.com/problems/jump-game-vi)
 
-[中文文档](/solution/1600-1699/1696.Jump%20Game%20VI/README.md)
+[中文文档](./solution/1600-1699/1696.Jump%20Game%20VI/README.md)
 
 <!-- tags:Queue,Array,Dynamic Programming,Monotonic Queue,Heap (Priority Queue) -->
 

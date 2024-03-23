@@ -1,6 +1,6 @@
 # [1765. Map of Highest Peak](https://leetcode.com/problems/map-of-highest-peak)
 
-[中文文档](/solution/1700-1799/1765.Map%20of%20Highest%20Peak/README.md)
+[中文文档](./solution/1700-1799/1765.Map%20of%20Highest%20Peak/README.md)
 
 <!-- tags:Breadth-First Search,Array,Matrix -->
 

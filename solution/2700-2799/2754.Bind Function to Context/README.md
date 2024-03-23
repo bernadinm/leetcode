@@ -1,6 +1,6 @@
 # [2754. Bind Function to Context](https://leetcode.com/problems/bind-function-to-context)
 
-[中文文档](/solution/2700-2799/2754.Bind%20Function%20to%20Context/README.md)
+[中文文档](./solution/2700-2799/2754.Bind%20Function%20to%20Context/README.md)
 
 <!-- tags: -->
 

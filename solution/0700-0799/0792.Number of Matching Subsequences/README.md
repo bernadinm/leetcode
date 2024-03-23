@@ -1,6 +1,6 @@
 # [792. Number of Matching Subsequences](https://leetcode.com/problems/number-of-matching-subsequences)
 
-[中文文档](/solution/0700-0799/0792.Number%20of%20Matching%20Subsequences/README.md)
+[中文文档](./solution/0700-0799/0792.Number%20of%20Matching%20Subsequences/README.md)
 
 <!-- tags:Trie,Array,Hash Table,String,Binary Search,Dynamic Programming,Sorting -->
 

@@ -1,6 +1,6 @@
 # [1267. Count Servers that Communicate](https://leetcode.com/problems/count-servers-that-communicate)
 
-[中文文档](/solution/1200-1299/1267.Count%20Servers%20that%20Communicate/README.md)
+[中文文档](./solution/1200-1299/1267.Count%20Servers%20that%20Communicate/README.md)
 
 <!-- tags:Depth-First Search,Breadth-First Search,Union Find,Array,Counting,Matrix -->
 

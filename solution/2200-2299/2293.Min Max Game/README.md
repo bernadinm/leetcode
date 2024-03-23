@@ -1,6 +1,6 @@
 # [2293. Min Max Game](https://leetcode.com/problems/min-max-game)
 
-[中文文档](/solution/2200-2299/2293.Min%20Max%20Game/README.md)
+[中文文档](./solution/2200-2299/2293.Min%20Max%20Game/README.md)
 
 <!-- tags:Array,Simulation -->
 

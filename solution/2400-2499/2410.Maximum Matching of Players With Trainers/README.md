@@ -1,6 +1,6 @@
 # [2410. Maximum Matching of Players With Trainers](https://leetcode.com/problems/maximum-matching-of-players-with-trainers)
 
-[中文文档](/solution/2400-2499/2410.Maximum%20Matching%20of%20Players%20With%20Trainers/README.md)
+[中文文档](./solution/2400-2499/2410.Maximum%20Matching%20of%20Players%20With%20Trainers/README.md)
 
 <!-- tags:Greedy,Array,Two Pointers,Sorting -->
 

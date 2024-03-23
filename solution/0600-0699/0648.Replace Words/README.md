@@ -1,6 +1,6 @@
 # [648. Replace Words](https://leetcode.com/problems/replace-words)
 
-[中文文档](/solution/0600-0699/0648.Replace%20Words/README.md)
+[中文文档](./solution/0600-0699/0648.Replace%20Words/README.md)
 
 <!-- tags:Trie,Array,Hash Table,String -->
 

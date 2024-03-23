@@ -1,6 +1,6 @@
 # [1518. Water Bottles](https://leetcode.com/problems/water-bottles)
 
-[中文文档](/solution/1500-1599/1518.Water%20Bottles/README.md)
+[中文文档](./solution/1500-1599/1518.Water%20Bottles/README.md)
 
 <!-- tags:Math,Simulation -->
 

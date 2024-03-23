@@ -1,6 +1,6 @@
 # [03.01. Three in One](https://leetcode.cn/problems/three-in-one-lcci)
 
-[中文文档](/lcci/03.01.Three%20in%20One/README.md)
+[中文文档](./lcci/03.01.Three%20in%20One/README.md)
 
 ## Description
 

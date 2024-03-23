@@ -1,6 +1,6 @@
 # [2401. Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray)
 
-[中文文档](/solution/2400-2499/2401.Longest%20Nice%20Subarray/README.md)
+[中文文档](./solution/2400-2499/2401.Longest%20Nice%20Subarray/README.md)
 
 <!-- tags:Bit Manipulation,Array,Sliding Window -->
 

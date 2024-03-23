@@ -1,6 +1,6 @@
 # [1388. Pizza With 3n Slices](https://leetcode.com/problems/pizza-with-3n-slices)
 
-[中文文档](/solution/1300-1399/1388.Pizza%20With%203n%20Slices/README.md)
+[中文文档](./solution/1300-1399/1388.Pizza%20With%203n%20Slices/README.md)
 
 <!-- tags:Greedy,Array,Dynamic Programming,Heap (Priority Queue) -->
 

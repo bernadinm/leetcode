@@ -1,6 +1,6 @@
 # [2929. Distribute Candies Among Children II](https://leetcode.com/problems/distribute-candies-among-children-ii)
 
-[中文文档](/solution/2900-2999/2929.Distribute%20Candies%20Among%20Children%20II/README.md)
+[中文文档](./solution/2900-2999/2929.Distribute%20Candies%20Among%20Children%20II/README.md)
 
 <!-- tags:Math,Combinatorics,Enumeration -->
 

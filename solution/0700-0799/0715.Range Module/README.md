@@ -1,6 +1,6 @@
 # [715. Range Module](https://leetcode.com/problems/range-module)
 
-[中文文档](/solution/0700-0799/0715.Range%20Module/README.md)
+[中文文档](./solution/0700-0799/0715.Range%20Module/README.md)
 
 <!-- tags:Design,Segment Tree,Ordered Set -->
 

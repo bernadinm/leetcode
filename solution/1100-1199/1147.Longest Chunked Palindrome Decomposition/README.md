@@ -1,6 +1,6 @@
 # [1147. Longest Chunked Palindrome Decomposition](https://leetcode.com/problems/longest-chunked-palindrome-decomposition)
 
-[中文文档](/solution/1100-1199/1147.Longest%20Chunked%20Palindrome%20Decomposition/README.md)
+[中文文档](./solution/1100-1199/1147.Longest%20Chunked%20Palindrome%20Decomposition/README.md)
 
 <!-- tags:Greedy,Two Pointers,String,Dynamic Programming,Hash Function,Rolling Hash -->
 

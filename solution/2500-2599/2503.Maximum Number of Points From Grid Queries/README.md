@@ -1,6 +1,6 @@
 # [2503. Maximum Number of Points From Grid Queries](https://leetcode.com/problems/maximum-number-of-points-from-grid-queries)
 
-[中文文档](/solution/2500-2599/2503.Maximum%20Number%20of%20Points%20From%20Grid%20Queries/README.md)
+[中文文档](./solution/2500-2599/2503.Maximum%20Number%20of%20Points%20From%20Grid%20Queries/README.md)
 
 <!-- tags:Breadth-First Search,Union Find,Array,Two Pointers,Matrix,Sorting,Heap (Priority Queue) -->
 

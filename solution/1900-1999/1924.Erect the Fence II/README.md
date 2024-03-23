@@ -1,6 +1,6 @@
 # [1924. Erect the Fence II](https://leetcode.com/problems/erect-the-fence-ii)
 
-[中文文档](/solution/1900-1999/1924.Erect%20the%20Fence%20II/README.md)
+[中文文档](./solution/1900-1999/1924.Erect%20the%20Fence%20II/README.md)
 
 <!-- tags:Geometry,Array,Math -->
 

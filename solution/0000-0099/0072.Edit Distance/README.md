@@ -1,6 +1,6 @@
 # [72. Edit Distance](https://leetcode.com/problems/edit-distance)
 
-[中文文档](/solution/0000-0099/0072.Edit%20Distance/README.md)
+[中文文档](./solution/0000-0099/0072.Edit%20Distance/README.md)
 
 <!-- tags:String,Dynamic Programming -->
 

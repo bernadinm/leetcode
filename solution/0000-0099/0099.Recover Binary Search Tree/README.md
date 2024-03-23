@@ -1,6 +1,6 @@
 # [99. Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree)
 
-[中文文档](/solution/0000-0099/0099.Recover%20Binary%20Search%20Tree/README.md)
+[中文文档](./solution/0000-0099/0099.Recover%20Binary%20Search%20Tree/README.md)
 
 <!-- tags:Tree,Depth-First Search,Binary Search Tree,Binary Tree -->
 

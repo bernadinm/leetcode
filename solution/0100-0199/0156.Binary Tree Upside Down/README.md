@@ -1,6 +1,6 @@
 # [156. Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down)
 
-[中文文档](/solution/0100-0199/0156.Binary%20Tree%20Upside%20Down/README.md)
+[中文文档](./solution/0100-0199/0156.Binary%20Tree%20Upside%20Down/README.md)
 
 <!-- tags:Tree,Depth-First Search,Binary Tree -->
 

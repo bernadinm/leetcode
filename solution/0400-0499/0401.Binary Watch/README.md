@@ -1,6 +1,6 @@
 # [401. Binary Watch](https://leetcode.com/problems/binary-watch)
 
-[中文文档](/solution/0400-0499/0401.Binary%20Watch/README.md)
+[中文文档](./solution/0400-0499/0401.Binary%20Watch/README.md)
 
 <!-- tags:Bit Manipulation,Backtracking -->
 

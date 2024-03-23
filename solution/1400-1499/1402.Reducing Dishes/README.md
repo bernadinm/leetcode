@@ -1,6 +1,6 @@
 # [1402. Reducing Dishes](https://leetcode.com/problems/reducing-dishes)
 
-[中文文档](/solution/1400-1499/1402.Reducing%20Dishes/README.md)
+[中文文档](./solution/1400-1499/1402.Reducing%20Dishes/README.md)
 
 <!-- tags:Greedy,Array,Dynamic Programming,Sorting -->
 

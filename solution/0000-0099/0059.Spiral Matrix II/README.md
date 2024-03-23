@@ -1,6 +1,6 @@
 # [59. Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii)
 
-[中文文档](/solution/0000-0099/0059.Spiral%20Matrix%20II/README.md)
+[中文文档](./solution/0000-0099/0059.Spiral%20Matrix%20II/README.md)
 
 <!-- tags:Array,Matrix,Simulation -->
 

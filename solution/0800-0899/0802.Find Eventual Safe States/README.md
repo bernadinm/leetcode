@@ -1,6 +1,6 @@
 # [802. Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states)
 
-[中文文档](/solution/0800-0899/0802.Find%20Eventual%20Safe%20States/README.md)
+[中文文档](./solution/0800-0899/0802.Find%20Eventual%20Safe%20States/README.md)
 
 <!-- tags:Depth-First Search,Breadth-First Search,Graph,Topological Sort -->
 

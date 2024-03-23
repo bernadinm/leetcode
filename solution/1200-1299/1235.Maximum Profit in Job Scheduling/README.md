@@ -1,6 +1,6 @@
 # [1235. Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling)
 
-[中文文档](/solution/1200-1299/1235.Maximum%20Profit%20in%20Job%20Scheduling/README.md)
+[中文文档](./solution/1200-1299/1235.Maximum%20Profit%20in%20Job%20Scheduling/README.md)
 
 <!-- tags:Array,Binary Search,Dynamic Programming,Sorting -->
 

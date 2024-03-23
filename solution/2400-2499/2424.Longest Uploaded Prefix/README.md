@@ -1,6 +1,6 @@
 # [2424. Longest Uploaded Prefix](https://leetcode.com/problems/longest-uploaded-prefix)
 
-[中文文档](/solution/2400-2499/2424.Longest%20Uploaded%20Prefix/README.md)
+[中文文档](./solution/2400-2499/2424.Longest%20Uploaded%20Prefix/README.md)
 
 <!-- tags:Union Find,Design,Binary Indexed Tree,Segment Tree,Binary Search,Ordered Set,Heap (Priority Queue) -->
 

@@ -1,6 +1,6 @@
 # [2364. Count Number of Bad Pairs](https://leetcode.com/problems/count-number-of-bad-pairs)
 
-[中文文档](/solution/2300-2399/2364.Count%20Number%20of%20Bad%20Pairs/README.md)
+[中文文档](./solution/2300-2399/2364.Count%20Number%20of%20Bad%20Pairs/README.md)
 
 <!-- tags:Array,Hash Table -->
 

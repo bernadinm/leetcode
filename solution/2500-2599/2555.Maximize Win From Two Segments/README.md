@@ -1,6 +1,6 @@
 # [2555. Maximize Win From Two Segments](https://leetcode.com/problems/maximize-win-from-two-segments)
 
-[中文文档](/solution/2500-2599/2555.Maximize%20Win%20From%20Two%20Segments/README.md)
+[中文文档](./solution/2500-2599/2555.Maximize%20Win%20From%20Two%20Segments/README.md)
 
 <!-- tags:Array,Binary Search,Sliding Window -->
 

@@ -1,6 +1,6 @@
 # [2252. Dynamic Pivoting of a Table](https://leetcode.com/problems/dynamic-pivoting-of-a-table)
 
-[中文文档](/solution/2200-2299/2252.Dynamic%20Pivoting%20of%20a%20Table/README.md)
+[中文文档](./solution/2200-2299/2252.Dynamic%20Pivoting%20of%20a%20Table/README.md)
 
 <!-- tags:Database -->
 

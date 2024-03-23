@@ -1,6 +1,6 @@
 # [2744. Find Maximum Number of String Pairs](https://leetcode.com/problems/find-maximum-number-of-string-pairs)
 
-[中文文档](/solution/2700-2799/2744.Find%20Maximum%20Number%20of%20String%20Pairs/README.md)
+[中文文档](./solution/2700-2799/2744.Find%20Maximum%20Number%20of%20String%20Pairs/README.md)
 
 <!-- tags:Array,Hash Table,String,Simulation -->
 

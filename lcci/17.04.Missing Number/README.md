@@ -1,6 +1,6 @@
 # [17.04. Missing Number](https://leetcode.cn/problems/missing-number-lcci)
 
-[中文文档](/lcci/17.04.Missing%20Number/README.md)
+[中文文档](./lcci/17.04.Missing%20Number/README.md)
 
 ## Description
 

@@ -1,6 +1,6 @@
 # [2159. Order Two Columns Independently](https://leetcode.com/problems/order-two-columns-independently)
 
-[中文文档](/solution/2100-2199/2159.Order%20Two%20Columns%20Independently/README.md)
+[中文文档](./solution/2100-2199/2159.Order%20Two%20Columns%20Independently/README.md)
 
 <!-- tags:Database -->
 

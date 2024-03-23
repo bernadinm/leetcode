@@ -1,6 +1,6 @@
 # [2922. Market Analysis III](https://leetcode.com/problems/market-analysis-iii)
 
-[中文文档](/solution/2900-2999/2922.Market%20Analysis%20III/README.md)
+[中文文档](./solution/2900-2999/2922.Market%20Analysis%20III/README.md)
 
 <!-- tags:Database -->
 

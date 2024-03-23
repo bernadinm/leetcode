@@ -1,6 +1,6 @@
 # [994. Rotting Oranges](https://leetcode.com/problems/rotting-oranges)
 
-[中文文档](/solution/0900-0999/0994.Rotting%20Oranges/README.md)
+[中文文档](./solution/0900-0999/0994.Rotting%20Oranges/README.md)
 
 <!-- tags:Breadth-First Search,Array,Matrix -->
 

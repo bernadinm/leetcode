@@ -1,6 +1,6 @@
 # [2063. Vowels of All Substrings](https://leetcode.com/problems/vowels-of-all-substrings)
 
-[中文文档](/solution/2000-2099/2063.Vowels%20of%20All%20Substrings/README.md)
+[中文文档](./solution/2000-2099/2063.Vowels%20of%20All%20Substrings/README.md)
 
 <!-- tags:Math,String,Dynamic Programming,Combinatorics -->
 

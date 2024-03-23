@@ -1,6 +1,6 @@
 # [2076. Process Restricted Friend Requests](https://leetcode.com/problems/process-restricted-friend-requests)
 
-[中文文档](/solution/2000-2099/2076.Process%20Restricted%20Friend%20Requests/README.md)
+[中文文档](./solution/2000-2099/2076.Process%20Restricted%20Friend%20Requests/README.md)
 
 <!-- tags:Union Find,Graph -->
 

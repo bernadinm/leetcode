@@ -1,6 +1,6 @@
 # [2607. Make K-Subarray Sums Equal](https://leetcode.com/problems/make-k-subarray-sums-equal)
 
-[中文文档](/solution/2600-2699/2607.Make%20K-Subarray%20Sums%20Equal/README.md)
+[中文文档](./solution/2600-2699/2607.Make%20K-Subarray%20Sums%20Equal/README.md)
 
 <!-- tags:Array,Math,Number Theory,Sorting -->
 

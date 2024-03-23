@@ -1,6 +1,6 @@
 # [2577. Minimum Time to Visit a Cell In a Grid](https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid)
 
-[中文文档](/solution/2500-2599/2577.Minimum%20Time%20to%20Visit%20a%20Cell%20In%20a%20Grid/README.md)
+[中文文档](./solution/2500-2599/2577.Minimum%20Time%20to%20Visit%20a%20Cell%20In%20a%20Grid/README.md)
 
 <!-- tags:Breadth-First Search,Graph,Array,Matrix,Shortest Path,Heap (Priority Queue) -->
 

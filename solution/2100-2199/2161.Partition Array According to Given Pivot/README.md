@@ -1,6 +1,6 @@
 # [2161. Partition Array According to Given Pivot](https://leetcode.com/problems/partition-array-according-to-given-pivot)
 
-[中文文档](/solution/2100-2199/2161.Partition%20Array%20According%20to%20Given%20Pivot/README.md)
+[中文文档](./solution/2100-2199/2161.Partition%20Array%20According%20to%20Given%20Pivot/README.md)
 
 <!-- tags:Array,Two Pointers,Simulation -->
 

@@ -1,6 +1,6 @@
 # [909. Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders)
 
-[中文文档](/solution/0900-0999/0909.Snakes%20and%20Ladders/README.md)
+[中文文档](./solution/0900-0999/0909.Snakes%20and%20Ladders/README.md)
 
 <!-- tags:Breadth-First Search,Array,Matrix -->
 

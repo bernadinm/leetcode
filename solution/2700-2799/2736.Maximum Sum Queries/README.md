@@ -1,6 +1,6 @@
 # [2736. Maximum Sum Queries](https://leetcode.com/problems/maximum-sum-queries)
 
-[中文文档](/solution/2700-2799/2736.Maximum%20Sum%20Queries/README.md)
+[中文文档](./solution/2700-2799/2736.Maximum%20Sum%20Queries/README.md)
 
 <!-- tags:Stack,Binary Indexed Tree,Segment Tree,Array,Binary Search,Sorting,Monotonic Stack -->
 

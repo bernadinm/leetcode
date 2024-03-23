@@ -1,6 +1,6 @@
 # [2781. Length of the Longest Valid Substring](https://leetcode.com/problems/length-of-the-longest-valid-substring)
 
-[中文文档](/solution/2700-2799/2781.Length%20of%20the%20Longest%20Valid%20Substring/README.md)
+[中文文档](./solution/2700-2799/2781.Length%20of%20the%20Longest%20Valid%20Substring/README.md)
 
 <!-- tags:Array,Hash Table,String,Sliding Window -->
 

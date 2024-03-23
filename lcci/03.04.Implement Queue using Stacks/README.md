@@ -1,6 +1,6 @@
 # [03.04. Implement Queue using Stacks](https://leetcode.cn/problems/implement-queue-using-stacks-lcci)
 
-[中文文档](/lcci/03.04.Implement%20Queue%20using%20Stacks/README.md)
+[中文文档](./lcci/03.04.Implement%20Queue%20using%20Stacks/README.md)
 
 ## Description
 

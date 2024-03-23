@@ -1,6 +1,6 @@
 # [1397. Find All Good Strings](https://leetcode.com/problems/find-all-good-strings)
 
-[中文文档](/solution/1300-1399/1397.Find%20All%20Good%20Strings/README.md)
+[中文文档](./solution/1300-1399/1397.Find%20All%20Good%20Strings/README.md)
 
 <!-- tags:String,Dynamic Programming,String Matching -->
 

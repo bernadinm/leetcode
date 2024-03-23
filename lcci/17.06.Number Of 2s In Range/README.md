@@ -1,6 +1,6 @@
 # [17.06. Number Of 2s In Range](https://leetcode.cn/problems/number-of-2s-in-range-lcci)
 
-[中文文档](/lcci/17.06.Number%20Of%202s%20In%20Range/README.md)
+[中文文档](./lcci/17.06.Number%20Of%202s%20In%20Range/README.md)
 
 ## Description
 

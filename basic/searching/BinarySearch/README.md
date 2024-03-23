@@ -55,8 +55,8 @@ Note that the advantage of these two templates is that they always keep the answ
 
 ## Examples
 
--   [Find First and Last Position of Element in Sorted Array](/solution/0000-0099/0034.Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array/README.md)
--   [Sqrt(x)](/solution/0000-0099/0069.Sqrt%28x%29/README.md)
--   [Find Peak Element](/solution/0100-0199/0162.Find%20Peak%20Element/README.md)
--   [First Bad Version](/solution/0200-0299/0278.First%20Bad%20Version/README.md)
--   [Fixed Point](/solution/1000-1099/1064.Fixed%20Point/README.md)
+-   [Find First and Last Position of Element in Sorted Array](./solution/0000-0099/0034.Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array/README.md)
+-   [Sqrt(x)](./solution/0000-0099/0069.Sqrt%28x%29/README.md)
+-   [Find Peak Element](./solution/0100-0199/0162.Find%20Peak%20Element/README.md)
+-   [First Bad Version](./solution/0200-0299/0278.First%20Bad%20Version/README.md)
+-   [Fixed Point](./solution/1000-1099/1064.Fixed%20Point/README.md)

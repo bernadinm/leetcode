@@ -1,6 +1,6 @@
 # [324. Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii)
 
-[中文文档](/solution/0300-0399/0324.Wiggle%20Sort%20II/README.md)
+[中文文档](./solution/0300-0399/0324.Wiggle%20Sort%20II/README.md)
 
 <!-- tags:Array,Divide and Conquer,Quickselect,Sorting -->
 

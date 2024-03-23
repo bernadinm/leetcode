@@ -1,6 +1,6 @@
 # [3042. Count Prefix and Suffix Pairs I](https://leetcode.com/problems/count-prefix-and-suffix-pairs-i)
 
-[中文文档](/solution/3000-3099/3042.Count%20Prefix%20and%20Suffix%20Pairs%20I/README.md)
+[中文文档](./solution/3000-3099/3042.Count%20Prefix%20and%20Suffix%20Pairs%20I/README.md)
 
 <!-- tags:Trie,Array,String,String Matching,Hash Function,Rolling Hash -->
 

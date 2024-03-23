@@ -1,6 +1,6 @@
 # [2069. Walking Robot Simulation II](https://leetcode.com/problems/walking-robot-simulation-ii)
 
-[中文文档](/solution/2000-2099/2069.Walking%20Robot%20Simulation%20II/README.md)
+[中文文档](./solution/2000-2099/2069.Walking%20Robot%20Simulation%20II/README.md)
 
 <!-- tags:Design,Simulation -->
 

@@ -1,6 +1,6 @@
 # [910. Smallest Range II](https://leetcode.com/problems/smallest-range-ii)
 
-[中文文档](/solution/0900-0999/0910.Smallest%20Range%20II/README.md)
+[中文文档](./solution/0900-0999/0910.Smallest%20Range%20II/README.md)
 
 <!-- tags:Greedy,Array,Math,Sorting -->
 

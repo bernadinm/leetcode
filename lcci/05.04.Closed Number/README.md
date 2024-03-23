@@ -1,6 +1,6 @@
 # [05.04. Closed Number](https://leetcode.cn/problems/closed-number-lcci)
 
-[中文文档](/lcci/05.04.Closed%20Number/README.md)
+[中文文档](./lcci/05.04.Closed%20Number/README.md)
 
 ## Description
 

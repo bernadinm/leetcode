@@ -1,6 +1,6 @@
 # [2505. Bitwise OR of All Subsequence Sums](https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums)
 
-[中文文档](/solution/2500-2599/2505.Bitwise%20OR%20of%20All%20Subsequence%20Sums/README.md)
+[中文文档](./solution/2500-2599/2505.Bitwise%20OR%20of%20All%20Subsequence%20Sums/README.md)
 
 <!-- tags:Bit Manipulation,Brainteaser,Array,Math -->
 

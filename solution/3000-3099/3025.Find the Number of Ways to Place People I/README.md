@@ -1,6 +1,6 @@
 # [3025. Find the Number of Ways to Place People I](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-i)
 
-[中文文档](/solution/3000-3099/3025.Find%20the%20Number%20of%20Ways%20to%20Place%20People%20I/README.md)
+[中文文档](./solution/3000-3099/3025.Find%20the%20Number%20of%20Ways%20to%20Place%20People%20I/README.md)
 
 <!-- tags:Geometry,Array,Math,Enumeration,Sorting -->
 

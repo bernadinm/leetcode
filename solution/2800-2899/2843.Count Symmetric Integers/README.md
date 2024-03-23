@@ -1,6 +1,6 @@
 # [2843. Count Symmetric Integers](https://leetcode.com/problems/count-symmetric-integers)
 
-[中文文档](/solution/2800-2899/2843.Count%20Symmetric%20Integers/README.md)
+[中文文档](./solution/2800-2899/2843.Count%20Symmetric%20Integers/README.md)
 
 <!-- tags:Math,Enumeration -->
 

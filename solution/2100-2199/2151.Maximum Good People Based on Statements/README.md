@@ -1,6 +1,6 @@
 # [2151. Maximum Good People Based on Statements](https://leetcode.com/problems/maximum-good-people-based-on-statements)
 
-[中文文档](/solution/2100-2199/2151.Maximum%20Good%20People%20Based%20on%20Statements/README.md)
+[中文文档](./solution/2100-2199/2151.Maximum%20Good%20People%20Based%20on%20Statements/README.md)
 
 <!-- tags:Bit Manipulation,Array,Backtracking,Enumeration -->
 

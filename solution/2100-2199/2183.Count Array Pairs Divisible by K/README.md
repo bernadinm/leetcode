@@ -1,6 +1,6 @@
 # [2183. Count Array Pairs Divisible by K](https://leetcode.com/problems/count-array-pairs-divisible-by-k)
 
-[中文文档](/solution/2100-2199/2183.Count%20Array%20Pairs%20Divisible%20by%20K/README.md)
+[中文文档](./solution/2100-2199/2183.Count%20Array%20Pairs%20Divisible%20by%20K/README.md)
 
 <!-- tags:Array,Math,Number Theory -->
 

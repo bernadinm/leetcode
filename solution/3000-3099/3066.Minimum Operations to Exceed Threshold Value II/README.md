@@ -1,6 +1,6 @@
 # [3066. Minimum Operations to Exceed Threshold Value II](https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii)
 
-[中文文档](/solution/3000-3099/3066.Minimum%20Operations%20to%20Exceed%20Threshold%20Value%20II/README.md)
+[中文文档](./solution/3000-3099/3066.Minimum%20Operations%20to%20Exceed%20Threshold%20Value%20II/README.md)
 
 <!-- tags:Array,Simulation,Heap (Priority Queue) -->
 

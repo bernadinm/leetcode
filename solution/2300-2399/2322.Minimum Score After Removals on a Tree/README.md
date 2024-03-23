@@ -1,6 +1,6 @@
 # [2322. Minimum Score After Removals on a Tree](https://leetcode.com/problems/minimum-score-after-removals-on-a-tree)
 
-[中文文档](/solution/2300-2399/2322.Minimum%20Score%20After%20Removals%20on%20a%20Tree/README.md)
+[中文文档](./solution/2300-2399/2322.Minimum%20Score%20After%20Removals%20on%20a%20Tree/README.md)
 
 <!-- tags:Bit Manipulation,Tree,Depth-First Search,Array -->
 

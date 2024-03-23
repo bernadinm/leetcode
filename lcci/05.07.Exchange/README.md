@@ -1,6 +1,6 @@
 # [05.07. Exchange](https://leetcode.cn/problems/exchange-lcci)
 
-[中文文档](/lcci/05.07.Exchange/README.md)
+[中文文档](./lcci/05.07.Exchange/README.md)
 
 ## Description
 

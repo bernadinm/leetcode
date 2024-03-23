@@ -1,6 +1,6 @@
 # [2731. Movement of Robots](https://leetcode.com/problems/movement-of-robots)
 
-[中文文档](/solution/2700-2799/2731.Movement%20of%20Robots/README.md)
+[中文文档](./solution/2700-2799/2731.Movement%20of%20Robots/README.md)
 
 <!-- tags:Brainteaser,Array,Prefix Sum,Sorting -->
 

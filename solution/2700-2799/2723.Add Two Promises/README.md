@@ -1,6 +1,6 @@
 # [2723. Add Two Promises](https://leetcode.com/problems/add-two-promises)
 
-[中文文档](/solution/2700-2799/2723.Add%20Two%20Promises/README.md)
+[中文文档](./solution/2700-2799/2723.Add%20Two%20Promises/README.md)
 
 <!-- tags: -->
 

@@ -1,6 +1,6 @@
 # [2851. String Transformation](https://leetcode.com/problems/string-transformation)
 
-[中文文档](/solution/2800-2899/2851.String%20Transformation/README.md)
+[中文文档](./solution/2800-2899/2851.String%20Transformation/README.md)
 
 <!-- tags:Math,String,Dynamic Programming,String Matching -->
 

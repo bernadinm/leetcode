@@ -1,6 +1,6 @@
 # [1204. Last Person to Fit in the Bus](https://leetcode.com/problems/last-person-to-fit-in-the-bus)
 
-[中文文档](/solution/1200-1299/1204.Last%20Person%20to%20Fit%20in%20the%20Bus/README.md)
+[中文文档](./solution/1200-1299/1204.Last%20Person%20to%20Fit%20in%20the%20Bus/README.md)
 
 <!-- tags:Database -->
 

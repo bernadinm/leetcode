@@ -1,6 +1,6 @@
 # [2685. Count the Number of Complete Components](https://leetcode.com/problems/count-the-number-of-complete-components)
 
-[中文文档](/solution/2600-2699/2685.Count%20the%20Number%20of%20Complete%20Components/README.md)
+[中文文档](./solution/2600-2699/2685.Count%20the%20Number%20of%20Complete%20Components/README.md)
 
 <!-- tags:Depth-First Search,Breadth-First Search,Graph -->
 

@@ -1,6 +1,6 @@
 # [2598. Smallest Missing Non-negative Integer After Operations](https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations)
 
-[中文文档](/solution/2500-2599/2598.Smallest%20Missing%20Non-negative%20Integer%20After%20Operations/README.md)
+[中文文档](./solution/2500-2599/2598.Smallest%20Missing%20Non-negative%20Integer%20After%20Operations/README.md)
 
 <!-- tags:Greedy,Array,Hash Table,Math -->
 

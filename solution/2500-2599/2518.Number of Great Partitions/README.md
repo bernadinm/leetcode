@@ -1,6 +1,6 @@
 # [2518. Number of Great Partitions](https://leetcode.com/problems/number-of-great-partitions)
 
-[中文文档](/solution/2500-2599/2518.Number%20of%20Great%20Partitions/README.md)
+[中文文档](./solution/2500-2599/2518.Number%20of%20Great%20Partitions/README.md)
 
 <!-- tags:Array,Dynamic Programming -->
 

@@ -1,6 +1,6 @@
 # [01.05. One Away](https://leetcode.cn/problems/one-away-lcci)
 
-[中文文档](/lcci/01.05.One%20Away/README.md)
+[中文文档](./lcci/01.05.One%20Away/README.md)
 
 ## Description
 

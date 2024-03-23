@@ -1,6 +1,6 @@
 # [2157. Groups of Strings](https://leetcode.com/problems/groups-of-strings)
 
-[中文文档](/solution/2100-2199/2157.Groups%20of%20Strings/README.md)
+[中文文档](./solution/2100-2199/2157.Groups%20of%20Strings/README.md)
 
 <!-- tags:Bit Manipulation,Union Find,String -->
 

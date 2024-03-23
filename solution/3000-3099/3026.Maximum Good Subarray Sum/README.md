@@ -1,6 +1,6 @@
 # [3026. Maximum Good Subarray Sum](https://leetcode.com/problems/maximum-good-subarray-sum)
 
-[中文文档](/solution/3000-3099/3026.Maximum%20Good%20Subarray%20Sum/README.md)
+[中文文档](./solution/3000-3099/3026.Maximum%20Good%20Subarray%20Sum/README.md)
 
 <!-- tags:Array,Hash Table,Prefix Sum -->
 

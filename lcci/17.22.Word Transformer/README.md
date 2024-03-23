@@ -1,6 +1,6 @@
 # [17.22. Word Transformer](https://leetcode.cn/problems/word-transformer-lcci)
 
-[中文文档](/lcci/17.22.Word%20Transformer/README.md)
+[中文文档](./lcci/17.22.Word%20Transformer/README.md)
 
 ## Description
 

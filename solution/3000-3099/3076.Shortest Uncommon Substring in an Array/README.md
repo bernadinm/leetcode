@@ -1,6 +1,6 @@
 # [3076. Shortest Uncommon Substring in an Array](https://leetcode.com/problems/shortest-uncommon-substring-in-an-array)
 
-[中文文档](/solution/3000-3099/3076.Shortest%20Uncommon%20Substring%20in%20an%20Array/README.md)
+[中文文档](./solution/3000-3099/3076.Shortest%20Uncommon%20Substring%20in%20an%20Array/README.md)
 
 <!-- tags:Trie,Array,Hash Table,String -->
 

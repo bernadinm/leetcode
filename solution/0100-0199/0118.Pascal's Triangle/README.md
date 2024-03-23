@@ -1,6 +1,6 @@
 # [118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)
 
-[中文文档](/solution/0100-0199/0118.Pascal%27s%20Triangle/README.md)
+[中文文档](./solution/0100-0199/0118.Pascal%27s%20Triangle/README.md)
 
 <!-- tags:Array,Dynamic Programming -->
 

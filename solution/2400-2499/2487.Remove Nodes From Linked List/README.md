@@ -1,6 +1,6 @@
 # [2487. Remove Nodes From Linked List](https://leetcode.com/problems/remove-nodes-from-linked-list)
 
-[中文文档](/solution/2400-2499/2487.Remove%20Nodes%20From%20Linked%20List/README.md)
+[中文文档](./solution/2400-2499/2487.Remove%20Nodes%20From%20Linked%20List/README.md)
 
 <!-- tags:Stack,Recursion,Linked List,Monotonic Stack -->
 

@@ -1,6 +1,6 @@
 # [2296. Design a Text Editor](https://leetcode.com/problems/design-a-text-editor)
 
-[中文文档](/solution/2200-2299/2296.Design%20a%20Text%20Editor/README.md)
+[中文文档](./solution/2200-2299/2296.Design%20a%20Text%20Editor/README.md)
 
 <!-- tags:Stack,Design,Linked List,String,Doubly-Linked List,Simulation -->
 

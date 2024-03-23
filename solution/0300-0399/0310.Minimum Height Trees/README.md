@@ -1,6 +1,6 @@
 # [310. Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees)
 
-[中文文档](/solution/0300-0399/0310.Minimum%20Height%20Trees/README.md)
+[中文文档](./solution/0300-0399/0310.Minimum%20Height%20Trees/README.md)
 
 <!-- tags:Depth-First Search,Breadth-First Search,Graph,Topological Sort -->
 

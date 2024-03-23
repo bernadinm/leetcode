@@ -1,6 +1,6 @@
 # [855. Exam Room](https://leetcode.com/problems/exam-room)
 
-[中文文档](/solution/0800-0899/0855.Exam%20Room/README.md)
+[中文文档](./solution/0800-0899/0855.Exam%20Room/README.md)
 
 <!-- tags:Design,Ordered Set,Heap (Priority Queue) -->
 

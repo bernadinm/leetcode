@@ -1,6 +1,6 @@
 # [456. 132 Pattern](https://leetcode.com/problems/132-pattern)
 
-[中文文档](/solution/0400-0499/0456.132%20Pattern/README.md)
+[中文文档](./solution/0400-0499/0456.132%20Pattern/README.md)
 
 <!-- tags:Stack,Array,Binary Search,Ordered Set,Monotonic Stack -->
 

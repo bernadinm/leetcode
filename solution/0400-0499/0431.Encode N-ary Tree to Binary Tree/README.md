@@ -1,6 +1,6 @@
 # [431. Encode N-ary Tree to Binary Tree](https://leetcode.com/problems/encode-n-ary-tree-to-binary-tree)
 
-[中文文档](/solution/0400-0499/0431.Encode%20N-ary%20Tree%20to%20Binary%20Tree/README.md)
+[中文文档](./solution/0400-0499/0431.Encode%20N-ary%20Tree%20to%20Binary%20Tree/README.md)
 
 <!-- tags:Tree,Depth-First Search,Breadth-First Search,Design,Binary Tree -->
 

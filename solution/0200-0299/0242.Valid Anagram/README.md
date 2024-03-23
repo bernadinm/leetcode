@@ -1,6 +1,6 @@
 # [242. Valid Anagram](https://leetcode.com/problems/valid-anagram)
 
-[中文文档](/solution/0200-0299/0242.Valid%20Anagram/README.md)
+[中文文档](./solution/0200-0299/0242.Valid%20Anagram/README.md)
 
 <!-- tags:Hash Table,String,Sorting -->
 

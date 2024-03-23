@@ -1,6 +1,6 @@
 # [2328. Number of Increasing Paths in a Grid](https://leetcode.com/problems/number-of-increasing-paths-in-a-grid)
 
-[中文文档](/solution/2300-2399/2328.Number%20of%20Increasing%20Paths%20in%20a%20Grid/README.md)
+[中文文档](./solution/2300-2399/2328.Number%20of%20Increasing%20Paths%20in%20a%20Grid/README.md)
 
 <!-- tags:Depth-First Search,Breadth-First Search,Graph,Topological Sort,Memoization,Array,Dynamic Programming,Matrix -->
 

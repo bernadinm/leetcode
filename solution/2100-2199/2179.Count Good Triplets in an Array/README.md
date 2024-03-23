@@ -1,6 +1,6 @@
 # [2179. Count Good Triplets in an Array](https://leetcode.com/problems/count-good-triplets-in-an-array)
 
-[中文文档](/solution/2100-2199/2179.Count%20Good%20Triplets%20in%20an%20Array/README.md)
+[中文文档](./solution/2100-2199/2179.Count%20Good%20Triplets%20in%20an%20Array/README.md)
 
 <!-- tags:Binary Indexed Tree,Segment Tree,Array,Binary Search,Divide and Conquer,Ordered Set,Merge Sort -->
 

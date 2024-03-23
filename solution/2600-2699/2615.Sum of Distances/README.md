@@ -1,6 +1,6 @@
 # [2615. Sum of Distances](https://leetcode.com/problems/sum-of-distances)
 
-[中文文档](/solution/2600-2699/2615.Sum%20of%20Distances/README.md)
+[中文文档](./solution/2600-2699/2615.Sum%20of%20Distances/README.md)
 
 <!-- tags:Array,Hash Table,Prefix Sum -->
 

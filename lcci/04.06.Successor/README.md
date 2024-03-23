@@ -1,6 +1,6 @@
 # [04.06. Successor](https://leetcode.cn/problems/successor-lcci)
 
-[中文文档](/lcci/04.06.Successor/README.md)
+[中文文档](./lcci/04.06.Successor/README.md)
 
 ## Description
 

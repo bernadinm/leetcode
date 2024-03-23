@@ -1,6 +1,6 @@
 # [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)
 
-[中文文档](/solution/0100-0199/0145.Binary%20Tree%20Postorder%20Traversal/README.md)
+[中文文档](./solution/0100-0199/0145.Binary%20Tree%20Postorder%20Traversal/README.md)
 
 <!-- tags:Stack,Tree,Depth-First Search,Binary Tree -->
 

@@ -1,6 +1,6 @@
 # [2318. Number of Distinct Roll Sequences](https://leetcode.com/problems/number-of-distinct-roll-sequences)
 
-[中文文档](/solution/2300-2399/2318.Number%20of%20Distinct%20Roll%20Sequences/README.md)
+[中文文档](./solution/2300-2399/2318.Number%20of%20Distinct%20Roll%20Sequences/README.md)
 
 <!-- tags:Memoization,Dynamic Programming -->
 

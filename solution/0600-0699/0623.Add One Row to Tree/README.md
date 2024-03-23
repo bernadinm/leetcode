@@ -1,6 +1,6 @@
 # [623. Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree)
 
-[中文文档](/solution/0600-0699/0623.Add%20One%20Row%20to%20Tree/README.md)
+[中文文档](./solution/0600-0699/0623.Add%20One%20Row%20to%20Tree/README.md)
 
 <!-- tags:Tree,Depth-First Search,Breadth-First Search,Binary Tree -->
 

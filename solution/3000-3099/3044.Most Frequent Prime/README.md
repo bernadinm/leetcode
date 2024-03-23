@@ -1,6 +1,6 @@
 # [3044. Most Frequent Prime](https://leetcode.com/problems/most-frequent-prime)
 
-[中文文档](/solution/3000-3099/3044.Most%20Frequent%20Prime/README.md)
+[中文文档](./solution/3000-3099/3044.Most%20Frequent%20Prime/README.md)
 
 <!-- tags:Array,Hash Table,Math,Counting,Enumeration,Matrix,Number Theory -->
 

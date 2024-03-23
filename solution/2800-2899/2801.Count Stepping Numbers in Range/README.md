@@ -1,6 +1,6 @@
 # [2801. Count Stepping Numbers in Range](https://leetcode.com/problems/count-stepping-numbers-in-range)
 
-[中文文档](/solution/2800-2899/2801.Count%20Stepping%20Numbers%20in%20Range/README.md)
+[中文文档](./solution/2800-2899/2801.Count%20Stepping%20Numbers%20in%20Range/README.md)
 
 <!-- tags:String,Dynamic Programming -->
 

@@ -1,6 +1,6 @@
 # [2197. Replace Non-Coprime Numbers in Array](https://leetcode.com/problems/replace-non-coprime-numbers-in-array)
 
-[中文文档](/solution/2100-2199/2197.Replace%20Non-Coprime%20Numbers%20in%20Array/README.md)
+[中文文档](./solution/2100-2199/2197.Replace%20Non-Coprime%20Numbers%20in%20Array/README.md)
 
 <!-- tags:Stack,Array,Math,Number Theory -->
 

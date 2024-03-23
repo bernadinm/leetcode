@@ -1,6 +1,6 @@
 # [97. Interleaving String](https://leetcode.com/problems/interleaving-string)
 
-[中文文档](/solution/0000-0099/0097.Interleaving%20String/README.md)
+[中文文档](./solution/0000-0099/0097.Interleaving%20String/README.md)
 
 <!-- tags:String,Dynamic Programming -->
 

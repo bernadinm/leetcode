@@ -1,6 +1,6 @@
 # [554. Brick Wall](https://leetcode.com/problems/brick-wall)
 
-[中文文档](/solution/0500-0599/0554.Brick%20Wall/README.md)
+[中文文档](./solution/0500-0599/0554.Brick%20Wall/README.md)
 
 <!-- tags:Array,Hash Table -->
 

@@ -1,6 +1,6 @@
 # [2041. Accepted Candidates From the Interviews](https://leetcode.com/problems/accepted-candidates-from-the-interviews)
 
-[中文文档](/solution/2000-2099/2041.Accepted%20Candidates%20From%20the%20Interviews/README.md)
+[中文文档](./solution/2000-2099/2041.Accepted%20Candidates%20From%20the%20Interviews/README.md)
 
 <!-- tags:Database -->
 

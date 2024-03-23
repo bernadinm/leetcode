@@ -1,6 +1,6 @@
 # [2330. Valid Palindrome IV](https://leetcode.com/problems/valid-palindrome-iv)
 
-[中文文档](/solution/2300-2399/2330.Valid%20Palindrome%20IV/README.md)
+[中文文档](./solution/2300-2399/2330.Valid%20Palindrome%20IV/README.md)
 
 <!-- tags:Two Pointers,String -->
 

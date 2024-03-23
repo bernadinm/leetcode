@@ -1,6 +1,6 @@
 # [639. Decode Ways II](https://leetcode.com/problems/decode-ways-ii)
 
-[中文文档](/solution/0600-0699/0639.Decode%20Ways%20II/README.md)
+[中文文档](./solution/0600-0699/0639.Decode%20Ways%20II/README.md)
 
 <!-- tags:String,Dynamic Programming -->
 

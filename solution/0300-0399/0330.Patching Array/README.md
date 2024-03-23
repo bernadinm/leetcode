@@ -1,6 +1,6 @@
 # [330. Patching Array](https://leetcode.com/problems/patching-array)
 
-[中文文档](/solution/0300-0399/0330.Patching%20Array/README.md)
+[中文文档](./solution/0300-0399/0330.Patching%20Array/README.md)
 
 <!-- tags:Greedy,Array -->
 

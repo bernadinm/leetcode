@@ -1,6 +1,6 @@
 # [2514. Count Anagrams](https://leetcode.com/problems/count-anagrams)
 
-[中文文档](/solution/2500-2599/2514.Count%20Anagrams/README.md)
+[中文文档](./solution/2500-2599/2514.Count%20Anagrams/README.md)
 
 <!-- tags:Hash Table,Math,String,Combinatorics,Counting -->
 

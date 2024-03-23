@@ -1,6 +1,6 @@
 # [16.08. English Int](https://leetcode.cn/problems/english-int-lcci)
 
-[中文文档](/lcci/16.08.English%20Int/README.md)
+[中文文档](./lcci/16.08.English%20Int/README.md)
 
 ## Description
 

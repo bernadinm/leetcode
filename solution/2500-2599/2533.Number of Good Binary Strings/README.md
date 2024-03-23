@@ -1,6 +1,6 @@
 # [2533. Number of Good Binary Strings](https://leetcode.com/problems/number-of-good-binary-strings)
 
-[中文文档](/solution/2500-2599/2533.Number%20of%20Good%20Binary%20Strings/README.md)
+[中文文档](./solution/2500-2599/2533.Number%20of%20Good%20Binary%20Strings/README.md)
 
 <!-- tags:Dynamic Programming -->
 

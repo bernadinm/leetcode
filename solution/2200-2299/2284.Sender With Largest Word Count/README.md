@@ -1,6 +1,6 @@
 # [2284. Sender With Largest Word Count](https://leetcode.com/problems/sender-with-largest-word-count)
 
-[中文文档](/solution/2200-2299/2284.Sender%20With%20Largest%20Word%20Count/README.md)
+[中文文档](./solution/2200-2299/2284.Sender%20With%20Largest%20Word%20Count/README.md)
 
 <!-- tags:Array,Hash Table,String,Counting -->
 

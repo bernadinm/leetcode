@@ -1,6 +1,6 @@
 # [17.14. Smallest K](https://leetcode.cn/problems/smallest-k-lcci)
 
-[中文文档](/lcci/17.14.Smallest%20K/README.md)
+[中文文档](./lcci/17.14.Smallest%20K/README.md)
 
 ## Description
 

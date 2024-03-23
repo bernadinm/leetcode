@@ -1,6 +1,6 @@
 # [3024. Type of Triangle](https://leetcode.com/problems/type-of-triangle)
 
-[中文文档](/solution/3000-3099/3024.Type%20of%20Triangle/README.md)
+[中文文档](./solution/3000-3099/3024.Type%20of%20Triangle/README.md)
 
 <!-- tags:Array,Math,Sorting -->
 

@@ -1,6 +1,6 @@
 # [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)
 
-[中文文档](/solution/0100-0199/0101.Symmetric%20Tree/README.md)
+[中文文档](./solution/0100-0199/0101.Symmetric%20Tree/README.md)
 
 <!-- tags:Tree,Depth-First Search,Breadth-First Search,Binary Tree -->
 

@@ -1,6 +1,6 @@
 # [2310. Sum of Numbers With Units Digit K](https://leetcode.com/problems/sum-of-numbers-with-units-digit-k)
 
-[中文文档](/solution/2300-2399/2310.Sum%20of%20Numbers%20With%20Units%20Digit%20K/README.md)
+[中文文档](./solution/2300-2399/2310.Sum%20of%20Numbers%20With%20Units%20Digit%20K/README.md)
 
 <!-- tags:Greedy,Math,Dynamic Programming,Enumeration -->
 

@@ -1,6 +1,6 @@
 # [1649. Create Sorted Array through Instructions](https://leetcode.com/problems/create-sorted-array-through-instructions)
 
-[中文文档](/solution/1600-1699/1649.Create%20Sorted%20Array%20through%20Instructions/README.md)
+[中文文档](./solution/1600-1699/1649.Create%20Sorted%20Array%20through%20Instructions/README.md)
 
 <!-- tags:Binary Indexed Tree,Segment Tree,Array,Binary Search,Divide and Conquer,Ordered Set,Merge Sort -->
 

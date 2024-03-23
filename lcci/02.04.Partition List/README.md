@@ -1,6 +1,6 @@
 # [02.04. Partition List](https://leetcode.cn/problems/partition-list-lcci)
 
-[中文文档](/lcci/02.04.Partition%20List/README.md)
+[中文文档](./lcci/02.04.Partition%20List/README.md)
 
 ## Description
 

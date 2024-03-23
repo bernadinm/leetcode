@@ -1,6 +1,6 @@
 # [147. Insertion Sort List](https://leetcode.com/problems/insertion-sort-list)
 
-[中文文档](/solution/0100-0199/0147.Insertion%20Sort%20List/README.md)
+[中文文档](./solution/0100-0199/0147.Insertion%20Sort%20List/README.md)
 
 <!-- tags:Linked List,Sorting -->
 

@@ -1,6 +1,6 @@
 # [411. Minimum Unique Word Abbreviation](https://leetcode.com/problems/minimum-unique-word-abbreviation)
 
-[中文文档](/solution/0400-0499/0411.Minimum%20Unique%20Word%20Abbreviation/README.md)
+[中文文档](./solution/0400-0499/0411.Minimum%20Unique%20Word%20Abbreviation/README.md)
 
 <!-- tags:Bit Manipulation,String,Backtracking -->
 

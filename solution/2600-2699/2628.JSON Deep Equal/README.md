@@ -1,6 +1,6 @@
 # [2628. JSON Deep Equal](https://leetcode.com/problems/json-deep-equal)
 
-[中文文档](/solution/2600-2699/2628.JSON%20Deep%20Equal/README.md)
+[中文文档](./solution/2600-2699/2628.JSON%20Deep%20Equal/README.md)
 
 <!-- tags: -->
 

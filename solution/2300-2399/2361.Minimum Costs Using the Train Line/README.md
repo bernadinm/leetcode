@@ -1,6 +1,6 @@
 # [2361. Minimum Costs Using the Train Line](https://leetcode.com/problems/minimum-costs-using-the-train-line)
 
-[中文文档](/solution/2300-2399/2361.Minimum%20Costs%20Using%20the%20Train%20Line/README.md)
+[中文文档](./solution/2300-2399/2361.Minimum%20Costs%20Using%20the%20Train%20Line/README.md)
 
 <!-- tags:Array,Dynamic Programming -->
 

@@ -1,6 +1,6 @@
 # [2637. Promise Time Limit](https://leetcode.com/problems/promise-time-limit)
 
-[中文文档](/solution/2600-2699/2637.Promise%20Time%20Limit/README.md)
+[中文文档](./solution/2600-2699/2637.Promise%20Time%20Limit/README.md)
 
 <!-- tags: -->
 

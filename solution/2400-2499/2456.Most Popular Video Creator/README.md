@@ -1,6 +1,6 @@
 # [2456. Most Popular Video Creator](https://leetcode.com/problems/most-popular-video-creator)
 
-[中文文档](/solution/2400-2499/2456.Most%20Popular%20Video%20Creator/README.md)
+[中文文档](./solution/2400-2499/2456.Most%20Popular%20Video%20Creator/README.md)
 
 <!-- tags:Array,Hash Table,String,Sorting,Heap (Priority Queue) -->
 

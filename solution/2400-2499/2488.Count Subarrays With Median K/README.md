@@ -1,6 +1,6 @@
 # [2488. Count Subarrays With Median K](https://leetcode.com/problems/count-subarrays-with-median-k)
 
-[中文文档](/solution/2400-2499/2488.Count%20Subarrays%20With%20Median%20K/README.md)
+[中文文档](./solution/2400-2499/2488.Count%20Subarrays%20With%20Median%20K/README.md)
 
 <!-- tags:Array,Hash Table,Prefix Sum -->
 

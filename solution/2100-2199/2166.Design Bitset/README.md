@@ -1,6 +1,6 @@
 # [2166. Design Bitset](https://leetcode.com/problems/design-bitset)
 
-[中文文档](/solution/2100-2199/2166.Design%20Bitset/README.md)
+[中文文档](./solution/2100-2199/2166.Design%20Bitset/README.md)
 
 <!-- tags:Design,Array,Hash Table,String -->
 

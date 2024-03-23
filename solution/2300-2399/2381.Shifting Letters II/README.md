@@ -1,6 +1,6 @@
 # [2381. Shifting Letters II](https://leetcode.com/problems/shifting-letters-ii)
 
-[中文文档](/solution/2300-2399/2381.Shifting%20Letters%20II/README.md)
+[中文文档](./solution/2300-2399/2381.Shifting%20Letters%20II/README.md)
 
 <!-- tags:Array,String,Prefix Sum -->
 

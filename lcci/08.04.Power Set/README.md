@@ -1,6 +1,6 @@
 # [08.04. Power Set](https://leetcode.cn/problems/power-set-lcci)
 
-[中文文档](/lcci/08.04.Power%20Set/README.md)
+[中文文档](./lcci/08.04.Power%20Set/README.md)
 
 ## Description
 

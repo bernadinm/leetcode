@@ -1,6 +1,6 @@
 # [17.12. BiNode](https://leetcode.cn/problems/binode-lcci)
 
-[中文文档](/lcci/17.12.BiNode/README.md)
+[中文文档](./lcci/17.12.BiNode/README.md)
 
 ## Description
 

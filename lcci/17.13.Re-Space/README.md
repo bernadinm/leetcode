@@ -1,6 +1,6 @@
 # [17.13. Re-Space](https://leetcode.cn/problems/re-space-lcci)
 
-[中文文档](/lcci/17.13.Re-Space/README.md)
+[中文文档](./lcci/17.13.Re-Space/README.md)
 
 ## Description
 

@@ -1,6 +1,6 @@
 # [2348. Number of Zero-Filled Subarrays](https://leetcode.com/problems/number-of-zero-filled-subarrays)
 
-[中文文档](/solution/2300-2399/2348.Number%20of%20Zero-Filled%20Subarrays/README.md)
+[中文文档](./solution/2300-2399/2348.Number%20of%20Zero-Filled%20Subarrays/README.md)
 
 <!-- tags:Array,Math -->
 

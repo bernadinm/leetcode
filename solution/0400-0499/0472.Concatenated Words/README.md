@@ -1,6 +1,6 @@
 # [472. Concatenated Words](https://leetcode.com/problems/concatenated-words)
 
-[中文文档](/solution/0400-0499/0472.Concatenated%20Words/README.md)
+[中文文档](./solution/0400-0499/0472.Concatenated%20Words/README.md)
 
 <!-- tags:Depth-First Search,Trie,Array,String,Dynamic Programming -->
 

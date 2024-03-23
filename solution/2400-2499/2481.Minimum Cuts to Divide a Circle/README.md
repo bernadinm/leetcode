@@ -1,6 +1,6 @@
 # [2481. Minimum Cuts to Divide a Circle](https://leetcode.com/problems/minimum-cuts-to-divide-a-circle)
 
-[中文文档](/solution/2400-2499/2481.Minimum%20Cuts%20to%20Divide%20a%20Circle/README.md)
+[中文文档](./solution/2400-2499/2481.Minimum%20Cuts%20to%20Divide%20a%20Circle/README.md)
 
 <!-- tags:Geometry,Math -->
 

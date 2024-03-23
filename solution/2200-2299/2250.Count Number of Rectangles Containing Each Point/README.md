@@ -1,6 +1,6 @@
 # [2250. Count Number of Rectangles Containing Each Point](https://leetcode.com/problems/count-number-of-rectangles-containing-each-point)
 
-[中文文档](/solution/2200-2299/2250.Count%20Number%20of%20Rectangles%20Containing%20Each%20Point/README.md)
+[中文文档](./solution/2200-2299/2250.Count%20Number%20of%20Rectangles%20Containing%20Each%20Point/README.md)
 
 <!-- tags:Binary Indexed Tree,Array,Binary Search,Sorting -->
 

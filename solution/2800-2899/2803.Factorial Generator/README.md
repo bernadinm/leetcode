@@ -1,6 +1,6 @@
 # [2803. Factorial Generator](https://leetcode.com/problems/factorial-generator)
 
-[中文文档](/solution/2800-2899/2803.Factorial%20Generator/README.md)
+[中文文档](./solution/2800-2899/2803.Factorial%20Generator/README.md)
 
 <!-- tags: -->
 

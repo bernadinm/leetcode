@@ -1,6 +1,6 @@
 # [851. Loud and Rich](https://leetcode.com/problems/loud-and-rich)
 
-[中文文档](/solution/0800-0899/0851.Loud%20and%20Rich/README.md)
+[中文文档](./solution/0800-0899/0851.Loud%20and%20Rich/README.md)
 
 <!-- tags:Depth-First Search,Graph,Topological Sort,Array -->
 

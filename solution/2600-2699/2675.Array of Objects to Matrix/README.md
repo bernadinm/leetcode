@@ -1,6 +1,6 @@
 # [2675. Array of Objects to Matrix](https://leetcode.com/problems/array-of-objects-to-matrix)
 
-[中文文档](/solution/2600-2699/2675.Array%20of%20Objects%20to%20Matrix/README.md)
+[中文文档](./solution/2600-2699/2675.Array%20of%20Objects%20to%20Matrix/README.md)
 
 <!-- tags: -->
 

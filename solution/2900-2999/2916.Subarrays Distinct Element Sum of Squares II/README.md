@@ -1,6 +1,6 @@
 # [2916. Subarrays Distinct Element Sum of Squares II](https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii)
 
-[中文文档](/solution/2900-2999/2916.Subarrays%20Distinct%20Element%20Sum%20of%20Squares%20II/README.md)
+[中文文档](./solution/2900-2999/2916.Subarrays%20Distinct%20Element%20Sum%20of%20Squares%20II/README.md)
 
 <!-- tags:Binary Indexed Tree,Segment Tree,Array,Dynamic Programming -->
 

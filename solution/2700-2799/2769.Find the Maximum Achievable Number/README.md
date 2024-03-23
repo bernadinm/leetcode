@@ -1,6 +1,6 @@
 # [2769. Find the Maximum Achievable Number](https://leetcode.com/problems/find-the-maximum-achievable-number)
 
-[中文文档](/solution/2700-2799/2769.Find%20the%20Maximum%20Achievable%20Number/README.md)
+[中文文档](./solution/2700-2799/2769.Find%20the%20Maximum%20Achievable%20Number/README.md)
 
 <!-- tags:Math -->
 

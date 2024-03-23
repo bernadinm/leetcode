@@ -1,6 +1,6 @@
 # [16.09. Operations](https://leetcode.cn/problems/operations-lcci)
 
-[中文文档](/lcci/16.09.Operations/README.md)
+[中文文档](./lcci/16.09.Operations/README.md)
 
 ## Description
 

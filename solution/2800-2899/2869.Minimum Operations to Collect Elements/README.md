@@ -1,6 +1,6 @@
 # [2869. Minimum Operations to Collect Elements](https://leetcode.com/problems/minimum-operations-to-collect-elements/)
 
-[中文文档](/solution/2800-2899/2869.Minimum%20Operations%20to%20Collect%20Elements/README.md)
+[中文文档](./solution/2800-2899/2869.Minimum%20Operations%20to%20Collect%20Elements/README.md)
 
 <!-- tags:Bit Manipulation,Array,Hash Table -->
 

@@ -1,6 +1,6 @@
 # [1105. Filling Bookcase Shelves](https://leetcode.com/problems/filling-bookcase-shelves)
 
-[中文文档](/solution/1100-1199/1105.Filling%20Bookcase%20Shelves/README.md)
+[中文文档](./solution/1100-1199/1105.Filling%20Bookcase%20Shelves/README.md)
 
 <!-- tags:Array,Dynamic Programming -->
 

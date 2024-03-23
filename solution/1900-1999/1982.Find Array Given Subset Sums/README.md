@@ -1,6 +1,6 @@
 # [1982. Find Array Given Subset Sums](https://leetcode.com/problems/find-array-given-subset-sums)
 
-[中文文档](/solution/1900-1999/1982.Find%20Array%20Given%20Subset%20Sums/README.md)
+[中文文档](./solution/1900-1999/1982.Find%20Array%20Given%20Subset%20Sums/README.md)
 
 <!-- tags:Array,Divide and Conquer -->
 

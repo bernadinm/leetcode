@@ -1,6 +1,6 @@
 # [278. First Bad Version](https://leetcode.com/problems/first-bad-version)
 
-[中文文档](/solution/0200-0299/0278.First%20Bad%20Version/README.md)
+[中文文档](./solution/0200-0299/0278.First%20Bad%20Version/README.md)
 
 <!-- tags:Binary Search,Interactive -->
 

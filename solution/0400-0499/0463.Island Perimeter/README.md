@@ -1,6 +1,6 @@
 # [463. Island Perimeter](https://leetcode.com/problems/island-perimeter)
 
-[中文文档](/solution/0400-0499/0463.Island%20Perimeter/README.md)
+[中文文档](./solution/0400-0499/0463.Island%20Perimeter/README.md)
 
 <!-- tags:Depth-First Search,Breadth-First Search,Array,Matrix -->
 

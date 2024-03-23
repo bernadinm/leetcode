@@ -1,6 +1,6 @@
 # [783. Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes)
 
-[中文文档](/solution/0700-0799/0783.Minimum%20Distance%20Between%20BST%20Nodes/README.md)
+[中文文档](./solution/0700-0799/0783.Minimum%20Distance%20Between%20BST%20Nodes/README.md)
 
 <!-- tags:Tree,Depth-First Search,Breadth-First Search,Binary Search Tree,Binary Tree -->
 

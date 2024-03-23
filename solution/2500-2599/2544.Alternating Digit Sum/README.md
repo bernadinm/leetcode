@@ -1,6 +1,6 @@
 # [2544. Alternating Digit Sum](https://leetcode.com/problems/alternating-digit-sum)
 
-[中文文档](/solution/2500-2599/2544.Alternating%20Digit%20Sum/README.md)
+[中文文档](./solution/2500-2599/2544.Alternating%20Digit%20Sum/README.md)
 
 <!-- tags:Math -->
 

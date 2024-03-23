@@ -1,6 +1,6 @@
 # [506. Relative Ranks](https://leetcode.com/problems/relative-ranks)
 
-[中文文档](/solution/0500-0599/0506.Relative%20Ranks/README.md)
+[中文文档](./solution/0500-0599/0506.Relative%20Ranks/README.md)
 
 <!-- tags:Array,Sorting,Heap (Priority Queue) -->
 

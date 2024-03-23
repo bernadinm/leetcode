@@ -1,6 +1,6 @@
 # [2441. Largest Positive Integer That Exists With Its Negative](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative)
 
-[中文文档](/solution/2400-2499/2441.Largest%20Positive%20Integer%20That%20Exists%20With%20Its%20Negative/README.md)
+[中文文档](./solution/2400-2499/2441.Largest%20Positive%20Integer%20That%20Exists%20With%20Its%20Negative/README.md)
 
 <!-- tags:Array,Hash Table,Two Pointers,Sorting -->
 
